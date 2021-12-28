@@ -9,14 +9,10 @@ import Header from '../../components/Header';
 const EventPage  = () => {
 	return (
 		<React.Fragment>
-			{/* <LazyLoad> */}
       <EventBackground />
-      <Header active={2} />
-				{/* <Router>
-					<Routes />
-				</Router> */}
-				{/* <Footer /> */}
-			{/* </LazyLoad> */}
+			<Header active={2} />
+			
+			
 		</React.Fragment>
 	);
 }

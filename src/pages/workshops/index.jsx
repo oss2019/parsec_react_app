@@ -5,7 +5,7 @@ const Workshop = () => {
   return (
     <React.Fragment>
       <Header active={3} />
-      <h1>Workshops</h1>
+      <div className=''></div>
     </React.Fragment>
   )
 }

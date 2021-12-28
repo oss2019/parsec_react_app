@@ -126,6 +126,7 @@ const Sidebar = ({ show, handleClose, active }) => {
 				</a> */}
 			</div>
 		</div>
+	
 	);
 };
 

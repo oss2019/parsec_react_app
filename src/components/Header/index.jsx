@@ -67,6 +67,8 @@ const Header = ({ active }) => {
 		setHover8(!hover8);
 	}
 
+
+
 	return (
 		<div>
 			<Slide top delay={100} when={true}>
