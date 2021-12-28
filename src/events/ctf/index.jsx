@@ -103,11 +103,18 @@ const Ctf = () => {
                               color: `#3ca2b8`,
                               paddingTop: `20px`,
                               textShadow: `1px 1px 2px black, 0 0 1em #3ca2b8, 0 0 0.2em #3ca2b8`,
-                              paddingBottom: `20px`
+                              paddingBottom: `20px`,
+                              textAlign : `center`
                             }}
                           >
                             All teams need to register <a
-                              href="https://venividivici.iitdh.ac.in/">here</a> before proceeding.
+                              href="https://venividivici.iitdh.ac.in/"
+                              style={{
+                                textDecoration:`None`,
+                                color : `#f20487`
+                              }}
+                            > 
+                              here</a> before proceeding.
                           </h5>
 
                         </div>
@@ -133,11 +140,13 @@ const Ctf = () => {
                           }}
                             className="font-weight-bold"
                           >
+                            
                             This is online CTF security challenge. The event starts at 9:00 AM on
                             15th Feb, 2020.
-                            {/* <br> */}
+                            <br />
                             Below are the categories on which the event will be based, given so that
                             you'll put up a good fight!
+                            
                           </p>
                           <ul className="list-style-four mb-1	">
                             <li>Pwning</li>
@@ -175,7 +184,8 @@ const Ctf = () => {
 
                             <a
                               href="https://t.me/joinchat/PV9kHhGxrySBwvO_TArVMQ"
-                              style={{ color: `#00adb5` }}
+                              style={{ color: `#00adb5` ,
+                                      textDecoration : `None`}}
                               target={'_blank'}
                             >channel</a> and we will try our best to answer
                             all of them.
