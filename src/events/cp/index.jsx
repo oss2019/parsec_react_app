@@ -4,6 +4,7 @@ import './styles.css';
 import '../../css/style.css';
 import '../../css/bootstrap.css';
 import '../../css/responsive.css';
+import Footer from '../../components/Footer';
 // import '../../css/prices.css'
 // import '../../css/winners.css'
 
@@ -159,6 +160,7 @@ const Cp = () => {
 					</div>
 				</section>
 			</div>
+			<Footer />
 		</React.Fragment>
 	);
 };
