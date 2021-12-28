@@ -14,12 +14,12 @@ const Hackathon = () => {
         <Header />
         
         <section className="page-title"
-        style={{backgroundImage: `url(src/images/events/devhack/devhack_banner.png)`}}
+        style={{backgroundImage: `url(images/events/devhack/devhack_banner.png)`}}
          >
             <div className="auto-container">
                 <ul className="bread-crumb clearfix">  
                     <li>
-                      &nbsp;
+                      {' '}
                       {/* <br></br><br></br> */}
                       </li>
                 </ul>
@@ -61,7 +61,7 @@ const Hackathon = () => {
                                     <div className="auto-container p-0">
                                         <div className="login-form">
                                             <div className="row clearfix">
-                                                <h1 className="mx-auto mt-5" style={{color:`#12114a`}}>About Event</h1>
+                                                <h1 className="mx-auto mt-5" style={{color:`#12114a`, textAlign:`center`}}>About Event</h1>
                                                 <div className="form-column col-lg-12 col-md-12 col-sm-12">
                                                     <div style={{padding:`40px`,
                                                                  paddingBottom:`10px`}}>
@@ -82,12 +82,13 @@ const Hackathon = () => {
                                                             style={{margin:`auto`,
                                                                 paddingBottom:`20px`}}>
                                                             
-                                                            <div className="btn-box">
-                                                                {/* <a href=""
+                                                            <div className="btn-box" style={{textAlign : `center`}}>
+                                                                <a 
+                                                                //href=""
                                                                 //  target="_blank"
                                                                     className="theme-btn btn-style-one btn-rounded mb-4"
-                                                                    // style={{pointerEvents: `none`}}
-                                                                    >COMING SOON</a> */}
+                                                                     style={{pointerEvents: `none`}}
+                                                                    >COMING SOON</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -113,10 +114,10 @@ const Hackathon = () => {
                                                                      fontSize: `large`,
                                                                      fontWeight: `bold`}}
                                                             className="card-body text-center text-danger">
-                                                            &nbsp; Duration: 36 hours &nbsp; &nbsp; Team Size: 4
+                                                            {' '} Duration: 36 hours {' '} {' '} Team Size: 4
                                                         </div>
                                                     </div>
-                                                    {/* </br> */}
+                                                    <br/>
 
                                                     <ul className="list-style-four mb-0">
                                                         <li style={{color:`#12114a`}}>Contest starts:
@@ -130,7 +131,7 @@ const Hackathon = () => {
                                                         <li style={{color:`#12114a`}}>Separate judging for Hardware and
                                                             Software hacks</li>
                                                     </ul>
-                                                    {/* <br></br> */}
+                                                    <br/><br/>
                                                 </div>
                                             </div>
                                         </div>
@@ -143,21 +144,21 @@ const Hackathon = () => {
                                 >
                                          TIMELINE 
                                 </h2>
-                                {/* <hr></hr> */}
+                                <hr/><hr/>
                                 <div className="content-box">
                                     <div className="row">
                                         <div className="row">
                                             <div className="col-auto text-center flex-column d-none d-sm-flex">
                                                 <div className="row h-50">
-                                                    <div className="col border-right">&nbsp;</div>
-                                                    <div className="col">&nbsp;</div>
+                                                    <div className="col border-right">{' '}</div>
+                                                    <div className="col">{' '}</div>
                                                 </div>
                                                 <h5 className="m-2">
-                                                    <span className="badge badge-pill bg-light border">&nbsp;</span>
+                                                    <span className="badge badge-pill bg-light border">{' '}</span>
                                                 </h5>
                                                 <div className="row h-50">
-                                                    <div className="col border-right">&nbsp;</div>
-                                                    <div className="col">&nbsp;</div>
+                                                    <div className="col border-right">{' '}</div>
+                                                    <div className="col">{' '}</div>
                                                 </div>
                                             </div>
                                             <div className="col py-2">
@@ -178,15 +179,15 @@ const Hackathon = () => {
                                         <div className="row">
                                             <div className="col-auto text-center flex-column d-none d-sm-flex">
                                                 <div className="row h-50">
-                                                    <div className="col border-right">&nbsp;</div>
-                                                    <div className="col">&nbsp;</div>
+                                                    <div className="col border-right">{' '}</div>
+                                                    <div className="col">{' '}</div>
                                                 </div>
                                                 <h5 className="m-2">
-                                                    <span className="badge badge-pill bg-danger">&nbsp;</span>
+                                                    <span className="badge badge-pill bg-danger">{' '}</span>
                                                 </h5>
                                                 <div className="row h-50">
-                                                    <div className="col border-right">&nbsp;</div>
-                                                    <div className="col">&nbsp;</div>
+                                                    <div className="col border-right">{' '}</div>
+                                                    <div className="col">{' '}</div>
                                                 </div>
                                             </div>
                                             <div className="col py-2">
@@ -222,15 +223,15 @@ const Hackathon = () => {
                                         <div className="row">
                                             <div className="col-auto text-center flex-column d-none d-sm-flex">
                                                 <div className="row h-50">
-                                                    <div className="col border-right">&nbsp;</div>
-                                                    <div className="col">&nbsp;</div>
+                                                    <div className="col border-right">{' '}</div>
+                                                    <div className="col">{' '}</div>
                                                 </div>
                                                 <h5 className="m-2">
-                                                    <span className="badge badge-pill bg-light border">&nbsp;</span>
+                                                    <span className="badge badge-pill bg-light border">{' '}</span>
                                                 </h5>
                                                 <div className="row h-50">
-                                                    <div className="col border-right">&nbsp;</div>
-                                                    <div className="col">&nbsp;</div>
+                                                    <div className="col border-right">{' '}</div>
+                                                    <div className="col">{' '}</div>
                                                 </div>
                                             </div>
                                             <div className="col py-2">
@@ -254,15 +255,15 @@ const Hackathon = () => {
                                         <div className="row">
                                             <div className="col-auto text-center flex-column d-none d-sm-flex">
                                                 <div className="row h-50">
-                                                    <div className="col border-right">&nbsp;</div>
-                                                    <div className="col">&nbsp;</div>
+                                                    <div className="col border-right">{' '}</div>
+                                                    <div className="col">{' '}</div>
                                                 </div>
                                                 <h5 className="m-2">
-                                                    <span className="badge badge-pill bg-danger">&nbsp;</span>
+                                                    <span className="badge badge-pill bg-danger">{' '}</span>
                                                 </h5>
                                                 <div className="row h-50">
-                                                    <div className="col border-right">&nbsp;</div>
-                                                    <div className="col">&nbsp;</div>
+                                                    <div className="col border-right">{' '}</div>
+                                                    <div className="col">{' '}</div>
                                                 </div>
                                             </div>
                                             <div className="col py-2">
@@ -286,15 +287,15 @@ const Hackathon = () => {
                                         <div className="row">
                                             <div className="col-auto text-center flex-column d-none d-sm-flex">
                                                 <div className="row h-50">
-                                                    <div className="col border-right">&nbsp;</div>
-                                                    <div className="col">&nbsp;</div>
+                                                    <div className="col border-right">{' '}</div>
+                                                    <div className="col">{' '}</div>
                                                 </div>
                                                 <h5 className="m-2">
-                                                    <span className="badge badge-pill bg-light border">&nbsp;</span>
+                                                    <span className="badge badge-pill bg-light border">{' '}</span>
                                                 </h5>
                                                 <div className="row h-50">
-                                                    <div className="col border-right">&nbsp;</div>
-                                                    <div className="col">&nbsp;</div>
+                                                    <div className="col border-right">{' '}</div>
+                                                    <div className="col">{' '}</div>
                                                 </div>
                                             </div>
                                             <div className="col py-2">
@@ -317,15 +318,15 @@ const Hackathon = () => {
                                         <div className="row">
                                             <div className="col-auto text-center flex-column d-none d-sm-flex">
                                                 <div className="row h-50">
-                                                    <div className="col border-right">&nbsp;</div>
-                                                    <div className="col">&nbsp;</div>
+                                                    <div className="col border-right">{' '}</div>
+                                                    <div className="col">{' '}</div>
                                                 </div>
                                                 <h5 className="m-2">
-                                                    <span className="badge badge-pill bg-danger">&nbsp;</span>
+                                                    <span className="badge badge-pill bg-danger">{' '}</span>
                                                 </h5>
                                                 <div className="row h-50">
-                                                    <div className="col border-right">&nbsp;</div>
-                                                    <div className="col">&nbsp;</div>
+                                                    <div className="col border-right">{' '}</div>
+                                                    <div className="col">{' '}</div>
                                                 </div>
                                             </div>
                                             <div className="col py-2">
@@ -347,15 +348,15 @@ const Hackathon = () => {
                                         <div className="row">
                                             <div className="col-auto text-center flex-column d-none d-sm-flex">
                                                 <div className="row h-50">
-                                                    <div className="col border-right">&nbsp;</div>
-                                                    <div className="col">&nbsp;</div>
+                                                    <div className="col border-right">{' '}</div>
+                                                    <div className="col">{' '}</div>
                                                 </div>
                                                 <h5 className="m-2">
-                                                    <span className="badge badge-pill bg-danger">&nbsp;</span>
+                                                    <span className="badge badge-pill bg-danger">{' '}</span>
                                                 </h5>
                                                 <div className="row h-50">
-                                                    <div className="col border-right">&nbsp;</div>
-                                                    <div className="col">&nbsp;</div>
+                                                    <div className="col border-right">{' '}</div>
+                                                    <div className="col">{' '}</div>
                                                 </div>
                                             </div>
                                             <div className="col py-2">
@@ -424,7 +425,7 @@ const Hackathon = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                                {' '}{' '}{' '}{' '}
 
                                                 <div className="col-12 col-sm-6 col-lg-3 shadow p-3 mb-5 bg-white rounded">
                                                     <div className="single-speaker-area bg-gradient-overlay-2 wow fadeInUp"
@@ -437,7 +438,7 @@ const Hackathon = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                                {' '}{' '}{' '}{' '}
 
                                                 
                                                 <div
@@ -452,7 +453,7 @@ const Hackathon = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                                {' '}{' '}{' '}{' '}
 
                                                 
                                                 <div
@@ -467,7 +468,7 @@ const Hackathon = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                                {' '}{' '}{' '}{' '}
 
 
                                             
@@ -482,7 +483,7 @@ const Hackathon = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                                {' '}{' '}{' '}{' '}
 
                                               
                                                 <div className="col-12 col-sm-6 col-lg-3 shadow p-3 mb-5 bg-white rounded">
@@ -496,7 +497,7 @@ const Hackathon = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                                {' '}{' '}{' '}{' '}
 
                                                 
                                                 <div className="col-12 col-sm-6 col-lg-3 shadow p-3 mb-5 bg-white rounded">
@@ -510,7 +511,7 @@ const Hackathon = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                                {' '}{' '}{' '}{' '}
 
                                               
                                                 <div className="col-12 col-sm-6 col-lg-3 shadow p-3 mb-5 bg-white rounded">
@@ -524,7 +525,7 @@ const Hackathon = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                                {' '}{' '}{' '}{' '}
 
                                               
                                                 <div className="col-12 col-sm-6 col-lg-3 shadow p-3 mb-5 bg-white rounded">
@@ -538,7 +539,7 @@ const Hackathon = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                                {' '}{' '}{' '}{' '}
 
                                                 
                                                 <div className="col-12 col-sm-6 col-lg-3 shadow p-1 mb-5 bg-white rounded">
@@ -552,7 +553,7 @@ const Hackathon = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                                {' '}{' '}{' '}{' '}
 
                                                
                                                 <div className="col-12 col-sm-6 col-lg-3 shadow p-1 mb-5 bg-white rounded">
@@ -567,7 +568,7 @@ const Hackathon = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                                {' '}{' '}{' '}{' '}
 
                                                 
                                                 <div className="col-12 col-sm-6 col-lg-3 shadow p-1 mb-5 bg-white rounded">
@@ -582,7 +583,7 @@ const Hackathon = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                                {' '}{' '}{' '}{' '}
 
                                                 
                                                 <div className="col-12 col-sm-6 col-lg-3 shadow p-1 mb-5 bg-white rounded">
@@ -597,7 +598,7 @@ const Hackathon = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                                {' '}{' '}{' '}{' '}
 
                                                 
                                                 <div className="col-12 col-sm-6 col-lg-3 shadow p-1 mb-5 bg-white rounded">
@@ -612,7 +613,7 @@ const Hackathon = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                                {' '}{' '}{' '}{' '}
 
                                                 
                                                 <div className="col-12 col-sm-6 col-lg-3 shadow p-1 mb-5 bg-white rounded">
@@ -627,7 +628,7 @@ const Hackathon = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                                {' '}{' '}{' '}{' '}
 
                                                 
                                                 <div className="col-12 col-sm-6 col-lg-3 shadow p-1 mb-5 bg-white rounded">
@@ -642,7 +643,7 @@ const Hackathon = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                                {' '}{' '}{' '}{' '}
 
                                                 
                                                 <div className="col-12 col-sm-6 col-lg-3 shadow p-1 mb-5 bg-white rounded">
@@ -657,7 +658,7 @@ const Hackathon = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                                {' '}{' '}{' '}{' '}
                                             </div>
                                         </div>
                                       
@@ -714,7 +715,7 @@ const Hackathon = () => {
                                             </div>
                                         </div>
                                         <div className="col-md-0.5 text-center flex-column d-none d-sm-flex">
-                                            <span className="badge badge-pill bg-danger">&nbsp;</span>    
+                                            <span className="badge badge-pill bg-danger">{' '}</span>    
                                         </div>
                                         <div className="col-md-5 py-2">
                                             <div className="card border-danger shadow">
@@ -745,7 +746,7 @@ const Hackathon = () => {
                                             </div>
                                         </div>
                                         <div className="col-md-0.5 text-center flex-column d-none d-sm-flex">
-                                            <span className="badge badge-pill bg-danger">&nbsp;</span>
+                                            <span className="badge badge-pill bg-danger">{' '}</span>
                                         </div>
                                         <div className="col-md-5 py-2">
                                             <div className="card border-danger shadow">
@@ -775,7 +776,7 @@ const Hackathon = () => {
                                             </div>
                                         </div>
                                         <div className="col-md-0.5 text-center flex-column d-none d-sm-flex">
-                                            <span className="badge badge-pill bg-danger">&nbsp;</span>
+                                            <span className="badge badge-pill bg-danger">{' '}</span>
                                         </div>
 
                                         <div className="col-md-5 py-2"><br></br>
@@ -810,7 +811,7 @@ const Hackathon = () => {
                                         </div>
                                         <div className="col-md-0.5 text-center flex-column d-none d-sm-flex">
                                             <br></br>
-                                            <span className="badge badge-pill bg-danger">&nbsp;</span>
+                                            <span className="badge badge-pill bg-danger">{' '}</span>
                                         </div>
                                         <br></br>
                                         <div className="col-md-5 py-2"><br></br>
@@ -846,7 +847,7 @@ const Hackathon = () => {
                                         </div>
                                         <div className="col-md-0.5 text-center flex-column d-none d-sm-flex">
                                             <br></br><br></br><br></br>
-                                            <span className="badge badge-pill bg-danger">&nbsp;</span>
+                                            <span className="badge badge-pill bg-danger">{' '}</span>
                                         </div>
                                         <br></br>
                                         <div className="col-md-5 py-2"><br></br>
@@ -882,7 +883,7 @@ const Hackathon = () => {
                                         </div>
                                         <div className="col-md-0.5 text-center flex-column d-none d-sm-flex">
                                             <br></br><br></br><br></br>
-                                            <span className="badge badge-pill bg-danger">&nbsp;</span>
+                                            <span className="badge badge-pill bg-danger">{' '}</span>
                                         </div>
                                         <br></br>
                                         <div className="col-md-5 py-2"><br></br>
@@ -917,7 +918,7 @@ const Hackathon = () => {
                                         </div>
                                         <div className="col-md-0.5 text-center flex-column d-none d-sm-flex">
                                             <br></br><br></br><br></br>
-                                            <span className="badge badge-pill bg-danger">&nbsp;</span>
+                                            <span className="badge badge-pill bg-danger">{' '}</span>
                                         </div>
                                         <br></br>
                                         <div className="col-md-5 py-2"><br></br>
@@ -954,7 +955,7 @@ const Hackathon = () => {
                                         </div>
                                         <div className="col-md-0.5 text-center flex-column d-none d-sm-flex">
                                             <br></br><br></br><br></br>
-                                            <span className="badge badge-pill bg-danger">&nbsp;</span>
+                                            <span className="badge badge-pill bg-danger">{' '}</span>
                                         </div>
                                         <br></br>
                                         <div className="col-md-5 py-2"><br></br>
@@ -989,7 +990,7 @@ const Hackathon = () => {
                                         </div>
                                         <div className="col-md-0.5 text-center flex-column d-none d-sm-flex">
                                             <br></br><br></br><br></br>
-                                            <span className="badge badge-pill bg-danger">&nbsp;</span>
+                                            <span className="badge badge-pill bg-danger">{' '}</span>
                                         </div>
                                     </div>
 
