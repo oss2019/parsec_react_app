@@ -11,11 +11,11 @@ const Cp = () => {
 	return (
 		<React.Fragment>
 			<Header />
-			<canvas id ='c'></canvas>
+			<canvas id='c'></canvas>
 			<section
 				className="page-title"
 				id="page-title"
-			
+
 			>
 				<div className="auto-container ">
 					<div className="project-tabs tabs-box">
@@ -99,7 +99,7 @@ const Cp = () => {
 														fontSize: 'large',
 														fontWeight: 'bold',
 														background: '#393e46',
-													
+
 													}}
 												>
 													<div className="row" style={{}}>
