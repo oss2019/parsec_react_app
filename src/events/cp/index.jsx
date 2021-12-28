@@ -16,7 +16,7 @@ const Cp = () => {
 				<div className="form-back-drop"></div>
 				<section className="page-title" id="page-title" style={{}}>
 					{/* <canvas id="c" style={{position: 'absolute', top: '0px', left: '0px', backgroundColor: 'black'}}></canvas> */}
-					<div className="auto-container" style={{  }}>
+					<div className="auto-container" style={{}}>
 						<div className="project-tabs tabs-box">
 							<div
 								className="inner-column tab active-tab"
@@ -74,9 +74,11 @@ const Cp = () => {
 																	<a
 																		href=""
 																		className="theme-btn btn-style-four button text-center"
+																		id = "btncs"
 																		style={{
 																			borderRadius: '8px',
 																			color: '#ffffff',
+																			// background: '#f20487',
 																		}}
 																	>
 																		Coming Soon
@@ -141,7 +143,7 @@ const Cp = () => {
 														<a
 															href="https://t.me/joinchat/PV9kHhZ3gKWJv7V-nQLrPA"
 															target="_blank"
-															style={{color:"#00adb5"}}
+															style={{ color: '#00adb5' }}
 														>
 															channel
 														</a>{' '}
