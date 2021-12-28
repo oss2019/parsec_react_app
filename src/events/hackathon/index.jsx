@@ -68,7 +68,7 @@ const Hackathon = () => {
                                                         <div className="title-box">
                                                             <p className="text-justify"
                                                                 style={{color:`#383434`,
-                                                                        fontSize:`large`}}>DevHack 2.0, the
+                                                                        fontSize:`large`}}>DevHack 3.0, the
                                                                 second edition of the annual hackathon of IIT Dharwad is
                                                                 back - <i>bigger, better and bolder!</i> We have always
                                                                 believed that engineers and researchers have the power
@@ -339,7 +339,7 @@ const Hackathon = () => {
                                                         <p className="card-text text-dark mb-1" style={{fontSize: `medium`}}>
                                                             <strong> Submit your hack on Devfolio</strong> and let the
                                                             world know what you made for them to be eligible to compete
-                                                            for the top positions in <strong>DevHack 2.0</strong>.
+                                                            for the top positions in <strong>DevHack 3.0</strong>.
                                                         </p>
                                                     </div>
                                                 </div>
