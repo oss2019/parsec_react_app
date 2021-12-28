@@ -21,7 +21,7 @@ const Routes = () => {
                 <Route path='/events' component={Events}/>
                 <Route path='/cp' component={Cp}/>
                 <Route path='/ctf' component={Ctf}/>
-                <Route path='/hackthon' component={Hackathon} />
+                <Route path='/hackathon' component={Hackathon} />
                 <Route path='/ascensus' component={Ascensus}/>
                 <Route path='/designo' component={Designo}/>
                 <Route path='/quiz' component={Quiz} />
