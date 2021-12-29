@@ -5,6 +5,7 @@ import '../../css/style.css'
 import '../../css/bootstrap.css'
 import '../../css/responsive.css'
 import quizTitleBackground from '../../images/resource/19629.jpg'
+import Footer from "../../components/Footer";
 
 const Quiz = () => {
   return (
@@ -14,7 +15,7 @@ const Quiz = () => {
 
         <Header />
 
-        <section className="page-title" style={{backgroundImage:`url(${quizTitleBackground})`}}>
+        <section className="page-title" id="page-title" style={{backgroundImage:`url(${quizTitleBackground})`}}>
           <div className="auto-container">
             <span className="float-text">SciTech Quiz</span>
               <h1>SciTech Quiz</h1>
@@ -156,6 +157,7 @@ const Quiz = () => {
       </div>
     </section>
     </div>
+    <Footer />
 </React.Fragment>
   )
 }
