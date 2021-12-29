@@ -229,6 +229,9 @@ const Footer = () => {
 				Copyright &copy; 2022 - OSS, Indian Institute of Technology, Dharwad.
 				All Rights Reserved.
 			</section>
+			{/* <div className="scroll-to-top scroll-to-target" data-target="html">
+				<span className="fa fa-angle-double-up"></span>
+			</div> */}
 		</React.Fragment>
 	);
 };
