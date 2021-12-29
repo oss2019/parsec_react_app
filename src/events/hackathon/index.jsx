@@ -1,9 +1,15 @@
 import React from "react";
 import Header from "../../components/Header";
+import { Link } from 'react-router-dom';
 import './styles.css';
 import '../../css/style.css'
 import '../../css/bootstrap.css'
 import '../../css/responsive.css'
+import Overview from "../hackathon_overview";
+import Timeline from "../hackathon_timeline";
+import Ctf from "../ctf";
+import Themes from "../hackathon_themes";
+import Judges from "../hackathon_judges";
 
 const Hackathon = () => {
   return (
@@ -37,16 +43,16 @@ const Hackathon = () => {
                             <div className="inner-column">
                                 <ul className="tab-buttons tab-btns clearfix">
                                     <li className="tab-btn active-btn" data-tab="#introduction">
-                                        <div>Overview</div>
+                                        <div><Link to={"hackathon_overview"}>Overview</Link></div>
                                     </li>
                                     <li className="tab-btn" data-tab="#timeline">
-                                        <div>Timeline</div>
+                                        <div><Link to={"hackathon_timeline"}>Timeline</Link></div>
                                     </li>
                                     <li className="tab-btn" data-tab="#theme">
-                                        <div>Themes</div>
+                                        <div><Link to={"hackathon_themes"}>Themes</Link></div>
                                     </li>
                                     <li className="tab-btn" data-tab="#judge">
-                                        <div>Judges</div>
+                                        <div><Link to={"hackathon_judges"}>Judges</Link></div>
                                     </li>
                                 </ul>
                             </div>
@@ -65,7 +71,7 @@ const Hackathon = () => {
                                                 <div className="form-column col-lg-12 col-md-12 col-sm-12">
                                                     <div style={{padding:`40px`,
                                                                  paddingBottom:`10px`}}>
-                                                        <div className="title-box">
+                                                         <div className="title-box">
                                                             <p className="text-justify"
                                                                 style={{color:`#383434`,
                                                                         fontSize:`large`}}>DevHack 3.0, the
@@ -99,7 +105,7 @@ const Hackathon = () => {
                                                 <div className="image-column col-lg-11 col-sm-12 col-sm-12">
                                                     <div className="image-box wow fadeIn">
                                                         <figure className="image">
-                                                          <img src="images/resource/project.jpg"
+                                                          <img src="src/images/resource/project.jpg"
                                                                 alt="" style={{maxWidth:`600px`,
                                                                               margin:`auto`}} >
                                                           </img>
