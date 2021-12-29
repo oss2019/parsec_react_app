@@ -14,7 +14,7 @@ const Quiz = () => {
 
         <Header />
 
-        <section className="page-title" style={{backgroundImage:`url(${quizTitleBackground})`}}>
+        <section className="page-title" id="page-title" style={{backgroundImage:`url(${quizTitleBackground})`}}>
           <div className="auto-container">
             <span className="float-text">SciTech Quiz</span>
               <h1>SciTech Quiz</h1>

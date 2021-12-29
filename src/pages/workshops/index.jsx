@@ -16,8 +16,11 @@ const Workshop = () => {
 					className="page-title"
 					style={{
 						backgroundImage: `url(${TitleBackground})`,
+					
 					}}
+					id='page-title'
 				>
+					{/* <img src={TitleBackground} /> */}
 					<div className="auto-container">
 						<span className="float-text">Workshops</span>
 						<h1>Workshops</h1>

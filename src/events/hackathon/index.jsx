@@ -13,7 +13,7 @@ const Hackathon = () => {
         {/* <div className="preloader"></div> */}
         <Header />
         
-        <section className="page-title"
+        <section className="page-title" id="page-title"
         style={{backgroundImage: `url(images/events/devhack/devhack_banner.png)`}}
          >
             <div className="auto-container">
