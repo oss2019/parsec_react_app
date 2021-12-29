@@ -5,6 +5,7 @@ import './styles.css';
 import '../../css/bootstrap.css';
 import '../../css/style.css';
 import '../../css/responsive.css';
+import Footer from '../../components/Footer';
 // import '../../css/contact.css';
 
 const Workshop = () => {
@@ -50,6 +51,7 @@ const Workshop = () => {
 					</div>
 				</section>
 			</div>
+			<Footer/>
 		</React.Fragment>
 	);
 };

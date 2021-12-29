@@ -5,6 +5,7 @@ import '../../css/style.css'
 import '../../css/bootstrap.css'
 import '../../css/responsive.css'
 import quizTitleBackground from '../../images/resource/19629.jpg'
+import Footer from "../../components/Footer";
 
 const Quiz = () => {
   return (
@@ -156,6 +157,7 @@ const Quiz = () => {
       </div>
     </section>
     </div>
+    <Footer />
 </React.Fragment>
   )
 }

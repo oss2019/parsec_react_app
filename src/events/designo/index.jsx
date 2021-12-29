@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
 const Designo = () => {
@@ -6,6 +7,7 @@ const Designo = () => {
     <React.Fragment>
       <Header />
       <h1>Designo</h1>
+      <Footer/>
     </React.Fragment>
   )
 }
