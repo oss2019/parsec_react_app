@@ -8,7 +8,7 @@ import FadeIn from 'react-fade-in';
 import LazyLoad from 'react-lazyload';
 // import data from '../../shared/Students.json';
 // import avatar from './avatar.png';
-import data from '../../data/webteam.json';
+import webTeamData from '../../data/webteam.json';
 import './styles.css';
 import '../../css/bootstrap.css';
 import '../../css/style.css';
@@ -58,190 +58,46 @@ const Team = () => {
 						</div>
 						{/* <FadeIn className="row"> */}
 						<div className="row">
-							<div className="col-12 col-sm-6 col-lg-3">
-								<Zoom delay={100}>
-									<Card delay={100} style={{ border: 0 }}>
-										<div className="single-speaker-area wow fadeInUp ">
-											<div className="speaker-single-thumb">
-												<img src={atulSingh} alt="" />
-											</div>
+							{webTeamData.map((data, i) => (
+								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
+									<Zoom delay={700}>
+										<Card delay={600} style={{ border: 0 }}>
+											<div className="single-speaker-area wow fadeInUp ">
+												<div className="speaker-single-thumb">
+													<img src={`${data.image}`} alt="" />
+												</div>
 
-											<div class="social-info">
-												<a
-													href="https://www.instagram.com/atulsingh.pks/"
-													target="_blank"
-												>
-													<i class="fab fa-instagram"></i>
-												</a>
-												<a
-													href="https://github.com/AtulSingh-Emyre/"
-													target="_blank"
-												>
-													<i class="fab fa-github"></i>
-												</a>
-												<a
-													href="https://www.linkedin.com/in/atul-singh-457610195/"
-													target="_blank"
-												>
-													<i class="fab fa-linkedin-in"></i>
-												</a>
+												<div class="social-info">
+													{data.facebook && (
+														<a href={`${data.facebook}`} target="_blank">
+															<i class="fab fa-facebook-f"></i>
+														</a>
+													)}
+													{data.instagram !== '' && (
+														<a href={`${data.instagram}`} target="_blank">
+															<i class="fab fa-instagram"></i>
+														</a>
+													)}
+													{data.github !== '' && (
+														<a href={`${data.github}`} target="_blank">
+															<i class="fab fa-github"></i>
+														</a>
+													)}
+													{data.linkedin !== '' && (
+														<a href={`${data.linkedin}`} target="_blank">
+															<i class="fab fa-linkedin-in"></i>
+														</a>
+													)}
+												</div>
+												<div class="speaker-info">
+													<h5>{makeName(data.name)}</h5>
+													{/* <p>General Secretary Technical Affairs</p> */}
+												</div>
 											</div>
-											<div class="speaker-info">
-												<h5>Atul Singh</h5>
-												<p>General Secretary Technical Affairs</p>
-											</div>
-										</div>
-									</Card>
-								</Zoom>
-							</div>
-
-							<div className="col-12 col-sm-6 col-lg-3">
-								<Zoom delay={100}>
-									<Card delay={100} style={{ border: 0 }}>
-										<div className="single-speaker-area wow fadeInUp ">
-											<div className="speaker-single-thumb">
-												<img src={atulSingh} alt="" />
-											</div>
-
-											<div class="social-info">
-												<a
-													href="https://www.instagram.com/atulsingh.pks/"
-													target="_blank"
-												>
-													<i class="fab fa-instagram"></i>
-												</a>
-												<a
-													href="https://github.com/AtulSingh-Emyre/"
-													target="_blank"
-												>
-													<i class="fab fa-github"></i>
-												</a>
-												<a
-													href="https://www.linkedin.com/in/atul-singh-457610195/"
-													target="_blank"
-												>
-													<i class="fab fa-linkedin-in"></i>
-												</a>
-											</div>
-											<div class="speaker-info">
-												<h5>Atul Singh</h5>
-												<p>General Secretary Technical Affairs</p>
-											</div>
-										</div>
-									</Card>
-								</Zoom>
-							</div>
-
-							<div className="col-12 col-sm-6 col-lg-3">
-								<Zoom delay={100}>
-									<Card delay={100} style={{ border: 0 }}>
-										<div className="single-speaker-area wow fadeInUp ">
-											<div className="speaker-single-thumb">
-												<img src={atulSingh} alt="" />
-											</div>
-
-											<div class="social-info">
-												<a
-													href="https://www.instagram.com/atulsingh.pks/"
-													target="_blank"
-												>
-													<i class="fab fa-instagram"></i>
-												</a>
-												<a
-													href="https://github.com/AtulSingh-Emyre/"
-													target="_blank"
-												>
-													<i class="fab fa-github"></i>
-												</a>
-												<a
-													href="https://www.linkedin.com/in/atul-singh-457610195/"
-													target="_blank"
-												>
-													<i class="fab fa-linkedin-in"></i>
-												</a>
-											</div>
-											<div class="speaker-info">
-												<h5>Atul Singh</h5>
-												<p>General Secretary Technical Affairs</p>
-											</div>
-										</div>
-									</Card>
-								</Zoom>
-							</div>
-
-							<div className="col-12 col-sm-6 col-lg-3">
-								<Zoom delay={100}>
-									<Card delay={100} style={{ border: 0 }}>
-										<div className="single-speaker-area wow fadeInUp ">
-											<div className="speaker-single-thumb">
-												<img src={atulSingh} alt="" />
-											</div>
-
-											<div class="social-info">
-												<a
-													href="https://www.instagram.com/atulsingh.pks/"
-													target="_blank"
-												>
-													<i class="fab fa-instagram"></i>
-												</a>
-												<a
-													href="https://github.com/AtulSingh-Emyre/"
-													target="_blank"
-												>
-													<i class="fab fa-github"></i>
-												</a>
-												<a
-													href="https://www.linkedin.com/in/atul-singh-457610195/"
-													target="_blank"
-												>
-													<i class="fab fa-linkedin-in"></i>
-												</a>
-											</div>
-											<div class="speaker-info">
-												<h5>Atul Singh</h5>
-												<p>General Secretary Technical Affairs</p>
-											</div>
-										</div>
-									</Card>
-								</Zoom>
-							</div>
-
-							<div className="col-12 col-sm-6 col-lg-3">
-								<Zoom delay={100}>
-									<Card delay={100} style={{ border: 0 }}>
-										<div className="single-speaker-area wow fadeInUp ">
-											<div className="speaker-single-thumb">
-												<img src={atulSingh} alt="" />
-											</div>
-
-											<div class="social-info">
-												<a
-													href="https://www.instagram.com/atulsingh.pks/"
-													target="_blank"
-												>
-													<i class="fab fa-instagram"></i>
-												</a>
-												<a
-													href="https://github.com/AtulSingh-Emyre/"
-													target="_blank"
-												>
-													<i class="fab fa-github"></i>
-												</a>
-												<a
-													href="https://www.linkedin.com/in/atul-singh-457610195/"
-													target="_blank"
-												>
-													<i class="fab fa-linkedin-in"></i>
-												</a>
-											</div>
-											<div class="speaker-info">
-												<h5>Atul Singh</h5>
-												<p>General Secretary Technical Affairs</p>
-											</div>
-										</div>
-									</Card>
-								</Zoom>
-							</div>
+										</Card>
+									</Zoom>
+								</div>
+							))}
 						</div>
 						{/* </FadeIn> */}
 
