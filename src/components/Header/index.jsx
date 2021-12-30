@@ -209,7 +209,7 @@ const Header = ({ active }) => {
 										</NavLink>
 										<NavLink
 											id="7"
-											href="https://parsec.iitdh.ac.in/team.html"
+											href="/team"
 											className={`elements circle-border ${
 												active !== 7 && hover7
 													? 'selected-gradient'

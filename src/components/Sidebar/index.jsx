@@ -91,7 +91,7 @@ const Sidebar = ({ show, handleClose, active }) => {
 					Speakers
 				</p>
 				<p
-					className={`elements text link ${active === 1 ? 'violet' : 'white'}`}
+					className={`elements text link ${active === 6 ? 'violet' : 'white'}`}
 				>
 					<a
 						href="https://parsec.iitdh.ac.in/faq.html"
@@ -101,17 +101,13 @@ const Sidebar = ({ show, handleClose, active }) => {
 					</a>
 				</p>
 				<p
-					className={`elements text link ${active === 1 ? 'violet' : 'white'}`}
+					className={`elements text link ${active === 7 ? 'violet' : 'white'}`}
+					onClick={() => history.push('/team')}
 				>
-					<a
-						href="https://parsec.iitdh.ac.in/team.html"
-						style={{ outline: 'none', textDecoration: 'none', color: 'white' }}
-					>
-						Team
-					</a>
+					Team
 				</p>
 				<p
-					className={`elements text link ${active === 1 ? 'violet' : 'white'}`}
+					className={`elements text link ${active === 8 ? 'violet' : 'white'}`}
 				>
 					<a
 						href="https://parsec.iitdh.ac.in/contact.html"
@@ -126,7 +122,6 @@ const Sidebar = ({ show, handleClose, active }) => {
 				</a> */}
 			</div>
 		</div>
-	
 	);
 };
 

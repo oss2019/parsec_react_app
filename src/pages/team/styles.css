@@ -1,0 +1,32 @@
+/* #abcd {
+	visibility: visible;
+	animation-delay: 300ms;
+	animation-name: fadeInUp;
+        visibility: visible;
+    animation-delay: 300ms;
+    animation-name: fadeInUp;
+} */
+
+#row {
+	/* display: -ms-flexbox; */
+	display: flex;
+	/* -ms-flex-wrap: wrap; */
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.fadeOut{
+     opacity:0;
+     width:0;
+     height:0;
+     transition: width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.5s;
+
+}
+.fadeIn{
+     opacity:1;
+     width:100px;
+     height:100px;
+     transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
+
+}

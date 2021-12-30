@@ -11,6 +11,7 @@ import Quiz from '../events/quiz';
 import Workshop from '../pages/workshops';
 import Schedule from '../pages/schedule';
 import Speakers from '../pages/speakers';
+import Team from '../pages/team';
 // import Students from '../pages/Students';
 
 const Routes = () => {
@@ -18,7 +19,8 @@ const Routes = () => {
         <div>
             <Switch>
                 {/* <Route exact path='/' component={Events} /> */}
-                <Route path='/events' component={Events}/>
+                <Route path='/events' component={Events} />
+                <Route path='/team' component={Team}/>
                 <Route path='/cp' component={Cp}/>
                 <Route path='/ctf' component={Ctf}/>
                 <Route path='/hackathon' component={Hackathon} />
