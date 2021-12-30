@@ -1,29 +1,20 @@
-import React from 'react';
-import Header from '../../components/Header';
+import React from "react";
+import Header from "../../components/Header";
 import './styles.css';
-import '../../css/style.css';
-import '../../css/bootstrap.css';
-import '../../css/responsive.css';
-import Overview from "../hackathon_overview";
-import Timeline from "../hackathon_timeline";
-import Ctf from "../ctf";
-import Themes from "../hackathon_themes";
-import Judges from "../hackathon_judges";
-import Footer from '../../components/Footer';
-import { Link } from 'react-router-dom';
-import hackathonBackground from '../../images/events/devhack/devhack_banner.png';
+import '../../css/style.css'
+import '../../css/bootstrap.css'
+import '../../css/responsive.css'
 
-
-const Hackathon = () => {
-	return (
-		<React.Fragment>
-			<div className="page-wrapper">
-                            
+const Overview = () => {
+  return (
+    <React.Fragment>
+     
+    <div className="page-wrapper">
         {/* <div className="preloader"></div> */}
         <Header />
         
         <section className="page-title"
-        style={{backgroundImage: `url(${hackathonBackground})`}}
+        style={{backgroundImage: `url(images/events/devhack/devhack_banner.png)`}}
          >
             <div className="auto-container">
                 <ul className="bread-crumb clearfix">  
@@ -42,26 +33,24 @@ const Hackathon = () => {
             <div className="auto-container">
                 <div className="project-tabs tabs-box">
                     <div className="row">
-                    <div className="buttons-column col-lg-4 col-md-12 col-sm-12">
+                        <div className="buttons-column col-lg-4 col-md-12 col-sm-12">
                             <div className="inner-column">
                                 <ul className="tab-buttons tab-btns clearfix">
                                     <li className="tab-btn active-btn" data-tab="#introduction">
-                                        <div><Link to={"hackathon_overview"}>Overview</Link></div>
+                                        <div>Overview</div>
                                     </li>
                                     <li className="tab-btn" data-tab="#timeline">
-                                        <div><Link to={"hackathon_timeline"}>Timeline</Link></div>
+                                        <div>Timeline</div>
                                     </li>
                                     <li className="tab-btn" data-tab="#theme">
-                                        <div><Link to={"hackathon_themes"}>Themes</Link></div>
+                                        <div>Themes</div>
                                     </li>
                                     <li className="tab-btn" data-tab="#judge">
-                                        <div><Link to={"hackathon_judges"}>Judges</Link></div>
+                                        <div>Judges</div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-
-
 
                         <div className="content-column col-lg-8 col-md-12 col-sm-12 tabs-content">
                             <div className="inner-column tab active-tab" id="introduction">
@@ -110,9 +99,9 @@ const Hackathon = () => {
                                                 <div className="image-column col-lg-11 col-sm-12 col-sm-12">
                                                     <div className="image-box wow fadeIn">
                                                         <figure className="image">
-                                                          <img src="../../images/resource/project.jpg"
-                                                                alt="" style={{maxWidth:`600px`,maxHeight:`400px`,
-                                                                              margin:`auto`}}>
+                                                          <img src="images/resource/project.jpg"
+                                                                alt="" style={{maxWidth:`600px`,
+                                                                              margin:`auto`}} >
                                                           </img>
                                                         </figure>
                                                     </div>
@@ -125,7 +114,7 @@ const Hackathon = () => {
                                                                      fontSize: `large`,
                                                                      fontWeight: `bold`}}
                                                             className="card-body text-center text-danger">
-                                                            {' '} Duration: 36 hours     Team Size: 4
+                                                            {' '} Duration: 36 hours {' '} {' '} Team Size: 4
                                                         </div>
                                                     </div>
                                                     <br/>
@@ -154,10 +143,9 @@ const Hackathon = () => {
                 </div>
             </div>
         </section>
-			<Footer />
-        </div>
-	</React.Fragment>
-	);
-};
+      </div>
+    </React.Fragment>
+  )
+}
 
-export default Hackathon;
+export default Overview;

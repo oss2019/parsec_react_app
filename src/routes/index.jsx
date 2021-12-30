@@ -12,6 +12,10 @@ import Workshop from '../pages/workshops';
 import Schedule from '../pages/schedule';
 import Speakers from '../pages/speakers';
 import Team from '../pages/team';
+import Overview from '../events/hackathon_overview';
+import Timeline from '../events/hackathon_timeline';
+import Themes from '../events/hackathon_themes';
+import Judges from '../events/hackathon_judges';
 // import Students from '../pages/Students';
 
 const Routes = () => {
@@ -24,13 +28,16 @@ const Routes = () => {
                 <Route path='/cp' component={Cp}/>
                 <Route path='/ctf' component={Ctf}/>
                 <Route path='/hackathon' component={Hackathon} />
+                <Route path='/hackathon_overview' component={Overview}/>
                 <Route path='/ascensus' component={Ascensus}/>
                 <Route path='/designo' component={Designo}/>
                 <Route path='/quiz' component={Quiz} />
                 <Route path='/workshops' component={Workshop} />
                 <Route path='/schedule' component={Schedule} />
                 <Route path='/speakers' component={Speakers} />
-                
+                <Route path='/hackathon_timeline' component={Timeline}/>
+                <Route path='/hackathon_themes' component={Themes} />
+                <Route path='/hackathon_judges' component={Judges} />
                 {/* <Route path='/students' component={Students}/> */}
             </Switch>
         </div>
