@@ -1,11 +1,11 @@
 import React from 'react';
 import Zoom from 'react-reveal/Zoom';
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 import { Row, Col, Card } from 'react-bootstrap';
 import teamTitleBackground from '../../images/background/team.jpg';
-import atulSingh from '../../images/team/atulSingh.jpg';
-import FadeIn from 'react-fade-in';
-import LazyLoad from 'react-lazyload';
+import Footer from '../../components/Footer';
+// import FadeIn from 'react-fade-in';
+// import LazyLoad from 'react-lazyload';
 // import data from '../../shared/Students.json';
 // import avatar from './avatar.png';
 import webTeamData from '../../data/webteam.json';
@@ -630,6 +630,7 @@ const Team = () => {
 						{/* !!!!!!!!! */}
 					</div>
 				</section>
+				<Footer />
 			</div>
 		</React.Fragment>
 	);
