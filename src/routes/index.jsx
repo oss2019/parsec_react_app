@@ -16,6 +16,7 @@ import Overview from '../events/hackathon_overview';
 import Timeline from '../events/hackathon_timeline';
 import Themes from '../events/hackathon_themes';
 import Judges from '../events/hackathon_judges';
+import FAQ from '../pages/faq';
 // import Students from '../pages/Students';
 
 const Routes = () => {
@@ -23,6 +24,7 @@ const Routes = () => {
         <div>
             <Switch>
                 {/* <Route exact path='/' component={Events} /> */}
+                <Route path='/faq' component={FAQ} />
                 <Route path='/events' component={Events} />
                 <Route path='/team' component={Team}/>
                 <Route path='/cp' component={Cp}/>
