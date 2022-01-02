@@ -49,28 +49,15 @@ const Sidebar = ({ show, handleClose, active }) => {
 			>
 				<p
 					className={`elements text link ${active === 1 ? 'violet' : 'white'}`}
+					onClick={() => history.push('/')}
 				>
-					<a
-						href="https://parsec.iitdh.ac.in"
-						style={{ outline: 'none', textDecoration: 'none', color: 'white' }}
-					>
-						Home
-					</a>
+					Home
 				</p>
 				<p
-					className={`elements text link `}
-					// onClick={() => history.push('/events')}
+					className={`elements text link ${active === 2 ? 'violet' : 'white'}`}
+					onClick={() => history.push('/events')}
 				>
-					<a
-						href="/events"
-						style={{
-							outline: 'none',
-							textDecoration: 'none',
-							color: active === 2 ? 'violet' : 'white',
-						}}
-					>
-						Events
-					</a>
+					Events
 				</p>
 				<p
 					className={`elements text link ${active === 3 ? 'violet' : 'white'}`}
@@ -78,7 +65,7 @@ const Sidebar = ({ show, handleClose, active }) => {
 				>
 					Workshop
 				</p>
-				<p
+				{/* <p
 					className={`elements text link ${active === 4 ? 'violet' : 'white'}`}
 					onClick={() => history.push('/schedule')}
 				>
@@ -89,16 +76,12 @@ const Sidebar = ({ show, handleClose, active }) => {
 					onClick={() => history.push('/speakers')}
 				>
 					Speakers
-				</p>
+				</p> */}
 				<p
 					className={`elements text link ${active === 6 ? 'violet' : 'white'}`}
+					onClick={() => history.push('/faq')}
 				>
-					<a
-						href="https://parsec.iitdh.ac.in/faq.html"
-						style={{ outline: 'none', textDecoration: 'none', color: 'white' }}
-					>
-						FAQs
-					</a>
+					FAQs
 				</p>
 				<p
 					className={`elements text link ${active === 7 ? 'violet' : 'white'}`}
@@ -107,14 +90,10 @@ const Sidebar = ({ show, handleClose, active }) => {
 					Team
 				</p>
 				<p
-					className={`elements text link ${active === 8 ? 'violet' : 'white'}`}
+					className={`elements text link ${active === 3 ? 'violet' : 'white'}`}
+					onClick={() => history.push('/contact')}
 				>
-					<a
-						href="https://parsec.iitdh.ac.in/contact.html"
-						style={{ outline: 'none', textDecoration: 'none', color: 'white' }}
-					>
-						Contact
-					</a>
+					Contact
 				</p>
 
 				{/* <a href="#" className="elements text a gradient-text">

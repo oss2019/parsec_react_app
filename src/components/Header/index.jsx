@@ -95,7 +95,7 @@ const Header = ({ active }) => {
 									<Nav className="justify-content-end">
 										<NavLink
 											id="1"
-											href="https://parsec.iitdh.ac.in"
+											href="/"
 											className={`elements circle-border ${
 												active !== 1 && hover
 													? 'selected-gradient'
@@ -150,7 +150,7 @@ const Header = ({ active }) => {
 												Workshops
 											</div>
 										</NavLink>
-										<NavLink
+										{/* <NavLink
 											id="4"
 											href="/schedule"
 											className={`elements circle-border ${
@@ -187,10 +187,10 @@ const Header = ({ active }) => {
 											>
 												Speakers
 											</div>
-										</NavLink>
+										</NavLink> */}
 										<NavLink
 											id="6"
-											href="http://parsec.iitdh.ac.in/faq.html"
+											href="/faq"
 											className={`elements circle-border ${
 												active !== 6 && hover6
 													? 'selected-gradient'
@@ -228,7 +228,7 @@ const Header = ({ active }) => {
 										</NavLink>
 										<NavLink
 											id="8"
-											href="https://parsec.iitdh.ac.in/contact.html"
+											href="/contact"
 											className={`elements circle-border ${
 												active !== 8 && hover8
 													? 'selected-gradient'

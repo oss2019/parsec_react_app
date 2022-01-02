@@ -72,7 +72,7 @@ const Team = () => {
 							{coordinatorTeamData.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={700}>
-										<Card delay={600} style={{ border: 0 }}>
+										{/* <Card delay={600} style={{ border: 0 }}> */}
 											<div className="single-speaker-area wow fadeInUp ">
 												<div className="speaker-single-thumb">
 													<img src={`${data.image}`} alt="" />
@@ -105,7 +105,7 @@ const Team = () => {
 													{/* <p>General Secretary Technical Affairs</p> */}
 												</div>
 											</div>
-										</Card>
+										{/* </Card> */}
 									</Zoom>
 								</div>
 							))}
@@ -119,7 +119,7 @@ const Team = () => {
 							{operationsHead.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={700}>
-										<Card delay={600} style={{ border: 0 }}>
+										{/* <Card delay={600} style={{ border: 0 }}> */}
 											<div className="single-speaker-area wow fadeInUp ">
 												<div className="speaker-single-thumb">
 													<img src={`${data.image}`} alt="" />
@@ -152,7 +152,7 @@ const Team = () => {
 													{/* <p>General Secretary Technical Affairs</p> */}
 												</div>
 											</div>
-										</Card>
+										{/* </Card> */}
 									</Zoom>
 								</div>
 							))}
@@ -166,7 +166,7 @@ const Team = () => {
 							{accountsManager.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={700}>
-										<Card delay={600} style={{ border: 0 }}>
+										{/* <Card delay={600} style={{ border: 0 }}> */}
 											<div className="single-speaker-area wow fadeInUp ">
 												<div className="speaker-single-thumb">
 													<img src={`${data.image}`} alt="" />
@@ -199,7 +199,7 @@ const Team = () => {
 													{/* <p>General Secretary Technical Affairs</p> */}
 												</div>
 											</div>
-										</Card>
+										{/* </Card> */}
 									</Zoom>
 								</div>
 							))}
@@ -213,7 +213,7 @@ const Team = () => {
 							{eventManager.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={700}>
-										<Card delay={600} style={{ border: 0 }}>
+										{/* <Card delay={600} style={{ border: 0 }}> */}
 											<div className="single-speaker-area wow fadeInUp ">
 												<div className="speaker-single-thumb">
 													<img src={`${data.image}`} alt="" />
@@ -246,7 +246,7 @@ const Team = () => {
 													{/* <p>General Secretary Technical Affairs</p> */}
 												</div>
 											</div>
-										</Card>
+										{/* </Card> */}
 									</Zoom>
 								</div>
 							))}
@@ -260,7 +260,7 @@ const Team = () => {
 							{sponsorshipTeam.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={700}>
-										<Card delay={600} style={{ border: 0 }}>
+										{/* <Card delay={600} style={{ border: 0 }}> */}
 											<div className="single-speaker-area wow fadeInUp ">
 												<div className="speaker-single-thumb">
 													<img src={`${data.image}`} alt="" />
@@ -293,7 +293,7 @@ const Team = () => {
 													{/* <p>General Secretary Technical Affairs</p> */}
 												</div>
 											</div>
-										</Card>
+										{/* </Card> */}
 									</Zoom>
 								</div>
 							))}
@@ -307,7 +307,7 @@ const Team = () => {
 							{workshopTeam.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={700}>
-										<Card delay={600} style={{ border: 0 }}>
+										{/* <Card delay={600} style={{ border: 0 }}> */}
 											<div className="single-speaker-area wow fadeInUp ">
 												<div className="speaker-single-thumb">
 													<img src={`${data.image}`} alt="" />
@@ -340,7 +340,7 @@ const Team = () => {
 													{/* <p>General Secretary Technical Affairs</p> */}
 												</div>
 											</div>
-										</Card>
+										{/* </Card> */}
 									</Zoom>
 								</div>
 							))}
@@ -353,7 +353,7 @@ const Team = () => {
 							{marketingTeam.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={700}>
-										<Card delay={600} style={{ border: 0 }}>
+										{/* <Card delay={600} style={{ border: 0 }}> */}
 											<div className="single-speaker-area wow fadeInUp ">
 												<div className="speaker-single-thumb">
 													<img src={`${data.image}`} alt="" />
@@ -386,7 +386,7 @@ const Team = () => {
 													{/* <p>General Secretary Technical Affairs</p> */}
 												</div>
 											</div>
-										</Card>
+										{/* </Card> */}
 									</Zoom>
 								</div>
 							))}
@@ -399,7 +399,7 @@ const Team = () => {
 							{webTeamData.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={700}>
-										<Card delay={600} style={{ border: 0 }}>
+										{/* <Card delay={600} style={{ border: 0 }}> */}
 											<div className="single-speaker-area wow fadeInUp ">
 												<div className="speaker-single-thumb">
 													<img src={`${data.image}`} alt="" />
@@ -432,7 +432,7 @@ const Team = () => {
 													{/* <p>General Secretary Technical Affairs</p> */}
 												</div>
 											</div>
-										</Card>
+										{/* </Card> */}
 									</Zoom>
 								</div>
 							))}
@@ -446,7 +446,7 @@ const Team = () => {
 							{designTeamData.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={700}>
-										<Card delay={600} style={{ border: 0 }}>
+										{/* <Card delay={600} style={{ border: 0 }}> */}
 											<div className="single-speaker-area wow fadeInUp ">
 												<div className="speaker-single-thumb">
 													<img src={`${data.image}`} alt="" />
@@ -479,7 +479,7 @@ const Team = () => {
 													{/* <p>General Secretary Technical Affairs</p> */}
 												</div>
 											</div>
-										</Card>
+										{/* </Card> */}
 									</Zoom>
 								</div>
 							))}
@@ -493,7 +493,7 @@ const Team = () => {
 							{contentTeamData.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={700}>
-										<Card delay={600} style={{ border: 0 }}>
+										{/* <Card delay={600} style={{ border: 0 }}> */}
 											<div className="single-speaker-area wow fadeInUp ">
 												<div className="speaker-single-thumb">
 													<img src={`${data.image}`} alt="" />
@@ -526,7 +526,7 @@ const Team = () => {
 													{/* <p>General Secretary Technical Affairs</p> */}
 												</div>
 											</div>
-										</Card>
+										{/* </Card> */}
 									</Zoom>
 								</div>
 							))}
@@ -540,7 +540,7 @@ const Team = () => {
 							{utilitiesTeam.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={700}>
-										<Card delay={600} style={{ border: 0 }}>
+										{/* <Card delay={600} style={{ border: 0 }}> */}
 											<div className="single-speaker-area wow fadeInUp ">
 												<div className="speaker-single-thumb">
 													<img src={`${data.image}`} alt="" />
@@ -573,7 +573,7 @@ const Team = () => {
 													{/* <p>General Secretary Technical Affairs</p> */}
 												</div>
 											</div>
-										</Card>
+										{/* </Card> */}
 									</Zoom>
 								</div>
 							))}
@@ -587,7 +587,7 @@ const Team = () => {
 							{eventCoordinators.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={700}>
-										<Card delay={600} style={{ border: 0 }}>
+										{/* <Card delay={600} style={{ border: 0 }}> */}
 											<div className="single-speaker-area wow fadeInUp ">
 												<div className="speaker-single-thumb">
 													<img src={`${data.image}`} alt="" />
@@ -620,7 +620,7 @@ const Team = () => {
 													{/* <p>General Secretary Technical Affairs</p> */}
 												</div>
 											</div>
-										</Card>
+										{/* </Card> */}
 									</Zoom>
 								</div>
 							))}
