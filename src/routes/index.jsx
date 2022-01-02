@@ -20,6 +20,7 @@ import FAQ from '../pages/faq';
 import ContactPage from '../pages/contact';
 import Home from '../pages/home';
 import Sponsers from '../pages/sponsors';
+import Travel from '../pages/travel';
 // import Students from '../pages/Students';
 
 const Routes = () => {
@@ -29,6 +30,7 @@ const Routes = () => {
                 <Route exact path='/' component={Home} />
                 <Route path='/faq' component={FAQ} />
                 <Route path='/sponsors' component={Sponsers} />
+                <Route path='/travel' component={Travel} />
                 <Route path='/contact' component={ContactPage} />
                 <Route path='/events' component={Events} />
                 <Route path='/team' component={Team}/>
