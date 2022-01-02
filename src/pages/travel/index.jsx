@@ -58,7 +58,7 @@ const Travel = () => {
 									</div>
 									<div className="text">
 										<br />
-										<span className="dot"></span>&nbsp&nbspTake a Cab direct to IIT
+										<span className="dot"></span>{'    '} Take a Cab direct to IIT
 										Dharwad campus. Standard charges 800/-
 									</div>
 								</div>
@@ -80,11 +80,11 @@ const Travel = () => {
 									</div>
 
 									<div className="text">
-										<span className="dot"></span>&nbsp&nbspTake a bus to Belgaum
+										<span className="dot"></span>{'    '} Take a bus to Belgaum
 										(purchase ticket to _ Dharwad High Court_)
 									</div>
 									<div className="text">
-										<span className="dot"></span>&nbsp&nbspGet down at Dharwad High
+										<span className="dot"></span>{'    '} Get down at Dharwad High
 										Court
 									</div>
 								</div>
@@ -103,11 +103,11 @@ const Travel = () => {
 										</h4>
 									</div>
 									<div className="text">
-										<span className="dot"></span>&nbsp&nbspTake a Belur bus to
+										<span className="dot"></span>{'    '} Take a Belur bus to
 										Dharwad High Court.{' '}
 									</div>
 									<div className="text">
-										<span className="dot"></span>&nbsp&nbspGet down at Dharwad High
+										<span className="dot"></span>{'    '} Get down at Dharwad High
 										Court{' '}
 									</div>
 								</div>
@@ -127,11 +127,11 @@ const Travel = () => {
 										</h4>
 									</div>
 									<div className="text">
-										<span className="dot"></span>&nbsp&nbspTake a bus to Dharwad
+										<span className="dot"></span>{'    '} Take a bus to Dharwad
 										High Court (rare) <br />
-										<span className="dot"></span>&nbsp&nbspOtherwise, take a bus to
+										<span className="dot"></span>{'    '} Otherwise, take a bus to
 										Jubilee Circle <br />
-										<span className="dot"></span>&nbsp&nbspRoute from Jubilee Circle
+										<span className="dot"></span>{'    '} Route from Jubilee Circle
 										mentioned earlier
 									</div>
 								</div>
@@ -153,11 +153,11 @@ const Travel = () => {
 										</h4>
 									</div>
 									<div className="text">
-										<span className="dot"></span>&nbsp&nbspGo to the Railway Station
+										<span className="dot"></span>{'    '} Go to the Railway Station
 										BRTS bus stop <br />
-										<span className="dot"></span>&nbsp&nbspTake a bus to Jubilee
+									<span className="dot"></span>{'    '} Take a bus to Jubilee
 										Circle <br />
-										<span className="dot"></span>&nbsp&nbspRoute from Jubilee Circle
+										<span className="dot"></span>{'    '} Route from Jubilee Circle
 										mentioned earlier
 									</div>
 								</div>
@@ -178,9 +178,9 @@ const Travel = () => {
 										</h4>
 									</div>
 									<div className="text">
-										<span className="dot"></span>&nbsp&nbspTake a bus to Belgaum
+										<span className="dot"></span>{'    '} Take a bus to Belgaum
 										(purchase ticket to Dharwad High Court) <br />
-										<span className="dot"></span>&nbsp&nbspGet down at Dharwad High
+										<span className="dot"></span>{'    '} Get down at Dharwad High
 										Court
 									</div>
 								</div>

@@ -21,7 +21,6 @@ import ContactPage from '../pages/contact';
 import Home from '../pages/home';
 import Sponsers from '../pages/sponsors';
 import Travel from '../pages/travel';
-// import Students from '../pages/Students';
 
 const Routes = () => {
     return (
