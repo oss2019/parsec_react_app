@@ -98,19 +98,6 @@ const Ctf = () => {
 															>
 																proceed to ctf
 															</a>
-															{/* <a
-                                                href="https://venividivici.iitdh.ac.in/"
-                                                style={{
-                                                  color:`#ffffff`,
-                                                  width: '100%'}}>{' '}To
-                                              </a>
-                                              <a
-                                                href="https://venividivici.iitdh.ac.in/"
-                                                style={{
-                                                  color:`#ffffff`,
-                                                width: '100%'}}
-                                                > CTF */}
-															{/* </a> */}
 														</li>
 													</ul>
 												</div>
@@ -148,7 +135,10 @@ const Ctf = () => {
 													className="form-column col-lg-12 col-md-12 col-sm-12"
 													style={{ padding: `40px` }}
 												>
-													<div className="card border-info">
+													<div
+														className="border-info"
+														style={{ border: '2px solid #3ca2b8', borderRadius: '8px', overflow: 'hidden' }}
+													>
 														<div
 															style={{ background: `rgb(7, 9, 12)` }}
 															class="card-body text-center"
