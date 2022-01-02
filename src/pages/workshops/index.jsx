@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../../components/Header';
 import TitleBackground from '../../images/background/workshop.jpg';
 import aiWorkshopImage from '../../images/resource/ml&ai.jpg';
@@ -10,6 +10,7 @@ import Footer from '../../components/Footer';
 // import '../../css/contact.css';
 
 const Workshop = () => {
+
 	return (
 		<React.Fragment>
 			<div className="page-wrapper" style={{ overflowX: 'hidden' }}>

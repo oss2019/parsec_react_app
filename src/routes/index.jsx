@@ -22,6 +22,7 @@ import Home from '../pages/home';
 import Sponsers from '../pages/sponsors';
 import Travel from '../pages/travel';
 import CodeOfConduct from '../pages/codeOfConduct';
+import About from '../pages/about';
 
 const Routes = () => {
     return (
@@ -30,6 +31,7 @@ const Routes = () => {
                 <Route exact path='/' component={Home} />
                 <Route path='/faq' component={FAQ} />
                 <Route path='/sponsors' component={Sponsers} />
+                <Route path='/aboutus' component={About} />
                 <Route path='/codeofconduct' component={CodeOfConduct} />
                 <Route path='/travel' component={Travel} />
                 <Route path='/contact' component={ContactPage} />

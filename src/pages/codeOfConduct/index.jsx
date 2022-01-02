@@ -96,7 +96,7 @@ const CodeOfConduct = () => {
 
                 </div>
                 <br/>
-                <div class="text-center mb-4">
+                <div class="text-center mb-4" style={{color: ''}}>
                     Our code of conduct is based on the <a href="https://hackcodeofconduct.org/" target="_blank">Hack
                         Code Of Conduct</a>
                 </div>
