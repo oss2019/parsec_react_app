@@ -238,8 +238,8 @@ const Home = () => {
 										</div>
 										<div class="btn-box">
 											<a
-												href="about.html"
-												target="_blank"
+												href="/aboutus"
+												// target="_blank"
 												class="theme-btn btn-style-one"
 											>
 												View More
