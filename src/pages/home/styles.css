@@ -1,0 +1,259 @@
+a {
+	text-decoration: none !important;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	width: 1000px;
+	overflow: hidden;
+	margin: 50px auto;
+	background: white;
+}
+
+/*photobanner*/
+
+.photobanner {
+	height: 233px;
+	width: 3550px;
+	margin-bottom: 80px;
+}
+
+/*keyframe animations*/
+.first {
+	-webkit-animation: bannermove 10s linear infinite;
+	-moz-animation: bannermove 10s linear infinite;
+	-ms-animation: bannermove 10s linear infinite;
+	-o-animation: bannermove 10s linear infinite;
+	animation: bannermove 10s linear infinite;
+}
+
+@keyframes "bannermove" {
+	0% {
+		margin-left: 0px;
+	}
+
+	100% {
+		margin-left: -2125px;
+	}
+}
+
+@-moz-keyframes bannermove {
+	0% {
+		margin-left: 0px;
+	}
+
+	100% {
+		margin-left: -2125px;
+	}
+}
+
+@-webkit-keyframes "bannermove" {
+	0% {
+		margin-left: 0px;
+	}
+
+	100% {
+		margin-left: -2125px;
+	}
+}
+
+@-ms-keyframes "bannermove" {
+	0% {
+		margin-left: 0px;
+	}
+
+	100% {
+		margin-left: -2125px;
+	}
+}
+
+@-o-keyframes "bannermove" {
+	0% {
+		margin-left: 0px;
+	}
+
+	100% {
+		margin-left: -2125px;
+	}
+}
+
+.photobanner {
+	height: 233px;
+	width: 3550px;
+	margin-bottom: 80px;
+}
+
+.photobanner img {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.photobanner img:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+	cursor: pointer;
+
+	-webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.logo1 {
+	margin: 50px auto;
+	text-align: center;
+}
+
+.logo1 a {
+	text-decoration: none;
+	-webkit-transform: perspective(2.5em) rotateX(15deg) scaleY(0.8);
+	-moz-transform: perspective(2.5em) rotateX(15deg) scaleY(0.8);
+	-ms-transform: perspective(2.5em) rotateX(15deg) scaleY(0.8);
+	-o-transform: perspective(2.5em) rotateX(15deg) scaleY(0.8);
+	transform: perspective(2.5em) rotateX(15deg) scaleY(0.8);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 75px;
+	font-weight: 700;
+	font-family: 'Exo 2';
+	line-height: 0.8;
+	color: #ffffff;
+	text-shadow: 0 -1px 15px rgba(0, 0, 0, 0.9), 0 1px 0 #fff, 0 3px 0 #fff,
+		0 5px 0 #fff, 0 7px 0 #fff, 0 9px 0 #937203,
+		0 6px 50px rgba(252, 223, 92, 0.8);
+}
+
+.logo1 a:first-line {
+	font-size: 0.8em;
+}
+
+.logo1 a:hover {
+	-webkit-transform: perspective(8em) rotateX(11deg) scale(1.2);
+	-moz-transform: perspective(8em) rotateX(11deg) scale(1.2);
+	-ms-transform: perspective(8em) rotateX(11deg) scale(1.2);
+	-o-transform: perspective(8em) rotateX(11deg) scale(1.2);
+	transform: perspective(8em) rotateX(11deg) scale(1.2);
+	text-shadow: 0 -1px 15px black, 0 1px 0 #ed6286, , 0 2px 0 #ed6286,
+		0 0px 0 #ed6286, 0 1px 0 #ed6286, 0 2px 0 #ed6286,
+		0 2px 30px rgba(252, 223, 92, 0.6);
+}
+
+#clockdiv {
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv > div {
+	/**padding: 10px;
+    border-radius: 3px;
+    background: #00BF96;**/
+	display: inline-block;
+}
+
+#clockdiv div > span {
+	padding: 15px;
+	border-radius: 3px;
+	/***background: #192552;***/
+	display: inline-block;
+}
+
+.smalltext {
+	padding-top: 5px;
+	font-size: 16px;
+}
+.bg-image {
+	/* background: url(images/resource/hackathon-home-bg.jpg) no-repeat center center fixed; */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.wrapper {
+	position: relative;
+	perspective: 40em;
+	display: grid;
+	transform-style: preserve-3d;
+}
+
+.card {
+	grid-area: 1 / 1;
+	height: 200px;
+	width: 280px;
+	transform: translateX(10px) rotateY(25deg) rotateX(10deg);
+
+	/*background: rgba(249, 198, 26, 0.88);*/
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	/*padding: 20px;*/
+	color: #000;
+	text-transform: uppercase;
+	font-size: 60px;
+	font-weight: 900;
+	backface-visibility: hidden;
+	box-shadow: 0 10px 30px -3px rgba(0, 0, 0, 0.1);
+}
+
+.head {
+	font-size: 60px;
+	font-weight: 900;
+}
+
+.card .enclosed {
+	background: #000;
+	line-height: 1;
+	color: rgba(249, 198, 26, 1);
+	padding: 0 5px;
+	display: inline-block;
+	transform: translate(-1px, 1px) scale(0.75);
+	transform-origin: right center;
+}
+
+.wrapper:before {
+	--bw: 5px;
+	grid-area: 1 / 1;
+	content: '';
+	backface-visibility: hidden;
+	height: 100%;
+	width: 100%;
+	margin-top: calc(-1 * var(--bw));
+	margin-left: calc(-1 * var(--bw));
+	background: transparent;
+	transform: translateX(-60px) rotateY(-30deg) rotateX(15deg) scale(1.03);
+	pointer-events: none;
+	border: var(--bw) solid #fff;
+	box-sizing: content-box;
+}
+
+.wrapper:hover > div,
+.wrapper:hover:before {
+	transform: none;
+}
+
+.wrapper > div,
+.wrapper:before {
+	will-change: transform;
+	transition: 0.3s transform cubic-bezier(0.25, 0.46, 0.45, 1);
+}
+.bg-image {
+	/* background: url(images/resource/hackathon-home-bg.jpg) no-repeat center center fixed; */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}

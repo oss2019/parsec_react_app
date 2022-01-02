@@ -18,13 +18,14 @@ import Themes from '../events/hackathon_themes';
 import Judges from '../events/hackathon_judges';
 import FAQ from '../pages/faq';
 import ContactPage from '../pages/contact';
+import Home from '../pages/home';
 // import Students from '../pages/Students';
 
 const Routes = () => {
     return (
         <div>
             <Switch>
-                {/* <Route exact path='/' component={Events} /> */}
+                <Route exact path='/' component={Home} />
                 <Route path='/faq' component={FAQ} />
                 <Route path='/contact' component={ContactPage} />
                 <Route path='/events' component={Events} />
