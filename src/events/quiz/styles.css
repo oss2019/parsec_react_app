@@ -36,3 +36,12 @@
     --color4: #f20487;
     font-family: Gruppo;
   }
+
+  #btncs{
+	text-decoration: none;
+	background-color: #f20487;
+}
+#btncs:hover{
+	text-decoration: none;
+	background-color: #12114a;
+}
