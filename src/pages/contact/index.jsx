@@ -37,7 +37,7 @@ const ContactPage = () => {
 						<h1>Contact Us</h1>
 						<ul className="bread-crumb clearfix">
 							<li>
-								<a href="https://parsec.iitdh.ac.in" target="_blank">
+								<a href="/" >
 									Home{' '}
 								</a>
 							</li>

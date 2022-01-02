@@ -114,7 +114,7 @@ const Footer = () => {
 										<div className="col-12">
 											<a
 												className="mb-0"
-												href="https://parsec.iitdh.ac.in/travel.html"
+												href="/travel"
 												style={{ textDecoration: 'none' }}
 											>
 												How to Reach?
@@ -122,7 +122,7 @@ const Footer = () => {
 											<br />
 											<a
 												className="mb-0"
-												href="https://parsec.iitdh.ac.in/sponsors.html"
+												href="/sponsors"
 												style={{ textDecoration: 'none' }}
 											>
 												Sponsors
@@ -130,28 +130,28 @@ const Footer = () => {
 											<br />
 											<a
 												className="mb-0"
-												href="https://parsec.iitdh.ac.in/gallery.html"
+												href="gallery"
 												style={{ textDecoration: 'none' }}
 											>
 												Gallery
 											</a>
 											<br />
 											<a
-												href="https://parsec.iitdh.ac.in/contact.html"
+												href="/contact"
 												style={{ textDecoration: 'none' }}
 											>
 												Contact Us
 											</a>
 											<br />
 											<a
-												href="https://parsec.iitdh.ac.in/about.html"
+												href="aboutus"
 												style={{ textDecoration: 'none' }}
 											>
 												About Us
 											</a>
 											<br />
 											<a
-												href="https://parsec.iitdh.ac.in/code_of_conduct.html"
+												href="codeofconduct"
 												style={{ textDecoration: 'none' }}
 											>
 												Code Of Conduct

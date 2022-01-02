@@ -84,7 +84,7 @@ const About = () => {
 			<div className="page-wrapper">
 				<div className="preloader"></div>
 
-				<Header />
+				<Header  />
 
 				<section
 					className="page-title"
@@ -97,7 +97,7 @@ const About = () => {
 						<h1>About Us</h1>
 						<ul className="bread-crumb clearfix">
 							<li>
-								<a href="index.html" target="_blank">
+								<a href="/" >
 									Home{' '}
 								</a>
 							</li>

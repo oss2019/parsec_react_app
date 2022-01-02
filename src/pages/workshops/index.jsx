@@ -29,8 +29,8 @@ const Workshop = () => {
 						<ul className="bread-crumb clearfix">
 							<li>
 								<a
-									href="index.html"
-									target="_blank"
+									href="/"
+									// target="_blank"
 									style={{ textDecoration: 'none' }}
 								>
 									Home

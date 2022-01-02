@@ -26,7 +26,7 @@ const CodeOfConduct = () => {
 						<h1>Code of Conduct</h1>
 						<ul className="bread-crumb clearfix">
 							<li>
-								<a href="index.html" id="sec-title-text">
+								<a href="/" id="sec-title-text">
 									Home
 								</a>
 							</li>

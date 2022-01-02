@@ -30,7 +30,7 @@ const Sponsers = () => {
 						<ul class="bread-crumb clearfix">
 							<li>
 								<a
-									href="index.html"
+									href="/"
 									id='sec-title-text'
 								>
 									Home

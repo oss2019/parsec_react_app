@@ -26,7 +26,7 @@ const Travel = () => {
 						<h1>How to Reach?</h1>
 						<ul className="bread-crumb clearfix">
 							<li>
-								<a href="index.html" id="sec-title-text">
+								<a href="/" id="sec-title-text">
 									Home
 								</a>
 							</li>
