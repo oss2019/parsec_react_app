@@ -1,261 +1,565 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Slide from 'react-reveal/Slide';
 import { useMediaQuery } from 'react-responsive';
 import { Navbar, Container, Nav, Button, NavLink } from 'react-bootstrap';
 
 // import DownloadButton from '../DownloadAsPDF';
 import Sidebar from '../Sidebar';
-import Logo from '../Logo';
+// import Logo from '../Logo';
+import Logo from '../../images/logos/logo-nav.png';
+import '../../css/style.css';
+import '../../css/bootstrap.css';
+import '../../css/responsive.css';
 import './styles.css';
-
+import ScriptTag from 'react-script-tag/lib/ScriptTag';
 const Header = ({ active }) => {
-	const isTabletorMobile = useMediaQuery({
-		query: '(max-width: 1000px)',
-	});
+	useEffect(() => {
+		(function ($) {
+			'use strict';
 
-	const [show, setShow] = useState(false);
+			//Hide Loading Box (Preloader)
+			function handlePreloader() {
+				if ($('.preloader').length) {
+					$('.preloader').delay(200).fadeOut(500);
+				}
+			}
 
-	const toggleShow = () => {
-		setShow(!show);
-	};
+			//Update Header Style and Scroll to Top
+			function headerStyle() {
+				if ($('.main-header').length) {
+					var windowpos = $(window).scrollTop();
+					var siteHeader = $('.main-header');
+					var scrollLink = $('.scroll-to-top');
+					if (windowpos >= 1) {
+						siteHeader.addClass('fixed-header');
+						scrollLink.fadeIn(300);
+					} else {
+						siteHeader.removeClass('fixed-header');
+						scrollLink.fadeOut(300);
+					}
+				}
+			}
 
-	const [hover, setHover] = useState(false);
+			headerStyle();
 
-	const toggleHover = () => {
-		setHover(!hover);
-	};
+			//Submenu Dropdown Toggle
+			if ($('.main-header li.dropdown ul').length) {
+				$('.main-header li.dropdown').append(
+					'<div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>'
+				);
 
-	const [hover1, setHover1] = useState(false);
+				//Dropdown Button
+				$('.main-header li.dropdown .dropdown-btn').on('click', function () {
+					$(this).prev('ul').slideToggle(500);
+				});
 
-	const toggleHover1 = () => {
-		setHover1(!hover1);
-	};
+				//Megamenu Toggle
+				$('.main-header .main-menu li.dropdown .dropdown-btn').on(
+					'click',
+					function () {
+						$(this).prev('.mega-menu').slideToggle(500);
+					}
+				);
 
-	const [hover2, setHover2] = useState(false);
+				//Disable dropdown parent link
+				$(
+					'.main-header .navigation li.dropdown > a,.hidden-bar .side-menu li.dropdown > a'
+				).on('click', function (e) {
+					e.preventDefault();
+				});
+			}
 
-	const toggleHover2 = () => {
-		setHover2(!hover2);
-	};
+			//Side Content Toggle
+			if ($('.main-header .outer-box .nav-btn').length) {
+				//Show Form
+				$('.main-header .outer-box .nav-btn').on('click', function (e) {
+					e.preventDefault();
+					$('body').addClass('side-content-visible');
+				});
+				//Hide Form
+				$('.hidden-bar .inner-box .cross-icon,.form-back-drop,.close-menu').on(
+					'click',
+					function (e) {
+						e.preventDefault();
+						$('body').removeClass('side-content-visible');
+					}
+				);
+				//Dropdown Menu
+				$('.fullscreen-menu .navigation li.dropdown > a').on(
+					'click',
+					function () {
+						$(this).next('ul').slideToggle(500);
+					}
+				);
+			}
 
-	const [hover3, setHover3] = useState(false);
+			//Hidden Sidebar
+			if ($('.hidden-bar, .prod-tabs .tab-buttons').length) {
+				$('.hidden-bar, .prod-tabs .tab-buttons').mCustomScrollbar({
+					theme: 'dark',
+				});
+			}
 
-	const toggleHover3 = () => {
-		setHover3(!hover3);
-	};
+			//Banner Carousel
+			if ($('.banner-carousel').length) {
+				$('.banner-carousel').owlCarousel({
+					animateOut: 'slideOutDown',
+					animateIn: 'fadeInUp',
+					loop: true,
+					margin: 0,
+					nav: true,
+					smartSpeed: 700,
+					autoHeight: true,
+					mouseDrag: false,
+					autoplay: true,
+					autoplayTimeout: 10000,
+					navText: [
+						'<span class="fa fa-angle-left"></span>',
+						'<span class="fa fa-angle-right"></span>',
+					],
+					responsive: {
+						0: {
+							items: 1,
+						},
+						600: {
+							items: 1,
+						},
+						1024: {
+							items: 1,
+						},
+					},
+				});
+			}
 
-	const [hover4, setHover4] = useState(false);
-	const toggleHover4 = () => {
-		setHover4(!hover4);
-	};
+			//
+			// Testimonial Carousel
+			if ($('.testimonial-carousel').length) {
+				$('.testimonial-carousel').owlCarousel({
+					loop: true,
+					margin: 0,
+					nav: true,
+					smartSpeed: 500,
+					autoplay: 5000,
+					navText: [
+						'<span class="arrow-left"></span>',
+						'<span class="arrow-right"></span>',
+					],
+					responsive: {
+						0: {
+							items: 1,
+						},
+						600: {
+							items: 1,
+						},
+						800: {
+							items: 1,
+						},
+						1024: {
+							items: 1,
+						},
+					},
+				});
+			}
 
-	const [hover5, setHover5] = useState(false);
-	const toggleHover5 = () => {
-		setHover5(!hover5);
-	};
+			//Fact Counter + Text Count
+			if ($('.count-box').length) {
+				$('.count-box').appear(
+					function () {
+						var $t = $(this),
+							n = $t.find('.count-text').attr('data-stop'),
+							r = parseInt($t.find('.count-text').attr('data-speed'), 10);
 
-	const [hover6, setHover6] = useState(false);
-	const toggleHover6 = () => {
-		setHover6(!hover6);
-	};
+						if (!$t.hasClass('counted')) {
+							$t.addClass('counted');
+							$({
+								countNum: $t.find('.count-text').text(),
+							}).animate(
+								{
+									countNum: n,
+								},
+								{
+									duration: r,
+									easing: 'linear',
+									step: function () {
+										$t.find('.count-text').text(Math.floor(this.countNum));
+									},
+									complete: function () {
+										$t.find('.count-text').text(this.countNum);
+									},
+								}
+							);
+						}
+					},
+					{ accY: 0 }
+				);
+			}
 
-	const [hover7, setHover7] = useState(false);
-	const toggleHover7 = () => {
-		setHover7(!hover7);
-	}
-	const [hover8, setHover8] = useState(false);
-	const toggleHover8 = () => {
-		setHover8(!hover8);
-	}
+			//Tabs Box
+			if ($('.tabs-box').length) {
+				$('.tabs-box .tab-buttons .tab-btn').on('click', function (e) {
+					e.preventDefault();
+					var target = $($(this).attr('data-tab'));
 
+					if ($(target).is(':visible')) {
+						return false;
+					} else {
+						target
+							.parents('.tabs-box')
+							.find('.tab-buttons')
+							.find('.tab-btn')
+							.removeClass('active-btn');
+						$(this).addClass('active-btn');
+						target
+							.parents('.tabs-box')
+							.find('.tabs-content')
+							.find('.tab')
+							.fadeOut(0);
+						target
+							.parents('.tabs-box')
+							.find('.tabs-content')
+							.find('.tab')
+							.removeClass('active-tab animated fadeIn');
+						$(target).fadeIn(300);
+						$(target).addClass('active-tab animated fadeIn');
+					}
+				});
+			}
 
+			//Accordion Box
+			if ($('.accordion-box').length) {
+				$('.accordion-box').on('click', '.acc-btn', function () {
+					var outerBox = $(this).parents('.accordion-box');
+					var target = $(this).parents('.accordion');
+
+					if ($(this).hasClass('active') !== true) {
+						$(outerBox).find('.accordion .acc-btn').removeClass('active ');
+					}
+
+					if ($(this).next('.acc-content').is(':visible')) {
+						return false;
+					} else {
+						$(this).addClass('active');
+						$(outerBox)
+							.children('.accordion')
+							.removeClass('active-block animated fadeInUp');
+						$(outerBox)
+							.find('.accordion')
+							.children('.acc-content')
+							.slideUp(300);
+						target.addClass('active-block animated fadeInUp');
+						$(this).next('.acc-content').slideDown(300);
+					}
+				});
+			}
+
+			//Custom Seclect Box
+			// if ($('.custom-select-box').length) {
+			// 	$('.custom-select-box')
+			// 		.selectmenu()
+			// 		.selectmenu('menuWidget')
+			// 		.addClass('overflow');
+			// }
+
+			// if ($('.timer').length) {
+			// 	$(function () {
+			// 		$('[data-countdown]').each(function () {
+			// 			var $this = $(this),
+			// 				finalDate = $(this).data('countdown');
+			// 			$this.countdown(finalDate, function (event) {
+			// 				$this.html(event.strftime('%D days %H:%M:%S'));
+			// 			});
+			// 		});
+			// 	});
+
+			// 	$('.cs-countdown')
+			// 		.countdown('')
+			// 		.on('update.countdown', function (event) {
+			// 			var $this = $(this).html(
+			// 				event.strftime(
+			// 					'<div><span>%D</span><h6>days</h6></div> <div><span>%H</span><h6>Hours</h6></div> <div><span>%M</span><h6>Minutes</h6></div> <div><span>%S</span><h6>Seconds</h6></div>'
+			// 				)
+			// 			);
+			// 		});
+			// }
+
+			// if ($('.ts-image-popup').length) {
+			// 	$('.ts-image-popup').magnificPopup({
+			// 		type: 'inline',
+			// 		closeOnContentClick: false,
+			// 		midClick: true,
+			// 		callbacks: {
+			// 			beforeOpen: function () {
+			// 				this.st.mainClass = this.st.el.attr('data-effect');
+			// 			},
+			// 		},
+			// 		zoom: {
+			// 			enabled: true,
+			// 			duration: 500, // don't foget to change the duration also in CSS
+			// 		},
+			// 		mainClass: 'mfp-fade',
+			// 	});
+			// }
+
+			//LightBox / Fancybox
+			if ($('.lightbox-image').length) {
+				$('.lightbox-image').fancybox({
+					openEffect: 'fade',
+					closeEffect: 'fade',
+					helpers: {
+						media: {},
+					},
+				});
+			}
+
+			//Price Range Slider
+			if ($('.price-range-slider').length) {
+				$('.price-range-slider').slider({
+					range: true,
+					min: 0,
+					max: 90,
+					values: [8, 85],
+					slide: function (event, ui) {
+						$('input.property-amount').val(ui.values[0] + ' - ' + ui.values[1]);
+					},
+				});
+
+				$('input.property-amount').val(
+					$('.price-range-slider').slider('values', 0) +
+						' - $' +
+						$('.price-range-slider').slider('values', 1)
+				);
+			}
+
+			// Scroll to a Specific Div
+			if ($('.scroll-to-target').length) {
+				$('.scroll-to-target').on('click', function () {
+					var target = $(this).attr('data-target');
+					// animate
+					$('html, body').animate(
+						{
+							scrollTop: $(target).offset().top,
+						},
+						1500
+					);
+				});
+			}
+
+			// // Elements Animation
+			// if ($('.wow').length) {
+			// 	var wow = new WOW({
+			// 		boxClass: 'wow', // animated element css class (default is wow)
+			// 		animateClass: 'animated', // animation css class (default is animated)
+			// 		offset: 0, // distance to the element when triggering the animation (default is 0)
+			// 		mobile: true, // trigger animations on mobile devices (default is true)
+			// 		live: true, // act on asynchronously loaded content (default is true)
+			// 	});
+			// 	wow.init();
+			// }
+
+			/* ==========================================================================
+   When document is Scrollig, do
+   ========================================================================== */
+
+			$(window).on('scroll', function () {
+				headerStyle();
+			});
+
+			/* ==========================================================================
+   When document is loading, do
+   ========================================================================== */
+
+			$(window).on('load', function () {
+				handlePreloader();
+			});
+		})(window.jQuery);
+	}, []);
+
+	
 
 	return (
-		<div>
-			<Slide top delay={100} when={true}>
-				<Navbar fixed="top" className="header">
-					<Container className="fullWidth">
-						<Slide top delay={100} when={true}>
-							<Navbar.Brand className="elements">
-								<div className="children">
-									{isTabletorMobile && (
-										<Button
-											className="gradient-text no-border link"
-											onClick={toggleShow}
-										>
-											<i className="fas fa-bars fa-2x" />
-										</Button>
-									)}
-									<Logo />
+		<React.Fragment>
+			<header className="main-header header-style-two">
+				<div className="header-upper">
+					<div className="outer-container">
+						<div className="clearfix">
+							<div className="pull-left logo-box">
+								<div className="logo">
+									<a href="https://parsec.iitdh.ac.in" target={'_blank'}>
+										<img src={Logo} />
+									</a>
 								</div>
-							</Navbar.Brand>
-						</Slide>
-						<Slide top delay={100} when={true}>
-							{!isTabletorMobile && (
-								<>
-									<Nav className="justify-content-end">
-										<NavLink
-											id="1"
-											href="/"
-											className={`elements circle-border ${
-												active !== 1 && hover
-													? 'selected-gradient'
-													: 'unselected-gradient'
-											}`}
-											onMouseEnter={toggleHover}
-											onMouseLeave={toggleHover}
-										>
-											<div
-												className={`title a ${
-													active === 1 ? 'underline-violet violet' : 'white'
-												}`}
-											>
-												Home
-											</div>
-										</NavLink>
-										<NavLink
-											id="2"
-											href="/events"
-											className={`elements circle-border ${
-												active !== 2 && hover2
-													? 'selected-gradient'
-													: 'unselected-gradient'
-											}`}
-											onMouseEnter={toggleHover2}
-											onMouseLeave={toggleHover2}
-										>
-											<div
-												className={`title a ${
-													active === 2 ? 'underline-violet violet' : 'white'
-												}`}
-											>
-												Events
-											</div>
-										</NavLink>
-										<NavLink
-											id="3"
-											href="/workshops"
-											className={`elements circle-border ${
-												active !== 3 && hover3
-													? 'selected-gradient'
-													: 'unselected-gradient'
-											}`}
-											onMouseEnter={toggleHover3}
-											onMouseLeave={toggleHover3}
-										>
-											<div
-												className={`title a ${
-													active === 3 ? 'underline-violet violet' : 'white'
-												}`}
-											>
-												Workshops
-											</div>
-										</NavLink>
-										{/* <NavLink
-											id="4"
-											href="/schedule"
-											className={`elements circle-border ${
-												active !== 4 && hover4
-													? 'selected-gradient'
-													: 'unselected-gradient'
-											}`}
-											onMouseEnter={toggleHover4}
-											onMouseLeave={toggleHover4}
-										>
-											<div
-												className={`title a ${
-													active === 4 ? 'underline-violet violet' : 'white'
-												}`}
-											>
-												Schedule
-											</div>
-										</NavLink>
-										<NavLink
-											id="5"
-											href="/speakers"
-											className={`elements circle-border ${
-												active !== 5 && hover5
-													? 'selected-gradient'
-													: 'unselected-gradient'
-											}`}
-											onMouseEnter={toggleHover5}
-											onMouseLeave={toggleHover5}
-										>
-											<div
-												className={`title a ${
-													active === 5 ? 'underline-violet violet' : 'white'
-												}`}
-											>
-												Speakers
-											</div>
-										</NavLink> */}
-										<NavLink
-											id="6"
-											href="/faq"
-											className={`elements circle-border ${
-												active !== 6 && hover6
-													? 'selected-gradient'
-													: 'unselected-gradient'
-											}`}
-											onMouseEnter={toggleHover6}
-											onMouseLeave={toggleHover6}
-										>
-											<div
-												className={`title a ${
-													active === 6 ? 'underline-violet violet' : 'white'
-												}`}
-											>
-												FAQs
-											</div>
-										</NavLink>
-										<NavLink
-											id="7"
-											href="/team"
-											className={`elements circle-border ${
-												active !== 7 && hover7
-													? 'selected-gradient'
-													: 'unselected-gradient'
-											}`}
-											onMouseEnter={toggleHover7}
-											onMouseLeave={toggleHover7}
-										>
-											<div
-												className={`title a ${
-													active === 7 ? 'underline-violet violet' : 'white'
-												}`}
-											>
-												Team
-											</div>
-										</NavLink>
-										<NavLink
-											id="8"
-											href="/contact"
-											className={`elements circle-border ${
-												active !== 8 && hover8
-													? 'selected-gradient'
-													: 'unselected-gradient'
-											}`}
-											onMouseEnter={toggleHover8}
-											onMouseLeave={toggleHover8}
-										>
-											<div
-												className={`title a ${
-													active === 8 ? 'underline-violet violet' : 'white'
-												}`}
-											>
-												Contact
-											</div>
-										</NavLink>
+							</div>
 
-										{/* <DownloadButton /> */}
-									</Nav>
-								</>
-							)}
-						</Slide>
-					</Container>
-					<Sidebar show={show} handleClose={toggleShow} active={active} />
-				</Navbar>
-			</Slide>
-		</div>
+							<div className="nav-outer clearfix">
+								<nav className="main-menu navbar-expand-md">
+									<div className="navbar-header">
+										<button
+											className="navbar-toggler"
+											type="button"
+											data-target="collapse"
+											data-target="#navbarSupportedContent"
+											aria-controls="navbarSupportedContent"
+											aria-label="Toggle navigation"
+										>
+											<span className="icon-bar"></span>
+											<span className="icon-bar"></span>
+											<span className="icon-bar"></span>
+										</button>
+									</div>
+
+									<div
+										className="navbar-collapse collapse scroll-nav clearfix"
+										id="navbarSupportedContent"
+									>
+										<ul class="navigation clearfix">
+											<li className={`${active === 1 ? 'current' : ''}`}>
+												<a href="/" target="">
+													Home
+												</a>
+											</li>
+											<li className={`${active === 2 ? 'current' : ''}`}>
+												<a href="/events">
+													Events
+												</a>
+											</li>
+											<li className={`${active === 3 ? 'current' : ''}`}>
+												<a href="/workshops">
+													Workshops
+												</a>
+											</li>
+											<li className={`${active === 10 ? 'current' : ''}`}>
+												<a href="/aboutus">About</a>
+											</li>
+											{/* <li className={`${active === 1 ? 'current' : ''}`}>
+												<a href="/workshops">Workshops</a>
+											</li> */}
+											<li className={`${active === 4 ? 'current' : ''}`}>
+												<a href="/schedule" target="">
+													Schedule
+												</a>
+											</li>
+											<li className={`${active === 5 ? 'current' : ''}`}>
+												<a href="/speakers" target="">
+													Speakers
+												</a>
+											</li>
+											<li className={`${active === 9 ? 'current' : ''}`}>
+												<a href="/gallery">
+													Gallery
+												</a>
+											</li>
+											<li className={`${active === 6 ? 'current' : ''}`}>
+												<a href="/faq" target="">
+													FAQs
+												</a>
+											</li>
+											<li className={`${active === 7 ? 'current' : ''}`}>
+												<a
+													href="/team"
+													target=""
+												>
+													Team
+												</a>
+											</li>
+											<li className={`${active === 8 ? 'current' : ''}`}>
+												<a
+													href="/contact"
+													target=""
+												>
+													Contact
+												</a>
+											</li>
+										</ul>
+									</div>
+								</nav>
+							</div>
+							<div className="outer-box">
+								<div className="nav-toggler">
+									<button className="nav-btn">
+										<span className="icon flaticon-arrows"></span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			{/* ! End main Header */}
+
+			<div className="form-back-drop"></div>
+
+			{/* HIddern bar */}
+			<section className="hidden-bar">
+				<div className="inner-box">
+					<div className="cross-icon">
+						<span className="fa fa-times"></span>
+					</div>
+					<div className="title">
+						<h2>Have some queries?</h2>
+					</div>
+
+					{/* Appointment form */}
+
+					<div className="appointment-form">
+						<form method="post" action="https://formspree.io/oss@iitdh.ac.in">
+							<div className="form-group">
+								<input
+									type="text"
+									name="text"
+									value=""
+									placeholder="Name"
+									required
+								/>
+							</div>
+							<div className="form-group">
+								<input
+									type="email"
+									name="email"
+									value=""
+									placeholder="Email Address"
+									required
+								/>
+							</div>
+							<div className="form-group">
+								<input
+									type="text"
+									name="phone"
+									value=""
+									placeholder="Mobile no."
+									required
+								/>
+							</div>
+							<div className="form-group">
+								<textarea placeholder="Message" name="message"></textarea>
+							</div>
+							<div className="form-group">
+								<button type="submit" className="theme-btn btn-style-one">
+									Submit now
+								</button>
+							</div>
+						</form>
+					</div>
+					<div className="contact-info-box">
+						<ul className="info-list">
+							<li>outreach.parsec@iitdh.ac.in</li>
+							<li>+91 7892128329</li>
+						</ul>
+						<ul className="social-list clearfix">
+							<li>
+								<a href="https://www.facebook.com/parsec.iitdh" target="_blank">
+									Facebook
+								</a>
+							</li>
+							<li>
+								<a href="https://twitter.com/parsec_iitdh" target="_blank">
+									Twitter
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</React.Fragment>
 	);
 };
 

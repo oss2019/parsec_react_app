@@ -46,7 +46,7 @@ const FAQ = () => {
 		<React.Fragment>
 			<div className="page-wrapper">
 				<div className="preloader"></div>
-				<Header />
+				<Header active={6} />
 
 				<section
 					className="page-title"
