@@ -27,7 +27,12 @@ const Timeline = () => {
 									<div className="col"> </div>
 								</div>
 								<h5 className="m-2">
-									<span className="badge badge-pill bg-light border"> </span>
+									<span
+										className="badge badge-pill bg-light border"
+										// style={{ borderRadius: '100%', width: '10%', height: '10%' }}
+									>
+										{' '}
+									</span>
 								</h5>
 								<div className="row h-50">
 									<div className="col border-right"> </div>
@@ -35,8 +40,14 @@ const Timeline = () => {
 								</div>
 							</div>
 							<div className="col py-2">
-								<div className="card shadow">
-									<div className="card-body">
+								<div className=" shadow">
+									<div
+										className="card-body"
+										style={{
+											border: '2px solid #e2e6e9',
+											borderRadius: '8px',
+										}}
+									>
 										<div className="float-right text-danger">
 											10:00 PM, February 14, 2020
 										</div>
@@ -68,8 +79,11 @@ const Timeline = () => {
 								</div>
 							</div>
 							<div className="col py-2">
-								<div className="card border-danger shadow">
-									<div className="card-body">
+								<div className=" border-danger shadow">
+									<div
+										className="card-body"
+										style={{ border: '2px solid #dc3545', borderRadius: '8px' }}
+									>
 										<div className="float-right text-danger">
 											12:00 Midnight, February 15, 2020
 										</div>
@@ -128,8 +142,11 @@ const Timeline = () => {
 								</div>
 							</div>
 							<div className="col py-2">
-								<div className="card shadow">
-									<div className="card-body">
+								<div className=" shadow">
+									<div
+										className="card-body"
+										style={{ border: '2px solid #e2e6e9', borderRadius: '8px' }}
+									>
 										<div className="float-right text-danger">
 											10:00 AM, February 15, 2020
 										</div>
@@ -165,8 +182,11 @@ const Timeline = () => {
 								</div>
 							</div>
 							<div className="col py-2">
-								<div className="card border-danger shadow">
-									<div className="card-body">
+								<div className=" border-danger shadow">
+									<div
+										className="card-body"
+										style={{ border: '2px solid #dc3545', borderRadius: '8px' }}
+									>
 										<div className="float-right text-danger">
 											2:00 PM, February 15, 2020
 										</div>
@@ -203,8 +223,11 @@ const Timeline = () => {
 								</div>
 							</div>
 							<div className="col py-2">
-								<div className="card border-danger shadow">
-									<div className="card-body">
+								<div className=" border-danger shadow">
+									<div
+										className="card-body"
+										style={{ border: '2px solid #e2e6e9', borderRadius: '8px' }}
+									>
 										<div className="float-right text-danger">
 											10:00 PM, February 15, 2020
 										</div>
@@ -239,8 +262,11 @@ const Timeline = () => {
 								</div>
 							</div>
 							<div className="col py-2">
-								<div className="card border-danger shadow">
-									<div className="card-body">
+								<div className=" border-danger shadow">
+									<div
+										className="card-body"
+										style={{ border: '2px solid #dc3545', borderRadius: '8px' }}
+									>
 										<div className="float-right text-danger">
 											6:00 AM, February 16, 2020
 										</div>
@@ -276,8 +302,11 @@ const Timeline = () => {
 								</div>
 							</div>
 							<div className="col py-2">
-								<div className="card border-danger shadow">
-									<div className="card-body">
+								<div className=" border-danger shadow">
+									<div
+										className="card-body"
+										style={{ border: '2px solid #dc3545', borderRadius: '8px' }}
+									>
 										<div className="float-right text-danger">
 											10:30 AM, February 16, 2020
 										</div>

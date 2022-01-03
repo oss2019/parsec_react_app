@@ -3,6 +3,7 @@ import './styles.css';
 import '../../../css/style.css';
 import '../../../css/bootstrap.css';
 import '../../../css/responsive.css';
+import project from '../../../images/resource/project.jpg';
 
 const Overview = () => {
 	return (
@@ -72,27 +73,30 @@ const Overview = () => {
 									</div>
 								</div>
 
-								<div className="image-column col-lg-11 col-sm-12 col-sm-12">
+								{/* <div className="image-column col-lg-11 col-sm-12 col-sm-12">
 									<div className="image-box wow fadeIn">
 										<figure className="image">
 											<img
-												src="../../images/resource/project.jpg"
+												src={project}
 												alt=""
 												style={{
-													maxWidth: `600px`,
-													maxHeight: `400px`,
-													margin: `auto`,
+													// maxWidth: `600px`,
+													// maxHeight: `400px`,
+													// margin: `auto`,
 												}}
 											></img>
 										</figure>
 									</div>
-								</div>
+								</div> */}
 
 								<div
 									className="form-column col-lg-12 col-md-12 col-sm-12"
 									style={{ padding: `40px` }}
 								>
-									<div className="card border-danger">
+									<div
+										className=" border-danger"
+										style={{ border: '2px solid #dc3545', borderRadius: '8px', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}
+									>
 										<div
 											style={{
 												fontFamily: `'Roboto', sans-serif`,
@@ -102,7 +106,17 @@ const Overview = () => {
 											className="card-body text-center text-danger"
 										>
 											{' '}
-											Duration: 36 hours Team Size: 4
+											Duration: 36 hours
+										</div>
+										<div
+											style={{
+												fontFamily: `'Roboto', sans-serif`,
+												fontSize: `large`,
+												fontWeight: `bold`,
+											}}
+											className="card-body text-center text-danger"
+										>
+											Team Size: 4
 										</div>
 									</div>
 									<br />
