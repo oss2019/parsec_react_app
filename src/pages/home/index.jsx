@@ -102,6 +102,35 @@ const Home = () => {
 			}
 
 			headerStyle();
+			//About Carousel
+			// if ($('.about-carousel').length) {
+			// 	$('.about-carousel').owlCarousel({
+			// 		animateOut: 'slideOutDown',
+			// 		animateIn: 'zoomIn',
+			// 		loop: true,
+			// 		margin: 30,
+			// 		nav: true,
+			// 		smartSpeed: 500,
+			// 		autoHeight: true,
+			// 		autoplay: true,
+			// 		autoplayTimeout: 5000,
+			// 		navText: [
+			// 			'<span class="fa fa-chevron-left"></span>',
+			// 			'<span class="fa fa-chevron-right"></span>',
+			// 		],
+			// 		responsive: {
+			// 			0: {
+			// 				items: 1,
+			// 			},
+			// 			600: {
+			// 				items: 1,
+			// 			},
+			// 			1024: {
+			// 				items: 1,
+			// 			},
+			// 		},
+			// 	});
+			// }
 
 			//Events Carousel
 			// if ($('.events-carousel').length) {
@@ -165,7 +194,7 @@ const Home = () => {
 					class="banner-section-two"
 					style={{ backgroundImage: `url(${parsecSlider})` }}
 				>
-					<div class="night">
+					<div class="night" >
 						<div class="shooting_star"></div>
 						<div class="shooting_star"></div>
 						<div class="shooting_star"></div>
@@ -423,12 +452,12 @@ const Home = () => {
 							<div class="sec-title">
 								<h2>Events</h2>
 							</div>
-							<div class="events-carousel owl-carousel owl-theme">
+							<div class="events-carousel owl-carousel owl-theme" >
 								<div class="slide-item">
 									<div class="row">
 										<div class="content-column order-2 col-lg-5 col-md-12 col-sm-12">
 											<div class="inner-column">
-												<span class="title">Hackathon</span>
+												<span class="title" >Hackathon</span>
 												<h2>DevHack 3.0</h2>
 												<div class="text mb-3">
 													Do you have what it takes to code sleeplessly for 36
