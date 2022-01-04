@@ -1,18 +1,72 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Slide from 'react-reveal/Slide';
 import { useMediaQuery } from 'react-responsive';
 import { Navbar, Container, Nav, Button, NavLink } from 'react-bootstrap';
 
 // import DownloadButton from '../DownloadAsPDF';
 import Sidebar from '../Sidebar';
-// import Logo from '../Logo';
-import Logo from '../../images/logos/logo-nav.png';
-import '../../css/style.css';
-import '../../css/bootstrap.css';
-import '../../css/responsive.css';
+import Logo from '../Logo';
 import './styles.css';
-import ScriptTag from 'react-script-tag/lib/ScriptTag';
+
 const Header = ({ active }) => {
+	const isTabletorMobile = useMediaQuery({
+		query: '(max-width: 1000px)',
+	});
+
+	const [show, setShow] = useState(false);
+
+	const toggleShow = () => {
+		setShow(!show);
+	};
+
+	const [hover, setHover] = useState(false);
+
+	const toggleHover = () => {
+		setHover(!hover);
+	};
+
+	const [hover1, setHover1] = useState(false);
+
+	const toggleHover1 = () => {
+		setHover1(!hover1);
+	};
+
+	const [hover2, setHover2] = useState(false);
+
+	const toggleHover2 = () => {
+		setHover2(!hover2);
+	};
+
+	const [hover3, setHover3] = useState(false);
+
+	const toggleHover3 = () => {
+		setHover3(!hover3);
+	};
+
+	const [hover4, setHover4] = useState(false);
+	const toggleHover4 = () => {
+		setHover4(!hover4);
+	};
+
+	const [hover5, setHover5] = useState(false);
+	const toggleHover5 = () => {
+		setHover5(!hover5);
+	};
+
+	const [hover6, setHover6] = useState(false);
+	const toggleHover6 = () => {
+		setHover6(!hover6);
+	};
+
+	const [hover7, setHover7] = useState(false);
+	const toggleHover7 = () => {
+		setHover7(!hover7);
+	};
+	const [hover8, setHover8] = useState(false);
+	const toggleHover8 = () => {
+		setHover8(!hover8);
+	};
+
 	useEffect(() => {
 		(function ($) {
 			'use strict';
@@ -253,52 +307,52 @@ const Header = ({ active }) => {
 			}
 
 			//Custom Seclect Box
-			if ($('.custom-select-box').length) {
-				$('.custom-select-box')
-					.selectmenu()
-					.selectmenu('menuWidget')
-					.addClass('overflow');
-			}
+			// if ($('.custom-select-box').length) {
+			// 	$('.custom-select-box')
+			// 		.selectmenu()
+			// 		.selectmenu('menuWidget')
+			// 		.addClass('overflow');
+			// }
 
-			if ($('.timer').length) {
-				$(function () {
-					$('[data-countdown]').each(function () {
-						var $this = $(this),
-							finalDate = $(this).data('countdown');
-						$this.countdown(finalDate, function (event) {
-							$this.html(event.strftime('%D days %H:%M:%S'));
-						});
-					});
-				});
+			// if ($('.timer').length) {
+			// 	$(function () {
+			// 		$('[data-countdown]').each(function () {
+			// 			var $this = $(this),
+			// 				finalDate = $(this).data('countdown');
+			// 			$this.countdown(finalDate, function (event) {
+			// 				$this.html(event.strftime('%D days %H:%M:%S'));
+			// 			});
+			// 		});
+			// 	});
 
-				$('.cs-countdown')
-					.countdown('')
-					.on('update.countdown', function (event) {
-						var $this = $(this).html(
-							event.strftime(
-								'<div><span>%D</span><h6>days</h6></div> <div><span>%H</span><h6>Hours</h6></div> <div><span>%M</span><h6>Minutes</h6></div> <div><span>%S</span><h6>Seconds</h6></div>'
-							)
-						);
-					});
-			}
+			// 	$('.cs-countdown')
+			// 		.countdown('')
+			// 		.on('update.countdown', function (event) {
+			// 			var $this = $(this).html(
+			// 				event.strftime(
+			// 					'<div><span>%D</span><h6>days</h6></div> <div><span>%H</span><h6>Hours</h6></div> <div><span>%M</span><h6>Minutes</h6></div> <div><span>%S</span><h6>Seconds</h6></div>'
+			// 				)
+			// 			);
+			// 		});
+			// }
 
-			if ($('.ts-image-popup').length) {
-				$('.ts-image-popup').magnificPopup({
-					type: 'inline',
-					closeOnContentClick: false,
-					midClick: true,
-					callbacks: {
-						beforeOpen: function () {
-							this.st.mainClass = this.st.el.attr('data-effect');
-						},
-					},
-					zoom: {
-						enabled: true,
-						duration: 500, // don't foget to change the duration also in CSS
-					},
-					mainClass: 'mfp-fade',
-				});
-			}
+			// if ($('.ts-image-popup').length) {
+			// 	$('.ts-image-popup').magnificPopup({
+			// 		type: 'inline',
+			// 		closeOnContentClick: false,
+			// 		midClick: true,
+			// 		callbacks: {
+			// 			beforeOpen: function () {
+			// 				this.st.mainClass = this.st.el.attr('data-effect');
+			// 			},
+			// 		},
+			// 		zoom: {
+			// 			enabled: true,
+			// 			duration: 500, // don't foget to change the duration also in CSS
+			// 		},
+			// 		mainClass: 'mfp-fade',
+			// 	});
+			// }
 
 			//LightBox / Fancybox
 			if ($('.lightbox-image').length) {
@@ -374,192 +428,194 @@ const Header = ({ active }) => {
 		})(window.jQuery);
 	}, []);
 
-	
-
 	return (
-		<React.Fragment>
-			<header className="main-header header-style-two">
-				<div className="header-upper">
-					<div className="outer-container">
-						<div className="clearfix">
-							<div className="pull-left logo-box">
-								<div className="logo">
-									<a href="https://parsec.iitdh.ac.in" target={'_blank'}>
-										<img src={Logo} />
-									</a>
-								</div>
-							</div>
-
-							<div className="nav-outer clearfix">
-								<nav className="main-menu navbar-expand-md">
-									<div className="navbar-header">
-										<button
-											className="navbar-toggler"
-											type="button"
-											data-target="collapse"
-											data-target="#navbarSupportedContent"
-											aria-controls="navbarSupportedContent"
-											aria-label="Toggle navigation"
-										>
-											<span className="icon-bar"></span>
-											<span className="icon-bar"></span>
-											<span className="icon-bar"></span>
-										</button>
+		<div style={{zIndex: 100, position: 'fixed'}}>
+			{isTabletorMobile && (
+				<Button className="gradient-text no-border link" onClick={toggleShow}>
+					<i className="fas fa-bars fa-2x"  />
+				</Button>
+			)}
+			{!isTabletorMobile && (
+				<>
+					<header className="main-header header-style-two">
+						<div className="header-upper">
+							<div className="outer-container">
+								<div className="clearfix">
+									<div className="pull-left logo-box">
+										<div className="logo">
+											<a href="https://parsec.iitdh.ac.in" target={'_blank'}>
+												<img src={Logo} />
+											</a>
+										</div>
 									</div>
 
-									<div
-										className="navbar-collapse collapse scroll-nav clearfix"
-										id="navbarSupportedContent"
-									>
-										<ul class="navigation clearfix">
-											<li className={`${active === 1 ? 'current' : ''}`}>
-												<a href="/" target="">
-													Home
-												</a>
-											</li>
-											<li className={`${active === 2 ? 'current' : ''}`}>
-												<a href="/events">
-													Events
-												</a>
-											</li>
-											<li className={`${active === 3 ? 'current' : ''}`}>
-												<a href="/workshops">
-													Workshops
-												</a>
-											</li>
-											<li className={`${active === 10 ? 'current' : ''}`}>
-												<a href="/aboutus">About</a>
-											</li>
-											{/* <li className={`${active === 1 ? 'current' : ''}`}>
+									<div className="nav-outer clearfix">
+										<nav className="main-menu navbar-expand-md">
+											<div className="navbar-header">
+												<button
+													className="navbar-toggler"
+													type="button"
+													data-target="collapse"
+													data-target="#navbarSupportedContent"
+													aria-controls="navbarSupportedContent"
+													aria-label="Toggle navigation"
+												>
+													<span className="icon-bar"></span>
+													<span className="icon-bar"></span>
+													<span className="icon-bar"></span>
+												</button>
+											</div>
+
+											<div
+												className="navbar-collapse collapse scroll-nav clearfix"
+												id="navbarSupportedContent"
+											>
+												<ul class="navigation clearfix">
+													<li className={`${active === 1 ? 'current' : ''}`}>
+														<a href="/" target="">
+															Home
+														</a>
+													</li>
+													<li className={`${active === 2 ? 'current' : ''}`}>
+														<a href="/events">Events</a>
+													</li>
+													<li className={`${active === 3 ? 'current' : ''}`}>
+														<a href="/workshops">Workshops</a>
+													</li>
+													<li className={`${active === 10 ? 'current' : ''}`}>
+														<a href="/aboutus">About</a>
+													</li>
+													{/* <li className={`${active === 1 ? 'current' : ''}`}>
 												<a href="/workshops">Workshops</a>
 											</li> */}
-											<li className={`${active === 4 ? 'current' : ''}`}>
-												<a href="/schedule" target="">
-													Schedule
-												</a>
-											</li>
-											<li className={`${active === 5 ? 'current' : ''}`}>
-												<a href="/speakers" target="">
-													Speakers
-												</a>
-											</li>
-											<li className={`${active === 9 ? 'current' : ''}`}>
-												<a href="/gallery">
-													Gallery
-												</a>
-											</li>
-											<li className={`${active === 6 ? 'current' : ''}`}>
-												<a href="/faq" target="">
-													FAQs
-												</a>
-											</li>
-											<li className={`${active === 7 ? 'current' : ''}`}>
-												<a
-													href="/team"
-													target=""
-												>
-													Team
-												</a>
-											</li>
-											<li className={`${active === 8 ? 'current' : ''}`}>
-												<a
-													href="/contact"
-													target=""
-												>
-													Contact
-												</a>
-											</li>
-										</ul>
+													<li className={`${active === 4 ? 'current' : ''}`}>
+														<a href="/schedule" target="">
+															Schedule
+														</a>
+													</li>
+													<li className={`${active === 5 ? 'current' : ''}`}>
+														<a href="/speakers" target="">
+															Speakers
+														</a>
+													</li>
+													<li className={`${active === 9 ? 'current' : ''}`}>
+														<a href="/gallery">Gallery</a>
+													</li>
+													<li className={`${active === 6 ? 'current' : ''}`}>
+														<a href="/faq" target="">
+															FAQs
+														</a>
+													</li>
+													<li className={`${active === 7 ? 'current' : ''}`}>
+														<a href="/team" target="">
+															Team
+														</a>
+													</li>
+													<li className={`${active === 8 ? 'current' : ''}`}>
+														<a href="/contact" target="">
+															Contact
+														</a>
+													</li>
+												</ul>
+											</div>
+										</nav>
 									</div>
-								</nav>
-							</div>
-							<div className="outer-box">
-								<div className="nav-toggler">
-									<button className="nav-btn">
-										<span className="icon flaticon-arrows"></span>
-									</button>
+									<div className="outer-box">
+										<div className="nav-toggler">
+											<button className="nav-btn">
+												<span className="icon flaticon-arrows"></span>
+											</button>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</header>
-			{/* ! End main Header */}
+					</header>
+					{/* ! End main Header */}
 
-			<div className="form-back-drop"></div>
+					<div className="form-back-drop"></div>
 
-			{/* HIddern bar */}
-			<section className="hidden-bar">
-				<div className="inner-box">
-					<div className="cross-icon">
-						<span className="fa fa-times"></span>
-					</div>
-					<div className="title">
-						<h2>Have some queries?</h2>
-					</div>
+					{/* HIddern bar */}
+					<section className="hidden-bar">
+						<div className="inner-box">
+							<div className="cross-icon">
+								<span className="fa fa-times"></span>
+							</div>
+							<div className="title">
+								<h2>Have some queries?</h2>
+							</div>
 
-					{/* Appointment form */}
+							{/* Appointment form */}
 
-					<div className="appointment-form">
-						<form method="post" action="https://formspree.io/oss@iitdh.ac.in">
-							<div className="form-group">
-								<input
-									type="text"
-									name="text"
-									value=""
-									placeholder="Name"
-									required
-								/>
+							<div className="appointment-form">
+								<form
+									method="post"
+									action="https://formspree.io/oss@iitdh.ac.in"
+								>
+									<div className="form-group">
+										<input
+											type="text"
+											name="text"
+											value=""
+											placeholder="Name"
+											required
+										/>
+									</div>
+									<div className="form-group">
+										<input
+											type="email"
+											name="email"
+											value=""
+											placeholder="Email Address"
+											required
+										/>
+									</div>
+									<div className="form-group">
+										<input
+											type="text"
+											name="phone"
+											value=""
+											placeholder="Mobile no."
+											required
+										/>
+									</div>
+									<div className="form-group">
+										<textarea placeholder="Message" name="message"></textarea>
+									</div>
+									<div className="form-group">
+										<button type="submit" className="theme-btn btn-style-one">
+											Submit now
+										</button>
+									</div>
+								</form>
 							</div>
-							<div className="form-group">
-								<input
-									type="email"
-									name="email"
-									value=""
-									placeholder="Email Address"
-									required
-								/>
+							<div className="contact-info-box">
+								<ul className="info-list">
+									<li>outreach.parsec@iitdh.ac.in</li>
+									<li>+91 7892128329</li>
+								</ul>
+								<ul className="social-list clearfix">
+									<li>
+										<a
+											href="https://www.facebook.com/parsec.iitdh"
+											target="_blank"
+										>
+											Facebook
+										</a>
+									</li>
+									<li>
+										<a href="https://twitter.com/parsec_iitdh" target="_blank">
+											Twitter
+										</a>
+									</li>
+								</ul>
 							</div>
-							<div className="form-group">
-								<input
-									type="text"
-									name="phone"
-									value=""
-									placeholder="Mobile no."
-									required
-								/>
-							</div>
-							<div className="form-group">
-								<textarea placeholder="Message" name="message"></textarea>
-							</div>
-							<div className="form-group">
-								<button type="submit" className="theme-btn btn-style-one">
-									Submit now
-								</button>
-							</div>
-						</form>
-					</div>
-					<div className="contact-info-box">
-						<ul className="info-list">
-							<li>outreach.parsec@iitdh.ac.in</li>
-							<li>+91 7892128329</li>
-						</ul>
-						<ul className="social-list clearfix">
-							<li>
-								<a href="https://www.facebook.com/parsec.iitdh" target="_blank">
-									Facebook
-								</a>
-							</li>
-							<li>
-								<a href="https://twitter.com/parsec_iitdh" target="_blank">
-									Twitter
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-		</React.Fragment>
+						</div>
+					</section>
+				</>
+			)}
+			<Sidebar show={show} handleClose={toggleShow} active={active} />
+		</div>
 	);
 };
 

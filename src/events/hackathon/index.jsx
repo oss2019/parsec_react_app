@@ -35,7 +35,7 @@ const Hackathon = () => {
 			<div className="page-wrapper">
 				<div className="preloader"></div>
 				{/* <EventsBackground /> */}
-				<Header />
+				<Header active={2} />
 
 				<section
 					className="page-title"

@@ -11,11 +11,11 @@ const Designo = () => {
 	return (
 		<React.Fragment>
 			<EventsBackground />
-			<Header />
 			<div className="page-wrapper">
 				{/* <Suspense fallback={<div className="preloader"></div>} /> */}
 				<div className="preloader"></div>
 				{/* <div className="form-back-drop"></div> */}
+				<Header active={2} />
 
 				<div
 					className="inner-column tab active-tab"

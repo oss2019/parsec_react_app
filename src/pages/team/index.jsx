@@ -42,6 +42,7 @@ const Team = () => {
 	return (
 		<React.Fragment>
 			<div className="page-wrapper">
+				<div className="preloader"></div>
 				<Header active={7} />
 				<section
 					className="page-title"
@@ -53,9 +54,7 @@ const Team = () => {
 						<h1>Team</h1>
 						<ul className="bread-crumb clearfix">
 							<li>
-								<a href="/" >
-									Home{' '}
-								</a>
+								<a href="/">Home </a>
 							</li>
 							<li>Team</li>
 						</ul>
@@ -73,38 +72,38 @@ const Team = () => {
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
-											<div className="single-speaker-area wow fadeInUp ">
-												<div className="speaker-single-thumb">
-													<img src={`${data.image}`} alt="" />
-												</div>
-
-												<div class="social-info">
-													{data.facebook && (
-														<a href={`${data.facebook}`} target="_blank">
-															<i class="fab fa-facebook-f"></i>
-														</a>
-													)}
-													{data.instagram !== '' && (
-														<a href={`${data.instagram}`} target="_blank">
-															<i class="fab fa-instagram"></i>
-														</a>
-													)}
-													{data.github !== '' && (
-														<a href={`${data.github}`} target="_blank">
-															<i class="fab fa-github"></i>
-														</a>
-													)}
-													{data.linkedin !== '' && (
-														<a href={`${data.linkedin}`} target="_blank">
-															<i class="fab fa-linkedin-in"></i>
-														</a>
-													)}
-												</div>
-												<div class="speaker-info">
-													<h5>{makeName(data.name)}</h5>
-													{/* <p>General Secretary Technical Affairs</p> */}
-												</div>
+										<div className="single-speaker-area wow fadeInUp ">
+											<div className="speaker-single-thumb">
+												<img src={`${data.image}`} alt="" />
 											</div>
+
+											<div class="social-info">
+												{data.facebook && (
+													<a href={`${data.facebook}`} target="_blank">
+														<i class="fab fa-facebook-f"></i>
+													</a>
+												)}
+												{data.instagram !== '' && (
+													<a href={`${data.instagram}`} target="_blank">
+														<i class="fab fa-instagram"></i>
+													</a>
+												)}
+												{data.github !== '' && (
+													<a href={`${data.github}`} target="_blank">
+														<i class="fab fa-github"></i>
+													</a>
+												)}
+												{data.linkedin !== '' && (
+													<a href={`${data.linkedin}`} target="_blank">
+														<i class="fab fa-linkedin-in"></i>
+													</a>
+												)}
+											</div>
+											<div class="speaker-info">
+												<h5>{makeName(data.name)}</h5>
+												{/* <p>General Secretary Technical Affairs</p> */}
+											</div>
+										</div>
 										{/* </Card> */}
 									</Zoom>
 								</div>
@@ -120,38 +119,38 @@ const Team = () => {
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
-											<div className="single-speaker-area wow fadeInUp ">
-												<div className="speaker-single-thumb">
-													<img src={`${data.image}`} alt="" />
-												</div>
-
-												<div class="social-info">
-													{data.facebook && (
-														<a href={`${data.facebook}`} target="_blank">
-															<i class="fab fa-facebook-f"></i>
-														</a>
-													)}
-													{data.instagram !== '' && (
-														<a href={`${data.instagram}`} target="_blank">
-															<i class="fab fa-instagram"></i>
-														</a>
-													)}
-													{data.github !== '' && (
-														<a href={`${data.github}`} target="_blank">
-															<i class="fab fa-github"></i>
-														</a>
-													)}
-													{data.linkedin !== '' && (
-														<a href={`${data.linkedin}`} target="_blank">
-															<i class="fab fa-linkedin-in"></i>
-														</a>
-													)}
-												</div>
-												<div class="speaker-info">
-													<h5>{makeName(data.name)}</h5>
-													{/* <p>General Secretary Technical Affairs</p> */}
-												</div>
+										<div className="single-speaker-area wow fadeInUp ">
+											<div className="speaker-single-thumb">
+												<img src={`${data.image}`} alt="" />
 											</div>
+
+											<div class="social-info">
+												{data.facebook && (
+													<a href={`${data.facebook}`} target="_blank">
+														<i class="fab fa-facebook-f"></i>
+													</a>
+												)}
+												{data.instagram !== '' && (
+													<a href={`${data.instagram}`} target="_blank">
+														<i class="fab fa-instagram"></i>
+													</a>
+												)}
+												{data.github !== '' && (
+													<a href={`${data.github}`} target="_blank">
+														<i class="fab fa-github"></i>
+													</a>
+												)}
+												{data.linkedin !== '' && (
+													<a href={`${data.linkedin}`} target="_blank">
+														<i class="fab fa-linkedin-in"></i>
+													</a>
+												)}
+											</div>
+											<div class="speaker-info">
+												<h5>{makeName(data.name)}</h5>
+												{/* <p>General Secretary Technical Affairs</p> */}
+											</div>
+										</div>
 										{/* </Card> */}
 									</Zoom>
 								</div>
@@ -167,38 +166,38 @@ const Team = () => {
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
-											<div className="single-speaker-area wow fadeInUp ">
-												<div className="speaker-single-thumb">
-													<img src={`${data.image}`} alt="" />
-												</div>
-
-												<div class="social-info">
-													{data.facebook && (
-														<a href={`${data.facebook}`} target="_blank">
-															<i class="fab fa-facebook-f"></i>
-														</a>
-													)}
-													{data.instagram !== '' && (
-														<a href={`${data.instagram}`} target="_blank">
-															<i class="fab fa-instagram"></i>
-														</a>
-													)}
-													{data.github !== '' && (
-														<a href={`${data.github}`} target="_blank">
-															<i class="fab fa-github"></i>
-														</a>
-													)}
-													{data.linkedin !== '' && (
-														<a href={`${data.linkedin}`} target="_blank">
-															<i class="fab fa-linkedin-in"></i>
-														</a>
-													)}
-												</div>
-												<div class="speaker-info">
-													<h5>{makeName(data.name)}</h5>
-													{/* <p>General Secretary Technical Affairs</p> */}
-												</div>
+										<div className="single-speaker-area wow fadeInUp ">
+											<div className="speaker-single-thumb">
+												<img src={`${data.image}`} alt="" />
 											</div>
+
+											<div class="social-info">
+												{data.facebook && (
+													<a href={`${data.facebook}`} target="_blank">
+														<i class="fab fa-facebook-f"></i>
+													</a>
+												)}
+												{data.instagram !== '' && (
+													<a href={`${data.instagram}`} target="_blank">
+														<i class="fab fa-instagram"></i>
+													</a>
+												)}
+												{data.github !== '' && (
+													<a href={`${data.github}`} target="_blank">
+														<i class="fab fa-github"></i>
+													</a>
+												)}
+												{data.linkedin !== '' && (
+													<a href={`${data.linkedin}`} target="_blank">
+														<i class="fab fa-linkedin-in"></i>
+													</a>
+												)}
+											</div>
+											<div class="speaker-info">
+												<h5>{makeName(data.name)}</h5>
+												{/* <p>General Secretary Technical Affairs</p> */}
+											</div>
+										</div>
 										{/* </Card> */}
 									</Zoom>
 								</div>
@@ -214,38 +213,38 @@ const Team = () => {
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
-											<div className="single-speaker-area wow fadeInUp ">
-												<div className="speaker-single-thumb">
-													<img src={`${data.image}`} alt="" />
-												</div>
-
-												<div class="social-info">
-													{data.facebook && (
-														<a href={`${data.facebook}`} target="_blank">
-															<i class="fab fa-facebook-f"></i>
-														</a>
-													)}
-													{data.instagram !== '' && (
-														<a href={`${data.instagram}`} target="_blank">
-															<i class="fab fa-instagram"></i>
-														</a>
-													)}
-													{data.github !== '' && (
-														<a href={`${data.github}`} target="_blank">
-															<i class="fab fa-github"></i>
-														</a>
-													)}
-													{data.linkedin !== '' && (
-														<a href={`${data.linkedin}`} target="_blank">
-															<i class="fab fa-linkedin-in"></i>
-														</a>
-													)}
-												</div>
-												<div class="speaker-info">
-													<h5>{makeName(data.name)}</h5>
-													{/* <p>General Secretary Technical Affairs</p> */}
-												</div>
+										<div className="single-speaker-area wow fadeInUp ">
+											<div className="speaker-single-thumb">
+												<img src={`${data.image}`} alt="" />
 											</div>
+
+											<div class="social-info">
+												{data.facebook && (
+													<a href={`${data.facebook}`} target="_blank">
+														<i class="fab fa-facebook-f"></i>
+													</a>
+												)}
+												{data.instagram !== '' && (
+													<a href={`${data.instagram}`} target="_blank">
+														<i class="fab fa-instagram"></i>
+													</a>
+												)}
+												{data.github !== '' && (
+													<a href={`${data.github}`} target="_blank">
+														<i class="fab fa-github"></i>
+													</a>
+												)}
+												{data.linkedin !== '' && (
+													<a href={`${data.linkedin}`} target="_blank">
+														<i class="fab fa-linkedin-in"></i>
+													</a>
+												)}
+											</div>
+											<div class="speaker-info">
+												<h5>{makeName(data.name)}</h5>
+												{/* <p>General Secretary Technical Affairs</p> */}
+											</div>
+										</div>
 										{/* </Card> */}
 									</Zoom>
 								</div>
@@ -261,38 +260,38 @@ const Team = () => {
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
-											<div className="single-speaker-area wow fadeInUp ">
-												<div className="speaker-single-thumb">
-													<img src={`${data.image}`} alt="" />
-												</div>
-
-												<div class="social-info">
-													{data.facebook && (
-														<a href={`${data.facebook}`} target="_blank">
-															<i class="fab fa-facebook-f"></i>
-														</a>
-													)}
-													{data.instagram !== '' && (
-														<a href={`${data.instagram}`} target="_blank">
-															<i class="fab fa-instagram"></i>
-														</a>
-													)}
-													{data.github !== '' && (
-														<a href={`${data.github}`} target="_blank">
-															<i class="fab fa-github"></i>
-														</a>
-													)}
-													{data.linkedin !== '' && (
-														<a href={`${data.linkedin}`} target="_blank">
-															<i class="fab fa-linkedin-in"></i>
-														</a>
-													)}
-												</div>
-												<div class="speaker-info">
-													<h5>{makeName(data.name)}</h5>
-													{/* <p>General Secretary Technical Affairs</p> */}
-												</div>
+										<div className="single-speaker-area wow fadeInUp ">
+											<div className="speaker-single-thumb">
+												<img src={`${data.image}`} alt="" />
 											</div>
+
+											<div class="social-info">
+												{data.facebook && (
+													<a href={`${data.facebook}`} target="_blank">
+														<i class="fab fa-facebook-f"></i>
+													</a>
+												)}
+												{data.instagram !== '' && (
+													<a href={`${data.instagram}`} target="_blank">
+														<i class="fab fa-instagram"></i>
+													</a>
+												)}
+												{data.github !== '' && (
+													<a href={`${data.github}`} target="_blank">
+														<i class="fab fa-github"></i>
+													</a>
+												)}
+												{data.linkedin !== '' && (
+													<a href={`${data.linkedin}`} target="_blank">
+														<i class="fab fa-linkedin-in"></i>
+													</a>
+												)}
+											</div>
+											<div class="speaker-info">
+												<h5>{makeName(data.name)}</h5>
+												{/* <p>General Secretary Technical Affairs</p> */}
+											</div>
+										</div>
 										{/* </Card> */}
 									</Zoom>
 								</div>
@@ -308,38 +307,38 @@ const Team = () => {
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
-											<div className="single-speaker-area wow fadeInUp ">
-												<div className="speaker-single-thumb">
-													<img src={`${data.image}`} alt="" />
-												</div>
-
-												<div class="social-info">
-													{data.facebook && (
-														<a href={`${data.facebook}`} target="_blank">
-															<i class="fab fa-facebook-f"></i>
-														</a>
-													)}
-													{data.instagram !== '' && (
-														<a href={`${data.instagram}`} target="_blank">
-															<i class="fab fa-instagram"></i>
-														</a>
-													)}
-													{data.github !== '' && (
-														<a href={`${data.github}`} target="_blank">
-															<i class="fab fa-github"></i>
-														</a>
-													)}
-													{data.linkedin !== '' && (
-														<a href={`${data.linkedin}`} target="_blank">
-															<i class="fab fa-linkedin-in"></i>
-														</a>
-													)}
-												</div>
-												<div class="speaker-info">
-													<h5>{makeName(data.name)}</h5>
-													{/* <p>General Secretary Technical Affairs</p> */}
-												</div>
+										<div className="single-speaker-area wow fadeInUp ">
+											<div className="speaker-single-thumb">
+												<img src={`${data.image}`} alt="" />
 											</div>
+
+											<div class="social-info">
+												{data.facebook && (
+													<a href={`${data.facebook}`} target="_blank">
+														<i class="fab fa-facebook-f"></i>
+													</a>
+												)}
+												{data.instagram !== '' && (
+													<a href={`${data.instagram}`} target="_blank">
+														<i class="fab fa-instagram"></i>
+													</a>
+												)}
+												{data.github !== '' && (
+													<a href={`${data.github}`} target="_blank">
+														<i class="fab fa-github"></i>
+													</a>
+												)}
+												{data.linkedin !== '' && (
+													<a href={`${data.linkedin}`} target="_blank">
+														<i class="fab fa-linkedin-in"></i>
+													</a>
+												)}
+											</div>
+											<div class="speaker-info">
+												<h5>{makeName(data.name)}</h5>
+												{/* <p>General Secretary Technical Affairs</p> */}
+											</div>
+										</div>
 										{/* </Card> */}
 									</Zoom>
 								</div>
@@ -354,38 +353,38 @@ const Team = () => {
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
-											<div className="single-speaker-area wow fadeInUp ">
-												<div className="speaker-single-thumb">
-													<img src={`${data.image}`} alt="" />
-												</div>
-
-												<div class="social-info">
-													{data.facebook && (
-														<a href={`${data.facebook}`} target="_blank">
-															<i class="fab fa-facebook-f"></i>
-														</a>
-													)}
-													{data.instagram !== '' && (
-														<a href={`${data.instagram}`} target="_blank">
-															<i class="fab fa-instagram"></i>
-														</a>
-													)}
-													{data.github !== '' && (
-														<a href={`${data.github}`} target="_blank">
-															<i class="fab fa-github"></i>
-														</a>
-													)}
-													{data.linkedin !== '' && (
-														<a href={`${data.linkedin}`} target="_blank">
-															<i class="fab fa-linkedin-in"></i>
-														</a>
-													)}
-												</div>
-												<div class="speaker-info">
-													<h5>{makeName(data.name)}</h5>
-													{/* <p>General Secretary Technical Affairs</p> */}
-												</div>
+										<div className="single-speaker-area wow fadeInUp ">
+											<div className="speaker-single-thumb">
+												<img src={`${data.image}`} alt="" />
 											</div>
+
+											<div class="social-info">
+												{data.facebook && (
+													<a href={`${data.facebook}`} target="_blank">
+														<i class="fab fa-facebook-f"></i>
+													</a>
+												)}
+												{data.instagram !== '' && (
+													<a href={`${data.instagram}`} target="_blank">
+														<i class="fab fa-instagram"></i>
+													</a>
+												)}
+												{data.github !== '' && (
+													<a href={`${data.github}`} target="_blank">
+														<i class="fab fa-github"></i>
+													</a>
+												)}
+												{data.linkedin !== '' && (
+													<a href={`${data.linkedin}`} target="_blank">
+														<i class="fab fa-linkedin-in"></i>
+													</a>
+												)}
+											</div>
+											<div class="speaker-info">
+												<h5>{makeName(data.name)}</h5>
+												{/* <p>General Secretary Technical Affairs</p> */}
+											</div>
+										</div>
 										{/* </Card> */}
 									</Zoom>
 								</div>
@@ -400,38 +399,38 @@ const Team = () => {
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
-											<div className="single-speaker-area wow fadeInUp ">
-												<div className="speaker-single-thumb">
-													<img src={`${data.image}`} alt="" />
-												</div>
-
-												<div class="social-info">
-													{data.facebook && (
-														<a href={`${data.facebook}`} target="_blank">
-															<i class="fab fa-facebook-f"></i>
-														</a>
-													)}
-													{data.instagram !== '' && (
-														<a href={`${data.instagram}`} target="_blank">
-															<i class="fab fa-instagram"></i>
-														</a>
-													)}
-													{data.github !== '' && (
-														<a href={`${data.github}`} target="_blank">
-															<i class="fab fa-github"></i>
-														</a>
-													)}
-													{data.linkedin !== '' && (
-														<a href={`${data.linkedin}`} target="_blank">
-															<i class="fab fa-linkedin-in"></i>
-														</a>
-													)}
-												</div>
-												<div class="speaker-info">
-													<h5>{makeName(data.name)}</h5>
-													{/* <p>General Secretary Technical Affairs</p> */}
-												</div>
+										<div className="single-speaker-area wow fadeInUp ">
+											<div className="speaker-single-thumb">
+												<img src={`${data.image}`} alt="" />
 											</div>
+
+											<div class="social-info">
+												{data.facebook && (
+													<a href={`${data.facebook}`} target="_blank">
+														<i class="fab fa-facebook-f"></i>
+													</a>
+												)}
+												{data.instagram !== '' && (
+													<a href={`${data.instagram}`} target="_blank">
+														<i class="fab fa-instagram"></i>
+													</a>
+												)}
+												{data.github !== '' && (
+													<a href={`${data.github}`} target="_blank">
+														<i class="fab fa-github"></i>
+													</a>
+												)}
+												{data.linkedin !== '' && (
+													<a href={`${data.linkedin}`} target="_blank">
+														<i class="fab fa-linkedin-in"></i>
+													</a>
+												)}
+											</div>
+											<div class="speaker-info">
+												<h5>{makeName(data.name)}</h5>
+												{/* <p>General Secretary Technical Affairs</p> */}
+											</div>
+										</div>
 										{/* </Card> */}
 									</Zoom>
 								</div>
@@ -447,38 +446,38 @@ const Team = () => {
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
-											<div className="single-speaker-area wow fadeInUp ">
-												<div className="speaker-single-thumb">
-													<img src={`${data.image}`} alt="" />
-												</div>
-
-												<div class="social-info">
-													{data.facebook && (
-														<a href={`${data.facebook}`} target="_blank">
-															<i class="fab fa-facebook-f"></i>
-														</a>
-													)}
-													{data.instagram !== '' && (
-														<a href={`${data.instagram}`} target="_blank">
-															<i class="fab fa-instagram"></i>
-														</a>
-													)}
-													{data.github !== '' && (
-														<a href={`${data.github}`} target="_blank">
-															<i class="fab fa-github"></i>
-														</a>
-													)}
-													{data.linkedin !== '' && (
-														<a href={`${data.linkedin}`} target="_blank">
-															<i class="fab fa-linkedin-in"></i>
-														</a>
-													)}
-												</div>
-												<div class="speaker-info">
-													<h5>{makeName(data.name)}</h5>
-													{/* <p>General Secretary Technical Affairs</p> */}
-												</div>
+										<div className="single-speaker-area wow fadeInUp ">
+											<div className="speaker-single-thumb">
+												<img src={`${data.image}`} alt="" />
 											</div>
+
+											<div class="social-info">
+												{data.facebook && (
+													<a href={`${data.facebook}`} target="_blank">
+														<i class="fab fa-facebook-f"></i>
+													</a>
+												)}
+												{data.instagram !== '' && (
+													<a href={`${data.instagram}`} target="_blank">
+														<i class="fab fa-instagram"></i>
+													</a>
+												)}
+												{data.github !== '' && (
+													<a href={`${data.github}`} target="_blank">
+														<i class="fab fa-github"></i>
+													</a>
+												)}
+												{data.linkedin !== '' && (
+													<a href={`${data.linkedin}`} target="_blank">
+														<i class="fab fa-linkedin-in"></i>
+													</a>
+												)}
+											</div>
+											<div class="speaker-info">
+												<h5>{makeName(data.name)}</h5>
+												{/* <p>General Secretary Technical Affairs</p> */}
+											</div>
+										</div>
 										{/* </Card> */}
 									</Zoom>
 								</div>
@@ -494,38 +493,38 @@ const Team = () => {
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
-											<div className="single-speaker-area wow fadeInUp ">
-												<div className="speaker-single-thumb">
-													<img src={`${data.image}`} alt="" />
-												</div>
-
-												<div class="social-info">
-													{data.facebook && (
-														<a href={`${data.facebook}`} target="_blank">
-															<i class="fab fa-facebook-f"></i>
-														</a>
-													)}
-													{data.instagram !== '' && (
-														<a href={`${data.instagram}`} target="_blank">
-															<i class="fab fa-instagram"></i>
-														</a>
-													)}
-													{data.github !== '' && (
-														<a href={`${data.github}`} target="_blank">
-															<i class="fab fa-github"></i>
-														</a>
-													)}
-													{data.linkedin !== '' && (
-														<a href={`${data.linkedin}`} target="_blank">
-															<i class="fab fa-linkedin-in"></i>
-														</a>
-													)}
-												</div>
-												<div class="speaker-info">
-													<h5>{makeName(data.name)}</h5>
-													{/* <p>General Secretary Technical Affairs</p> */}
-												</div>
+										<div className="single-speaker-area wow fadeInUp ">
+											<div className="speaker-single-thumb">
+												<img src={`${data.image}`} alt="" />
 											</div>
+
+											<div class="social-info">
+												{data.facebook && (
+													<a href={`${data.facebook}`} target="_blank">
+														<i class="fab fa-facebook-f"></i>
+													</a>
+												)}
+												{data.instagram !== '' && (
+													<a href={`${data.instagram}`} target="_blank">
+														<i class="fab fa-instagram"></i>
+													</a>
+												)}
+												{data.github !== '' && (
+													<a href={`${data.github}`} target="_blank">
+														<i class="fab fa-github"></i>
+													</a>
+												)}
+												{data.linkedin !== '' && (
+													<a href={`${data.linkedin}`} target="_blank">
+														<i class="fab fa-linkedin-in"></i>
+													</a>
+												)}
+											</div>
+											<div class="speaker-info">
+												<h5>{makeName(data.name)}</h5>
+												{/* <p>General Secretary Technical Affairs</p> */}
+											</div>
+										</div>
 										{/* </Card> */}
 									</Zoom>
 								</div>
@@ -541,38 +540,38 @@ const Team = () => {
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
-											<div className="single-speaker-area wow fadeInUp ">
-												<div className="speaker-single-thumb">
-													<img src={`${data.image}`} alt="" />
-												</div>
-
-												<div class="social-info">
-													{data.facebook && (
-														<a href={`${data.facebook}`} target="_blank">
-															<i class="fab fa-facebook-f"></i>
-														</a>
-													)}
-													{data.instagram !== '' && (
-														<a href={`${data.instagram}`} target="_blank">
-															<i class="fab fa-instagram"></i>
-														</a>
-													)}
-													{data.github !== '' && (
-														<a href={`${data.github}`} target="_blank">
-															<i class="fab fa-github"></i>
-														</a>
-													)}
-													{data.linkedin !== '' && (
-														<a href={`${data.linkedin}`} target="_blank">
-															<i class="fab fa-linkedin-in"></i>
-														</a>
-													)}
-												</div>
-												<div class="speaker-info">
-													<h5>{makeName(data.name)}</h5>
-													{/* <p>General Secretary Technical Affairs</p> */}
-												</div>
+										<div className="single-speaker-area wow fadeInUp ">
+											<div className="speaker-single-thumb">
+												<img src={`${data.image}`} alt="" />
 											</div>
+
+											<div class="social-info">
+												{data.facebook && (
+													<a href={`${data.facebook}`} target="_blank">
+														<i class="fab fa-facebook-f"></i>
+													</a>
+												)}
+												{data.instagram !== '' && (
+													<a href={`${data.instagram}`} target="_blank">
+														<i class="fab fa-instagram"></i>
+													</a>
+												)}
+												{data.github !== '' && (
+													<a href={`${data.github}`} target="_blank">
+														<i class="fab fa-github"></i>
+													</a>
+												)}
+												{data.linkedin !== '' && (
+													<a href={`${data.linkedin}`} target="_blank">
+														<i class="fab fa-linkedin-in"></i>
+													</a>
+												)}
+											</div>
+											<div class="speaker-info">
+												<h5>{makeName(data.name)}</h5>
+												{/* <p>General Secretary Technical Affairs</p> */}
+											</div>
+										</div>
 										{/* </Card> */}
 									</Zoom>
 								</div>
@@ -588,38 +587,38 @@ const Team = () => {
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
-											<div className="single-speaker-area wow fadeInUp ">
-												<div className="speaker-single-thumb">
-													<img src={`${data.image}`} alt="" />
-												</div>
-
-												<div class="social-info">
-													{data.facebook && (
-														<a href={`${data.facebook}`} target="_blank">
-															<i class="fab fa-facebook-f"></i>
-														</a>
-													)}
-													{data.instagram !== '' && (
-														<a href={`${data.instagram}`} target="_blank">
-															<i class="fab fa-instagram"></i>
-														</a>
-													)}
-													{data.github !== '' && (
-														<a href={`${data.github}`} target="_blank">
-															<i class="fab fa-github"></i>
-														</a>
-													)}
-													{data.linkedin !== '' && (
-														<a href={`${data.linkedin}`} target="_blank">
-															<i class="fab fa-linkedin-in"></i>
-														</a>
-													)}
-												</div>
-												<div class="speaker-info">
-													<h5>{makeName(data.name)}</h5>
-													{/* <p>General Secretary Technical Affairs</p> */}
-												</div>
+										<div className="single-speaker-area wow fadeInUp ">
+											<div className="speaker-single-thumb">
+												<img src={`${data.image}`} alt="" />
 											</div>
+
+											<div class="social-info">
+												{data.facebook && (
+													<a href={`${data.facebook}`} target="_blank">
+														<i class="fab fa-facebook-f"></i>
+													</a>
+												)}
+												{data.instagram !== '' && (
+													<a href={`${data.instagram}`} target="_blank">
+														<i class="fab fa-instagram"></i>
+													</a>
+												)}
+												{data.github !== '' && (
+													<a href={`${data.github}`} target="_blank">
+														<i class="fab fa-github"></i>
+													</a>
+												)}
+												{data.linkedin !== '' && (
+													<a href={`${data.linkedin}`} target="_blank">
+														<i class="fab fa-linkedin-in"></i>
+													</a>
+												)}
+											</div>
+											<div class="speaker-info">
+												<h5>{makeName(data.name)}</h5>
+												{/* <p>General Secretary Technical Affairs</p> */}
+											</div>
+										</div>
 										{/* </Card> */}
 									</Zoom>
 								</div>

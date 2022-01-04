@@ -14,7 +14,7 @@ const Ctf = () => {
 				<EventsBackground />
 				<div className="preloader"></div>
 
-				<Header />
+				<Header active={2} />
 
 				<section
 					className="page-title"

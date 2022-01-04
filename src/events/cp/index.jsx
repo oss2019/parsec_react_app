@@ -42,11 +42,11 @@ const Cp = () => {
 	return (
 		<React.Fragment>
 			<EventsBackground />
-			<Header />
 			<div className="page-wrapper">
 				{/* <Suspense fallback={<div className="preloader"></div>} /> */}
 				<div className="preloader"></div>
 				{/* <div className="form-back-drop"></div> */}
+				<Header active={2} />
 
 				<section className="page-title" id="page-title" style={{}}>
 					{/* <canvas id="c" style={{position: 'absolute', top: '0px', left: '0px', backgroundColor: 'black'}}></canvas> */}

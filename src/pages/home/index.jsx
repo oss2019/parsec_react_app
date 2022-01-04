@@ -150,6 +150,9 @@ const Home = () => {
 				handlePreloader();
 			});
 		})(window.jQuery);
+
+
+		
 	}, []);
 
 	return (

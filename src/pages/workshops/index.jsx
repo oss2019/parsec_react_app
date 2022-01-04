@@ -14,6 +14,7 @@ const Workshop = () => {
 	return (
 		<React.Fragment>
 			<div className="page-wrapper" style={{ overflowX: 'hidden' }}>
+				<div className="preloader"></div>
 				<Header active={3} />
 				<section
 					className="page-title"
@@ -154,8 +155,7 @@ const Workshop = () => {
 								</div>
 							</div>
 
-							
-							<div className='col-lg-2'></div>
+							<div className="col-lg-2"></div>
 
 							<div
 								className="news-block news-block-style col-lg-5 col-md-6 col-sm-12 wow fadeInUp "

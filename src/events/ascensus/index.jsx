@@ -11,10 +11,10 @@ const Ascensus = () => {
 	return (
 		<React.Fragment>
 			<EventsBackground />
-			<Header />
 			<div className="page-wrapper">
-				{/* <Suspense fallback={<div className="preloader"></div>} /> */}
 				<div className="preloader"></div>
+				<Header  active={2} />
+				{/* <Suspense fallback={<div className="preloader"></div>} /> */}
 				{/* <div className="form-back-drop"></div> */}
 
 				<section className="page-title" id="page-title" style={{}}>

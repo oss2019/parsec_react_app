@@ -26,7 +26,8 @@ const EventPage  = () => {
 		<React.Fragment>
 			<EventBackground />
 			<div className="page-wrapper">
-				<div className="auto-container" style={{maxWidth: '100vw'}}>
+				<div className="preloader"></div>
+				<div className="auto-container" style={{ maxWidth: '100vw' }}>
 					<Header active={2} />
 					<section class="location-section">
 						<span class="float-text">Our Events</span>
