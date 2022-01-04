@@ -43,13 +43,13 @@ canvas {
 	color: rgb(242, 172, 79);
 } */
 
-.project-tabs .tab .list-style-four1 {
+.project-tabs .tab .list-style-four2 {
 	margin-bottom: 80px;
 }
-.list-style-four1 {
+.list-style-four2 {
 	position: relative;
 }
-.list-style-four1 li {
+.list-style-four2 li {
 	position: relative;
 	padding-left: 35px;
 	font-size: 17px;
@@ -58,7 +58,7 @@ canvas {
 	font-weight: 400;
 	margin-bottom: 15px;
 }
-.list-style-four1 li:before {
+.list-style-four2 li:before {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -100,15 +100,15 @@ x-sign:nth-of-type(1) {
 	margin-top: 50px; */
 }
 
-.button1:hover {
+.button2:hover {
+	text-decoration: none;
+	background-color: #12114a;
+}
+#btncs2{
 	text-decoration: none;
 	background-color: rgb(242, 172, 79);
 }
-#btncs1{
-	text-decoration: none;
-	background-color: rgb(242, 172, 79);
-}
-#btncs1:hover{
+#btncs2:hover{
 	text-decoration: none;
 	background-color: #12114a;
 }

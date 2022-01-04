@@ -22,7 +22,7 @@ const Ascensus = () => {
 								<div
 									className="inner-column tab active-tab"
 									id="introduction"
-									style={{ background: 'rgba(0,0,0,0.95)' }}
+									style={{ background: 'rgba(0,0,0,0.85)' }}
 								>
 									<section
 										className="login-section"
@@ -73,8 +73,8 @@ const Ascensus = () => {
 																	<div className="btn-box text-center">
 																		<a
 																			href="##"
-																			className="theme-btn btn-style-four button1 text-center"
-																			id="btncs1"
+																			className="theme-btn btn-style-four button2 text-center"
+																			id="btncs2"
 																			style={{
 																				borderRadius: '8px',
 																				color: '#ffffff',
@@ -138,26 +138,26 @@ const Ascensus = () => {
                               
 
 														<ul  style={{
-	                                    color:`rgb(242, 172, 79)`
+	                                    color:`#707070`
                                 }}
-                                className="list-style-four1">
+                                className="list-style-four2">
 															<li style={{
-	                                    color:`rgb(242, 172, 79)`
-                                }}>Round one will be a quiz to test your business and Management knowledge</li>
+	                                    color:`#707070`
+                                }}><strong>Round one will be a quiz to test your business and Management knowledge</strong></li>
 															<li style={{
-	                                    color:`rgb(242, 172, 79)`
+	                                    color:`#707070`
                                 }}>
-                              Round Two will be ppt submission on solution of the given problem statement
-															</li>
+                              <strong>Round Two will be ppt submission on solution of the given problem statement
+							  </strong></li>
 															<li style={{
-	                                    color:`rgb(242, 172, 79)`
-                                }}>
+	                                    color:`#707070`
+                                }}><strong>
                               In Round Three, you will be presenting your solution in front of the jury
-															</li>
+															</strong></li>
 														</ul>
 
 														
-														{/* <p
+														<p
 															className="font-weight-bold"
 															style={{ fontSize: 'large', color: '#eeeeee' }}
 														>
@@ -171,7 +171,7 @@ const Ascensus = () => {
 																channel
 															</a>{' '}
 															and we will try our best to answer all of them.
-														</p> */}
+														</p>
 													</div>
 												</div>
 											</div>
