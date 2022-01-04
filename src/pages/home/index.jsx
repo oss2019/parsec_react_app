@@ -17,6 +17,7 @@ import quizBg from '../../images/resource/quiz-home-bg.png';
 import cadBg from '../../images/resource/cad-home-bg.png';
 import caseStudyBg from '../../images/resource/case-home-bg.png';
 import $ from 'jquery';
+import topScroll from '../../components/topScroll';
 
 const Home = () => {
 	useEffect(() => {
@@ -701,6 +702,7 @@ const Home = () => {
 					</div>
 				</div>
 
+			{/* <topScroll /> */}
 				<Footer />
 			</div>
 		</React.Fragment>

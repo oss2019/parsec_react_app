@@ -38,7 +38,7 @@ const Team = () => {
 		}
 		return newName;
 	};
-
+	const delayTime = 500
 	return (
 		<React.Fragment>
 			<div className="page-wrapper">
@@ -71,7 +71,7 @@ const Team = () => {
 						<div className="row">
 							{coordinatorTeamData.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
-									<Zoom delay={700}>
+									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
 											<div className="single-speaker-area wow fadeInUp ">
 												<div className="speaker-single-thumb">
@@ -118,7 +118,7 @@ const Team = () => {
 						<div className="row">
 							{operationsHead.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
-									<Zoom delay={700}>
+									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
 											<div className="single-speaker-area wow fadeInUp ">
 												<div className="speaker-single-thumb">
@@ -165,7 +165,7 @@ const Team = () => {
 						<div className="row">
 							{accountsManager.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
-									<Zoom delay={700}>
+									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
 											<div className="single-speaker-area wow fadeInUp ">
 												<div className="speaker-single-thumb">
@@ -212,7 +212,7 @@ const Team = () => {
 						<div className="row">
 							{eventManager.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
-									<Zoom delay={700}>
+									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
 											<div className="single-speaker-area wow fadeInUp ">
 												<div className="speaker-single-thumb">
@@ -259,7 +259,7 @@ const Team = () => {
 						<div className="row">
 							{sponsorshipTeam.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
-									<Zoom delay={700}>
+									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
 											<div className="single-speaker-area wow fadeInUp ">
 												<div className="speaker-single-thumb">
@@ -306,7 +306,7 @@ const Team = () => {
 						<div className="row">
 							{workshopTeam.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
-									<Zoom delay={700}>
+									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
 											<div className="single-speaker-area wow fadeInUp ">
 												<div className="speaker-single-thumb">
@@ -352,7 +352,7 @@ const Team = () => {
 						<div className="row">
 							{marketingTeam.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
-									<Zoom delay={700}>
+									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
 											<div className="single-speaker-area wow fadeInUp ">
 												<div className="speaker-single-thumb">
@@ -398,7 +398,7 @@ const Team = () => {
 						<div className="row">
 							{webTeamData.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
-									<Zoom delay={700}>
+									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
 											<div className="single-speaker-area wow fadeInUp ">
 												<div className="speaker-single-thumb">
@@ -445,7 +445,7 @@ const Team = () => {
 						<div className="row">
 							{designTeamData.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
-									<Zoom delay={700}>
+									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
 											<div className="single-speaker-area wow fadeInUp ">
 												<div className="speaker-single-thumb">
@@ -492,7 +492,7 @@ const Team = () => {
 						<div className="row">
 							{contentTeamData.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
-									<Zoom delay={700}>
+									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
 											<div className="single-speaker-area wow fadeInUp ">
 												<div className="speaker-single-thumb">
@@ -539,7 +539,7 @@ const Team = () => {
 						<div className="row">
 							{utilitiesTeam.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
-									<Zoom delay={700}>
+									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
 											<div className="single-speaker-area wow fadeInUp ">
 												<div className="speaker-single-thumb">
@@ -586,7 +586,7 @@ const Team = () => {
 						<div className="row">
 							{eventCoordinators.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
-									<Zoom delay={700}>
+									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
 											<div className="single-speaker-area wow fadeInUp ">
 												<div className="speaker-single-thumb">
