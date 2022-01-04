@@ -198,12 +198,12 @@ const Home = () => {
 									</span>
 								</h4>
 							</div>
-							<div class="timer">
+							{/* <div class="timer">
 								<div
 									class="cs-countdown"
 									data-countdown="4/24/2019 05:06:59"
 								></div>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</section>

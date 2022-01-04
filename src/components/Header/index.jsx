@@ -253,52 +253,52 @@ const Header = ({ active }) => {
 			}
 
 			//Custom Seclect Box
-			// if ($('.custom-select-box').length) {
-			// 	$('.custom-select-box')
-			// 		.selectmenu()
-			// 		.selectmenu('menuWidget')
-			// 		.addClass('overflow');
-			// }
+			if ($('.custom-select-box').length) {
+				$('.custom-select-box')
+					.selectmenu()
+					.selectmenu('menuWidget')
+					.addClass('overflow');
+			}
 
-			// if ($('.timer').length) {
-			// 	$(function () {
-			// 		$('[data-countdown]').each(function () {
-			// 			var $this = $(this),
-			// 				finalDate = $(this).data('countdown');
-			// 			$this.countdown(finalDate, function (event) {
-			// 				$this.html(event.strftime('%D days %H:%M:%S'));
-			// 			});
-			// 		});
-			// 	});
+			if ($('.timer').length) {
+				$(function () {
+					$('[data-countdown]').each(function () {
+						var $this = $(this),
+							finalDate = $(this).data('countdown');
+						$this.countdown(finalDate, function (event) {
+							$this.html(event.strftime('%D days %H:%M:%S'));
+						});
+					});
+				});
 
-			// 	$('.cs-countdown')
-			// 		.countdown('')
-			// 		.on('update.countdown', function (event) {
-			// 			var $this = $(this).html(
-			// 				event.strftime(
-			// 					'<div><span>%D</span><h6>days</h6></div> <div><span>%H</span><h6>Hours</h6></div> <div><span>%M</span><h6>Minutes</h6></div> <div><span>%S</span><h6>Seconds</h6></div>'
-			// 				)
-			// 			);
-			// 		});
-			// }
+				$('.cs-countdown')
+					.countdown('')
+					.on('update.countdown', function (event) {
+						var $this = $(this).html(
+							event.strftime(
+								'<div><span>%D</span><h6>days</h6></div> <div><span>%H</span><h6>Hours</h6></div> <div><span>%M</span><h6>Minutes</h6></div> <div><span>%S</span><h6>Seconds</h6></div>'
+							)
+						);
+					});
+			}
 
-			// if ($('.ts-image-popup').length) {
-			// 	$('.ts-image-popup').magnificPopup({
-			// 		type: 'inline',
-			// 		closeOnContentClick: false,
-			// 		midClick: true,
-			// 		callbacks: {
-			// 			beforeOpen: function () {
-			// 				this.st.mainClass = this.st.el.attr('data-effect');
-			// 			},
-			// 		},
-			// 		zoom: {
-			// 			enabled: true,
-			// 			duration: 500, // don't foget to change the duration also in CSS
-			// 		},
-			// 		mainClass: 'mfp-fade',
-			// 	});
-			// }
+			if ($('.ts-image-popup').length) {
+				$('.ts-image-popup').magnificPopup({
+					type: 'inline',
+					closeOnContentClick: false,
+					midClick: true,
+					callbacks: {
+						beforeOpen: function () {
+							this.st.mainClass = this.st.el.attr('data-effect');
+						},
+					},
+					zoom: {
+						enabled: true,
+						duration: 500, // don't foget to change the duration also in CSS
+					},
+					mainClass: 'mfp-fade',
+				});
+			}
 
 			//LightBox / Fancybox
 			if ($('.lightbox-image').length) {

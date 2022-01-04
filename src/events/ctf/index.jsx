@@ -5,12 +5,14 @@ import '../../css/style.css';
 import '../../css/bootstrap.css';
 import '../../css/responsive.css';
 import Footer from '../../components/Footer';
+import EventsBackground from '../../components/eventsBackground';
 
 const Ctf = () => {
 	return (
 		<React.Fragment>
 			<div className="page-wrapper">
-				{/* <div className="preloader"></div> */}
+				<EventsBackground />
+				<div className="preloader"></div>
 
 				<Header />
 

@@ -12,7 +12,7 @@ import Judges from './judges';
 import Footer from '../../components/Footer';
 import { Link } from 'react-router-dom';
 import hackathonBackground from '../../images/events/devhack/devhack_banner.png';
-
+import EventsBackground from '../../components/eventsBackground';
 const Hackathon = () => {
 	const [hack, setHack] = useState(1);
 	// const overviewCtrl = () => {
@@ -33,7 +33,8 @@ const Hackathon = () => {
 	return (
 		<React.Fragment>
 			<div className="page-wrapper">
-				{/* <div className="preloader"></div> */}
+				<div className="preloader"></div>
+				{/* <EventsBackground /> */}
 				<Header />
 
 				<section
