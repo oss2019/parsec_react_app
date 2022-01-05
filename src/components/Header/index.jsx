@@ -6,6 +6,7 @@ import { Navbar, Container, Nav, Button, NavLink } from 'react-bootstrap';
 // import DownloadButton from '../DownloadAsPDF';
 import Sidebar from '../Sidebar';
 import Logo from '../Logo';
+import parsecLogo from '../../images/logos/logo-nav.png';
 import './styles.css';
 
 const Header = ({ active }) => {
@@ -429,11 +430,38 @@ const Header = ({ active }) => {
 	}, []);
 
 	return (
-		<div style={{zIndex: 100, position: 'fixed'}}>
+		<div
+			style={{
+				zIndex: 100,
+				position: 'fixed',
+				backgroundColor: '#1f003b',
+				width: '100vw',
+			}}
+		>
 			{isTabletorMobile && (
-				<Button className="gradient-text no-border link" onClick={toggleShow}>
-					<i className="fas fa-bars fa-2x"  />
-				</Button>
+				<div
+					style={{
+						display: 'flex',
+						flexDirection: 'row',
+						justifyContent: 'space-between',
+						alignItems: 'center',
+					}}
+				>
+					{/* <Button className="gradient-text no-border link" onClick={toggleShow}>
+					</Button> */}
+					<div
+						className="gradient-text no-border link"
+						onClick={toggleShow}
+						style={{ margin: '5px 20px' }}
+					>
+						<i className="fas fa-bars fa-2x" />
+					</div>
+					<div className="logo" style={{ margin: '5px 20px' }}>
+						<a href="/" target={'_blank'}>
+							<img src={parsecLogo} />
+						</a>
+					</div>
+				</div>
 			)}
 			{!isTabletorMobile && (
 				<>
@@ -443,7 +471,7 @@ const Header = ({ active }) => {
 								<div className="clearfix">
 									<div className="pull-left logo-box">
 										<div className="logo">
-											<a href="https://parsec.iitdh.ac.in" target={'_blank'}>
+											<a href="/" target={'_blank'}>
 												<img src={Logo} />
 											</a>
 										</div>

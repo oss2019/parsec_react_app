@@ -4,7 +4,7 @@ import { NavLink, useHistory } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 
 // import { url } from '../../shared/pdfURL';
-import Logo from '../Logo';
+// import Logo from '../Logo';
 
 const Sidebar = ({ show, handleClose, active }) => {
 	const isTabletorMobile = useMediaQuery({
@@ -15,7 +15,6 @@ const Sidebar = ({ show, handleClose, active }) => {
 
 	return (
 		<div
-			className="background-black"
 			style={{
 				left: show ? '0' : '-320px',
 				position: 'absolute',
@@ -26,18 +25,17 @@ const Sidebar = ({ show, handleClose, active }) => {
 				transition: 'left 0.5s',
 				zIndex: 100,
 				top: '0px',
+				backgroundColor: '#1f003b',
 			}}
 		>
 			<div className="children">
 				{isTabletorMobile && (
-					<Button
-						className="gradient-text no-border elements link"
-						onClick={handleClose}
-					>
-						<i class="fas fa-arrow-left fa-2x" />
-					</Button>
+						<div className='gradient-text no-border link' onClick={handleClose} style={{margin: '5px 20px'}}>
+
+							<i class="fas fa-arrow-left fa-2x" />
+					</div>
 				)}
-				<Logo />
+				{/* <Logo /> */}
 			</div>
 			<div
 				style={{
