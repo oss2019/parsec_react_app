@@ -18,6 +18,8 @@ import cadBg from '../../images/resource/cad-home-bg.png';
 import caseStudyBg from '../../images/resource/case-home-bg.png';
 import $ from 'jquery';
 import topScroll from '../../components/topScroll';
+import EventCarousel from './eventsCarousel';
+import { Carousel } from 'react-bootstrap';
 
 const Home = () => {
 	useEffect(() => {
@@ -179,9 +181,6 @@ const Home = () => {
 				handlePreloader();
 			});
 		})(window.jQuery);
-
-
-		
 	}, []);
 
 	return (
@@ -194,7 +193,7 @@ const Home = () => {
 					class="banner-section-two"
 					style={{ backgroundImage: `url(${parsecSlider})` }}
 				>
-					<div class="night" >
+					<div class="night">
 						<div class="shooting_star"></div>
 						<div class="shooting_star"></div>
 						<div class="shooting_star"></div>
@@ -424,6 +423,8 @@ const Home = () => {
 						</div>
 					</div>
 				</section>
+
+				{/* <EventCarousel /> */}
 				{/* lasdjfaldsfjasdfkasldfja */}
 				<section class="location-section">
 					<span class="float-text">Our Events</span>
@@ -452,7 +453,9 @@ const Home = () => {
 							<div class="sec-title">
 								<h2>Events</h2>
 							</div>
-							<div class="events-carousel owl-carousel owl-theme" >
+							<EventCarousel />
+
+							{/* <div class="events-carousel owl-carousel owl-theme" >
 								<div class="slide-item">
 									<div class="row">
 										<div class="content-column order-2 col-lg-5 col-md-12 col-sm-12">
@@ -605,7 +608,7 @@ const Home = () => {
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> */}
 						</div>
 					</section>
 				</section>
@@ -734,7 +737,7 @@ const Home = () => {
 					</div>
 				</div>
 
-			{/* <topScroll /> */}
+				{/* <topScroll /> */}
 				<Footer />
 			</div>
 		</React.Fragment>
