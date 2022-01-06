@@ -18,8 +18,9 @@ const Ctf = () => {
 
 				<section
 					className="page-title"
-					sstyle="background-image:url(images/background/cp.jpg);"
+					// sstyle="background-image:url(images/background/cp.jpg);"
 					id="page-title"
+					style={{ position: 'relative', margin: '-150px auto 0' }}
 				>
 					{/* <canvas></canvas> */}
 					<div className="auto-container">
@@ -139,7 +140,11 @@ const Ctf = () => {
 												>
 													<div
 														className="border-info"
-														style={{ border: '2px solid #3ca2b8', borderRadius: '8px', overflow: 'hidden' }}
+														style={{
+															border: '2px solid #3ca2b8',
+															borderRadius: '8px',
+															overflow: 'hidden',
+														}}
 													>
 														<div
 															style={{ background: `rgb(7, 9, 12)` }}

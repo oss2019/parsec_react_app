@@ -48,7 +48,11 @@ const Cp = () => {
 				{/* <div className="form-back-drop"></div> */}
 				<Header active={2} />
 
-				<section className="page-title" id="page-title" style={{}}>
+				<section
+					className="page-title"
+					id="page-title"
+					style={{ position: 'relative', margin: '-150px auto 0' }}
+				>
 					{/* <canvas id="c" style={{position: 'absolute', top: '0px', left: '0px', backgroundColor: 'black'}}></canvas> */}
 					<div className="auto-container" style={{}}>
 						<div className="project-tabs tabs-box">
