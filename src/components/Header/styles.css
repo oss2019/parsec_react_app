@@ -36,3 +36,15 @@
     --color4: #f20487;
     font-family: Gruppo;
   }
+
+  @media all and (max-width: 425px) {
+  /* #bg-img{
+    max-height: 150px;
+    width: auto;
+  } */
+  #logo{
+    max-height: 60px;
+    width: auto;
+  }
+  
+}

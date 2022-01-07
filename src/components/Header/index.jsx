@@ -456,9 +456,9 @@ const Header = ({ active }) => {
 					>
 						<i className="fas fa-bars fa-2x" />
 					</div>
-					<div className="logo" style={{ margin: '5px 20px' }}>
+					<div className="logo" style={{ margin: '5px 10px' }}>
 						<a href="/" target={'_blank'}>
-							<img src={parsecLogo} />
+							<img src={parsecLogo} className='img-fluid' id='logo' />
 						</a>
 					</div>
 				</div>

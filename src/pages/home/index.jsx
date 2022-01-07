@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import './styles.css';
+import '../../css/counternew.css';
 import '../../css/bootstrap.css';
 import '../../css/style.css';
 import '../../css/responsive.css';
-import '../../css/counternew.css';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -193,6 +193,7 @@ const Home = () => {
 					class="banner-section-two"
 					style={{ backgroundImage: `url(${parsecSlider})` }}
 				>
+					{/* <img src={parsecSlider}  className='bg-img '  style={{width: '100vw', height: 'auto'}}/> */}
 					<div class="night">
 						<div class="shooting_star"></div>
 						<div class="shooting_star"></div>
@@ -218,13 +219,18 @@ const Home = () => {
 										justifyContent: 'center',
 									}}
 								>
-									<div style={{ width: '80%' }}>
-										<img class="col-md-6" src={parsecLogo} />
+									<div style={{ width: '100%' }}>
+										<img
+											class="col-md-6 img-fluid"
+											src={parsecLogo}
+											id="bg-img"
+										/>
 									</div>
 								</div>
+								{/* <img class="" src={parsecLogo} style={{width: '20px',height: 'auto'}} /> */}
 								<br />
 								<h4 class="ml12 text-white mt-5">
-									<span class="ml12 letter">
+									<span class="ml12 letter" id="intro-title">
 										Annual TechFest of IIT Dharwad
 									</span>
 								</h4>
@@ -249,11 +255,11 @@ const Home = () => {
 						<div class="about-carousel owl-carousel owl-theme">
 							<div class="slide-item clearfix">
 								<div class="image-box">
-									<figure class="image">
+									<figure class="image" style={{ boxShadow: 'none' }}>
 										<img src={logoAbout} alt="" />
 									</figure>
 								</div>
-								<div class="content-box">
+								<div class="content-box" style={{ marginTop: '20px' }}>
 									<div class="inner-box">
 										<span class="title"></span>
 										<h3></h3>

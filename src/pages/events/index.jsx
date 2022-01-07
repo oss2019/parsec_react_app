@@ -20,16 +20,43 @@ import ctfBg from '../../images/resource/vini-home-bg.png';
 import quizBg from '../../images/resource/quiz-home-bg.png';
 import cadBg from '../../images/resource/cad-home-bg.png';
 import caseStudyBg from '../../images/resource/case-home-bg.png';
+import Slide from 'react-reveal/Slide';
 
-const EventPage  = () => {
+const EventPage = () => {
 	return (
 		<React.Fragment>
 			<EventBackground />
 			<div className="page-wrapper">
 				<div className="preloader"></div>
-				<div className="auto-container" style={{ maxWidth: '100vw' }}>
-					<Header active={2} />
-					<section class="location-section">
+				<Header active={2} />
+				<div style={{ width: '100%', height: '150px' }}></div>
+				{/* <div className="auto-container" style={{ maxWidth: '100vw' }}> */}
+				<div className="eventPage__container" fluid="md">
+					<Slide left delay={100}>
+						<div className="eventPage__description ">
+							<p>
+								Welcome to the{' '}
+								<span className="heading gradient-text">YearBook Website </span>{' '}
+								made by 2020-21 Batch of IIT Dharwad <br />
+								<span className="dark-text eventPage__description-overview">
+									This is also availabe in PDF and can be accessed through the{' '}
+									<span className="gradient-text">Download as PDF</span> above
+									or by clicking{' '}
+									{/* <a href={url} className="a gradient-text">
+											here
+										</a> */}
+								</span>
+							</p>
+						</div>
+					</Slide>
+					<Slide right delay={100}>
+						<div className="eventPage__image-container">
+							<div className="container"></div>
+							{/* <img src={picture} alt="avtar" /> */}
+						</div>
+					</Slide>
+				</div>
+				{/* <section class="location-section">
 						<span class="float-text">Our Events</span>
 						<div class="anim-icons">
 							<span class="icon icon-dots wow zoomIn"></span>
@@ -212,12 +239,13 @@ const EventPage  = () => {
 								</div>
 							</div>
 						</section>
-					</section>
-					<Footer />
-				</div>
+					</section> */}
+				<div style={{ width: '100%', height: '150px' }}></div>
+				<Footer />
 			</div>
+			{/* </div> */}
 		</React.Fragment>
 	);
-}
+};
 
 export default EventPage;
