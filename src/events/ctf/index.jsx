@@ -5,19 +5,22 @@ import '../../css/style.css';
 import '../../css/bootstrap.css';
 import '../../css/responsive.css';
 import Footer from '../../components/Footer';
+import EventsBackground from '../../components/eventsBackground';
 
 const Ctf = () => {
 	return (
 		<React.Fragment>
 			<div className="page-wrapper">
-				{/* <div className="preloader"></div> */}
+				<EventsBackground />
+				<div className="preloader"></div>
 
-				<Header />
+				<Header active={2} />
 
 				<section
 					className="page-title"
-					sstyle="background-image:url(images/background/cp.jpg);"
+					// sstyle="background-image:url(images/background/cp.jpg);"
 					id="page-title"
+					style={{ position: 'relative', margin: '-150px auto 0' }}
 				>
 					{/* <canvas></canvas> */}
 					<div className="auto-container">
@@ -137,7 +140,11 @@ const Ctf = () => {
 												>
 													<div
 														className="border-info"
-														style={{ border: '2px solid #3ca2b8', borderRadius: '8px', overflow: 'hidden' }}
+														style={{
+															border: '2px solid #3ca2b8',
+															borderRadius: '8px',
+															overflow: 'hidden',
+														}}
 													>
 														<div
 															style={{ background: `rgb(7, 9, 12)` }}

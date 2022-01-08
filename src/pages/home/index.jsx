@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import './styles.css';
+import '../../css/counternew.css';
 import '../../css/bootstrap.css';
 import '../../css/style.css';
 import '../../css/responsive.css';
-import '../../css/counternew.css';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -17,6 +17,9 @@ import quizBg from '../../images/resource/quiz-home-bg.png';
 import cadBg from '../../images/resource/cad-home-bg.png';
 import caseStudyBg from '../../images/resource/case-home-bg.png';
 import $ from 'jquery';
+import topScroll from '../../components/topScroll';
+import EventCarousel from './eventsCarousel';
+import { Carousel } from 'react-bootstrap';
 
 const Home = () => {
 	useEffect(() => {
@@ -101,6 +104,35 @@ const Home = () => {
 			}
 
 			headerStyle();
+			//About Carousel
+			// if ($('.about-carousel').length) {
+			// 	$('.about-carousel').owlCarousel({
+			// 		animateOut: 'slideOutDown',
+			// 		animateIn: 'zoomIn',
+			// 		loop: true,
+			// 		margin: 30,
+			// 		nav: true,
+			// 		smartSpeed: 500,
+			// 		autoHeight: true,
+			// 		autoplay: true,
+			// 		autoplayTimeout: 5000,
+			// 		navText: [
+			// 			'<span class="fa fa-chevron-left"></span>',
+			// 			'<span class="fa fa-chevron-right"></span>',
+			// 		],
+			// 		responsive: {
+			// 			0: {
+			// 				items: 1,
+			// 			},
+			// 			600: {
+			// 				items: 1,
+			// 			},
+			// 			1024: {
+			// 				items: 1,
+			// 			},
+			// 		},
+			// 	});
+			// }
 
 			//Events Carousel
 			// if ($('.events-carousel').length) {
@@ -161,6 +193,7 @@ const Home = () => {
 					class="banner-section-two"
 					style={{ backgroundImage: `url(${parsecSlider})` }}
 				>
+					{/* <img src={parsecSlider}  className='bg-img '  style={{width: '100vw', height: 'auto'}}/> */}
 					<div class="night">
 						<div class="shooting_star"></div>
 						<div class="shooting_star"></div>
@@ -175,7 +208,7 @@ const Home = () => {
 								class="title-box text-center"
 								style={{ alignItems: 'center' }}
 							>
-								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								<div
 									style={{
 										display: 'flex',
@@ -186,23 +219,28 @@ const Home = () => {
 										justifyContent: 'center',
 									}}
 								>
-									<div style={{ width: '80%' }}>
-										<img class="col-md-6" src={parsecLogo} />
+									<div style={{ width: '100%' }}>
+										<img
+											class="col-md-6 img-fluid"
+											src={parsecLogo}
+											id="bg-img"
+										/>
 									</div>
 								</div>
+								{/* <img class="" src={parsecLogo} style={{width: '20px',height: 'auto'}} /> */}
 								<br />
 								<h4 class="ml12 text-white mt-5">
-									<span class="ml12 letter">
+									<span class="ml12 letter" id="intro-title">
 										Annual TechFest of IIT Dharwad
 									</span>
 								</h4>
 							</div>
-							<div class="timer">
+							{/* <div class="timer">
 								<div
 									class="cs-countdown"
 									data-countdown="4/24/2019 05:06:59"
 								></div>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</section>
@@ -217,11 +255,11 @@ const Home = () => {
 						<div class="about-carousel owl-carousel owl-theme">
 							<div class="slide-item clearfix">
 								<div class="image-box">
-									<figure class="image">
+									<figure class="image" style={{ boxShadow: 'none' }}>
 										<img src={logoAbout} alt="" />
 									</figure>
 								</div>
-								<div class="content-box">
+								<div class="content-box" style={{ marginTop: '20px' }}>
 									<div class="inner-box">
 										<span class="title"></span>
 										<h3></h3>
@@ -391,6 +429,8 @@ const Home = () => {
 						</div>
 					</div>
 				</section>
+
+				{/* <EventCarousel /> */}
 				{/* lasdjfaldsfjasdfkasldfja */}
 				<section class="location-section">
 					<span class="float-text">Our Events</span>
@@ -419,12 +459,14 @@ const Home = () => {
 							<div class="sec-title">
 								<h2>Events</h2>
 							</div>
-							<div class="events-carousel owl-carousel owl-theme">
+							<EventCarousel />
+
+							{/* <div class="events-carousel owl-carousel owl-theme" >
 								<div class="slide-item">
 									<div class="row">
 										<div class="content-column order-2 col-lg-5 col-md-12 col-sm-12">
 											<div class="inner-column">
-												<span class="title">Hackathon</span>
+												<span class="title" >Hackathon</span>
 												<h2>DevHack 3.0</h2>
 												<div class="text mb-3">
 													Do you have what it takes to code sleeplessly for 36
@@ -572,7 +614,7 @@ const Home = () => {
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> */}
 						</div>
 					</section>
 				</section>
@@ -701,6 +743,7 @@ const Home = () => {
 					</div>
 				</div>
 
+				{/* <topScroll /> */}
 				<Footer />
 			</div>
 		</React.Fragment>

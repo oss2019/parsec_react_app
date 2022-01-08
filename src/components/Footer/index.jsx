@@ -63,7 +63,7 @@ const Footer = () => {
 													pointerEvents: 'none',
 												}}
 											>
-												Algostriken 2.0
+												Algostrike 2.0
 											</a>
 											<br />
 

@@ -5,6 +5,7 @@ import '../../css/style.css';
 import '../../css/bootstrap.css';
 import '../../css/responsive.css';
 import Footer from '../../components/Footer';
+import EventsBackground from '../../components/eventsBackground';
 // import '../../css/prices.css'
 // import '../../css/winners.css'
 
@@ -40,13 +41,18 @@ const Cp = () => {
 	// else {
 	return (
 		<React.Fragment>
-			<Header />
+			<EventsBackground />
 			<div className="page-wrapper">
 				{/* <Suspense fallback={<div className="preloader"></div>} /> */}
 				<div className="preloader"></div>
 				{/* <div className="form-back-drop"></div> */}
+				<Header active={2} />
 
-				<section className="page-title" id="page-title" style={{}}>
+				<section
+					className="page-title"
+					id="page-title"
+					style={{ position: 'relative', margin: '-150px auto 0' }}
+				>
 					{/* <canvas id="c" style={{position: 'absolute', top: '0px', left: '0px', backgroundColor: 'black'}}></canvas> */}
 					<div className="auto-container" style={{}}>
 						<div className="project-tabs tabs-box">
@@ -146,7 +152,11 @@ const Cp = () => {
 													<div className="border-info">
 														<div
 															className="row-cols-1"
-															style={{ border: '2px solid #47aeb5', borderRadius: '8px', overflow: 'hidden' }}
+															style={{
+																border: '2px solid #47aeb5',
+																borderRadius: '8px',
+																overflow: 'hidden',
+															}}
 														>
 															<div
 																className="card-body text-center text-info"
@@ -199,6 +209,7 @@ const Cp = () => {
 															href="https://t.me/joinchat/PV9kHhZ3gKWJv7V-nQLrPA"
 															target="_blank"
 															style={{ color: '#00adb5' }}
+															rel="noreferrer"
 														>
 															channel
 														</a>{' '}

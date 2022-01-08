@@ -1,19 +1,21 @@
-import React from "react";
-import Header from "../../components/Header";
+import React from 'react';
+import Header from '../../components/Header';
 import './styles.css';
-import '../../css/style.css'
-import '../../css/bootstrap.css'
-import '../../css/responsive.css'
-import quizTitleBackground from '../../images/resource/19629.jpg'
-import Footer from "../../components/Footer";
+import '../../css/style.css';
+import '../../css/bootstrap.css';
+import '../../css/responsive.css';
+import quizTitleBackground from '../../images/resource/19629.jpg';
+import Footer from '../../components/Footer';
+import EventsBackground from '../../components/eventsBackground';
 
 const Quiz = () => {
-  return (
+	return (
 		<React.Fragment>
 			<div className="page-wrapper">
-				{/* <div className="preloader"></div> */}
+				<div className="preloader"></div>
+				<EventsBackground />
 
-				<Header />
+				<Header active={2} />
 
 				<section
 					className="page-title"
@@ -96,8 +98,8 @@ const Quiz = () => {
 																	<a
 																		href="#"
 																		//  target="_blank"
-                                    className="theme-btn btn-style-one btn-rounded mb-4"
-                                    // id="btncs"
+																		className="theme-btn btn-style-one btn-rounded mb-4"
+																		// id="btncs"
 																		style={{
 																			// pointerEvents: `none`,
 																			textDecoration: `none`,
@@ -148,7 +150,11 @@ const Quiz = () => {
 													>
 														<div
 															className=" border-danger"
-															style={{ border: '2px solid #ed6286', borderRadius: '8px' , overflow: 'hidden' }}
+															style={{
+																border: '2px solid #ed6286',
+																borderRadius: '8px',
+																overflow: 'hidden',
+															}}
 														>
 															<div
 																style={{
@@ -267,6 +273,6 @@ const Quiz = () => {
 			<Footer />
 		</React.Fragment>
 	);
-}
+};
 
 export default Quiz;

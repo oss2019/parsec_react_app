@@ -13,7 +13,7 @@ const Gallery = () => {
 			<div className="page-wrapper">
 				<div className="preloader"></div>
 
-				<Header />
+				<Header active={9} />
 
 				<section
 					className="page-title"

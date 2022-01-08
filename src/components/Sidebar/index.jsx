@@ -4,7 +4,7 @@ import { NavLink, useHistory } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 
 // import { url } from '../../shared/pdfURL';
-import Logo from '../Logo';
+// import Logo from '../Logo';
 
 const Sidebar = ({ show, handleClose, active }) => {
 	const isTabletorMobile = useMediaQuery({
@@ -15,7 +15,6 @@ const Sidebar = ({ show, handleClose, active }) => {
 
 	return (
 		<div
-			className="background-black"
 			style={{
 				left: show ? '0' : '-320px',
 				position: 'absolute',
@@ -26,18 +25,20 @@ const Sidebar = ({ show, handleClose, active }) => {
 				transition: 'left 0.5s',
 				zIndex: 100,
 				top: '0px',
+				backgroundColor: '#1f003b',
 			}}
 		>
 			<div className="children">
 				{isTabletorMobile && (
-					<Button
-						className="gradient-text no-border elements link"
+					<div
+						className="gradient-text no-border link"
 						onClick={handleClose}
+						style={{ margin: '5px 20px' }}
 					>
 						<i class="fas fa-arrow-left fa-2x" />
-					</Button>
+					</div>
 				)}
-				<Logo />
+				{/* <Logo /> */}
 			</div>
 			<div
 				style={{
@@ -95,6 +96,31 @@ const Sidebar = ({ show, handleClose, active }) => {
 				>
 					Contact
 				</p>
+
+				<div style={{ color: 'white', bottom: 0, position: 'absolute' }} > 
+					<div className="contact-info-box">
+						<ul className="info-list">
+							<br />
+							<li>outreach.parsec@iitdh.ac.in</li>
+							<br />
+							<li>+91 7892128329</li>
+						</ul>
+						<ul className="social-list clearfix">
+							<br />
+							<br />
+							<li>
+								<a href="https://www.facebook.com/parsec.iitdh" target="_blank">
+									Facebook
+								</a>
+							</li>
+							<li>
+								<a href="https://twitter.com/parsec_iitdh" target="_blank">
+									Twitter
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 
 				{/* <a href="#" className="elements text a gradient-text">
 					Download as PDF

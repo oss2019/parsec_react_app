@@ -8,7 +8,7 @@ const Logo = () => {
 
 	return (
 		<div className="container gradient-text">
-			<a href="https://parsec.iitdh.ac.in" style={{ textDecoration: 'none' }}>
+			<a href="/" style={{ textDecoration: 'none' }}>
 				<img className="heading link" src={logo} />
 			</a>
 		</div>
