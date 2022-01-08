@@ -611,12 +611,12 @@ const Header = ({ active }) => {
 								<span className="fa fa-times"></span>
 							</div>
 							<div className="title">
-								<h2>Have some queries?</h2>
+								<h2>Stuck? Feel free to contact.</h2>
 							</div>
 
 							{/* Appointment form */}
 
-							<div className="appointment-form">
+							{/* <div className="appointment-form">
 								<form
 									method="post"
 									action="https://formspree.io/oss@iitdh.ac.in"
@@ -657,13 +657,17 @@ const Header = ({ active }) => {
 										</button>
 									</div>
 								</form>
-							</div>
+							</div> */}
 							<div className="contact-info-box">
 								<ul className="info-list">
+									<br />
 									<li>outreach.parsec@iitdh.ac.in</li>
+									<br />
 									<li>+91 7892128329</li>
 								</ul>
 								<ul className="social-list clearfix">
+									<br />
+									<br />
 									<li>
 										<a
 											href="https://www.facebook.com/parsec.iitdh"
