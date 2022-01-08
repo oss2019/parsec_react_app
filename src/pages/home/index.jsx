@@ -19,9 +19,10 @@ import caseStudyBg from '../../images/resource/case-home-bg.png';
 import $ from 'jquery';
 import topScroll from '../../components/topScroll';
 import EventCarousel from './eventsCarousel';
-import { Carousel } from 'react-bootstrap';
-import { Typewriter } from 'react-simple-typewriter';
+// import Typewriter from 'typewriter-effect';
 
+import { Typewriter } from '@chrisfieldsii/react-use-typewriter';
+import '@chrisfieldsii/react-use-typewriter/dist/index.css';
 const Home = () => {
 	useEffect(() => {
 		function getTimeRemaining(endtime) {
@@ -182,7 +183,10 @@ const Home = () => {
 				handlePreloader();
 			});
 		})(window.jQuery);
+
+		
 	}, []);
+
 
 
 
@@ -197,7 +201,10 @@ const Home = () => {
 					style={{ backgroundImage: `url(${parsecSlider})` }}
 				>
 					{/* <img src={parsecSlider}  className='bg-img '  style={{width: '100vw', height: 'auto'}}/> */}
-					<div class="night">
+					<div class="night" style={{bottom: 0, left: 0, zIndex: 2}}>
+					
+						<div class="shooting_star"></div>
+						<div class="shooting_star"></div>
 						<div class="shooting_star"></div>
 						<div class="shooting_star"></div>
 						<div class="shooting_star"></div>
@@ -241,15 +248,16 @@ const Home = () => {
 										{/* Annual TechFest of IIT Dharwad */}
 										{/* {text} */}
 										<Typewriter
-											words={['ANNUAL TECHFEST OF IIT DHARWAD']}
-											loop={0}
+											loop
 											cursor
 											cursorStyle="|"
-											typeSpeed={50}
-											deleteSpeed={50}
+											typeSpeed={90}
+											deleteSpeed={90}
 											delaySpeed={1000}
-											// onLoopDone={handleDone}
-											// onType={handleType}
+											words={['ANNUAL TECHFEST OF IIT DHARWAD']}
+											// onLoop={(loopCount) => 
+											
+											// }
 										/>
 									</span>
 								</h4>

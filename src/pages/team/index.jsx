@@ -41,7 +41,7 @@ const Team = () => {
 		}
 		return newName;
 	};
-	const delayTime = 500
+	const delayTime = 300
 	return (
 		<React.Fragment>
 			<div className="page-wrapper">

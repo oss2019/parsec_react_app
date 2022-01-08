@@ -3,9 +3,11 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
+		"@chrisfieldsii/react-use-typewriter": "^1.0.1",
 		"@testing-library/jest-dom": "^5.16.1",
 		"@testing-library/react": "^12.1.2",
 		"@testing-library/user-event": "^13.5.0",
+		"@vvo/typewriter-effect": "^2.13.1",
 		"babel-runtime": "^6.26.0",
 		"bootstrap": "^5.1.0",
 		"css-loader": "^6.5.1",
