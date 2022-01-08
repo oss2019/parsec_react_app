@@ -537,7 +537,7 @@ const Header = ({ active }) => {
 																<Dropdown.Item href="/ctf">
 																	VeniVidiVici 2.0
 																</Dropdown.Item>
-																
+
 																<Dropdown.Item href="/designo">
 																	Designõ
 																</Dropdown.Item>
@@ -605,8 +605,11 @@ const Header = ({ active }) => {
 					<div className="form-back-drop"></div>
 
 					{/* HIddern bar */}
-					<section className="hidden-bar">
-						<div className="inner-box">
+					<section
+						className="hidden-bar"
+						style={{ backgroundColor: '#13286B' }}
+					>
+						<div className="inner-box" style={{ backgroundColor: '#13286B' }}>
 							<div className="cross-icon">
 								<span className="fa fa-times"></span>
 							</div>

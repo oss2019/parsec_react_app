@@ -99,8 +99,9 @@ const Background = () => {
 					},
 					detectRetina: true,
 					background: {
-						// color: '#202124',
-						color: '#090b38',
+						color: '#202124',
+						// color: '#090b38',
+						// color: 'rgba(0,0,0,0.2)',
 					},
 					emitters: [
 						{
@@ -129,3 +130,4 @@ const Background = () => {
 };
 
 export default Background;
+
