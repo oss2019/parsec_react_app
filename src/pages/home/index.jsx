@@ -20,6 +20,8 @@ import $ from 'jquery';
 import topScroll from '../../components/topScroll';
 import EventCarousel from './eventsCarousel';
 import { Carousel } from 'react-bootstrap';
+import { useTypewriter } from 'react-simple-typewriter';
+import { Typewriter } from 'react-simple-typewriter';
 
 const Home = () => {
 	useEffect(() => {
@@ -183,6 +185,11 @@ const Home = () => {
 		})(window.jQuery);
 	}, []);
 
+	const { text } = useTypewriter({
+		words: ['Annual TechFest of IIT Dharwad '],
+		loop: 0, // Infinit
+	});
+
 	return (
 		<React.Fragment>
 			<div class="page-wrapper">
@@ -230,8 +237,24 @@ const Home = () => {
 								{/* <img class="" src={parsecLogo} style={{width: '20px',height: 'auto'}} /> */}
 								<br />
 								<h4 class="ml12 text-white mt-5">
-									<span class="ml12 letter" id="intro-title">
-										Annual TechFest of IIT Dharwad
+									<span
+										class="ml12 letter"
+										id="intro-title"
+										style={{ fontSize: '1.5rem', fontWeight: '450' }}
+									>
+										{/* Annual TechFest of IIT Dharwad */}
+										{/* {text} */}
+										<Typewriter
+											words={['ANNUAL TECHFEST OF IIT DHARWAD']}
+											loop={0}
+											cursor
+											cursorStyle="|"
+											typeSpeed={50}
+											deleteSpeed={50}
+											delaySpeed={1000}
+											// onLoopDone={handleDone}
+											// onType={handleType}
+										/>
 									</span>
 								</h4>
 							</div>

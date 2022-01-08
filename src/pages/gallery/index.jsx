@@ -191,7 +191,7 @@ const Gallery = () => {
 						<div m-auto> &nbsp;</div>
 						<div class="sec-title text-center" style={{ maxHeight: '10px' }}>
 							<h2 class="" style={{ color: '#1f7ac3', fontSize: '33px' }}>
-								DevHack 1.0
+								DevHack 3.0
 							</h2>
 						</div>
 						<br />
