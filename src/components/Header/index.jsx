@@ -523,28 +523,55 @@ const Header = ({ active }) => {
 																	background: 'none',
 																	color: 'white',
 																	border: 'none',
+																	boxShadow: 'none',
 																}}
 															>
 																Events
 															</Dropdown.Toggle>
-															<Dropdown.Menu>
-																<Dropdown.Item href="/hackathon">
+															<Dropdown.Menu
+																style={{
+																	backgroundColor: '#12114a',
+																	boxShadow: '1px 1px 1px 1px #12114a',
+																	color: 'white',
+																}}
+															>
+																<Dropdown.Item
+																	href="/hackathon"
+																	style={{ color: 'white' }}
+																>
 																	DevHack 3.0
 																</Dropdown.Item>
-																<Dropdown.Item href="/cp">
+																<Dropdown.Item
+																	href="/cp"
+																	style={{ color: 'white' }}
+																>
 																	Algostrike 2.0
 																</Dropdown.Item>
-																<Dropdown.Item href="/ctf">
+																<Dropdown.Item
+																	href="/ctf"
+																	style={{ color: 'white' }}
+																>
 																	VeniVidiVici 2.0
 																</Dropdown.Item>
 
-																<Dropdown.Item href="/designo">
+																<Dropdown.Item
+																	href="/designo"
+																	style={{ color: 'white' }}
+																>
 																	Designõ
 																</Dropdown.Item>
-																<Dropdown.Item href="/ascensus">
+																<Dropdown.Item
+																	href="/ascensus"
+																	style={{ color: 'white' }}
+																>
 																	Ascensus
 																</Dropdown.Item>
-																<Dropdown.Item href="/quiz">Quiz</Dropdown.Item>
+																<Dropdown.Item
+																	href="/quiz"
+																	style={{ color: 'white' }}
+																>
+																	Quiz
+																</Dropdown.Item>
 															</Dropdown.Menu>
 														</Dropdown>
 													</li>
@@ -607,9 +634,9 @@ const Header = ({ active }) => {
 					{/* HIddern bar */}
 					<section
 						className="hidden-bar"
-						style={{ backgroundColor: '#13286B' }}
+						style={{ backgroundColor: '#12114a' }}
 					>
-						<div className="inner-box" style={{ backgroundColor: '#13286B' }}>
+						<div className="inner-box" style={{ backgroundColor: '#12114a' }}>
 							<div className="cross-icon">
 								<span className="fa fa-times"></span>
 							</div>

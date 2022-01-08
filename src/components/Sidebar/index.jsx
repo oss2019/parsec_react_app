@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Dropdown } from 'react-bootstrap';
 import { NavLink, useHistory } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 
@@ -8,7 +8,7 @@ import { useMediaQuery } from 'react-responsive';
 
 const Sidebar = ({ show, handleClose, active }) => {
 	const isTabletorMobile = useMediaQuery({
-		query: '(max-width: 1000px)',
+		query: '(max-width: 1080px)',
 	});
 
 	const history = useHistory();
@@ -56,10 +56,37 @@ const Sidebar = ({ show, handleClose, active }) => {
 				</p>
 				<p
 					className={`elements text link ${active === 2 ? 'violet' : 'white'}`}
+					// onClick={() => history.push('/events')}
+				>
+					<Dropdown>
+						<Dropdown.Toggle
+							className="dropdown"
+							style={{
+								background: 'none',
+								color: 'white',
+								border: 'none',
+								boxShadow: 'none'
+							}}
+						>
+							Events
+						</Dropdown.Toggle>
+						<Dropdown.Menu style={{ backgroundColor: '#1f003b', boxShadow: '1px 1px 1px 1px rgba(32,4,49,0.8)', color: 'white' }}>
+							<Dropdown.Item href="/hackathon"style={{color: 'white'}}>DevHack 3.0</Dropdown.Item>
+							<Dropdown.Item href="/cp"style={{color: 'white'}}>Algostrike 2.0</Dropdown.Item>
+							<Dropdown.Item href="/ctf"style={{color: 'white'}}>VeniVidiVici 2.0</Dropdown.Item>
+
+							<Dropdown.Item href="/designo"style={{color: 'white'}}>Designõ</Dropdown.Item>
+							<Dropdown.Item href="/ascensus"style={{color: 'white'}}>Ascensus</Dropdown.Item>
+							<Dropdown.Item href="/quiz"style={{color: 'white'}}>Quiz</Dropdown.Item>
+						</Dropdown.Menu>
+					</Dropdown>
+				</p>
+				{/* <p
+					className={`elements text link ${active === 2 ? 'violet' : 'white'}`}
 					onClick={() => history.push('/events')}
 				>
 					Events
-				</p>
+				</p> */}
 				<p
 					className={`elements text link ${active === 3 ? 'violet' : 'white'}`}
 					onClick={() => history.push('/workshops')}
@@ -79,6 +106,18 @@ const Sidebar = ({ show, handleClose, active }) => {
 					Speakers
 				</p> */}
 				<p
+					className={`elements text link ${active === 10 ? 'violet' : 'white'}`}
+					onClick={() => history.push('/aboutus')}
+				>
+					About
+				</p>
+				<p
+					className={`elements text link ${active === 9 ? 'violet' : 'white'}`}
+					onClick={() => history.push('/gallery')}
+				>
+					Gallery
+				</p>
+				<p
 					className={`elements text link ${active === 6 ? 'violet' : 'white'}`}
 					onClick={() => history.push('/faq')}
 				>
@@ -97,7 +136,7 @@ const Sidebar = ({ show, handleClose, active }) => {
 					Contact
 				</p>
 
-				<div style={{ color: 'white', bottom: 0, position: 'absolute' }} > 
+				<div style={{ color: 'white', bottom: 0, position: 'absolute' }}>
 					<div className="contact-info-box">
 						<ul className="info-list">
 							<br />
