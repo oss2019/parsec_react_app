@@ -1,17 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import Slide from 'react-reveal/Slide';
 import { useMediaQuery } from 'react-responsive';
-import { Navbar, Container, Nav, Button, NavLink } from 'react-bootstrap';
+import {
+	Navbar,
+	Container,
+	Nav,
+	Button,
+	NavLink,
+	Dropdown,
+} from 'react-bootstrap';
 
 // import DownloadButton from '../DownloadAsPDF';
 import Sidebar from '../Sidebar';
 import Logo from '../Logo';
 import parsecLogo from '../../images/logos/logo-nav.png';
 import './styles.css';
+import { nodeName } from 'jquery';
 
 const Header = ({ active }) => {
 	const isTabletorMobile = useMediaQuery({
-		query: '(max-width: 1000px)',
+		query: '(max-width: 1080px)',
 	});
 
 	const [show, setShow] = useState(false);
@@ -458,7 +466,7 @@ const Header = ({ active }) => {
 					</div>
 					<div className="logo" style={{ margin: '5px 10px' }}>
 						<a href="/" target={'_blank'}>
-							<img src={parsecLogo} className='img-fluid' id='logo' />
+							<img src={parsecLogo} className="img-fluid" id="logo" />
 						</a>
 					</div>
 				</div>
@@ -498,14 +506,47 @@ const Header = ({ active }) => {
 												className="navbar-collapse collapse scroll-nav clearfix"
 												id="navbarSupportedContent"
 											>
-												<ul class="navigation clearfix">
+												<ul
+													class="navigation clearfix"
+													style={{ display: 'flex', alignItems: 'center' }}
+												>
 													<li className={`${active === 1 ? 'current' : ''}`}>
 														<a href="/" target="">
 															Home
 														</a>
 													</li>
 													<li className={`${active === 2 ? 'current' : ''}`}>
-														<a href="/events">Events</a>
+														<Dropdown>
+															<Dropdown.Toggle
+																className="dropdown"
+																style={{
+																	background: 'none',
+																	color: 'white',
+																	border: 'none',
+																}}
+															>
+																Events
+															</Dropdown.Toggle>
+															<Dropdown.Menu>
+																<Dropdown.Item href="/hackathon">
+																	DevHack 3.0
+																</Dropdown.Item>
+																<Dropdown.Item href="/cp">
+																	Algostrike 2.0
+																</Dropdown.Item>
+																<Dropdown.Item href="/ctf">
+																	VeniVidiVici 2.0
+																</Dropdown.Item>
+																
+																<Dropdown.Item href="/designo">
+																	Designõ
+																</Dropdown.Item>
+																<Dropdown.Item href="/ascensus">
+																	Ascensus
+																</Dropdown.Item>
+																<Dropdown.Item href="/quiz">Quiz</Dropdown.Item>
+															</Dropdown.Menu>
+														</Dropdown>
 													</li>
 													<li className={`${active === 3 ? 'current' : ''}`}>
 														<a href="/workshops">Workshops</a>
@@ -516,7 +557,7 @@ const Header = ({ active }) => {
 													{/* <li className={`${active === 1 ? 'current' : ''}`}>
 												<a href="/workshops">Workshops</a>
 											</li> */}
-													<li className={`${active === 4 ? 'current' : ''}`}>
+													{/* <li className={`${active === 4 ? 'current' : ''}`}>
 														<a href="/schedule" target="">
 															Schedule
 														</a>
@@ -525,7 +566,7 @@ const Header = ({ active }) => {
 														<a href="/speakers" target="">
 															Speakers
 														</a>
-													</li>
+													</li> */}
 													<li className={`${active === 9 ? 'current' : ''}`}>
 														<a href="/gallery">Gallery</a>
 													</li>

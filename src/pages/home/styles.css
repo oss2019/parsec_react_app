@@ -805,10 +805,10 @@ template {
     max-height: 120px;
     width: auto;
   }
-  #logo{
+  /* #logo{
     max-height: 70px;
     width: auto;
-  }
+  } */
   #intro-title{
     font-size: 2rem;
     font-weight: 400;
