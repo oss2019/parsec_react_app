@@ -1,7 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Events from '../pages/events';
 import Cp from '../events/cp';
 import Ctf from '../events/ctf';
 import Hackathon from '../events/hackathon';
@@ -37,7 +36,7 @@ const Routes = () => {
                 <Route path='/codeofconduct' component={CodeOfConduct} />
                 <Route path='/travel' component={Travel} />
                 <Route path='/contact' component={ContactPage} />
-                <Route path='/events' component={Events} />
+                {/* <Route path='/events' component={Events} /> */}
                 <Route path='/team' component={Team}/>
                 <Route path='/cp' component={Cp}/>
                 <Route path='/ctf' component={Ctf}/>

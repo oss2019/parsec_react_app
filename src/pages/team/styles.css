@@ -30,3 +30,10 @@
      transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
 
 }
+h5{
+     padding-bottom: 0;
+}
+p{
+     padding-top: 0;
+}
+

@@ -3,7 +3,6 @@ import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import LazyLoad from 'react-lazyload';
 import Routes from './routes';
-import EventPage from './pages/events';
 
 function App() {
 	return (

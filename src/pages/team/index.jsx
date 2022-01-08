@@ -8,6 +8,7 @@ import Footer from '../../components/Footer';
 // import LazyLoad from 'react-lazyload';
 // import data from '../../shared/Students.json';
 // import avatar from './avatar.png';
+import overallJrCoordinator from '../../data/overallJrCoordinator.json'
 import webTeamData from '../../data/webteam.json';
 import contentTeamData from '../../data/contentTeam.json';
 import coordinatorTeamData from '../../data/coordinator.json';
@@ -66,9 +67,8 @@ const Team = () => {
 				<section className="our-speaker-area section-padding-100">
 					<div className="auto-container">
 						<div className="sec-title" style={{ display: 'block' }}>
-							<h1>Overall cordinator</h1>
+							<h1>Overall Co-ordinator</h1>
 						</div>
-						{/* <FadeIn className="row"> */}
 						<div className="row">
 							{coordinatorTeamData.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
@@ -103,7 +103,9 @@ const Team = () => {
 											</div>
 											<div className="speaker-info">
 												<h5>{makeName(data.name)}</h5>
-												{/* <p>General Secretary Technical Affairs</p> */}
+												<p style={{ color: 'cyan' }}>
+													General Secretary Technical Affairs
+												</p>
 											</div>
 										</div>
 										{/* </Card> */}
@@ -212,6 +214,53 @@ const Team = () => {
 						{/* <FadeIn className="row"> */}
 						<div className="row">
 							{eventManager.map((data, i) => (
+								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
+									<Zoom delay={delayTime}>
+										{/* <Card delay={600} style={{ border: 0 }}> */}
+										<div className="single-speaker-area wow fadeInUp ">
+											<div className="speaker-single-thumb">
+												<img src={`${data.image}`} alt="" />
+											</div>
+
+											<div className="social-info">
+												{data.facebook && (
+													<a href={`${data.facebook}`} target="_blank">
+														<i className="fab fa-facebook-f"></i>
+													</a>
+												)}
+												{data.instagram !== '' && (
+													<a href={`${data.instagram}`} target="_blank">
+														<i className="fab fa-instagram"></i>
+													</a>
+												)}
+												{data.github !== '' && (
+													<a href={`${data.github}`} target="_blank">
+														<i className="fab fa-github"></i>
+													</a>
+												)}
+												{data.linkedin !== '' && (
+													<a href={`${data.linkedin}`} target="_blank">
+														<i className="fab fa-linkedin-in"></i>
+													</a>
+												)}
+											</div>
+											<div className="speaker-info">
+												<h5>{makeName(data.name)}</h5>
+												{/* <p>General Secretary Technical Affairs</p> */}
+											</div>
+										</div>
+										{/* </Card> */}
+									</Zoom>
+								</div>
+							))}
+						</div>
+
+						<div className="sec-title" style={{ display: 'block' }}>
+							<h1>Jr. Overall Co-ordinator</h1>
+						</div>
+						{/* <FadeIn className="row"> */}
+						<div className="row">
+							{overallJrCoordinator.map((data, i) => (
 								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
@@ -570,7 +619,17 @@ const Team = () => {
 												)}
 											</div>
 											<div className="speaker-info">
-												<h5>{makeName(data.name)}</h5>
+												<h5
+													style={{
+														color: `${
+															data.github == 'https://github.com/saurabh021120'
+																? '#c9c9c9'
+																: 'white'
+														}`,
+													}}
+												>
+													{makeName(data.name)}
+												</h5>
 												{/* <p>General Secretary Technical Affairs</p> */}
 											</div>
 										</div>
@@ -587,53 +646,55 @@ const Team = () => {
 						</div>
 
 						<div className="row">
-
 							<div className="sec-title">
 								<h4>Devhack Team</h4>
 							</div>
 							{/* <FadeIn className="row"> */}
 							<div className="row">
-							{eventCoordinators.map((data, i) => (<>
-								{data.post === 'devhack' && (<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
-									<Zoom delay={delayTime}>
-										{/* <Card delay={600} style={{ border: 0 }}> */}
-										<div className="single-speaker-area wow fadeInUp ">
-											<div className="speaker-single-thumb">
-												<img src={`${data.image}`} alt="" />
-											</div>
+								{eventCoordinators.map((data, i) => (
+									<>
+										{data.post === 'devhack' && (
+											<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
+												<Zoom delay={delayTime}>
+													{/* <Card delay={600} style={{ border: 0 }}> */}
+													<div className="single-speaker-area wow fadeInUp ">
+														<div className="speaker-single-thumb">
+															<img src={`${data.image}`} alt="" />
+														</div>
 
-											<div className="social-info">
-												{data.facebook && (
-													<a href={`${data.facebook}`} target="_blank">
-														<i className="fab fa-facebook-f"></i>
-													</a>
-												)}
-												{data.instagram !== '' && (
-													<a href={`${data.instagram}`} target="_blank">
-														<i className="fab fa-instagram"></i>
-													</a>
-												)}
-												{data.github !== '' && (
-													<a href={`${data.github}`} target="_blank">
-														<i className="fab fa-github"></i>
-													</a>
-												)}
-												{data.linkedin !== '' && (
-													<a href={`${data.linkedin}`} target="_blank">
-														<i className="fab fa-linkedin-in"></i>
-													</a>
-												)}
+														<div className="social-info">
+															{data.facebook && (
+																<a href={`${data.facebook}`} target="_blank">
+																	<i className="fab fa-facebook-f"></i>
+																</a>
+															)}
+															{data.instagram !== '' && (
+																<a href={`${data.instagram}`} target="_blank">
+																	<i className="fab fa-instagram"></i>
+																</a>
+															)}
+															{data.github !== '' && (
+																<a href={`${data.github}`} target="_blank">
+																	<i className="fab fa-github"></i>
+																</a>
+															)}
+															{data.linkedin !== '' && (
+																<a href={`${data.linkedin}`} target="_blank">
+																	<i className="fab fa-linkedin-in"></i>
+																</a>
+															)}
+														</div>
+														<div className="speaker-info">
+															<h5>{makeName(data.name)}</h5>
+															{/* <p>General Secretary Technical Affairs</p> */}
+														</div>
+													</div>
+													{/* </Card> */}
+												</Zoom>
 											</div>
-											<div className="speaker-info">
-												<h5>{makeName(data.name)}</h5>
-												{/* <p>General Secretary Technical Affairs</p> */}
-											</div>
-										</div>
-										{/* </Card> */}
-									</Zoom>
-								</div>)}
-							</>
-							))}
+										)}
+									</>
+								))}
 							</div>
 
 							<div className="sec-title">
@@ -641,47 +702,50 @@ const Team = () => {
 							</div>
 							{/* <FadeIn className="row"> */}
 							<div className="row">
-							{eventCoordinators.map((data, i) => (<>
-								{data.post === 'algostrike' && (<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
-									<Zoom delay={delayTime}>
-										{/* <Card delay={600} style={{ border: 0 }}> */}
-										<div className="single-speaker-area wow fadeInUp ">
-											<div className="speaker-single-thumb">
-												<img src={`${data.image}`} alt="" />
-											</div>
+								{eventCoordinators.map((data, i) => (
+									<>
+										{data.post === 'algostrike' && (
+											<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
+												<Zoom delay={delayTime}>
+													{/* <Card delay={600} style={{ border: 0 }}> */}
+													<div className="single-speaker-area wow fadeInUp ">
+														<div className="speaker-single-thumb">
+															<img src={`${data.image}`} alt="" />
+														</div>
 
-											<div className="social-info">
-												{data.facebook && (
-													<a href={`${data.facebook}`} target="_blank">
-														<i className="fab fa-facebook-f"></i>
-													</a>
-												)}
-												{data.instagram !== '' && (
-													<a href={`${data.instagram}`} target="_blank">
-														<i className="fab fa-instagram"></i>
-													</a>
-												)}
-												{data.github !== '' && (
-													<a href={`${data.github}`} target="_blank">
-														<i className="fab fa-github"></i>
-													</a>
-												)}
-												{data.linkedin !== '' && (
-													<a href={`${data.linkedin}`} target="_blank">
-														<i className="fab fa-linkedin-in"></i>
-													</a>
-												)}
+														<div className="social-info">
+															{data.facebook && (
+																<a href={`${data.facebook}`} target="_blank">
+																	<i className="fab fa-facebook-f"></i>
+																</a>
+															)}
+															{data.instagram !== '' && (
+																<a href={`${data.instagram}`} target="_blank">
+																	<i className="fab fa-instagram"></i>
+																</a>
+															)}
+															{data.github !== '' && (
+																<a href={`${data.github}`} target="_blank">
+																	<i className="fab fa-github"></i>
+																</a>
+															)}
+															{data.linkedin !== '' && (
+																<a href={`${data.linkedin}`} target="_blank">
+																	<i className="fab fa-linkedin-in"></i>
+																</a>
+															)}
+														</div>
+														<div className="speaker-info">
+															<h5>{makeName(data.name)}</h5>
+															{/* <p>General Secretary Technical Affairs</p> */}
+														</div>
+													</div>
+													{/* </Card> */}
+												</Zoom>
 											</div>
-											<div className="speaker-info">
-												<h5>{makeName(data.name)}</h5>
-												{/* <p>General Secretary Technical Affairs</p> */}
-											</div>
-										</div>
-										{/* </Card> */}
-									</Zoom>
-								</div>)}
-							</>
-							))}
+										)}
+									</>
+								))}
 							</div>
 
 							<div className="sec-title">
@@ -689,47 +753,50 @@ const Team = () => {
 							</div>
 							{/* <FadeIn className="row"> */}
 							<div className="row">
-							{eventCoordinators.map((data, i) => (<>
-								{data.post === 'venividivici' && (<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
-									<Zoom delay={delayTime}>
-										{/* <Card delay={600} style={{ border: 0 }}> */}
-										<div className="single-speaker-area wow fadeInUp ">
-											<div className="speaker-single-thumb">
-												<img src={`${data.image}`} alt="" />
-											</div>
+								{eventCoordinators.map((data, i) => (
+									<>
+										{data.post === 'venividivici' && (
+											<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
+												<Zoom delay={delayTime}>
+													{/* <Card delay={600} style={{ border: 0 }}> */}
+													<div className="single-speaker-area wow fadeInUp ">
+														<div className="speaker-single-thumb">
+															<img src={`${data.image}`} alt="" />
+														</div>
 
-											<div className="social-info">
-												{data.facebook && (
-													<a href={`${data.facebook}`} target="_blank">
-														<i className="fab fa-facebook-f"></i>
-													</a>
-												)}
-												{data.instagram !== '' && (
-													<a href={`${data.instagram}`} target="_blank">
-														<i className="fab fa-instagram"></i>
-													</a>
-												)}
-												{data.github !== '' && (
-													<a href={`${data.github}`} target="_blank">
-														<i className="fab fa-github"></i>
-													</a>
-												)}
-												{data.linkedin !== '' && (
-													<a href={`${data.linkedin}`} target="_blank">
-														<i className="fab fa-linkedin-in"></i>
-													</a>
-												)}
+														<div className="social-info">
+															{data.facebook && (
+																<a href={`${data.facebook}`} target="_blank">
+																	<i className="fab fa-facebook-f"></i>
+																</a>
+															)}
+															{data.instagram !== '' && (
+																<a href={`${data.instagram}`} target="_blank">
+																	<i className="fab fa-instagram"></i>
+																</a>
+															)}
+															{data.github !== '' && (
+																<a href={`${data.github}`} target="_blank">
+																	<i className="fab fa-github"></i>
+																</a>
+															)}
+															{data.linkedin !== '' && (
+																<a href={`${data.linkedin}`} target="_blank">
+																	<i className="fab fa-linkedin-in"></i>
+																</a>
+															)}
+														</div>
+														<div className="speaker-info">
+															<h5>{makeName(data.name)}</h5>
+															{/* <p>General Secretary Technical Affairs</p> */}
+														</div>
+													</div>
+													{/* </Card> */}
+												</Zoom>
 											</div>
-											<div className="speaker-info">
-												<h5>{makeName(data.name)}</h5>
-												{/* <p>General Secretary Technical Affairs</p> */}
-											</div>
-										</div>
-										{/* </Card> */}
-									</Zoom>
-								</div>)}
-							</>
-							))}
+										)}
+									</>
+								))}
 							</div>
 
 							<div className="sec-title">
@@ -737,47 +804,50 @@ const Team = () => {
 							</div>
 							{/* <FadeIn className="row"> */}
 							<div className="row">
-							{eventCoordinators.map((data, i) => (<>
-								{data.post === 'designo' && (<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
-									<Zoom delay={delayTime}>
-										{/* <Card delay={600} style={{ border: 0 }}> */}
-										<div className="single-speaker-area wow fadeInUp ">
-											<div className="speaker-single-thumb">
-												<img src={`${data.image}`} alt="" />
-											</div>
+								{eventCoordinators.map((data, i) => (
+									<>
+										{data.post === 'designo' && (
+											<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
+												<Zoom delay={delayTime}>
+													{/* <Card delay={600} style={{ border: 0 }}> */}
+													<div className="single-speaker-area wow fadeInUp ">
+														<div className="speaker-single-thumb">
+															<img src={`${data.image}`} alt="" />
+														</div>
 
-											<div className="social-info">
-												{data.facebook && (
-													<a href={`${data.facebook}`} target="_blank">
-														<i className="fab fa-facebook-f"></i>
-													</a>
-												)}
-												{data.instagram !== '' && (
-													<a href={`${data.instagram}`} target="_blank">
-														<i className="fab fa-instagram"></i>
-													</a>
-												)}
-												{data.github !== '' && (
-													<a href={`${data.github}`} target="_blank">
-														<i className="fab fa-github"></i>
-													</a>
-												)}
-												{data.linkedin !== '' && (
-													<a href={`${data.linkedin}`} target="_blank">
-														<i className="fab fa-linkedin-in"></i>
-													</a>
-												)}
+														<div className="social-info">
+															{data.facebook && (
+																<a href={`${data.facebook}`} target="_blank">
+																	<i className="fab fa-facebook-f"></i>
+																</a>
+															)}
+															{data.instagram !== '' && (
+																<a href={`${data.instagram}`} target="_blank">
+																	<i className="fab fa-instagram"></i>
+																</a>
+															)}
+															{data.github !== '' && (
+																<a href={`${data.github}`} target="_blank">
+																	<i className="fab fa-github"></i>
+																</a>
+															)}
+															{data.linkedin !== '' && (
+																<a href={`${data.linkedin}`} target="_blank">
+																	<i className="fab fa-linkedin-in"></i>
+																</a>
+															)}
+														</div>
+														<div className="speaker-info">
+															<h5>{makeName(data.name)}</h5>
+															{/* <p>General Secretary Technical Affairs</p> */}
+														</div>
+													</div>
+													{/* </Card> */}
+												</Zoom>
 											</div>
-											<div className="speaker-info">
-												<h5>{makeName(data.name)}</h5>
-												{/* <p>General Secretary Technical Affairs</p> */}
-											</div>
-										</div>
-										{/* </Card> */}
-									</Zoom>
-								</div>)}
-							</>
-							))}
+										)}
+									</>
+								))}
 							</div>
 
 							<div className="sec-title">
@@ -785,47 +855,50 @@ const Team = () => {
 							</div>
 							{/* <FadeIn className="row"> */}
 							<div className="row">
-							{eventCoordinators.map((data, i) => (<>
-								{data.post === 'ascensus' && (<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
-									<Zoom delay={delayTime}>
-										{/* <Card delay={600} style={{ border: 0 }}> */}
-										<div className="single-speaker-area wow fadeInUp ">
-											<div className="speaker-single-thumb">
-												<img src={`${data.image}`} alt="" />
-											</div>
+								{eventCoordinators.map((data, i) => (
+									<>
+										{data.post === 'ascensus' && (
+											<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
+												<Zoom delay={delayTime}>
+													{/* <Card delay={600} style={{ border: 0 }}> */}
+													<div className="single-speaker-area wow fadeInUp ">
+														<div className="speaker-single-thumb">
+															<img src={`${data.image}`} alt="" />
+														</div>
 
-											<div className="social-info">
-												{data.facebook && (
-													<a href={`${data.facebook}`} target="_blank">
-														<i className="fab fa-facebook-f"></i>
-													</a>
-												)}
-												{data.instagram !== '' && (
-													<a href={`${data.instagram}`} target="_blank">
-														<i className="fab fa-instagram"></i>
-													</a>
-												)}
-												{data.github !== '' && (
-													<a href={`${data.github}`} target="_blank">
-														<i className="fab fa-github"></i>
-													</a>
-												)}
-												{data.linkedin !== '' && (
-													<a href={`${data.linkedin}`} target="_blank">
-														<i className="fab fa-linkedin-in"></i>
-													</a>
-												)}
+														<div className="social-info">
+															{data.facebook && (
+																<a href={`${data.facebook}`} target="_blank">
+																	<i className="fab fa-facebook-f"></i>
+																</a>
+															)}
+															{data.instagram !== '' && (
+																<a href={`${data.instagram}`} target="_blank">
+																	<i className="fab fa-instagram"></i>
+																</a>
+															)}
+															{data.github !== '' && (
+																<a href={`${data.github}`} target="_blank">
+																	<i className="fab fa-github"></i>
+																</a>
+															)}
+															{data.linkedin !== '' && (
+																<a href={`${data.linkedin}`} target="_blank">
+																	<i className="fab fa-linkedin-in"></i>
+																</a>
+															)}
+														</div>
+														<div className="speaker-info">
+															<h5>{makeName(data.name)}</h5>
+															{/* <p>General Secretary Technical Affairs</p> */}
+														</div>
+													</div>
+													{/* </Card> */}
+												</Zoom>
 											</div>
-											<div className="speaker-info">
-												<h5>{makeName(data.name)}</h5>
-												{/* <p>General Secretary Technical Affairs</p> */}
-											</div>
-										</div>
-										{/* </Card> */}
-									</Zoom>
-								</div>)}
-							</>
-							))}
+										)}
+									</>
+								))}
 							</div>
 
 							<div className="sec-title">
@@ -833,47 +906,50 @@ const Team = () => {
 							</div>
 							{/* <FadeIn className="row"> */}
 							<div className="row">
-							{eventCoordinators.map((data, i) => (<>
-								{data.post === 'quiz' && (<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
-									<Zoom delay={delayTime}>
-										{/* <Card delay={600} style={{ border: 0 }}> */}
-										<div className="single-speaker-area wow fadeInUp ">
-											<div className="speaker-single-thumb">
-												<img src={`${data.image}`} alt="" />
-											</div>
+								{eventCoordinators.map((data, i) => (
+									<>
+										{data.post === 'quiz' && (
+											<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
+												<Zoom delay={delayTime}>
+													{/* <Card delay={600} style={{ border: 0 }}> */}
+													<div className="single-speaker-area wow fadeInUp ">
+														<div className="speaker-single-thumb">
+															<img src={`${data.image}`} alt="" />
+														</div>
 
-											<div className="social-info">
-												{data.facebook && (
-													<a href={`${data.facebook}`} target="_blank">
-														<i className="fab fa-facebook-f"></i>
-													</a>
-												)}
-												{data.instagram !== '' && (
-													<a href={`${data.instagram}`} target="_blank">
-														<i className="fab fa-instagram"></i>
-													</a>
-												)}
-												{data.github !== '' && (
-													<a href={`${data.github}`} target="_blank">
-														<i className="fab fa-github"></i>
-													</a>
-												)}
-												{data.linkedin !== '' && (
-													<a href={`${data.linkedin}`} target="_blank">
-														<i className="fab fa-linkedin-in"></i>
-													</a>
-												)}
+														<div className="social-info">
+															{data.facebook && (
+																<a href={`${data.facebook}`} target="_blank">
+																	<i className="fab fa-facebook-f"></i>
+																</a>
+															)}
+															{data.instagram !== '' && (
+																<a href={`${data.instagram}`} target="_blank">
+																	<i className="fab fa-instagram"></i>
+																</a>
+															)}
+															{data.github !== '' && (
+																<a href={`${data.github}`} target="_blank">
+																	<i className="fab fa-github"></i>
+																</a>
+															)}
+															{data.linkedin !== '' && (
+																<a href={`${data.linkedin}`} target="_blank">
+																	<i className="fab fa-linkedin-in"></i>
+																</a>
+															)}
+														</div>
+														<div className="speaker-info">
+															<h5>{makeName(data.name)}</h5>
+															{/* <p>General Secretary Technical Affairs</p> */}
+														</div>
+													</div>
+													{/* </Card> */}
+												</Zoom>
 											</div>
-											<div className="speaker-info">
-												<h5>{makeName(data.name)}</h5>
-												{/* <p>General Secretary Technical Affairs</p> */}
-											</div>
-										</div>
-										{/* </Card> */}
-									</Zoom>
-								</div>)}
-							</>
-							))}
+										)}
+									</>
+								))}
 							</div>
 						</div>
 
