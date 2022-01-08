@@ -30,12 +30,9 @@ const Sidebar = ({ show, handleClose, active }) => {
 		>
 			<div className="children">
 				{isTabletorMobile && (
-					<div
-						className="gradient-text no-border link"
-						onClick={handleClose}
-						style={{ margin: '5px 20px' }}
-					>
-						<i class="fas fa-arrow-left fa-2x" />
+						<div className='gradient-text no-border link' onClick={handleClose} style={{margin: '5px 20px'}}>
+
+							<i class="fas fa-arrow-left fa-2x" />
 					</div>
 				)}
 				{/* <Logo /> */}

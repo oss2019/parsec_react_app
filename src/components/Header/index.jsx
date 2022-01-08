@@ -466,7 +466,7 @@ const Header = ({ active }) => {
 					</div>
 					<div className="logo" style={{ margin: '5px 10px' }}>
 						<a href="/" target={'_blank'}>
-							<img src={parsecLogo} className="img-fluid" id="logo" />
+							<img src={parsecLogo} className='img-fluid' id='logo' />
 						</a>
 					</div>
 				</div>
@@ -506,47 +506,14 @@ const Header = ({ active }) => {
 												className="navbar-collapse collapse scroll-nav clearfix"
 												id="navbarSupportedContent"
 											>
-												<ul
-													class="navigation clearfix"
-													style={{ display: 'flex', alignItems: 'center' }}
-												>
+												<ul class="navigation clearfix">
 													<li className={`${active === 1 ? 'current' : ''}`}>
 														<a href="/" target="">
 															Home
 														</a>
 													</li>
 													<li className={`${active === 2 ? 'current' : ''}`}>
-														<Dropdown>
-															<Dropdown.Toggle
-																className="dropdown"
-																style={{
-																	background: 'none',
-																	color: 'white',
-																	border: 'none',
-																}}
-															>
-																Events
-															</Dropdown.Toggle>
-															<Dropdown.Menu>
-																<Dropdown.Item href="/hackathon">
-																	DevHack 3.0
-																</Dropdown.Item>
-																<Dropdown.Item href="/cp">
-																	Algostrike 2.0
-																</Dropdown.Item>
-																<Dropdown.Item href="/ctf">
-																	VeniVidiVici 2.0
-																</Dropdown.Item>
-																
-																<Dropdown.Item href="/designo">
-																	Designõ
-																</Dropdown.Item>
-																<Dropdown.Item href="/ascensus">
-																	Ascensus
-																</Dropdown.Item>
-																<Dropdown.Item href="/quiz">Quiz</Dropdown.Item>
-															</Dropdown.Menu>
-														</Dropdown>
+														<a href="/events">Events</a>
 													</li>
 													<li className={`${active === 3 ? 'current' : ''}`}>
 														<a href="/workshops">Workshops</a>
@@ -557,7 +524,7 @@ const Header = ({ active }) => {
 													{/* <li className={`${active === 1 ? 'current' : ''}`}>
 												<a href="/workshops">Workshops</a>
 											</li> */}
-													{/* <li className={`${active === 4 ? 'current' : ''}`}>
+													<li className={`${active === 4 ? 'current' : ''}`}>
 														<a href="/schedule" target="">
 															Schedule
 														</a>
@@ -566,7 +533,7 @@ const Header = ({ active }) => {
 														<a href="/speakers" target="">
 															Speakers
 														</a>
-													</li> */}
+													</li>
 													<li className={`${active === 9 ? 'current' : ''}`}>
 														<a href="/gallery">Gallery</a>
 													</li>
@@ -611,12 +578,12 @@ const Header = ({ active }) => {
 								<span className="fa fa-times"></span>
 							</div>
 							<div className="title">
-								<h2>Stuck? Feel free to contact.</h2>
+								<h2>Have some queries?</h2>
 							</div>
 
 							{/* Appointment form */}
 
-							{/* <div className="appointment-form">
+							<div className="appointment-form">
 								<form
 									method="post"
 									action="https://formspree.io/oss@iitdh.ac.in"
@@ -657,17 +624,13 @@ const Header = ({ active }) => {
 										</button>
 									</div>
 								</form>
-							</div> */}
+							</div>
 							<div className="contact-info-box">
 								<ul className="info-list">
-									<br />
 									<li>outreach.parsec@iitdh.ac.in</li>
-									<br />
 									<li>+91 7892128329</li>
 								</ul>
 								<ul className="social-list clearfix">
-									<br />
-									<br />
 									<li>
 										<a
 											href="https://www.facebook.com/parsec.iitdh"
