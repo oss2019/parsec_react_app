@@ -20,7 +20,6 @@ import $ from 'jquery';
 import topScroll from '../../components/topScroll';
 import EventCarousel from './eventsCarousel';
 import { Carousel } from 'react-bootstrap';
-import { useTypewriter } from 'react-simple-typewriter';
 import { Typewriter } from 'react-simple-typewriter';
 
 const Home = () => {
@@ -185,10 +184,7 @@ const Home = () => {
 		})(window.jQuery);
 	}, []);
 
-	const { text } = useTypewriter({
-		words: ['Annual TechFest of IIT Dharwad '],
-		loop: 0, // Infinit
-	});
+
 
 	return (
 		<React.Fragment>
