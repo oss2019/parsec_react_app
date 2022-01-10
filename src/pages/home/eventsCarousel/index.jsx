@@ -3,7 +3,7 @@ import { Carousel } from 'react-bootstrap';
 
 const EventCarousel = () => {
 	return (
-		<Carousel  variant="dark" style={{padding: '10px 0 0'}}>
+		<Carousel variant="dark" style={{ padding: '10px 0 0' }}>
 			<Carousel.Item interval={5000}>
 				<div class="slide-item">
 					<div class="row">
@@ -89,7 +89,7 @@ const EventCarousel = () => {
 						<div class="info-column col-lg-7 col-md-12 col-sm-12">
 							<div class="inner-column  bg-img">
 								<img
-									src="https://drive.google.com/uc?id=1cNMiLFJkzH8Ew99XNhHxCweJNWd0OqyY"
+									src="https://drive.google.com/uc?id=1jsVvaXDB8vmo1aXzStkaULx_UkvV2iIK"
 									alt=""
 									class="bg-img"
 								/>
@@ -142,7 +142,7 @@ const EventCarousel = () => {
 						<div class="info-column col-lg-7 col-md-12 col-sm-12">
 							<div class="inner-column  bg-img">
 								<img
-									src="https://drive.google.com/uc?id=1cNMiLFJkzH8Ew99XNhHxCweJNWd0OqyY"
+									src="https://drive.google.com/uc?id=1h_MrGkMWhn1PCAwBXJD4o8e8WeOMTXMM"
 									alt=""
 									class="bg-img"
 								/>
@@ -185,7 +185,7 @@ const EventCarousel = () => {
 						<div class="info-column col-lg-7 col-md-12 col-sm-12">
 							<div class="inner-column  bg-img">
 								<img
-									src="https://drive.google.com/uc?id=1cNMiLFJkzH8Ew99XNhHxCweJNWd0OqyY"
+									src="https://drive.google.com/uc?id=1bxLISdAOiSW5i_xmEcFS4-EinFSs5XPI"
 									alt=""
 									class="bg-img"
 								/>
@@ -228,7 +228,7 @@ const EventCarousel = () => {
 						<div class="info-column col-lg-7 col-md-12 col-sm-12">
 							<div class="inner-column  bg-img">
 								<img
-									src="https://drive.google.com/uc?id=1cNMiLFJkzH8Ew99XNhHxCweJNWd0OqyY"
+									src="https://drive.google.com/uc?id=1SYN5K4Q35btVFJP0jEaeoCzqRMFg4K-M"
 									alt=""
 									class="bg-img"
 								/>
@@ -271,7 +271,7 @@ const EventCarousel = () => {
 						<div class="info-column col-lg-7 col-md-12 col-sm-12">
 							<div class="inner-column  bg-img">
 								<img
-									src="https://drive.google.com/uc?id=1cNMiLFJkzH8Ew99XNhHxCweJNWd0OqyY"
+									src="https://drive.google.com/uc?id=1oaXSeYF5HGJ_aF_HBCpRWH4lzF3cje8G"
 									alt=""
 									class="bg-img"
 								/>
