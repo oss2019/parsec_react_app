@@ -19,7 +19,7 @@ import { nodeName } from 'jquery';
 
 const Header = ({ active }) => {
 	const isTabletorMobile = useMediaQuery({
-		query: '(max-width: 1080px)',
+		query: '(max-width: 1026px)',
 	});
 
 	const [show, setShow] = useState(false);
@@ -28,53 +28,6 @@ const Header = ({ active }) => {
 		setShow(!show);
 	};
 
-	const [hover, setHover] = useState(false);
-
-	const toggleHover = () => {
-		setHover(!hover);
-	};
-
-	const [hover1, setHover1] = useState(false);
-
-	const toggleHover1 = () => {
-		setHover1(!hover1);
-	};
-
-	const [hover2, setHover2] = useState(false);
-
-	const toggleHover2 = () => {
-		setHover2(!hover2);
-	};
-
-	const [hover3, setHover3] = useState(false);
-
-	const toggleHover3 = () => {
-		setHover3(!hover3);
-	};
-
-	const [hover4, setHover4] = useState(false);
-	const toggleHover4 = () => {
-		setHover4(!hover4);
-	};
-
-	const [hover5, setHover5] = useState(false);
-	const toggleHover5 = () => {
-		setHover5(!hover5);
-	};
-
-	const [hover6, setHover6] = useState(false);
-	const toggleHover6 = () => {
-		setHover6(!hover6);
-	};
-
-	const [hover7, setHover7] = useState(false);
-	const toggleHover7 = () => {
-		setHover7(!hover7);
-	};
-	const [hover8, setHover8] = useState(false);
-	const toggleHover8 = () => {
-		setHover8(!hover8);
-	};
 
 	useEffect(() => {
 		(function ($) {
@@ -480,7 +433,7 @@ const Header = ({ active }) => {
 									<div className="pull-left logo-box">
 										<div className="logo">
 											<a href="/" target={'_blank'}>
-												<img src={Logo} />
+												<img src={parsecLogo} />
 											</a>
 										</div>
 									</div>
@@ -578,9 +531,9 @@ const Header = ({ active }) => {
 													<li className={`${active === 3 ? 'current' : ''}`}>
 														<a href="/workshops">Workshops</a>
 													</li>
-													<li className={`${active === 10 ? 'current' : ''}`}>
+													{/* <li className={`${active === 10 ? 'current' : ''}`}>
 														<a href="/aboutus">About</a>
-													</li>
+													</li> */}
 													{/* <li className={`${active === 1 ? 'current' : ''}`}>
 												<a href="/workshops">Workshops</a>
 											</li> */}
@@ -607,11 +560,11 @@ const Header = ({ active }) => {
 															Team
 														</a>
 													</li>
-													<li className={`${active === 8 ? 'current' : ''}`}>
+													{/* <li className={`${active === 8 ? 'current' : ''}`}>
 														<a href="/contact" target="">
 															Contact
 														</a>
-													</li>
+													</li> */}
 												</ul>
 											</div>
 										</nav>

@@ -24,14 +24,14 @@ const Quiz = () => {
 				>
 					<div className="auto-container">
 						<span className="float-text">SciTech Quiz</span>
-						<h1>SciTech Quiz</h1>
+						<h1>Quiz</h1>
 						<ul className="bread-crumb clearfix">
 							<li>
 								<a href="index.html" style={{ textDecoration: `None` }}>
 									Home{' '}
 								</a>
 							</li>
-							<li>SciTech Quiz</li>
+							<li>Quiz</li>
 						</ul>
 					</div>
 				</section>
@@ -63,7 +63,7 @@ const Quiz = () => {
 														className="mx-auto mt-5"
 														style={{ color: `#ce41af`, textAlign: `center` }}
 													>
-														SciTech Quiz
+														Quiz
 													</h1>
 
 													<div className="form-column col-lg-12 col-md-12 col-sm-12">

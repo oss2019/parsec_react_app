@@ -79,7 +79,7 @@ const Ctf = () => {
 													{/* <br> */}
 													<ul className="ul1" style={{ paddingRight: `30px` }}>
 														<a
-															href=" https://parseciitdh.typeform.com/to/FuAQay"
+															// href=" https://parseciitdh.typeform.com/to/FuAQay"
 															style={{ textDecoration: 'none' }}
 														>
 															<li className="li1">Register Now</li>
