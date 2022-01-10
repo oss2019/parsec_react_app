@@ -8,7 +8,7 @@ import { useMediaQuery } from 'react-responsive';
 
 const Sidebar = ({ show, handleClose, active }) => {
 	const isTabletorMobile = useMediaQuery({
-		query: '(max-width: 1080px)',
+		query: '(max-width: 1026px)',
 	});
 
 	const history = useHistory();

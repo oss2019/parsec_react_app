@@ -19,7 +19,7 @@ import { nodeName } from 'jquery';
 
 const Header = ({ active }) => {
 	const isTabletorMobile = useMediaQuery({
-		query: '(max-width: 1080px)',
+		query: '(max-width: 1026px)',
 	});
 
 	const [show, setShow] = useState(false);

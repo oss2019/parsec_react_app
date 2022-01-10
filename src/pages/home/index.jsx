@@ -298,45 +298,12 @@ const Home = () => {
 				<br />
 				<br />
 				<br />
-				<section style={{ margin: '60px' }} className='home-about-sec'>
-					<div
-						className="auto-container "
-						// style={{
-						// 	backgroundColor: 'red',
-						// 	borderRadius: '12px',
-						// 	padding: '50px',
-						// }}
-					>
-						<div
-							className=" "
-							// style={{
-							// 	display: 'flex',
-							// }}
-						>
-							<img
-								src={logoAbout}
-								// style={{
-								// 	borderRadius: '8px',
-								// 	zIndex: 10,
-								// 	width: 'auto',
-								// 	height: '170px',
-								// 	marginLeft: '-100px',
-								// 	marginRight: '30px',
-								// 	marginTop: '30px',
-								// }}
-							/>
+				<section style={{ margin: '60px' }} className="home-about-sec">
+					<div className="auto-container ">
+						<div>
+							<img src={logoAbout} />
 
-							<div
-								className="text"
-								// style={{
-								// 	right: 0,
-								// 	lineHeight: '35px',
-								// 	color: '#ffffff',
-								// 	fontWeight: 400,
-								// 	fontSize: '18px',
-								// 	marginBottom: '40px',
-								// }}
-							>
+							<div className="text">
 								PARSEC 2022, the second edition of the Technology Festival of
 								IIT Dharwad, aims to bring together the unparalleled experience
 								of magnificent technologists and the innate curiosity of
@@ -348,18 +315,14 @@ const Home = () => {
 							</div>
 						</div>
 
-						<div className='home-btn-container'
+						<div
+							className="home-btn-container"
 							style={{
 								display: 'flex',
 								justifyContent: 'center',
 							}}
 						>
-							<div
-								className=" home-btn-box"
-								style={{
-								
-								}}
-							>
+							<div className=" home-btn-box" style={{}}>
 								<a
 									// style={{
 									// 	backgroundColor: '#f20587',
@@ -371,6 +334,7 @@ const Home = () => {
 									// 	fontWeight: 400,
 									// 	borderRadius: '8px',
 									// }}
+									className="theme-btn btn-style-one"
 								>
 									View More
 								</a>
