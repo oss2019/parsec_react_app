@@ -9,15 +9,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import parsecLogo from '../../images/logos/parsec-lg.png';
 import logoAbout from '../../images/logos/logo-about.jpg';
-import parsecSlider from '../../images/main-slider/4.jpg';
-import hackathonBg from '../../images/resource/dev-home-bg.png';
-import algoBg from '../../images/resource/algo-home-bg.png';
-import ctfBg from '../../images/resource/vini-home-bg.png';
-import quizBg from '../../images/resource/quiz-home-bg.png';
-import cadBg from '../../images/resource/cad-home-bg.png';
-import caseStudyBg from '../../images/resource/case-home-bg.png';
-import $ from 'jquery';
-import topScroll from '../../components/topScroll';
+
 import EventCarousel from './eventsCarousel';
 // import Typewriter from 'typewriter-effect';
 
@@ -183,12 +175,7 @@ const Home = () => {
 				handlePreloader();
 			});
 		})(window.jQuery);
-
-		
 	}, []);
-
-
-
 
 	return (
 		<React.Fragment>
@@ -197,12 +184,12 @@ const Home = () => {
 				<Header active={1} />
 				<section
 					id="vantajs"
-					class="banner-section-two"
-					style={{ backgroundImage: `url(${parsecSlider})` }}
+					class="banner-section-two "
+					style={{
+						backgroundImage: `url(https://drive.google.com/uc?id=1IPc-P88_oDVRg1NKQgUWdBCB18tACY1Q)`,
+					}}
 				>
-					{/* <img src={parsecSlider}  className='bg-img '  style={{width: '100vw', height: 'auto'}}/> */}
-					<div class="night" style={{bottom: 0, left: 0, zIndex: 2}}>
-					
+					<div class="night">
 						<div class="shooting_star"></div>
 						<div class="shooting_star"></div>
 						<div class="shooting_star"></div>
@@ -231,13 +218,12 @@ const Home = () => {
 								>
 									<div style={{ width: '100%' }}>
 										<img
-											class="col-md-6 img-fluid"
+											class="col-md-5 img-fluid"
 											src={parsecLogo}
 											id="bg-img"
 										/>
 									</div>
 								</div>
-								{/* <img class="" src={parsecLogo} style={{width: '20px',height: 'auto'}} /> */}
 								<br />
 								<h4 class="ml12 text-white mt-5">
 									<span
@@ -245,8 +231,6 @@ const Home = () => {
 										id="intro-title"
 										style={{ fontSize: '1.5rem', fontWeight: '450' }}
 									>
-										{/* Annual TechFest of IIT Dharwad */}
-										{/* {text} */}
 										<Typewriter
 											loop
 											cursor
@@ -255,24 +239,18 @@ const Home = () => {
 											deleteSpeed={90}
 											delaySpeed={1000}
 											words={['ANNUAL TECHFEST OF IIT DHARWAD']}
-											// onLoop={(loopCount) => 
-											
+											// onLoop={(loopCount) =>
+
 											// }
 										/>
 									</span>
 								</h4>
 							</div>
-							{/* <div class="timer">
-								<div
-									class="cs-countdown"
-									data-countdown="4/24/2019 05:06:59"
-								></div>
-							</div> */}
 						</div>
 					</div>
 				</section>
 
-				<section class="about-section">
+				{/* <section class="about-section">
 					<span class="float-text">Parsec</span>
 					<div class="auto-container">
 						<div class="sec-title">
@@ -315,7 +293,92 @@ const Home = () => {
 							</div>
 						</div>
 					</div>
+				</section> */}
+				<br />
+				<br />
+				<br />
+				<br />
+				<section style={{ margin: '60px' }} className='home-about-sec'>
+					<div
+						className="auto-container "
+						// style={{
+						// 	backgroundColor: 'red',
+						// 	borderRadius: '12px',
+						// 	padding: '50px',
+						// }}
+					>
+						<div
+							className=" "
+							// style={{
+							// 	display: 'flex',
+							// }}
+						>
+							<img
+								src={logoAbout}
+								// style={{
+								// 	borderRadius: '8px',
+								// 	zIndex: 10,
+								// 	width: 'auto',
+								// 	height: '170px',
+								// 	marginLeft: '-100px',
+								// 	marginRight: '30px',
+								// 	marginTop: '30px',
+								// }}
+							/>
+
+							<div
+								className="text"
+								// style={{
+								// 	right: 0,
+								// 	lineHeight: '35px',
+								// 	color: '#ffffff',
+								// 	fontWeight: 400,
+								// 	fontSize: '18px',
+								// 	marginBottom: '40px',
+								// }}
+							>
+								PARSEC 2022, the second edition of the Technology Festival of
+								IIT Dharwad, aims to bring together the unparalleled experience
+								of magnificent technologists and the innate curiosity of
+								passionate students by providing a common platform to showcase
+								their expertise and hone their skills. While there is no doubt
+								that technology has taken magnanimous leaps in the past few
+								decades, this fest ambitiously aspires to see it progress in
+								parsecs in the near future.{' '}
+							</div>
+						</div>
+
+						<div className='home-btn-container'
+							style={{
+								display: 'flex',
+								justifyContent: 'center',
+							}}
+						>
+							<div
+								className=" home-btn-box"
+								style={{
+								
+								}}
+							>
+								<a
+									// style={{
+									// 	backgroundColor: '#f20587',
+									// 	color: '#ffff',
+									// 	position: 'relative',
+									// 	width: 'max-content',
+									// 	padding: '15px 35px',
+									// 	fontSize: '18px',
+									// 	fontWeight: 400,
+									// 	borderRadius: '8px',
+									// }}
+								>
+									View More
+								</a>
+							</div>
+						</div>
+					</div>
 				</section>
+
 				<br />
 				<br />
 				<br />

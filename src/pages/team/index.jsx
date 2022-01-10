@@ -21,11 +21,11 @@ import sponsorshipTeam from '../../data/sponsorship.json';
 import utilitiesTeam from '../../data/utilitiesTeam.json';
 import workshopTeam from '../../data/workshopTeam.json';
 import accountsManager from '../../data/accountsManager.json';
-import './styles.css';
 import '../../css/bootstrap.css';
 import '../../css/style.css';
 import '../../css/responsive.css';
 import '../../css/team.css';
+import './styles.css';
 import Header from '../../components/Header';
 
 
@@ -75,7 +75,7 @@ const Team = () => {
 									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
 										<div className="single-speaker-area wow fadeInUp ">
-											<div className="speaker-single-thumb">
+											<div className="speaker-single-thumb" s>
 												<img src={`${data.image}`} alt="" />
 											</div>
 
@@ -620,13 +620,13 @@ const Team = () => {
 											</div>
 											<div className="speaker-info">
 												<h5
-													style={{
-														color: `${
-															data.github == 'https://github.com/saurabh021120'
-																? '#c9c9c9'
-																: 'white'
-														}`,
-													}}
+													// style={{
+													// 	color: `${
+													// 		data.github == 'https://github.com/saurabh021120'
+													// 			? '#c9c9c9'
+													// 			: 'white'
+													// 	}`,
+													// }}
 												>
 													{makeName(data.name)}
 												</h5>
