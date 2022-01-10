@@ -7,6 +7,7 @@ import '../../css/bootstrap.css';
 import '../../css/style.css';
 import '../../css/responsive.css';
 import Footer from '../../components/Footer';
+import Workshop_comp from './workshop_comp';
 // import '../../css/contact.css';
 
 const Workshop = () => {
@@ -45,14 +46,17 @@ const Workshop = () => {
 				<section className="news-section">
 					<div className="auto-container">
 						<div className="row">
-							<div
+							<Workshop_comp name = "Demo workshop & Testing" startDate = "Feb 15, 2020, 10:00 AM"
+							 			   endDate = "Feb 15, 2020, 10:00 AM" fee = "850" ></Workshop_comp>
+						    
+							{/* <div
 								className="news-block news-block-style col-lg-5 col-md-6 col-sm-12 wow fadeInUp "
 								dataWowDelay="400ms"
 							>
-								<div className="image-box">
+								<div className="image-box" style = {{paddingTop : '8%', paddingBottom : '3%'}}>
 									<figure className="image">
 										<a href="#">
-											<img src={aiWorkshopImage} />
+											<img src={aiWorkshopImage} alt = "" style={{width : '100%',objectFit:'cover'}}/>
 										</a>
 									</figure>
 								</div>
@@ -60,7 +64,7 @@ const Workshop = () => {
 								<div className="lower-content" style={{ textAlign: 'left' }}>
 									<h4>
 										<a
-											href=""
+											href="#"
 											style={{
 												fontSize: '25px',
 												paddingTop: '5px',
@@ -153,11 +157,13 @@ const Workshop = () => {
 										<br />
 									</center>
 								</div>
-							</div>
+							</div> */}
 
 							<div className="col-lg-2"></div>
+							<workshop_comp name = "Demo workshop & Testing" startDate = "Feb 15, 2020, 10:00 AM"
+							 			   endDate = "Feb 15, 2020, 10:00 AM" fee = "850" ></workshop_comp>
 
-							<div
+							{/* <div
 								className="news-block news-block-style col-lg-5 col-md-6 col-sm-12 wow fadeInUp "
 								dataWowDelay="400ms"
 							>
@@ -265,7 +271,7 @@ const Workshop = () => {
 										<br />
 									</center>
 								</div>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</section>
