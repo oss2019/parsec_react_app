@@ -131,7 +131,7 @@ const Designo = () => {
 																	className="col-md-6"
 																	style={{ color: `#ed6286` }}
 																>
-																	Duration: -
+																	Duration: 4 hour
 																</div>
 																<div
 																	className="col-md-6"
@@ -164,7 +164,9 @@ const Designo = () => {
 															color: `#ffffff`,
 														}}
 													>
-														<strong>The event starts at 2:00 PM on 5th March, 2022.</strong>
+														<strong>
+															The event starts at 2:00 PM on 5th March, 2022.
+														</strong>
 													</p>
 
 													<br />
@@ -250,6 +252,7 @@ const Designo = () => {
 																textDecoration: `None`,
 															}}
 															target={'_blank'}
+															rel="noreferrer"
 														>
 															channel
 														</a>{' '}
