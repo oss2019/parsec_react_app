@@ -215,7 +215,7 @@ const Cp = () => {
 								>
 									Still have queries? Reach out to us on our Telegram{' '}
 									<a
-										href="https://t.me/joinchat/PV9kHhZ3gKWJv7V-nQLrPA"
+										href="https://t.me/algostrike"
 										target="_blank"
 										style={{ color: '#00adb5' }}
 										rel="noreferrer"

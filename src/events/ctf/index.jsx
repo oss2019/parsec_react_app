@@ -209,12 +209,12 @@ const Ctf = () => {
 													>
 														Still have queries? Reach out to us on our Telegram{' '}
 														<a
-															href="https://t.me/joinchat/PV9kHhGxrySBwvO_TArVMQ"
+															href="https://t.me/parsec_venividivici"
 															style={{
 																color: `#00adb5`,
 																textDecoration: `None`,
 															}}
-															target={'_blank'}
+															target="_blank"
 														>
 															channel
 														</a>{' '}

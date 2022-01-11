@@ -141,6 +141,26 @@ const Overview = () => {
 									</ul>
 									<br />
 									<br />
+									<p
+												className="text-justify"
+												style={{
+													color: `#383434`,
+													fontSize: `large`,
+												}}
+											>
+											Still have queries? Join us on our Telegram{' '}
+															<a
+																href="https://t.me/parseciitdh"
+																style={{
+																	color: `#12114a`,
+																	textDecoration: `None`,
+																}}
+																target="_blank"
+															>
+																channel
+															</a>{' '}
+															and we'll try our best to answer all your doubts.
+									</p>
 								</div>
 							</div>
 						</div>

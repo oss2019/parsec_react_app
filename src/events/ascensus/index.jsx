@@ -199,8 +199,8 @@ const Ascensus = () => {
 													>
 														Still have queries? Reach out to us on our Telegram{' '}
 														<a
-															href="https://t.me/joinchat/PV9kHhZ3gKWJv7V-nQLrPA"
-															target="_blank"
+															href="https://t.me/parsec_casestudy"
+															target={'_blank'}
 															style={{ color: 'rgb(242, 172, 79)' }}
 														>
 															channel

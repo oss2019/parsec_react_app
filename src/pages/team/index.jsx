@@ -541,10 +541,10 @@ const Team = () => {
 						{/* <FadeIn className="row"> */}
 						<div className="row">
 							{contentTeamData.map((data, i) => (
-								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
+								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`} style={{padding: '0px'}}>
 									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
-										<div className="single-speaker-area wow fadeInUp ">
+										<div className="single-speaker-area wow fadeInUp " style={{padding: '0px', margin:'0px'}}>
 											<div className="speaker-single-thumb">
 												<img src={`${data.image}`} alt="" />
 											</div>
@@ -571,7 +571,7 @@ const Team = () => {
 													</a>
 												)}
 											</div>
-											<div className="speaker-info">
+											<div className="speaker-info" style={{margin:'0'}}>
 												<h5>{makeName(data.name)}</h5>
 												{/* <p>General Secretary Technical Affairs</p> */}
 											</div>

@@ -244,12 +244,12 @@ const Designo = () => {
 													>
 														Still have queries? Join us on our Telegram{' '}
 														<a
-															href="https://t.me/joinchat/PV9kHkiEiwob7C0ZEolvcA"
+															href="https://t.me/parsec_cad"
 															style={{
 																color: `#ed6286`,
 																textDecoration: `None`,
 															}}
-															//target={_blank}
+															target={'_blank'}
 														>
 															channel
 														</a>{' '}
