@@ -87,12 +87,12 @@ const Sidebar = ({ show, handleClose, active }) => {
 				>
 					Events
 				</p> */}
-				<p
+				{/* <p
 					className={`elements text link ${active === 3 ? 'violet' : 'white'}`}
 					onClick={() => history.push('/workshops')}
 				>
 					Workshop
-				</p>
+				</p> */}
 				{/* <p
 					className={`elements text link ${active === 4 ? 'violet' : 'white'}`}
 					onClick={() => history.push('/schedule')}
@@ -105,12 +105,12 @@ const Sidebar = ({ show, handleClose, active }) => {
 				>
 					Speakers
 				</p> */}
-				<p
+				{/* <p
 					className={`elements text link ${active === 10 ? 'violet' : 'white'}`}
 					onClick={() => history.push('/aboutus')}
 				>
 					About
-				</p>
+				</p> */}
 				<p
 					className={`elements text link ${active === 9 ? 'violet' : 'white'}`}
 					onClick={() => history.push('/gallery')}

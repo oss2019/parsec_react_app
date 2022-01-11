@@ -418,7 +418,7 @@ const Header = ({ active }) => {
 						<i className="fas fa-bars fa-2x" />
 					</div>
 					<div className="logo" style={{ margin: '5px 10px' }}>
-						<a href="/" target={'_blank'}>
+						<a href="/" >
 							<img src={parsecLogo} className="img-fluid" id="logo" />
 						</a>
 					</div>
@@ -432,7 +432,7 @@ const Header = ({ active }) => {
 								<div className="clearfix">
 									<div className="pull-left logo-box">
 										<div className="logo">
-											<a href="/" target={'_blank'}>
+											<a href="/" >
 												<img src={parsecLogo} />
 											</a>
 										</div>
@@ -528,9 +528,9 @@ const Header = ({ active }) => {
 															</Dropdown.Menu>
 														</Dropdown>
 													</li>
-													<li className={`${active === 3 ? 'current' : ''}`}>
+													{/* <li className={`${active === 3 ? 'current' : ''}`}>
 														<a href="/workshops">Workshops</a>
-													</li>
+													</li> */}
 													{/* <li className={`${active === 10 ? 'current' : ''}`}>
 														<a href="/aboutus">About</a>
 													</li> */}
