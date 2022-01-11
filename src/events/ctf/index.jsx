@@ -169,7 +169,7 @@ const Ctf = () => {
 														className="font-weight-bold"
 													>
 														This is online CTF security challenge. The event
-														starts at 9:00 AM on 15th Feb, 2020.
+														starts at 8:00 PM on 4th March, 2022.
 														<br />
 														Below are the categories on which the event will be
 														based, given so that you'll put up a good fight!

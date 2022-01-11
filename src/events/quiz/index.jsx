@@ -170,7 +170,7 @@ const Quiz = () => {
 																		className="col-md-6"
 																		style={{ color: `#ed6286` }}
 																	>
-																		Duration: 4 hours
+																		Duration: 3 hours
 																	</div>
 																	<div
 																		className="col-md-6"
@@ -194,8 +194,7 @@ const Quiz = () => {
 															style={{ fontSize: `large`, color: `#ed6286` }}
 														>
 															<li style={{ color: `#ed6286` }}>
-																Quiz starts: 15th February 2020 (timings would
-																be conveyed soon)
+																Quiz starts: 12:30 PM, 5th March, 2022 
 															</li>
 															<li style={{ color: `#ed6286` }}>
 																Students of Standard 9th to 12th and

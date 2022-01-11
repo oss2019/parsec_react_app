@@ -49,7 +49,7 @@ const Timeline = () => {
 										}}
 									>
 										<div className="float-right text-danger">
-											10:00 PM, February 14, 2020
+											6:00 PM, March 4, 2022
 										</div>
 										<h4 className="card-title text-danger">Orientation</h4>
 										<p
@@ -85,7 +85,7 @@ const Timeline = () => {
 										style={{ border: '2px solid #dc3545', borderRadius: '8px' }}
 									>
 										<div className="float-right text-danger">
-											12:00 Midnight, February 15, 2020
+											8:00 PM, March 4 , 2022
 										</div>
 										<h4 className="card-title text-danger">
 											<strong>Phase 1:</strong>
@@ -148,7 +148,7 @@ const Timeline = () => {
 										style={{ border: '2px solid #e2e6e9', borderRadius: '8px' }}
 									>
 										<div className="float-right text-danger">
-											10:00 AM, February 15, 2020
+											10:00 AM, March 5, 2022
 										</div>
 										<h4 className="card-title text-danger">Speaker Session</h4>
 										<p
@@ -188,7 +188,7 @@ const Timeline = () => {
 										style={{ border: '2px solid #dc3545', borderRadius: '8px' }}
 									>
 										<div className="float-right text-danger">
-											2:00 PM, February 15, 2020
+											2:00 PM, March 5, 2022
 										</div>
 										<h4 className="card-title text-danger">
 											<strong>Phase 2:</strong>
@@ -229,7 +229,7 @@ const Timeline = () => {
 										style={{ border: '2px solid #e2e6e9', borderRadius: '8px' }}
 									>
 										<div className="float-right text-danger">
-											10:00 PM, February 15, 2020
+											10:00 PM, March 5, 2022
 										</div>
 										<h4 className="card-title text-danger">
 											<strong>Phase 3:</strong>
@@ -268,7 +268,7 @@ const Timeline = () => {
 										style={{ border: '2px solid #dc3545', borderRadius: '8px' }}
 									>
 										<div className="float-right text-danger">
-											6:00 AM, February 16, 2020
+											8:00 AM, March 6, 2022
 										</div>
 										<h4 className="card-title text-danger">
 											<strong>Phase 4:</strong>
@@ -308,7 +308,7 @@ const Timeline = () => {
 										style={{ border: '2px solid #dc3545', borderRadius: '8px' }}
 									>
 										<div className="float-right text-danger">
-											10:30 AM, February 16, 2020
+											10:30 AM, March 6, 2022
 										</div>
 										<h4 className="card-title text-danger">
 											<strong>Phase 5:</strong>

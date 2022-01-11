@@ -140,16 +140,17 @@ const Ascensus = () => {
 														style={{ fontSize: 'large', color: '#eeeeee' }}
 													>
 														Ascensus will be hosted on dare2compete (D2C)
-														platform and will be of 3 rounds.
+														platform and will be of 3 rounds. The event
+														starts at 8:00 PM on 4th March, 2022.
 													</p>
 													<p
-														className="font-weight-bold"
+														// className="font-weight-bold"
 														style={{ fontSize: 'large', color: '#eeeeee' }}
 													>
-														<div>Quiz round : 1 March - 7 pm</div>
+														<div>Quiz round : 1 March - 7 PM</div>
 														<div>
-															Problem statement round : 1 March - 11 pm{' '}
-															submission : 5 March - 6 pm
+															Problem statement round : 1 March - 11 PM{' '}
+															Submission : 5 March - 6 PM
 														</div>
 														<div>Ppt presentation round : 6 March - 12 pm</div>
 													</p>

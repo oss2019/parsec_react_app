@@ -157,6 +157,16 @@ const Designo = () => {
 														day.
 													</p>
 
+													<p
+														style={{
+															fontFamily: `FontAwesome, sans-serif`,
+															fontSize: `large`,
+															color: `#ffffff`,
+														}}
+													>
+														<strong>The event starts at 2:00 PM on 5th March, 2022.</strong>
+													</p>
+
 													<br />
 													<p style={{ fontSize: `large`, color: `#ffffff` }}>
 														<strong>Rules : </strong>

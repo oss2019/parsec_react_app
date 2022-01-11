@@ -190,8 +190,8 @@ const Cp = () => {
 
 								<ul className="list-style-four">
 									<li>
-										Contest starts:
-										<strong> 9:30 AM, February 16, 2020 </strong>
+										Contest starts:  
+										<strong> 3:00 PM, March 5, 2022 </strong>
 									</li>
 									<li>Code of Conduct to be followed.</li>
 									<li>

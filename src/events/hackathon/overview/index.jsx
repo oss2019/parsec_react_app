@@ -124,7 +124,7 @@ const Overview = () => {
 									<ul className="list-style-four mb-0">
 										<li style={{ color: `#12114a` }}>
 											Contest starts:
-											<strong> 12 Midnight, February 14, 2020 </strong>
+											<strong> 8:00 PM on 4th March, 2022  </strong>
 										</li>
 										<li style={{ color: `#12114a` }}>
 											Code of Conduct to be followed.
