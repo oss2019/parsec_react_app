@@ -98,66 +98,7 @@ const Home = () => {
 			}
 
 			headerStyle();
-			//About Carousel
-			// if ($('.about-carousel').length) {
-			// 	$('.about-carousel').owlCarousel({
-			// 		animateOut: 'slideOutDown',
-			// 		animateIn: 'zoomIn',
-			// 		loop: true,
-			// 		margin: 30,
-			// 		nav: true,
-			// 		smartSpeed: 500,
-			// 		autoHeight: true,
-			// 		autoplay: true,
-			// 		autoplayTimeout: 5000,
-			// 		navText: [
-			// 			'<span class="fa fa-chevron-left"></span>',
-			// 			'<span class="fa fa-chevron-right"></span>',
-			// 		],
-			// 		responsive: {
-			// 			0: {
-			// 				items: 1,
-			// 			},
-			// 			600: {
-			// 				items: 1,
-			// 			},
-			// 			1024: {
-			// 				items: 1,
-			// 			},
-			// 		},
-			// 	});
-			// }
-
-			//Events Carousel
-			// if ($('.events-carousel').length) {
-			// 	$('.events-carousel').owlCarousel({
-			// 		animateOut: 'slideOutDown',
-			// 		animateIn: 'fadeInUp',
-			// 		loop: true,
-			// 		margin: 0,
-			// 		nav: true,
-			// 		smartSpeed: 700,
-			// 		autoHeight: true,
-			// 		mouseDrag: false,
-			// 		autoplay: true,
-			// 		autoplayTimeout: 10000,
-			// 		navText: [
-			// 			'<span class="fa fa-angle-left"></span>',
-			// 			'<span class="fa fa-angle-right"></span>',
-			// 		],
-			// 		responsive: {
-			// 			0: {
-			// 				items: 1,
-			// 			},
-			// 			600: {
-			// 				items: 1,
-			// 			},
-			// 			1024: {
-			// 				items: 1,
-			// 			},
-			// 		},
-			// 	});
-			// }
+			
 
 			/* ==========================================================================
    When document is Scrollig, do
@@ -179,30 +120,33 @@ const Home = () => {
 
 	return (
 		<React.Fragment>
-			<div class="page-wrapper">
-				<div class="preloader"></div>
+			<div className="page-wrapper">
+				<div className="preloader"></div>
 				<Header active={1} />
+				
 				<section
 					id="vantajs"
-					class="banner-section-two "
+					className="banner-section-two "
 					style={{
 						backgroundImage: `url(https://drive.google.com/uc?id=1IPc-P88_oDVRg1NKQgUWdBCB18tACY1Q)`,
+						height: '100vh',
+						// paddingTop: '0px'
 					}}
 				>
-					<div class="night">
-						<div class="shooting_star"></div>
-						<div class="shooting_star"></div>
-						<div class="shooting_star"></div>
-						<div class="shooting_star"></div>
-						<div class="shooting_star"></div>
-						<div class="shooting_star"></div>
-						<div class="shooting_star"></div>
-						<div class="shooting_star"></div>
+					<div className="night" style={{ position: 'absolute', top: '-10vh' }}>
+						<div className="shooting_star"></div>
+						<div className="shooting_star"></div>
+						<div className="shooting_star"></div>
+						<div className="shooting_star"></div>
+						<div className="shooting_star"></div>
+						<div className="shooting_star"></div>
+						<div className="shooting_star"></div>
+						<div className="shooting_star"></div>
 					</div>
-					<div class="auto-container">
-						<div class="content-box">
+					<div className="auto-container">
+						<div className="content-box">
 							<div
-								class="title-box text-center"
+								className="title-box text-center"
 								style={{ alignItems: 'center' }}
 							>
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -218,16 +162,16 @@ const Home = () => {
 								>
 									<div style={{ width: '100%' }}>
 										<img
-											class="col-md-5 img-fluid"
+											className="col-md-5 img-fluid"
 											src={parsecLogo}
 											id="bg-img"
 										/>
 									</div>
 								</div>
 								<br />
-								<h4 class="ml12 text-white mt-5">
+								<h4 className="ml12 text-white mt-5">
 									<span
-										class="ml12 letter"
+										className="ml12 letter"
 										id="intro-title"
 										style={{ fontSize: '1.5rem', fontWeight: '450' }}
 									>
@@ -250,60 +194,24 @@ const Home = () => {
 					</div>
 				</section>
 
-				{/* <section class="about-section">
-					<span class="float-text">Parsec</span>
-					<div class="auto-container">
-						<div class="sec-title">
-							<h2>About Parsec</h2>
-						</div>
-
-						<div class="about-carousel owl-carousel owl-theme">
-							<div class="slide-item clearfix">
-								<div class="image-box">
-									<figure class="image" style={{ boxShadow: 'none' }}>
-										<img src={logoAbout} alt="" />
-									</figure>
-								</div>
-								<div class="content-box" style={{ marginTop: '20px' }}>
-									<div class="inner-box">
-										<span class="title"></span>
-										<h3></h3>
-										<div class="text">
-											PARSEC 2022, the second edition of the Technology Festival
-											of IIT Dharwad, aims to bring together the unparalleled
-											experience of magnificent technologists and the innate
-											curiosity of passionate students by providing a common
-											platform to showcase their expertise and hone their
-											skills. While there is no doubt that technology has taken
-											magnanimous leaps in the past few decades, this fest
-											ambitiously aspires to see it progress in parsecs in the
-											near future.{' '}
-										</div>
-										<div class="btn-box">
-											<a
-												href="/aboutus"
-												// target="_blank"
-												class="theme-btn btn-style-one"
-											>
-												View More
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section> */}
+				{/* <br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br /> */}
 				<br />
 				<br />
-				<br />
-				<br />
-				<section style={{ margin: '60px' }} className="home-about-sec">
-					<div className="auto-container ">
+				{/* <div  className='auto-container' style={{display: 'inline-block', marginTop: '10px', background: 'red'}}> */}
+				<section className="home-about-sec" style={{ margin: '60px' }}>
+					<div
+						className="auto-container home-abt-sec-auto"
+						style={{ paddingBottom: '0px' }}
+					>
 						<div>
 							<img src={logoAbout} />
 
-							<div className="text">
+							<div className="text about-us-text">
 								PARSEC 2022, the second edition of the Technology Festival of
 								IIT Dharwad, aims to bring together the unparalleled experience
 								of magnificent technologists and the innate curiosity of
@@ -324,7 +232,7 @@ const Home = () => {
 						>
 							<div className=" home-btn-box" style={{}}>
 								<a
-								   href='/aboutus'
+									href="/aboutus"
 									// style={{
 									// 	backgroundColor: '#f20587',
 									// 	color: '#ffff',
@@ -343,6 +251,7 @@ const Home = () => {
 						</div>
 					</div>
 				</section>
+				{/* </div> */}
 
 				<br />
 				<br />
@@ -350,15 +259,15 @@ const Home = () => {
 				<br />
 
 				<section
-					class="about-us-countdown-area section-padding-100-0"
+					className="about-us-countdown-area section-padding-100-0"
 					id="about"
 				>
-					<div class="countdown-up-area">
-						<div class="auto-container">
-							<div id="clockdiv" class="row align-items-center">
-								<div class="col-12 col-md-3">
+					<div className="countdown-up-area">
+						<div className="auto-container">
+							<div id="clockdiv" className="row align-items-center">
+								<div className="col-12 col-md-3">
 									<div
-										class="countdown-content-text mb-100 wow fadeInUp"
+										className="countdown-content-text mb-100 wow fadeInUp"
 										data-wow-delay="300ms"
 									>
 										<h6 style={{ textAlign: 'left' }}>4th March</h6>
@@ -368,9 +277,9 @@ const Home = () => {
 									</div>
 								</div>
 
-								<div class="col-12 col-md-2">
+								<div className="col-12 col-md-2">
 									<div
-										class="countdown-timer mb-100 wow fadeInUp mx-auto"
+										className="countdown-timer mb-100 wow fadeInUp mx-auto"
 										data-wow-delay="300ms"
 										style={{
 											height: '160px',
@@ -379,7 +288,7 @@ const Home = () => {
 										}}
 									>
 										<span
-											class="days"
+											className="days"
 											style={{ fontWeight: '900', fontSize: '55px' }}
 										></span>
 
@@ -396,9 +305,9 @@ const Home = () => {
 										</h3>
 									</div>
 								</div>
-								<div class="col-12 col-md-2">
+								<div className="col-12 col-md-2">
 									<div
-										class="countdown-timer mb-100 wow fadeInUp mx-auto"
+										className="countdown-timer mb-100 wow fadeInUp mx-auto"
 										data-wow-delay="300ms"
 										style={{
 											height: '160px',
@@ -407,7 +316,7 @@ const Home = () => {
 										}}
 									>
 										<span
-											class="hours"
+											className="hours"
 											style={{ fontWeight: '900', fontSize: '55px' }}
 										></span>
 
@@ -424,9 +333,9 @@ const Home = () => {
 										</h3>
 									</div>
 								</div>
-								<div class="col-12 col-md-2">
+								<div className="col-12 col-md-2">
 									<div
-										class="countdown-timer mb-100 wow fadeInUp mx-auto"
+										className="countdown-timer mb-100 wow fadeInUp mx-auto"
 										data-wow-delay="300ms"
 										style={{
 											height: '160px',
@@ -435,7 +344,7 @@ const Home = () => {
 										}}
 									>
 										<span
-											class="minutes"
+											className="minutes"
 											style={{ fontWeight: '900', fontSize: '55px' }}
 										></span>
 
@@ -452,9 +361,9 @@ const Home = () => {
 										</h3>
 									</div>
 								</div>
-								<div class="col-12 col-md-2">
+								<div className="col-12 col-md-2">
 									<div
-										class="countdown-timer mb-100 wow fadeInUp mx-auto"
+										className="countdown-timer mb-100 wow fadeInUp mx-auto"
 										data-wow-delay="300ms"
 										style={{
 											height: '160px',
@@ -463,7 +372,7 @@ const Home = () => {
 										}}
 									>
 										<span
-											class="seconds"
+											className="seconds"
 											style={{ fontWeight: '900', fontSize: '55px' }}
 										></span>
 
@@ -487,223 +396,68 @@ const Home = () => {
 
 				{/* <EventCarousel /> */}
 				{/* lasdjfaldsfjasdfkasldfja */}
-				<section class="location-section">
-					<span class="float-text">Our Events</span>
-					<div class="anim-icons">
-						<span class="icon icon-dots wow zoomIn"></span>
-						<span class="icon icon-dots-2"></span>
-						<span class="icon icon-lines"></span>
+				<section className="location-section">
+					<span className="float-text">Our Events</span>
+					<div className="anim-icons">
+						<span className="icon icon-dots wow zoomIn"></span>
+						<span className="icon icon-dots-2"></span>
+						<span className="icon icon-lines"></span>
 					</div>
-					<section id="events" class="events-section">
-						<div class="anim-icons">
-							<span class="icon icon-circle-1 wow zoomIn"></span>
+					<section id="events" className="events-section">
+						<div className="anim-icons">
+							<span className="icon icon-circle-1 wow zoomIn"></span>
 							<span
-								class="icon icon-circle-2 wow zoomIn"
+								className="icon icon-circle-2 wow zoomIn"
 								data-wow-delay="300ms"
 							></span>
 							<span
-								class="icon icon-circle-3 wow zoomIn"
+								className="icon icon-circle-3 wow zoomIn"
 								data-wow-delay="600ms"
 							></span>
 							<span
-								class="icon icon-circle-4 wow zoomIn"
+								className="icon icon-circle-4 wow zoomIn"
 								data-wow-delay="900ms"
 							></span>
 						</div>
-						<div class="auto-container" style={{ width: '80%' }}>
-							<div class="sec-title">
+						<div className="auto-container" style={{ width: '80%' }}>
+							<div className="sec-title">
 								<h2>Events</h2>
 							</div>
 							<EventCarousel />
-
-							{/* <div class="events-carousel owl-carousel owl-theme" >
-								<div class="slide-item">
-									<div class="row">
-										<div class="content-column order-2 col-lg-5 col-md-12 col-sm-12">
-											<div class="inner-column">
-												<span class="title" >Hackathon</span>
-												<h2>DevHack 3.0</h2>
-												<div class="text mb-3">
-													Do you have what it takes to code sleeplessly for 36
-													hrs to develop a groundbreaking piece of software?
-													Well then, this event's rightly engineered for you.
-													Devhack is a 36 hour hackathon attended in teams of 4
-													who would be participating within the themes and
-													problem statements provided. It's a hackathon where
-													the registered team would ideate, design and innovate
-													products by using their technical knowledge and excel
-													at it.
-												</div>
-											</div>
-										</div>
-
-										<div class="info-column col-lg-7 col-md-12 col-sm-12">
-											<div class="inner-column  bg-img">
-												<img src={hackathonBg} alt="" class="bg-img" />
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="slide-item">
-									<div class="row">
-										<div class="content-column order-2 col-lg-5 col-md-12 col-sm-12">
-											<div class="inner-column">
-												<span class="title">Competitive Coding</span>
-												<h2>AlgoStrike 2.0</h2>
-												<div class="text mb-3">
-													For normal people, maestro is a distinguished
-													performer of a musical instrument. Although, for us,
-													Code Maestro is someone who can interweave data
-													structures and algos to solve a problem efficiently.
-													Join us at this 3 hour long brainstorming coding
-													contest where you can turn yourself into a Code
-													Maestro!
-												</div>
-											</div>
-										</div>
-
-										<div class="info-column col-lg-7 col-md-12 col-sm-12">
-											<div class="inner-column bg-img">
-												<img src={algoBg} alt="" class="bg-img" />
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="slide-item">
-									<div class="row">
-										<div class="content-column order-2 col-lg-5 col-md-12 col-sm-12">
-											<div class="inner-column">
-												<span class="title">Capture the Flag</span>
-												<h2>VeniVidiVici 2.0</h2>
-												<div class="text mb-3">
-													Test your cybersecurity skills in this{' '}
-													<strong>
-														jeopardy-style CTF to conquer the flags hidden
-														throughout some machines.
-													</strong>{' '}
-													Solve computer security problems and/or capture and
-													defend computer systems by encrypting the codes.{' '}
-													<strong>
-														{' '}
-														Be assured that only knowledge won't suffice.{' '}
-													</strong>{' '}
-													You'll need a righteous blend of knowledge and
-													temperament to crack this one.
-												</div>
-											</div>
-										</div>
-
-										<div class="info-column col-lg-7 col-md-12 col-sm-12">
-											<div class="inner-column bg-img">
-												<img src={ctfBg} alt="" class="bg-img" />
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="slide-item">
-									<div class="row">
-										<div class="content-column order-2 col-lg-5 col-md-12 col-sm-12">
-											<div class="inner-column">
-												<span class="title">Sharpen your Mind</span>
-												<h2>Quiz</h2>
-												<div class="text mb-3">
-													Participate in this quiz, which is based on technical
-													aspects, where you can test how well you are versed
-													with technology you use!
-												</div>
-											</div>
-										</div>
-
-										<div class="info-column col-lg-7 col-md-12 col-sm-12">
-											<div class="inner-column bg-img">
-												<img src={quizBg} alt="" class="bg-img" />
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="slide-item">
-									<div class="row">
-										<div class="content-column order-2 col-lg-5 col-md-12 col-sm-12">
-											<div class="inner-column">
-												<span class="title">Design the World</span>
-												<h2>Designõ</h2>
-												<div class="text mb-3">
-													Design and Engineer your own product to solve a real
-													life problem and showcase it by creating a 3D model.
-													Join us in teams of 2 at this CAD Based product design
-													event!
-												</div>
-											</div>
-										</div>
-
-										<div class="info-column col-lg-7 col-md-12 col-sm-12">
-											<div class="inner-column bg-img">
-												<img src={cadBg} alt="" class="bg-img" />
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="slide-item">
-									<div class="row">
-										<div class="content-column order-2 col-lg-5 col-md-12 col-sm-12">
-											<div class="inner-column">
-												<span class="title">Show your Skills</span>
-												<h2>Ascensus</h2>
-												<div class="text mb-3">
-													Solve a real life industry problem engineered with
-													technical elements in an economically feasible way by
-													taking part in this event.
-												</div>
-											</div>
-										</div>
-
-										<div class="info-column col-lg-7 col-md-12 col-sm-12">
-											<div class="inner-column bg-img">
-												<img src={caseStudyBg} alt="" class="bg-img" />
-											</div>
-										</div>
-									</div>
-								</div>
-							</div> */}
 						</div>
 					</section>
 				</section>
 
 				<section
 					id="what-you-get"
-					class="features-section"
+					className="features-section"
 					style={{ backgroundColor: '#12114a', paddingTop: '80px' }}
 				>
-					<span class="float-text">our feature</span>
-					<div class="container">
-						<div class="sec-title">
+					<span className="float-text">our feature</span>
+					<div className="container">
+						<div className="sec-title">
 							<h2 style={{ color: '#fff' }}>What You Get</h2>
 						</div>
 
-						<div class="row"></div>
+						<div className="row"></div>
 					</div>
 				</section>
 				{/* lasdjfaldsfjasdfkasldfja */}
 
 				<div style={{ backgroundColor: '#12114a' }}>
-					<div class="auto-container" style={{ backgroundColor: '#12114a' }}>
-						<div class="row">
+					<div className="auto-container" style={{ backgroundColor: '#12114a' }}>
+						<div className="row">
 							<div style={{ height: '100px' }}></div>
 
 							<div
-								class="col-lg-4"
+								className="col-lg-4"
 								style={{ paddingBottom: '90px', paddingLeft: '40px' }}
 							>
-								<div class="wrapper">
-									<div class="card" style={{ backgroundColor: '#1c86da' }}>
+								<div className="wrapper">
+									<div className="card" style={{ backgroundColor: '#1c86da' }}>
 										<h1 style={{ background: '#1c86da' }}>
 											<span
-												class="enclosed"
+												className="enclosed"
 												style={{
 													backgroundColor: '#1c86da',
 													color: '#fff',
@@ -729,14 +483,14 @@ const Home = () => {
 							</div>
 
 							<div
-								class="col-lg-4"
+								className="col-lg-4"
 								style={{ paddingBottom: '90px', paddingLeft: '40px' }}
 							>
-								<div class="wrapper">
-									<div class="card" style={{ backgroundColor: '#ed6286' }}>
+								<div className="wrapper">
+									<div className="card" style={{ backgroundColor: '#ed6286' }}>
 										<h1 style={{ background: '#ed6286' }}>
 											<span
-												class="enclosed"
+												className="enclosed"
 												style={{
 													backgroundColor: '#ed6286',
 													color: '#fff',
@@ -762,14 +516,14 @@ const Home = () => {
 								</div>
 							</div>
 							<div
-								class="col-lg-4"
+								className="col-lg-4"
 								style={{ paddingBottom: '90px', paddingLeft: '40px' }}
 							>
-								<div class="wrapper">
-									<div class="card" style={{ backgroundColor: '#1c86da' }}>
+								<div className="wrapper">
+									<div className="card" style={{ backgroundColor: '#1c86da' }}>
 										<h1 style={{ background: '#1c86da' }}>
 											<span
-												class="enclosed"
+												className="enclosed"
 												style={{
 													backgroundColor: '#1c86da',
 													color: '#fff',
@@ -798,6 +552,31 @@ const Home = () => {
 					</div>
 				</div>
 
+				<section className="sponsor">
+					<div className="auto-container">
+						<br />
+						<br />
+						<br />
+						<span className="float-text">SPONSORS</span>
+						<h1 title="sec-title">Sponsors</h1>
+						<div className="btn-box" style={{ textAlign: 'center' }}>
+							<a
+								href="https://drive.google.com/file/d/1bN3DHWDMvaiEYX8YA4N8i_W4uuh2gqzm/view?usp=sharing"
+								target="_blank"
+								className="theme-btn btn-style-four button"
+								style={{
+									borderRadius: '8px',
+									color: '#ffffff',
+								}}
+							>
+								Become a Sponsor
+							</a>
+						</div>
+						<br />
+						<br />
+						<br />
+					</div>
+				</section>
 				{/* <topScroll /> */}
 				<Footer />
 			</div>

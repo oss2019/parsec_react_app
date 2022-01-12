@@ -48,11 +48,25 @@ const Sidebar = ({ show, handleClose, active }) => {
 					alignItems: 'center',
 				}}
 			>
-				<p
+				{/* <p
 					className={`elements text link ${active === 1 ? 'violet' : 'white'}`}
 					onClick={() => history.push('/')}
 				>
 					Home
+				</p> */}
+				<p
+					className={`elements text link ${active === 1 ? 'violet' : 'white'}`}
+					// onClick={() => history.push('/gallery')}
+				>
+					<a
+						className={`elements text link ${
+							active === 1 ? 'violet' : 'white'
+						}`}
+						href="/"
+						style={{ textDecoration: 'none' }}
+					>
+						Home
+					</a>
 				</p>
 				<p
 					className={`elements text link ${active === 2 ? 'violet' : 'white'}`}
@@ -60,24 +74,45 @@ const Sidebar = ({ show, handleClose, active }) => {
 				>
 					<Dropdown>
 						<Dropdown.Toggle
-							className="dropdown"
+							// className="dropdown"
+							className={` dropdown elements text link ${
+								active === 2 ? 'violet' : 'white'
+							}`}
 							style={{
 								background: 'none',
 								color: 'white',
 								border: 'none',
-								boxShadow: 'none'
+								boxShadow: 'none',
 							}}
 						>
 							Events
 						</Dropdown.Toggle>
-						<Dropdown.Menu style={{ backgroundColor: '#1f003b', boxShadow: '1px 1px 1px 1px rgba(32,4,49,0.8)', color: 'white' }}>
-							<Dropdown.Item href="/hackathon"style={{color: 'white'}}>DevHack 3.0</Dropdown.Item>
-							<Dropdown.Item href="/cp"style={{color: 'white'}}>Algostrike 2.0</Dropdown.Item>
-							<Dropdown.Item href="/ctf"style={{color: 'white'}}>VeniVidiVici 2.0</Dropdown.Item>
+						<Dropdown.Menu
+							style={{
+								backgroundColor: '#1f003b',
+								boxShadow: '1px 1px 1px 1px rgba(32,4,49,0.8)',
+								color: 'white',
+							}}
+						>
+							<Dropdown.Item href="/hackathon" style={{ color: 'white' }}>
+								DevHack 3.0
+							</Dropdown.Item>
+							<Dropdown.Item href="/cp" style={{ color: 'white' }}>
+								Algostrike 2.0
+							</Dropdown.Item>
+							<Dropdown.Item href="/ctf" style={{ color: 'white' }}>
+								VeniVidiVici 2.0
+							</Dropdown.Item>
 
-							<Dropdown.Item href="/designo"style={{color: 'white'}}>Designõ</Dropdown.Item>
-							<Dropdown.Item href="/ascensus"style={{color: 'white'}}>Ascensus</Dropdown.Item>
-							<Dropdown.Item href="/quiz"style={{color: 'white'}}>Quiz</Dropdown.Item>
+							<Dropdown.Item href="/designo" style={{ color: 'white' }}>
+								Designõ
+							</Dropdown.Item>
+							<Dropdown.Item href="/ascensus" style={{ color: 'white' }}>
+								Ascensus
+							</Dropdown.Item>
+							<Dropdown.Item href="/quiz" style={{ color: 'white' }}>
+								Quiz
+							</Dropdown.Item>
 						</Dropdown.Menu>
 					</Dropdown>
 				</p>
@@ -113,28 +148,78 @@ const Sidebar = ({ show, handleClose, active }) => {
 				</p> */}
 				<p
 					className={`elements text link ${active === 9 ? 'violet' : 'white'}`}
-					onClick={() => history.push('/gallery')}
+					// onClick={() => history.push('/gallery')}
 				>
-					Gallery
+					<a
+						className={`elements text link ${
+							active === 9 ? 'violet' : 'white'
+						}`}
+						href="/gallery"
+						style={{ textDecoration: 'none' }}
+					>
+						Gallery
+					</a>
 				</p>
 				<p
+					className={`elements text link ${active === 6 ? 'violet' : 'white'}`}
+					// onClick={() => history.push('/gallery')}
+				>
+					<a
+						className={`elements text link ${
+							active === 6 ? 'violet' : 'white'
+						}`}
+						href="/faq"
+						style={{ textDecoration: 'none' }}
+					>
+						FAQs
+					</a>
+				</p>
+				{/* <p
 					className={`elements text link ${active === 6 ? 'violet' : 'white'}`}
 					onClick={() => history.push('/faq')}
 				>
 					FAQs
-				</p>
+				</p> */}
 				<p
+					className={`elements text link ${active === 7 ? 'violet' : 'white'}`}
+					// onClick={() => history.push('/gallery')}
+				>
+					<a
+						className={`elements text link ${
+							active === 7 ? 'violet' : 'white'
+						}`}
+						href="/team"
+						style={{ textDecoration: 'none' }}
+					>
+						Team
+					</a>
+				</p>
+				{/* <p
 					className={`elements text link ${active === 7 ? 'violet' : 'white'}`}
 					onClick={() => history.push('/team')}
 				>
 					Team
-				</p>
-				<p
+				</p> */}
+				{/* <p
+					className={`elements text link ${active === 3 ? 'violet' : 'white'}`}
+					// onClick={() => history.push('/gallery')}
+				>
+					<a
+						className={`elements text link ${
+							active === 3 ? 'violet' : 'white'
+						}`}
+						href="/contact"
+						style={{ textDecoration: 'none' }}
+					>
+						Contact
+					</a>
+				</p> */}
+				{/* <p
 					className={`elements text link ${active === 3 ? 'violet' : 'white'}`}
 					onClick={() => history.push('/contact')}
 				>
 					Contact
-				</p>
+				</p> */}
 
 				<div style={{ color: 'white', bottom: 0, position: 'absolute' }}>
 					<div className="contact-info-box">
