@@ -63,7 +63,7 @@ const Designo = () => {
 																style={{ color: `#ffffff`, fontSize: `20px` }}
 															>
 																<strong>PARSEC 2.0</strong> came up with
-																DESIGNO(3D modeling or CAD) allows engineers and
+																DESIGNO(3D modeling or CAD) that allows engineers and
 																designers to build realistic computer models of
 																parts and assemblies. These models can be then
 																3D Printed or CNC machined as well as used to
