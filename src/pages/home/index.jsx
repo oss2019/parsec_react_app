@@ -165,6 +165,7 @@ const Home = () => {
 											className="col-md-5 img-fluid"
 											src={parsecLogo}
 											id="bg-img"
+											style={{maxWidth: '450px'}}
 										/>
 									</div>
 								</div>
