@@ -324,6 +324,7 @@ const Home = () => {
 						>
 							<div className=" home-btn-box" style={{}}>
 								<a
+								   href='/aboutus'
 									// style={{
 									// 	backgroundColor: '#f20587',
 									// 	color: '#ffff',
