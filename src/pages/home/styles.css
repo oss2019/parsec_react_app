@@ -887,7 +887,7 @@ template {
 	border-radius: 8px;
 	z-index: 10;
 	width: auto;
-	height: 400px;
+	height: 350px;
 	margin-left: -250px;
 	margin-right: 40px;
 	margin-top: 0px;
@@ -976,6 +976,10 @@ template {
 		padding: 40px 50px 0;
 		width: 65%;
 	}
+	.home-about-sec > div > div > img {
+		height: 300px !important;
+		width: auto;
+		margin: 20px 70px 0 -160px;}
 }
 @media all and (max-width: 1320px) {
 	.home-about-sec {
@@ -985,6 +989,10 @@ template {
 		padding: 40px 50px 0;
 		width: 70%;
 	}
+	.home-about-sec > div > div > img {
+		height: 300px !important;
+		width: auto;
+		margin: 20px 70px 0 -160px;}
 }
 @media all and (max-width: 1224px) {
 	.home-about-sec {
