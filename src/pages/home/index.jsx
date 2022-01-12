@@ -558,7 +558,9 @@ const Home = () => {
 						<br />
 						<br />
 						<span className="float-text">SPONSORS</span>
-						<h1 title="sec-title">Sponsors</h1>
+						<h1 title="sec-title" style={{textAlign: 'center'}}>Sponsors</h1>
+						<br />
+						<br />
 						<div className="btn-box" style={{ textAlign: 'center' }}>
 							<a
 								href="https://drive.google.com/file/d/1bN3DHWDMvaiEYX8YA4N8i_W4uuh2gqzm/view?usp=sharing"
