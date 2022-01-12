@@ -135,7 +135,7 @@ const ContactPage = () => {
 					<br />
 					<center>
 						<div className="btn-box">
-							<a href="travel.html" className="theme-btn btn-style-one" style={{textDecoration: 'none'}}>
+							<a href="/travel" className="theme-btn btn-style-one" style={{textDecoration: 'none'}}>
 								More Information
 							</a>
 						</div>
