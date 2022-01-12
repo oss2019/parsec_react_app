@@ -101,8 +101,9 @@ const Team = () => {
 													</a>
 												)}
 											</div>
-											<div className="speaker-info">
+											<div className="speaker-info" style={{backgroundColor: 'transparent'}}>
 												<h5>{makeName(data.name)}</h5>
+												{/* <br /> */}
 												<p style={{ color: 'cyan' }}>
 													General Secretary Technical Affairs
 												</p>
