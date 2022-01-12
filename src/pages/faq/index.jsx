@@ -101,7 +101,7 @@ const FAQ = () => {
 													{' '}
 													We value the importance of safety and inclusion of
 													all. All attendees must adhere to{' '}
-													<a href="code_of_conduct.html" target="_blank">
+													<a href="/codeofconduct" >
 														Our Code of Conduct.
 													</a>
 													Additionally, all DevHack Participants are required to

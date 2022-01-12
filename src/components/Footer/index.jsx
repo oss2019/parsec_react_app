@@ -35,10 +35,10 @@ const Footer = () => {
 										<div className="col-12">
 											<a
 												className="mb-0"
-												href="hackathon.html"
+												href="/hackathon"
 												style={{
 													textDecoration: 'none',
-													pointerEvents: 'none',
+													// pointerEvents: 'none',
 												}}
 											>
 												DevHack 3.0
@@ -46,10 +46,10 @@ const Footer = () => {
 											<br />
 											<a
 												className="mb-0"
-												href="ctf.html"
+												href="/ctf"
 												style={{
 													textDecoration: 'none',
-													pointerEvents: 'none',
+													// pointerEvents: 'none',
 												}}
 											>
 												VeniVidiVici 2.0
@@ -57,10 +57,10 @@ const Footer = () => {
 											<br />
 											<a
 												className="mb-0"
-												href="cp.html"
+												href="/cp"
 												style={{
 													textDecoration: 'none',
-													pointerEvents: 'none',
+													// pointerEvents: 'none',
 												}}
 											>
 												Algostrike 2.0
@@ -69,10 +69,10 @@ const Footer = () => {
 
 											<a
 												className="mb-0"
-												href="quiz.html"
+												href="/quiz"
 												style={{
 													textDecoration: 'none',
-													pointerEvents: 'none',
+													// pointerEvents: 'none',
 												}}
 											>
 												Quiz
@@ -80,10 +80,10 @@ const Footer = () => {
 											<br />
 											<a
 												className="mb-0"
-												href="#"
+												href="/designo"
 												style={{
 													textDecoration: 'none',
-													pointerEvents: 'none',
+													// pointerEvents: 'none',
 												}}
 											>
 												Designõ
@@ -91,10 +91,10 @@ const Footer = () => {
 											<br />
 											<a
 												className="mb-0"
-												href="#"
+												href="/ascensus"
 												style={{
 													textDecoration: 'none',
-													pointerEvents: 'none',
+													// pointerEvents: 'none',
 												}}
 											>
 												Ascensus
