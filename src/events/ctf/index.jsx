@@ -109,7 +109,7 @@ const Ctf = () => {
 													className="row justify-content-center align-items-center col-lg-12"
 													style={{ margin: `auto` }}
 												>
-													<h5
+													{/* <h5
 														style={{
 															color: `#3ca2b8`,
 															paddingTop: `20px`,
@@ -129,7 +129,7 @@ const Ctf = () => {
 															here
 														</a>{' '}
 														before proceeding.
-													</h5>
+													</h5> */}
 												</div>
 
 												{/* <br> */}

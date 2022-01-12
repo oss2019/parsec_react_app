@@ -194,7 +194,7 @@ const FAQ = () => {
 												<div className="text">
 													{' '}
 													If you have any other queries,{' '}
-													<a href="contact.html" target="_blank">
+													<a href="/contact" >
 														reach out to us
 													</a>
 												</div>

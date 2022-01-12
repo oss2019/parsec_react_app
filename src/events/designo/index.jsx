@@ -131,7 +131,7 @@ const Designo = () => {
 																	className="col-md-6"
 																	style={{ color: `#ed6286` }}
 																>
-																	Duration: 4 hour
+																	Duration: 2 Days
 																</div>
 																<div
 																	className="col-md-6"
