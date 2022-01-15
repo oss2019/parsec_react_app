@@ -16,7 +16,7 @@ const Footer = () => {
 						height: 'fit-content',
 					}}
 				>
-					<div className="row">
+					<div className="row" style={{textAlign: 'center'}}>
 						<div className="col-lg-3 col-md-6 col-sm-6 my-auto">
 							<a href="index.html" target="_blank">
 								<img src={FooterLogo} alt="footer-logo" />
@@ -106,11 +106,11 @@ const Footer = () => {
 							</ul>
 						</div>
 
-						<div className="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4 text-left">
-							<h5 className="mb-4 font-weight-bold text-white">SUPPORT</h5>
-							<ul className="f-address text-left" style={{ paddingLeft: 0 }}>
+						<div className="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4 text-left" style={{textAlign: 'center'}}>
+							<h5 className="mb-4 font-weight-bold text-white" style={{textAlign: 'center'}}>SUPPORT</h5>
+							<ul className="f-address text-left" style={{ paddingLeft: 0, textAlign: 'center' }}>
 								<li>
-									<div className="row">
+									<div className="row" style={{textAlign: 'center'}}>
 										<div className="col-12">
 											<a
 												className="mb-0"
@@ -163,10 +163,10 @@ const Footer = () => {
 							</ul>
 						</div>
 
-						<div className="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4 text-left">
-							<h5 className="mb-4 font-weight-bold text-white">SOCIAL MEDIA</h5>
+					<div className="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4 text-left" style={{textAlign: 'center'}}>
+							<h5 className="mb-4 font-weight-bold text-white" style={{textAlign: 'center'}}>SOCIAL MEDIA</h5>
 
-							<ul className="social-pet mt-4 mb-4" style={{ paddingLeft: '0' }}>
+							<ul className="social-pet mt-4 mb-4" style={{ paddingLeft: '0',textAlign: 'center' }}>
 								<li>
 									<a
 										href="https://www.facebook.com/parsec.iitdh"

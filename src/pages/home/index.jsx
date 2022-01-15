@@ -123,7 +123,7 @@ const Home = () => {
 			<div className="page-wrapper">
 				<div className="preloader"></div>
 				<Header active={1} />
-				
+
 				<section
 					id="vantajs"
 					className="banner-section-two "
@@ -165,7 +165,7 @@ const Home = () => {
 											className="col-md-5 img-fluid"
 											src={parsecLogo}
 											id="bg-img"
-											style={{maxWidth: '450px'}}
+											style={{ maxWidth: '450px' }}
 										/>
 									</div>
 								</div>
@@ -204,7 +204,11 @@ const Home = () => {
 				<br />
 				<br />
 				{/* <div  className='auto-container' style={{display: 'inline-block', marginTop: '10px', background: 'red'}}> */}
+
 				<section className="home-about-sec" style={{ margin: '60px' }}>
+					<div className=" sec-title" style={{backgroundColor: 'transparent'}}>
+						<h1>About us</h1>
+					</div>
 					<div
 						className="auto-container home-abt-sec-auto"
 						style={{ paddingBottom: '0px' }}
@@ -446,7 +450,10 @@ const Home = () => {
 				{/* lasdjfaldsfjasdfkasldfja */}
 
 				<div style={{ backgroundColor: '#12114a' }}>
-					<div className="auto-container" style={{ backgroundColor: '#12114a' }}>
+					<div
+						className="auto-container"
+						style={{ backgroundColor: '#12114a' }}
+					>
 						<div className="row">
 							<div style={{ height: '100px' }}></div>
 
@@ -559,7 +566,9 @@ const Home = () => {
 						<br />
 						<br />
 						<span className="float-text">SPONSORS</span>
-						<h1 title="sec-title" style={{textAlign: 'center'}}>Sponsors</h1>
+						<h1 title="sec-title" style={{ textAlign: 'center' }}>
+							Sponsors
+						</h1>
 						<br />
 						<br />
 						<div className="btn-box" style={{ textAlign: 'center' }}>
