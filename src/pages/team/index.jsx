@@ -101,8 +101,12 @@ const Team = () => {
 													</a>
 												)}
 											</div>
-											<div className="speaker-info">
+											<div
+												className="speaker-info"
+												style={{ backgroundColor: 'transparent' }}
+											>
 												<h5>{makeName(data.name)}</h5>
+												{/* <br /> */}
 												<p style={{ color: 'cyan' }}>
 													General Secretary Technical Affairs
 												</p>
@@ -541,10 +545,10 @@ const Team = () => {
 						{/* <FadeIn className="row"> */}
 						<div className="row">
 							{contentTeamData.map((data, i) => (
-								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`} style={{padding: '0px'}}>
+								<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
 									<Zoom delay={delayTime}>
 										{/* <Card delay={600} style={{ border: 0 }}> */}
-										<div className="single-speaker-area wow fadeInUp " style={{padding: '0px', margin:'0px'}}>
+										<div className="single-speaker-area wow fadeInUp ">
 											<div className="speaker-single-thumb">
 												<img src={`${data.image}`} alt="" />
 											</div>
@@ -571,8 +575,18 @@ const Team = () => {
 													</a>
 												)}
 											</div>
-											<div className="speaker-info" style={{margin:'0'}}>
-												<h5>{makeName(data.name)}</h5>
+											<div className="speaker-info">
+												<h5
+												// style={{
+												// 	color: `${
+												// 		data.github == 'https://github.com/saurabh021120'
+												// 			? '#c9c9c9'
+												// 			: 'white'
+												// 	}`,
+												// }}
+												>
+													{makeName(data.name)}
+												</h5>
 												{/* <p>General Secretary Technical Affairs</p> */}
 											</div>
 										</div>
@@ -620,13 +634,13 @@ const Team = () => {
 											</div>
 											<div className="speaker-info">
 												<h5
-													// style={{
-													// 	color: `${
-													// 		data.github == 'https://github.com/saurabh021120'
-													// 			? '#c9c9c9'
-													// 			: 'white'
-													// 	}`,
-													// }}
+												// style={{
+												// 	color: `${
+												// 		data.github == 'https://github.com/saurabh021120'
+												// 			? '#c9c9c9'
+												// 			: 'white'
+												// 	}`,
+												// }}
 												>
 													{makeName(data.name)}
 												</h5>

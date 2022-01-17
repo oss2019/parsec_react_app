@@ -44,7 +44,7 @@ const Designo = () => {
 													className="mx-auto mt-5"
 													style={{ color: `#ce41af`, textAlign: `center` }}
 												>
-													DESIGNO
+													DESIGNÕ
 												</h1>
 												<h2
 													className="mx-auto mt-5"
@@ -63,15 +63,15 @@ const Designo = () => {
 																style={{ color: `#ffffff`, fontSize: `20px` }}
 															>
 																<strong>PARSEC 2.0</strong> came up with
-																DESIGNO(3D modeling or CAD) allows engineers and
-																designers to build realistic computer models of
-																parts and assemblies. These models can be then
-																3D Printed or CNC machined as well as used to
-																run complex simulations. A wide range of
-																parameters can be simulated such as strength or
-																temperature resistance before any physical
-																models have been created, enabling a much faster
-																and cheaper workflow.
+																DESIGNÕ(3D modeling or CAD) that allows
+																engineers and designers to build realistic
+																computer models of parts and assemblies. These
+																models can be then 3D Printed or CNC machined as
+																well as used to run complex simulations. A wide
+																range of parameters can be simulated such as
+																strength or temperature resistance before any
+																physical models have been created, enabling a
+																much faster and cheaper workflow.
 															</div>
 														</div>
 														<div
