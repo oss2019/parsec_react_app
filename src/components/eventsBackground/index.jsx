@@ -1,7 +1,7 @@
 import './styles.css';
 import Particles from 'react-tsparticles';
 
-const Background = () => {
+const Background = ({bgColor}) => {
 	return (
 		<div className="App">
 			<Particles
@@ -99,7 +99,7 @@ const Background = () => {
 					},
 					detectRetina: true,
 					background: {
-						color: '#202124',
+						color: bgColor!=='' ?`${bgColor}`: '#202124',
 						// color: '#090b38',
 						// color: 'rgba(0,0,0,0.2)',
 					},

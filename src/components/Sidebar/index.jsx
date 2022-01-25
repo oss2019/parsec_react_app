@@ -72,7 +72,16 @@ const Sidebar = ({ show, handleClose, active }) => {
 					className={`elements text link ${active === 2 ? 'violet' : 'white'}`}
 					// onClick={() => history.push('/events')}
 				>
-					<Dropdown>
+					<a
+						className={`elements text link ${
+							active === 2 ? 'violet' : 'white'
+						}`}
+						href="/events"
+						style={{ textDecoration: 'none' }}
+					>
+						Events
+					</a>
+					{/* <Dropdown>
 						<Dropdown.Toggle
 							// className="dropdown"
 							className={` dropdown elements text link ${
@@ -114,7 +123,7 @@ const Sidebar = ({ show, handleClose, active }) => {
 								Quiz
 							</Dropdown.Item>
 						</Dropdown.Menu>
-					</Dropdown>
+					</Dropdown> */}
 				</p>
 				{/* <p
 					className={`elements text link ${active === 2 ? 'violet' : 'white'}`}
