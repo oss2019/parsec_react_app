@@ -17,8 +17,8 @@ import quiz from '../../images/_events/quiz.png';
 import ascensus from '../../images/_events/ascensus.png';
 import designo from '../../images/_events/designo.png';
 import EventBackground from '../../components/eventsBackground';
-import evtTitle from '../../images/_events/evtTitle.png';
-import evtSmall from '../../images/_events/evtSmall.png';
+import evtTitle from '../../images/_events/evtTitle.jpg';
+// import evtSmall from '../../images/_events/evtSmall.png';
 
 import LazyLoad from 'react-lazyload';
 import { useMediaQuery } from 'react-responsive';

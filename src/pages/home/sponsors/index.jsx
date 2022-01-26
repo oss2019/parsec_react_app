@@ -1,6 +1,8 @@
 import React from 'react';
 import platinumSponsors from './platinumSponsors.json';
-import goldSponsors from './goldSponsors.json'
+import goldSponsors from './goldSponsors.json';
+import merchandisePartner from './merchandisePartner.json';
+import inkind from './inkind.json';
 
 const Sponsors = () => {
 	return (
@@ -17,7 +19,10 @@ const Sponsors = () => {
 				{/* SPONSORS */}
 				<section className="our-ticket-pricing-table-area section-padding-100-0">
 					<div className="container">
-						<div className="row">
+						<div
+							className="row"
+							style={{ display: 'flex-wrap', justifyContent: 'center' }}
+						>
 							{/* HIGHLIGHT PLATINUM */}
 							<>
 								<h1
@@ -31,7 +36,10 @@ const Sponsors = () => {
 									PLATINUM
 								</h1>
 								{platinumSponsors.map((item, index) => (
-									<div className="col-12 col-md-6 col-lg-4">
+									<div
+										className="col-12 col-md-6 col-lg-4"
+										style={{ margin: '0 10px 0 5px' }}
+									>
 										<div
 											className="single-ticket-pricing-table style-2 active text-center mb-100 wow fadeInUp"
 											data-wow-delay="300ms"
@@ -44,7 +52,12 @@ const Sponsors = () => {
 													border: '#ffffff',
 												}}
 											>
-												<a href={`${item.link}`}>
+												<a
+													href={`${item.link}`}
+													style={{
+														pointerEvents: item.link === '' ? 'none' : '',
+													}}
+												>
 													<div
 														style={{
 															display: 'flex',
@@ -84,6 +97,67 @@ const Sponsors = () => {
 									GOLD
 								</h1>
 								{goldSponsors.map((item, index) => (
+									<div
+										className="col-12 col-md-6 col-lg-4"
+										style={{ margin: '0 10px 0 5px' }}
+									>
+										<div
+											className="single-ticket-pricing-table style-2 active text-center mb-100 wow fadeInUp"
+											data-wow-delay="300ms"
+											style={{ padding: '0' }}
+										>
+											<figure
+												className="image"
+												style={{
+													height: '143px',
+													border: '#ffffff',
+												}}
+											>
+												<a
+													href={`${item.link}`}
+													style={{
+														pointerEvents: item.link === '' ? 'none' : '',
+													}}
+												>
+													<div
+														style={{
+															display: 'flex',
+															alignItems: 'center',
+															justifyContent: 'center',
+															width: '100%',
+															height: '100%',
+														}}
+													>
+														<img
+															src={`https://drive.google.com/uc?id=${item.image}`}
+															alt=""
+															style={{
+																height: '123px',
+																width: 'auto',
+																alignItems: 'center',
+																padding: '5px',
+															}}
+														/>
+													</div>
+												</a>
+											</figure>
+										</div>
+									</div>
+								))}
+							</>
+
+							<>
+								<h1
+									className="col-12 text"
+									style={{
+										color: '#cd7f32',
+										marginBottom: '30px',
+										textAlign: 'center',
+									}}
+								>
+									MERCHANDISE PARTNER
+								</h1>
+								{merchandisePartner.map((item, index) => (
 									<div className="col-12 col-md-6 col-lg-4">
 										<div
 											className="single-ticket-pricing-table style-2 active text-center mb-100 wow fadeInUp"
@@ -97,7 +171,70 @@ const Sponsors = () => {
 													border: '#ffffff',
 												}}
 											>
-												<a href={`${item.link}`}>
+												<a
+													href={`${item.link}`}
+													style={{
+														pointerEvents: item.link === '' ? 'none' : '',
+													}}
+												>
+													<div
+														style={{
+															display: 'flex',
+															alignItems: 'center',
+															justifyContent: 'center',
+															width: '100%',
+															height: '100%',
+														}}
+													>
+														<img
+															src={`https://drive.google.com/uc?id=${item.image}`}
+															alt=""
+															style={{
+																height: '123px',
+																width: 'auto',
+																alignItems: 'center',
+																padding: '5px',
+															}}
+														/>
+													</div>
+												</a>
+											</figure>
+										</div>
+									</div>
+								))}
+							</>
+							{/* HIGHLIGHT IN-KIND */}
+							<>
+								<h1
+									className="col-12 text"
+									style={{
+										color: '#cd7f32',
+										marginBottom: '30px',
+										textAlign: 'center',
+									}}
+								>
+									IN-KIND
+								</h1>
+								{inkind.map((item, index) => (
+									<div className="col-12 col-md-6 col-lg-4">
+										<div
+											className="single-ticket-pricing-table style-2 active text-center mb-100 wow fadeInUp"
+											data-wow-delay="300ms"
+											style={{ padding: '0' }}
+										>
+											<figure
+												className="image"
+												style={{
+													height: '143px',
+													border: '#ffffff',
+												}}
+											>
+												<a
+													href={`${item.link}`}
+													style={{
+														pointerEvents: item.link === '' ? 'none' : '',
+													}}
+												>
 													<div
 														style={{
 															display: 'flex',
