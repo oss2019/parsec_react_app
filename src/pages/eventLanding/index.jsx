@@ -187,7 +187,7 @@ const EventLanding = () => {
 						</div>
 						{/* <LazyLoad> */}
 
-						<div className="row ">
+						<div className="row " style={{padding: 'auto', display: 'flex-wrap', justifyContent: 'center'}}>
 							<EvtCard
 								evtLogo={devhack}
 								evtTitle="DEVHACK 3.0"
