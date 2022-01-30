@@ -48,7 +48,7 @@ const Routes = () => {
                 <Route path='/ascensus' component={Ascensus}/>
                 <Route path='/designo' component={Designo}/>
                 <Route path='/quiz' component={Quiz} />
-                {/* <Route path='/workshops' component={Workshop} /> */}
+                <Route path='/workshops' component={Workshop} />
                 <Route path='/schedule' component={Schedule} />
                 <Route path='/speakers' component={Speakers} />
                 {/* <Route path='/hackathon_timeline' component={Timeline}/>

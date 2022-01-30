@@ -28,7 +28,6 @@ const Header = ({ active }) => {
 		setShow(!show);
 	};
 
-
 	useEffect(() => {
 		(function ($) {
 			'use strict';
@@ -535,9 +534,9 @@ const Header = ({ active }) => {
 													{/* <li className={`${active === 10 ? 'current' : ''}`}>
 														<a href="/aboutus">About</a>
 													</li> */}
-													{/* <li className={`${active === 1 ? 'current' : ''}`}>
-												<a href="/workshops">Workshops</a>
-											</li> */}
+													<li className={`${active === 3 ? 'current' : ''}`}>
+														<a href="/workshops">Workshops</a>
+													</li>
 													{/* <li className={`${active === 4 ? 'current' : ''}`}>
 														<a href="/schedule" target="">
 															Schedule

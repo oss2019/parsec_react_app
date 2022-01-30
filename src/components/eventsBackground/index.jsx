@@ -39,7 +39,7 @@ const Background = ({bgColor}) => {
 							random: { enable: true, minimumValue: 4 },
 							animation: {
 								enable: false,
-								speed: 20,
+								speed: 3,
 								minimumValue: 4,
 								sync: false,
 							},
@@ -48,9 +48,9 @@ const Background = ({bgColor}) => {
 							enable: true,
 							gravity: {
 								enable: true,
-								acceleration: -0.5,
+								acceleration: -1,
 							},
-							speed: 5,
+							speed: 2,
 							direction: 'top',
 							random: false,
 							straight: false,

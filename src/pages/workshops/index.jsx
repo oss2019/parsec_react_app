@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import Header from '../../components/Header';
 import TitleBackground from '../../images/background/workshop.jpg';
-import aiWorkshopImage from '../../images/resource/ml&ai.jpg';
 import './styles.css';
 import '../../css/bootstrap.css';
 import '../../css/style.css';
@@ -11,7 +10,6 @@ import Workshop_comp from './workshop_comp';
 // import '../../css/contact.css';
 
 const Workshop = () => {
-
 	return (
 		<React.Fragment>
 			<div className="page-wrapper" style={{ overflowX: 'hidden' }}>
@@ -44,235 +42,55 @@ const Workshop = () => {
 				</section>
 
 				<section className="news-section">
-					<div className="auto-container">
-						<div className="row">
-							<Workshop_comp name = "Demo workshop & Testing" startDate = "Feb 15, 2020, 10:00 AM"
-							 			   endDate = "Feb 15, 2020, 10:00 AM" fee = "850" ></Workshop_comp>
-						    
-							{/* <div
-								className="news-block news-block-style col-lg-5 col-md-6 col-sm-12 wow fadeInUp "
-								dataWowDelay="400ms"
-							>
-								<div className="image-box" style = {{paddingTop : '8%', paddingBottom : '3%'}}>
-									<figure className="image">
-										<a href="#">
-											<img src={aiWorkshopImage} alt = "" style={{width : '100%',objectFit:'cover'}}/>
-										</a>
-									</figure>
-								</div>
-
-								<div className="lower-content" style={{ textAlign: 'left' }}>
-									<h4>
-										<a
-											href="#"
-											style={{
-												fontSize: '25px',
-												paddingTop: '5px',
-												fontFamily: `-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif`,
-												textAlign: 'center',
-												textDecoration: 'none',
-											}}
-										>
-											Demo workshop & Testing
-										</a>
-									</h4>
-									<div className="text" style={{ marginBottom: '6px' }}>
-										<span
-											style={{
-												color: '#000',
-												fontWeight: '700',
-												fontSize: '20px',
-											}}
-										>
-											Start Date:{' '}
-										</span>
-										<span
-											style={{
-												color: '#000',
-												fontSize: '17px',
-												fontWeight: 'normal',
-											}}
-										>
-											Feb 15, 2020, 10:00 AM
-										</span>
-									</div>
-									<div className="text" style={{ marginBottom: '6px' }}>
-										<span
-											style={{
-												color: '#000',
-												fontWeight: '700',
-												fontSize: '20px',
-											}}
-										>
-											End Date:{' '}
-										</span>
-										<span
-											style={{
-												color: '#000',
-												fontSize: '17px',
-												fontWeight: 'normal',
-											}}
-										>
-											Feb 15, 2020, 10:00 AM
-										</span>
-									</div>
-									<div className="text" style={{ marginBottom: '6px' }}>
-										<span
-											style={{
-												color: '#000',
-												fontWeight: '700',
-												fontSize: '20px',
-											}}
-										>
-											Fees:{' '}
-										</span>
-										<span
-											style={{
-												color: '#000',
-												fontSize: '17px',
-												fontWeight: 'normal',
-											}}
-										>
-											&#8377; 850
-										</span>
-									</div>
-
-									<center
-										style={{
-											height: '50px',
-											paddingBottom: '60px',
-											paddingTop: '15px',
-										}}
-									>
-										<div className="btn-box">
-											<button
-												type="button"
-												className="btn btn-lg btn-primary"
-												disabled
-											>
-												Coming soon
-											</button>
-										</div>
-										<br />
-										<br />
-									</center>
-								</div>
-							</div> */}
-
-							<div className="col-lg-2"></div>
-							<workshop_comp name = "Demo workshop & Testing" startDate = "Feb 15, 2020, 10:00 AM"
-							 			   endDate = "Feb 15, 2020, 10:00 AM" fee = "850" ></workshop_comp>
-
-							{/* <div
-								className="news-block news-block-style col-lg-5 col-md-6 col-sm-12 wow fadeInUp "
-								dataWowDelay="400ms"
-							>
-								<div className="image-box">
-									<figure className="image">
-										<a href="#">
-											<img src={aiWorkshopImage} />
-										</a>
-									</figure>
-								</div>
-
-								<div className="lower-content" style={{ textAlign: 'left' }}>
-									<h4>
-										<a
-											href=""
-											style={{
-												fontSize: '25px',
-												paddingTop: '5px',
-												fontFamily: `-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif`,
-												textAlign: 'center',
-												textDecoration: 'none',
-											}}
-										>
-											Demo workshop & Testing
-										</a>
-									</h4>
-									<div className="text" style={{ marginBottom: '6px' }}>
-										<span
-											style={{
-												color: '#000',
-												fontWeight: '700',
-												fontSize: '20px',
-											}}
-										>
-											Start Date:{' '}
-										</span>
-										<span
-											style={{
-												color: '#000',
-												fontSize: '17px',
-												fontWeight: 'normal',
-											}}
-										>
-											Feb 15, 2020, 10:00 AM
-										</span>
-									</div>
-									<div className="text" style={{ marginBottom: '6px' }}>
-										<span
-											style={{
-												color: '#000',
-												fontWeight: '700',
-												fontSize: '20px',
-											}}
-										>
-											End Date:{' '}
-										</span>
-										<span
-											style={{
-												color: '#000',
-												fontSize: '17px',
-												fontWeight: 'normal',
-											}}
-										>
-											Feb 15, 2020, 10:00 AM
-										</span>
-									</div>
-									<div className="text" style={{ marginBottom: '6px' }}>
-										<span
-											style={{
-												color: '#000',
-												fontWeight: '700',
-												fontSize: '20px',
-											}}
-										>
-											Fees:{' '}
-										</span>
-										<span
-											style={{
-												color: '#000',
-												fontSize: '17px',
-												fontWeight: 'normal',
-											}}
-										>
-											&#8377; 850
-										</span>
-									</div>
-
-									<center
-										style={{
-											height: '50px',
-											paddingBottom: '60px',
-											paddingTop: '15px',
-										}}
-									>
-										<div className="btn-box">
-											<button
-												type="button"
-												className="btn btn-lg btn-primary"
-												disabled
-											>
-												Coming soon
-											</button>
-										</div>
-										<br />
-										<br />
-									</center>
-								</div>
-							</div> */}
+					<div className="auto-container" style={{ padding: '0 auto' }}>
+						<div
+							class="row"
+							style={{
+								padding: 'auto',
+								display: 'flex-wrap',
+								justifyContent: 'center',
+							}}
+						>
+							<Workshop_comp
+								imageId="1dS5sWrqmjVIIgcY_5P5YjelUn5IZBn_P"
+								title="Data Science and Machine Learning using Python"
+								startDate="March 5, 2022, 10:00 AM"
+								endDate="March 6, 2022, 5:00 PM"
+								venue="Zoom"
+								fee="799.00"
+								registrationLink="https://rzp.io/l/parsec22"
+							/>
+							<Workshop_comp
+								imageId="121LzHkYuBH13mq-lM6O6bxezjtMRnukD"
+								title="Data Structures and Algorithms"
+								startDate="March 5, 2022, 10:00 AM"
+								endDate="March 6, 2022, 5:00 PM"
+								venue="Zoom"
+								fee="799.00"
+								registrationLink="https://rzp.io/l/parsec22"
+							/>
+							<Workshop_comp
+								imageId="1ThdVu8tM_x23z5d5FIEgTlfq0CP-dSY8"
+								title="Ethical Hacking and Cyber Security
+"
+								startDate="March 5, 2022, 10:00 AM"
+								endDate="March 6, 2022, 5:00 PM"
+								venue="Zoom"
+								fee="799.00"
+								registrationLink="https://rzp.io/l/parsec22"
+							/>
 						</div>
+
+						{/* <div className="row">
+							<Workshop_comp
+								title="Data Science and Machine Learning using Python"
+								startDate="March 5, 2022, 10:00 AM"
+								endDate="March 6, 2022, 5:00 PM"
+								venue="Zoom"
+								fee="799.00"
+								registrationLink="https://rzp.io/l/parsec22"
+							></Workshop_comp>
+						</div> */}
 					</div>
 				</section>
 			</div>

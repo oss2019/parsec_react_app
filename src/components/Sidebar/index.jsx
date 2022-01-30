@@ -81,6 +81,7 @@ const Sidebar = ({ show, handleClose, active }) => {
 					>
 						Events
 					</a>
+					
 					{/* <Dropdown>
 						<Dropdown.Toggle
 							// className="dropdown"
@@ -155,6 +156,20 @@ const Sidebar = ({ show, handleClose, active }) => {
 				>
 					About
 				</p> */}
+				<p
+					className={`elements text link ${active === 3 ? 'violet' : 'white'}`}
+					// onClick={() => history.push('/gallery')}
+				>
+					<a
+						className={`elements text link ${
+							active === 3 ? 'violet' : 'white'
+						}`}
+						href="/workshops"
+						style={{ textDecoration: 'none' }}
+					>
+						Workshops
+					</a>
+				</p>
 				<p
 					className={`elements text link ${active === 9 ? 'violet' : 'white'}`}
 					// onClick={() => history.push('/gallery')}
