@@ -3,7 +3,8 @@ import platinumSponsors from './platinumSponsors.json';
 import goldSponsors from './goldSponsors.json';
 import merchandisePartner from './merchandisePartner.json';
 import inkind from './inkind.json';
-
+import industryPartner from './industryPartner.json';
+import workshopPartner from './workshopPartner.json';
 const Sponsors = () => {
 	return (
 		<section className="sponsor">
@@ -145,7 +146,65 @@ const Sponsors = () => {
 									</div>
 								))}
 							</>
-
+							{/* HIGHLIGHT MERCHANDISE */}
+							<>
+								<h1
+									className="col-12 text"
+									style={{
+										color: '#cd7f32',
+										marginBottom: '30px',
+										textAlign: 'center',
+									}}
+								>
+									INDUSTRIAL LIVE TRAINING AND INTERNSHIP PARTNER
+								</h1>
+								{industryPartner.map((item, index) => (
+									<div className="col-12 col-md-6 col-lg-4">
+										<div
+											className="single-ticket-pricing-table style-2 active text-center mb-100 wow fadeInUp"
+											data-wow-delay="300ms"
+											style={{ padding: '0' }}
+										>
+											<figure
+												className="image"
+												style={{
+													height: '143px',
+													border: '#ffffff',
+												}}
+											>
+												<a
+													href={`${item.link}`}
+													style={{
+														pointerEvents: item.link === '' ? 'none' : '',
+													}}
+												>
+													<div
+														style={{
+															display: 'flex',
+															alignItems: 'center',
+															justifyContent: 'center',
+															width: '100%',
+															height: '100%',
+														}}
+													>
+														<img
+															src={`https://drive.google.com/uc?id=${item.image}`}
+															alt=""
+															style={{
+																height: '123px',
+																width: 'auto',
+																alignItems: 'center',
+																padding: '5px',
+															}}
+														/>
+													</div>
+												</a>
+											</figure>
+										</div>
+									</div>
+								))}
+							</>
+							{/* HIGHLIGHT MERCHANDISE */}
 							<>
 								<h1
 									className="col-12 text"
@@ -158,6 +217,65 @@ const Sponsors = () => {
 									MERCHANDISE PARTNER
 								</h1>
 								{merchandisePartner.map((item, index) => (
+									<div className="col-12 col-md-6 col-lg-4">
+										<div
+											className="single-ticket-pricing-table style-2 active text-center mb-100 wow fadeInUp"
+											data-wow-delay="300ms"
+											style={{ padding: '0' }}
+										>
+											<figure
+												className="image"
+												style={{
+													height: '143px',
+													border: '#ffffff',
+												}}
+											>
+												<a
+													href={`${item.link}`}
+													style={{
+														pointerEvents: item.link === '' ? 'none' : '',
+													}}
+												>
+													<div
+														style={{
+															display: 'flex',
+															alignItems: 'center',
+															justifyContent: 'center',
+															width: '100%',
+															height: '100%',
+														}}
+													>
+														<img
+															src={`https://drive.google.com/uc?id=${item.image}`}
+															alt=""
+															style={{
+																height: '123px',
+																width: 'auto',
+																alignItems: 'center',
+																padding: '5px',
+															}}
+														/>
+													</div>
+												</a>
+											</figure>
+										</div>
+									</div>
+								))}
+							</>
+
+							{/* HIGHLIGHT WORKSHOP PARTNER */}
+							<>
+								<h1
+									className="col-12 text"
+									style={{
+										color: '#cd7f32',
+										marginBottom: '30px',
+										textAlign: 'center',
+									}}
+								>
+									WORKSHOP PARTNER
+								</h1>
+								{workshopPartner.map((item, index) => (
 									<div className="col-12 col-md-6 col-lg-4">
 										<div
 											className="single-ticket-pricing-table style-2 active text-center mb-100 wow fadeInUp"
