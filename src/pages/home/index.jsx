@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, Suspense } from 'react';
 import './styles.css';
 import '../../css/counternew.css';
 import '../../css/bootstrap.css';
@@ -8,13 +8,17 @@ import '../../css/responsive.css';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import parsecLogo from '../../images/logos/parsec-lg.png';
-import logoAbout from '../../images/logos/logo-about.jpg';
-
+import mainSlider from '../../images/main-slider/4_comp.jpg'
 import EventCarousel from './eventsCarousel';
-// import Typewriter from 'typewriter-effect';
+
+
 
 import { Typewriter } from '@chrisfieldsii/react-use-typewriter';
 import '@chrisfieldsii/react-use-typewriter/dist/index.css';
+import Sponsors from './sponsors';
+import AboutUs from './about';
+
+
 const Home = () => {
 	useEffect(() => {
 		function getTimeRemaining(endtime) {
@@ -98,7 +102,6 @@ const Home = () => {
 			}
 
 			headerStyle();
-			
 
 			/* ==========================================================================
    When document is Scrollig, do
@@ -121,14 +124,14 @@ const Home = () => {
 	return (
 		<React.Fragment>
 			<div className="page-wrapper">
-				<div className="preloader"></div>
+				<div className='preloader'></div>
 				<Header active={1} />
-				
+
 				<section
 					id="vantajs"
 					className="banner-section-two "
 					style={{
-						backgroundImage: `url(https://drive.google.com/uc?id=1IPc-P88_oDVRg1NKQgUWdBCB18tACY1Q)`,
+						backgroundImage: `url(${mainSlider})`,
 						height: '100vh',
 						// paddingTop: '0px'
 					}}
@@ -165,7 +168,7 @@ const Home = () => {
 											className="col-md-5 img-fluid"
 											src={parsecLogo}
 											id="bg-img"
-											style={{maxWidth: '450px'}}
+											style={{ maxWidth: '450px' }}
 										/>
 									</div>
 								</div>
@@ -194,65 +197,12 @@ const Home = () => {
 						</div>
 					</div>
 				</section>
-
-				{/* <br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br /> */}
+			
 				<br />
 				<br />
-				{/* <div  className='auto-container' style={{display: 'inline-block', marginTop: '10px', background: 'red'}}> */}
-				<section className="home-about-sec" style={{ margin: '60px' }}>
-					<div
-						className="auto-container home-abt-sec-auto"
-						style={{ paddingBottom: '0px' }}
-					>
-						<div>
-							<img src={logoAbout} />
+		
 
-							<div className="text about-us-text">
-								PARSEC 2022, the second edition of the Technology Festival of
-								IIT Dharwad, aims to bring together the unparalleled experience
-								of magnificent technologists and the innate curiosity of
-								passionate students by providing a common platform to showcase
-								their expertise and hone their skills. While there is no doubt
-								that technology has taken magnanimous leaps in the past few
-								decades, this fest ambitiously aspires to see it progress in
-								parsecs in the near future.{' '}
-							</div>
-						</div>
-
-						<div
-							className="home-btn-container"
-							style={{
-								display: 'flex',
-								justifyContent: 'center',
-							}}
-						>
-							<div className=" home-btn-box" style={{}}>
-								<a
-									href="/aboutus"
-									// style={{
-									// 	backgroundColor: '#f20587',
-									// 	color: '#ffff',
-									// 	position: 'relative',
-									// 	width: 'max-content',
-									// 	padding: '15px 35px',
-									// 	fontSize: '18px',
-									// 	fontWeight: 400,
-									// 	borderRadius: '8px',
-									// }}
-									className="theme-btn btn-style-one"
-								>
-									View More
-								</a>
-							</div>
-						</div>
-					</div>
-				</section>
-				{/* </div> */}
+				<AboutUs />
 
 				<br />
 				<br />
@@ -446,7 +396,10 @@ const Home = () => {
 				{/* lasdjfaldsfjasdfkasldfja */}
 
 				<div style={{ backgroundColor: '#12114a' }}>
-					<div className="auto-container" style={{ backgroundColor: '#12114a' }}>
+					<div
+						className="auto-container"
+						style={{ backgroundColor: '#12114a' }}
+					>
 						<div className="row">
 							<div style={{ height: '100px' }}></div>
 
@@ -553,35 +506,10 @@ const Home = () => {
 					</div>
 				</div>
 
-				<section className="sponsor">
-					<div className="auto-container">
-						<br />
-						<br />
-						<br />
-						<span className="float-text">SPONSORS</span>
-						<h1 title="sec-title" style={{textAlign: 'center'}}>Sponsors</h1>
-						<br />
-						<br />
-						<div className="btn-box" style={{ textAlign: 'center' }}>
-							<a
-								href="https://drive.google.com/file/d/1bN3DHWDMvaiEYX8YA4N8i_W4uuh2gqzm/view?usp=sharing"
-								target="_blank"
-								className="theme-btn btn-style-four button"
-								style={{
-									borderRadius: '8px',
-									color: '#ffffff',
-								}}
-							>
-								Become a Sponsor
-							</a>
-						</div>
-						<br />
-						<br />
-						<br />
-					</div>
-				</section>
+				<Sponsors />
 				{/* <topScroll /> */}
 				<Footer />
+				{/* </Suspense> */}
 			</div>
 		</React.Fragment>
 	);

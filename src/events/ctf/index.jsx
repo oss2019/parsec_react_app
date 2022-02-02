@@ -74,21 +74,22 @@ const Ctf = () => {
 												<div className="col-lg-4"></div>
 												<div
 													className="col-lg-4"
-													style={{ maxWidth: `300px`, maxHeight: `200px` }}
+													style={{ maxWidth: `250px`, maxHeight: `200px`, textAlign: 'center' }}
 												>
 													{/* <br> */}
-													<ul className="ul1" style={{ paddingRight: `30px` }}>
+													<ul className="ul1" style={{ paddingRight: `30px`, textAlign: 'center' }}>
 														<a
 															// href=" https://parseciitdh.typeform.com/to/FuAQay"
 															style={{ textDecoration: 'none' }}
 														>
-															<li className="li1">Register Now</li>
+															<li className="li1" style={{maxWidth: '330px'}}>Register Now</li>
 														</a>
 														<li
 															className="li1"
 															style={{
+																marginRight: `40px`,
 																paddingRight: `40px`,
-																maxWidth: `350px`,
+																maxWidth: `330px`,textAlign:'center'
 															}}
 														>
 															<a
@@ -96,7 +97,7 @@ const Ctf = () => {
 																style={{
 																	color: `#ffffff`,
 																	width: '100%',
-																	textDecoration: 'none',
+																	textDecoration: 'none',textAlign: 'center'
 																}}
 															>
 																proceed to ctf

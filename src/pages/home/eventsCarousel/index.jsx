@@ -55,10 +55,11 @@ const EventCarousel = () => {
 					<div class="info-column col-lg-7 col-md-12 col-sm-12">
 						<div class="inner-column  bg-img">
 							<img
-								src="https://drive.google.com/uc?id=1cNMiLFJkzH8Ew99XNhHxCweJNWd0OqyY"
+								src="https://drive.google.com/uc?id=1zfapVQ70IumpDdz0yVDGZUV3zhp4I8i4"
 								alt=""
 								class="bg-img"
 								style={{ width: '70%' }}
+								
 							/>
 						</div>
 					</div>
@@ -100,10 +101,11 @@ const EventCarousel = () => {
 					<div class="info-column col-lg-7 col-md-12 col-sm-12">
 						<div class="inner-column  bg-img">
 							<img
-								src="https://drive.google.com/uc?id=1jsVvaXDB8vmo1aXzStkaULx_UkvV2iIK"
+								src="https://drive.google.com/uc?id=16AvAkRTlLHJ5X-KcGLWO3-fA-n6PCSsg"
 								alt=""
 								class="bg-img"
 								style={{ width: '70%' }}
+								
 							/>
 						</div>
 					</div>
@@ -149,7 +151,7 @@ const EventCarousel = () => {
 					<div class="info-column col-lg-7 col-md-12 col-sm-12">
 						<div class="inner-column  bg-img">
 							<img
-								src="https://drive.google.com/uc?id=1h_MrGkMWhn1PCAwBXJD4o8e8WeOMTXMM"
+								src="https://drive.google.com/uc?id=1yYK3kdxUwk6tBZpFKyr4wgIuoRJWT1p6"
 								alt=""
 								class="bg-img"
 								style={{ width: '70%' }}
@@ -191,10 +193,10 @@ const EventCarousel = () => {
 					<div class="info-column col-lg-7 col-md-12 col-sm-12">
 						<div class="inner-column  bg-img">
 							<img
-								src="https://drive.google.com/uc?id=1bxLISdAOiSW5i_xmEcFS4-EinFSs5XPI"
+								src="https://drive.google.com/uc?id=17c5WqrsJsXmArHg6xDYOh5ZX__snZDf0"
 								alt=""
 								class="bg-img"
-								style={{ width: '70%' }}
+								style={{ width: '70%' }} 
 							/>
 						</div>
 					</div>
@@ -233,7 +235,7 @@ const EventCarousel = () => {
 					<div class="info-column col-lg-7 col-md-12 col-sm-12">
 						<div class="inner-column  bg-img">
 							<img
-								src="https://drive.google.com/uc?id=1SYN5K4Q35btVFJP0jEaeoCzqRMFg4K-M"
+								src="https://drive.google.com/uc?id=1EAnQrMy4e-bEeUUC1Rhrhr2rgXz8-IEv"
 								alt=""
 								class="bg-img"
 								style={{ width: '70%' }}
@@ -275,7 +277,7 @@ const EventCarousel = () => {
 					<div class="info-column col-lg-7 col-md-12 col-sm-12">
 						<div class="inner-column  bg-img">
 							<img
-								src="https://drive.google.com/uc?id=1oaXSeYF5HGJ_aF_HBCpRWH4lzF3cje8G"
+								src="https://drive.google.com/uc?id=1CJkzriYKr05wO81rGG4ENjIOh8taoHwz"
 								alt=""
 								class="bg-img"
 								style={{ width: '70%' }}

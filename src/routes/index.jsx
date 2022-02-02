@@ -15,6 +15,7 @@ import Team from '../pages/team';
 // import Timeline from '../events/hackathon_timeline';
 // import Themes from '../events/hackathon_themes';
 // import Judges from '../events/hackathon_judges';
+
 import FAQ from '../pages/faq';
 import ContactPage from '../pages/contact';
 import Home from '../pages/home';
@@ -23,6 +24,7 @@ import Travel from '../pages/travel';
 import CodeOfConduct from '../pages/codeOfConduct';
 import About from '../pages/about';
 import Gallery from '../pages/gallery';
+import EventLanding from '../pages/eventLanding';
 
 const Routes = () => {
     return (
@@ -36,7 +38,8 @@ const Routes = () => {
                 <Route path='/codeofconduct' component={CodeOfConduct} />
                 <Route path='/travel' component={Travel} />
                 <Route path='/contact' component={ContactPage} />
-                {/* <Route path='/events' component={Events} /> */}
+                
+                <Route path='/events' component={EventLanding} />
                 <Route path='/team' component={Team}/>
                 <Route path='/cp' component={Cp}/>
                 <Route path='/ctf' component={Ctf}/>
@@ -45,7 +48,7 @@ const Routes = () => {
                 <Route path='/ascensus' component={Ascensus}/>
                 <Route path='/designo' component={Designo}/>
                 <Route path='/quiz' component={Quiz} />
-                {/* <Route path='/workshops' component={Workshop} /> */}
+                <Route path='/workshops' component={Workshop} />
                 <Route path='/schedule' component={Schedule} />
                 <Route path='/speakers' component={Speakers} />
                 {/* <Route path='/hackathon_timeline' component={Timeline}/>

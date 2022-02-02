@@ -115,6 +115,7 @@ const Cp = () => {
 											solution for a problem statement released at the start of
 											the event.
 										</div>
+										<br /><br />
 										<div
 											className="row justify-content-center align-items-center"
 											style={{ margin: 'auto' }}

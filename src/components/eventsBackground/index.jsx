@@ -1,7 +1,7 @@
 import './styles.css';
 import Particles from 'react-tsparticles';
 
-const Background = () => {
+const Background = ({bgColor}) => {
 	return (
 		<div className="App">
 			<Particles
@@ -39,7 +39,7 @@ const Background = () => {
 							random: { enable: true, minimumValue: 4 },
 							animation: {
 								enable: false,
-								speed: 20,
+								speed: 3,
 								minimumValue: 4,
 								sync: false,
 							},
@@ -48,9 +48,9 @@ const Background = () => {
 							enable: true,
 							gravity: {
 								enable: true,
-								acceleration: -0.5,
+								acceleration: -1,
 							},
-							speed: 5,
+							speed: 2,
 							direction: 'top',
 							random: false,
 							straight: false,
@@ -99,7 +99,7 @@ const Background = () => {
 					},
 					detectRetina: true,
 					background: {
-						color: '#202124',
+						color: bgColor!=='' ?`${bgColor}`: '#202124',
 						// color: '#090b38',
 						// color: 'rgba(0,0,0,0.2)',
 					},
