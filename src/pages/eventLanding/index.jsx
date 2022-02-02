@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './styles.css';
 import '../../css/bootstrap.css';
 import '../../css/style.css';
@@ -6,7 +6,7 @@ import '../../css/responsive.css';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import styled from '@emotion/styled/macro';
-// import ReactHoverFlip from 'react-hover-flip';
+// import ReactCardFlip from 'react-card-flip'; 
 import eventBg from '../../images/_events/bg.jpeg';
 import prsents from '../../images/_events/PRESENTS.png';
 import parsecLogo from '../../images/_events/parsec_logo.png';
@@ -23,7 +23,7 @@ import evtTitle from '../../images/_events/evtTitle.jpg';
 import LazyLoad from 'react-lazyload';
 import { useMediaQuery } from 'react-responsive';
 
-const EvtCard = ({ evtTitle, evtLogo, evtUrl }) => {
+const EvtCard = ({ evtTitle, evtLogo, evtUrl,date,time,mode}) => {
 	// const url = '/hackathon';
 	const isMobile = useMediaQuery({
 		query: '(max-width: 400px)',
@@ -31,9 +31,10 @@ const EvtCard = ({ evtTitle, evtLogo, evtUrl }) => {
 	const isTablet = useMediaQuery({
 		query: '(max-width: 1100px)',
 	});
+	
 	return (
 		<div
-			className="venue-feature-block col-lg-5 col-md-6 col-sm-12 wow fadeInUp bg-img"
+			className="venue-feature-block col-lg-5 col-md-6 col-sm-12 wow fadeInUp bg-img flip-card"
 			style={{
 				padding: '0',
 				width: isTablet === true ? '280px' : '320px',
@@ -50,7 +51,11 @@ const EvtCard = ({ evtTitle, evtLogo, evtUrl }) => {
 			id="example3"
 		>
 			<a href={evtUrl}>
-				<div style={{ width: '100%', height: '100%' }}>
+				<div className='flip-card-inner'>
+
+				<div style={{ width: '100%', height: '100%'}}
+					 className='flip-card-front' 
+						 >
 					<img
 						src={parsecLogo}
 						style={{
@@ -73,7 +78,7 @@ const EvtCard = ({ evtTitle, evtLogo, evtUrl }) => {
 							margin: '0 auto',
 						}}
 					/>
-					<div
+					<div 
 						style={{
 							height: '150px',
 							width: '150px',
@@ -85,6 +90,8 @@ const EvtCard = ({ evtTitle, evtLogo, evtUrl }) => {
 							margin: '0 auto',
 							background: 'rgba(255,255,255, 0.25)',
 						}}
+
+						
 					>
 						<div
 							style={{
@@ -143,12 +150,67 @@ const EvtCard = ({ evtTitle, evtLogo, evtUrl }) => {
 						{evtTitle}
 					</h3>
 				</div>
+
+				<div class="flip-card-back" >
+						<h2 style={{ fontFamily: `'Oswald', sans-serif`,color : 'white', padding : '20px'}}>{evtTitle}</h2>
+
+						<div style={{
+								display: 'flex',
+								flexDirection :'column',
+								flexWrap : 'nowrap',
+								justifyContent:'space-around',
+								justifyItems:'center' }}
+							>
+							
+							<div style={{padding:'20px'}}><h5 style={{fontFamily: `'Oswald', sans-serif`,color : 'white'}}>DATE : {date}</h5></div>
+							<div style={{padding:'20px'}}><h5 style={{fontFamily: `'Oswald', sans-serif`,color : 'white'}}>TIME : {time}</h5></div>
+							<div style={{padding:'20px'}}><h5 style={{fontFamily: `'Oswald', sans-serif`,color : 'white'}}>MODE : {mode}</h5></div>
+						</div>
+						
+				</div>
+
+
+			</div>
+				
 			</a>
+			
 		</div>
 	);
 };
+
+
+// const Card = ({evtTitle, evtLogo, evtUrl, details}) => {
+// 	const [isFlipped, setIsFlipped] = React.useState(false);
+// 	
+// 	return (
+// 	  <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+// 		<div
+// 		  style={CardStyle}
+// 		  onMouseEnter={() => setIsFlipped((prev) => !prev)}
+// 		  
+// 		>
+//		<EvtCard
+// 		evtLogo={evtLogo}
+// 		evtTitle={evtTitle}
+// 		evtUrl={evtUrl}
+//		/>
+// 		  
+// 		</div>
+// 		<div
+// 		  style={CardStyle}
+// 		  onMouseLeave={() => setIsFlipped((prev) => !prev)}
+// 		
+// 		>
+// 		  {details}
+// 		</div>
+// 	  </ReactCardFlip>
+// 	);
+//   };
+
+
 const EventLanding = () => {
 	const isMobileOrTablet = useMediaQuery({ query: '(max-width: 600px)' });
+
 	return (
 		<React.Fragment>
 			<div className="page-wrapper">
@@ -188,32 +250,68 @@ const EventLanding = () => {
 						{/* <LazyLoad> */}
 
 						<div className="row " style={{padding: 'auto', display: 'flex-wrap', justifyContent: 'center'}}>
+
+						
+							
+    					
 							<EvtCard
 								evtLogo={devhack}
 								evtTitle="DEVHACK 3.0"
 								evtUrl={'/hackathon'}
+								date="4 MARCH 2022"
+								time="8 PM"
+								mode="ONLINE"
+								
 							/>
 							<EvtCard
 								evtLogo={algostrike}
 								evtTitle="ALGOSTRIKE 2.0"
 								evtUrl={'/cp'}
+								date="5 MARCH 2022"
+								time="3 PM"
+								mode="ONLINE"
 							/>
 							<EvtCard
 								evtLogo={venni}
 								evtTitle="VENIVIDIVICI 2.0"
 								evtUrl={'/ctf'}
+								date="4 MARCH 2022"
+								time="8 PM"
+								mode="ONLINE"
 							/>
-							<EvtCard evtLogo={quiz} evtTitle="QUIZ" evtUrl={'/quiz'} />
+							<EvtCard 
+								evtLogo={quiz} 
+								evtTitle="QUIZ" 
+								evtUrl={'/quiz'}
+								date="5 MARCH 2022"
+								time="12:30 PM"
+								mode="ONLINE"
+							/>
 							<EvtCard
 								evtLogo={designo}
 								evtTitle="DESIGNÕ"
 								evtUrl={'/designo'}
+								date="5 MARCH 2022"
+								time="2 PM"
+								mode="ONLINE"
 							/>
 							<EvtCard
 								evtLogo={ascensus}
 								evtTitle="ASCENSUS"
 								evtUrl={'/ascensus'}
+								date="4 MARCH 2022"
+								time="8 PM"
+								mode="ONLINE"
 							/>
+							  {/* <EvtCard 
+								evtLogo={devhack}
+								evtTitle="GUARDAINS"
+								evtUrl={}
+								date="4 MARCH 2022"
+								time="8 PM"
+								mode="ONLINE"  
+								
+							/> */}
 						</div>
 
 						{/* </LazyLoad> */}

@@ -1,5 +1,5 @@
 import React from 'react';
-import logoAbout from '../../../images/logos/logo-about.jpg';
+import logoAbout from '../../../images/logos/logo-about_comp.jpg';
 
 const AboutUs = () => {
   return (

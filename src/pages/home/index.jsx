@@ -8,7 +8,7 @@ import '../../css/responsive.css';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import parsecLogo from '../../images/logos/parsec-lg.png';
-import mainSlider from '../../images/main-slider/4.jpg'
+import mainSlider from '../../images/main-slider/4_comp.jpg'
 import EventCarousel from './eventsCarousel';
 
 
