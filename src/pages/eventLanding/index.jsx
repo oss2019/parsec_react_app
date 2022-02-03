@@ -168,12 +168,8 @@ const EvtCard = ({ evtTitle, evtLogo, evtUrl,date,time,mode}) => {
 						</div>
 						
 				</div>
-
-
-			</div>
-				
-			</a>
-			
+			</div>				
+			</a>			
 		</div>
 	);
 };
