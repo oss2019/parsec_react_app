@@ -15,6 +15,7 @@ const WorkshopComp = ({
 	fee,
 	venue,
 	imageId,
+	pdfLink
 }) => {
 	const isMobile = useMediaQuery({
 		query: '(max-width: 425px)',
@@ -112,7 +113,14 @@ const WorkshopComp = ({
 					</div>
 					<br />
 				</div>
-				<div style={{ display: 'flex', justifyContent: 'center' }}>
+				<div style={{ display: 'flex', justifyContent: 'space-between' }}>
+					<a href={`${pdfLink}`} target="_blank">
+						<div className="btn-box">
+							<button type="button" className="btn btn-lg btn-primary">
+								Know More
+							</button>
+						</div>
+					</a>
 					<a href={`${registrationLink}`} target="_blank">
 						<div className="btn-box">
 							<button type="button" className="btn btn-lg btn-primary">
