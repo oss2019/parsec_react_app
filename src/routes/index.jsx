@@ -25,6 +25,7 @@ import CodeOfConduct from '../pages/codeOfConduct';
 import About from '../pages/about';
 import Gallery from '../pages/gallery';
 import EventLanding from '../pages/eventLanding';
+import Guardains from '../events/guardains';
 
 const Routes = () => {
     return (
@@ -55,6 +56,7 @@ const Routes = () => {
                 <Route path='/hackathon_themes' component={Themes} />
                 <Route path='/hackathon_judges' component={Judges} /> */}
                 {/* <Route path='/students' component={Students}/> */}
+                <Route path='/guardains' component={Guardains} />
             </Switch>
         </div>
     )

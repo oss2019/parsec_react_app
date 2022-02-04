@@ -6,7 +6,7 @@ import '../../css/bootstrap.css';
 import '../../css/style.css';
 import '../../css/responsive.css';
 import Footer from '../../components/Footer';
-import Workshop_comp from './workshop_comp';
+import WorkshopComp from './workshop_comp';
 // import '../../css/contact.css';
 
 const Workshop = () => {
@@ -51,7 +51,7 @@ const Workshop = () => {
 								justifyContent: 'center',
 							}}
 						>
-							<Workshop_comp
+							<WorkshopComp
 								imageId="1dS5sWrqmjVIIgcY_5P5YjelUn5IZBn_P"
 								title="Data Science and Machine Learning using Python"
 								startDate="March 5, 2022, 10:00 AM"
@@ -60,7 +60,7 @@ const Workshop = () => {
 								fee="799.00"
 								registrationLink="https://rzp.io/l/parsec22"
 							/>
-							<Workshop_comp
+							<WorkshopComp
 								imageId="121LzHkYuBH13mq-lM6O6bxezjtMRnukD"
 								title="Data Structures and Algorithms"
 								startDate="March 5, 2022, 10:00 AM"
@@ -69,7 +69,7 @@ const Workshop = () => {
 								fee="799.00"
 								registrationLink="https://rzp.io/l/parsec22"
 							/>
-							<Workshop_comp
+							<WorkshopComp
 								imageId="1ThdVu8tM_x23z5d5FIEgTlfq0CP-dSY8"
 								title="Ethical Hacking and Cyber Security
 "
@@ -79,7 +79,19 @@ const Workshop = () => {
 								fee="799.00"
 								registrationLink="https://rzp.io/l/parsec22"
 							/>
-						</div>
+							<WorkshopComp
+								imageId="1-qiYntGY2gPoPzJO8ZeaE4HsTGJKYKKp"
+								title="Blockchain and Application"
+								startDate="March 5, 2022, 10:00 AM"
+								endDate="March 6, 2022, 4:30 PM"
+								venue="Zoom"
+								fee="799.00"
+								registrationLink="https://rzp.io/l/7Kmit4R9q"
+							/>
+							
+						</div> 
+
+						
 
 						{/* <div className="row">
 							<Workshop_comp

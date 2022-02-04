@@ -7,7 +7,7 @@ import '../../css/responsive.css';
 import { useMediaQuery } from 'react-responsive';
 
 
-const Workshop_comp = ({
+const WorkshopComp = ({
 	title,
 	registrationLink,
 	startDate,
@@ -277,4 +277,4 @@ const Workshop_comp = ({
 	);
 };
 
-export default Workshop_comp;
+export default WorkshopComp;

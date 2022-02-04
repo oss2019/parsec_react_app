@@ -216,8 +216,9 @@ const Ascensus = () => {
 						</div>
 					</div>
 				</section>
+				<Footer />
 			</div>
-			<Footer />
+			
 		</React.Fragment>
 	);
 };
