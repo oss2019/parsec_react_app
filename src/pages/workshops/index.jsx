@@ -59,6 +59,9 @@ const Workshop = () => {
 								venue="Zoom"
 								fee="799.00"
 								registrationLink="https://rzp.io/l/parsec22"
+								pdfLink={
+									'https://drive.google.com/file/d/1v51v3JI_JQ_cNB2-2XUJdaIe2f4UN8lF/view'
+								}
 							/>
 							<WorkshopComp
 								imageId="121LzHkYuBH13mq-lM6O6bxezjtMRnukD"
@@ -68,6 +71,9 @@ const Workshop = () => {
 								venue="Zoom"
 								fee="799.00"
 								registrationLink="https://rzp.io/l/parsec22"
+								pdfLink={
+									'https://drive.google.com/file/d/1ImeYN7cN8WTkPLggMOJS6bC4SMS3GY0N/view'
+								}
 							/>
 							<WorkshopComp
 								imageId="1ThdVu8tM_x23z5d5FIEgTlfq0CP-dSY8"
@@ -78,20 +84,23 @@ const Workshop = () => {
 								venue="Zoom"
 								fee="799.00"
 								registrationLink="https://rzp.io/l/parsec22"
+								pdfLink={
+									'https://drive.google.com/file/d/1_uC_LdO665miJcFvXK1EhX4gMImv0B-p/view'
+								}
 							/>
 							<WorkshopComp
 								imageId="1-qiYntGY2gPoPzJO8ZeaE4HsTGJKYKKp"
-								title="Blockchain and Application"
+								title="Blockchain Tech and Application"
 								startDate="March 5, 2022, 10:00 AM"
 								endDate="March 6, 2022, 4:30 PM"
-								venue="Zoom"
+								venue="Instructor-Led Online (Zoom)"
 								fee="799.00"
 								registrationLink="https://rzp.io/l/7Kmit4R9q"
+								pdfLink={
+									'https://drive.google.com/file/d/1_6iFpliz_oANi3s55YtBz_-coBUwlA64/view'
+								}
 							/>
-							
-						</div> 
-
-						
+						</div>
 
 						{/* <div className="row">
 							<Workshop_comp
