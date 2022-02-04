@@ -5,7 +5,8 @@ import merchandisePartner from './merchandisePartner.json';
 import inkind from './inkind.json';
 import industryPartner from './industryPartner.json';
 import workshopPartner from './workshopPartner.json';
-import silverSponsor from './silver.json'
+import silverSponsor from './silver.json';
+import associateSponsors from './associatePartners.json'
 const SponsorSec = ({title,sponsorData}) => {
 	return (
 		<>
@@ -96,15 +97,30 @@ const Sponsors = () => {
 							<SponsorSec title="GOLD" sponsorData={goldSponsors} />
 							{/* HIGHLIGHT SILVER */}
 							<SponsorSec title="SILVER" sponsorData={silverSponsor} />
+							{/* HIGHLIGHT ASSOCIATE PARTNER */}
+							<SponsorSec
+								title={'ASSOCIATE PARTNER'}
+								sponsorData={associateSponsors}
+							/>
 							{/* HIGHLIGHT INDUSTRIAL LIVE TRAINING AND INTERNSHIP PARTNER */}
-							<SponsorSec title={"INDUSTRIAL LIVE TRAINING AND INTERNSHIP PARTNER"} sponsorData={industryPartner}/>
+							<SponsorSec
+								title={'INDUSTRIAL LIVE TRAINING AND INTERNSHIP PARTNER'}
+								sponsorData={industryPartner}
+							/>
+
 							{/* HIGHLIGHT MERCHANDISE */}
-							<SponsorSec title="MERCHANDISE PARTNER" sponsorData={merchandisePartner}/>
+							<SponsorSec
+								title="MERCHANDISE PARTNER"
+								sponsorData={merchandisePartner}
+							/>
 
 							{/* HIGHLIGHT WORKSHOP PARTNER */}
-							<SponsorSec title={"WORKSHOP PARTNER"} sponsorData={workshopPartner}/>
+							<SponsorSec
+								title={'WORKSHOP PARTNER'}
+								sponsorData={workshopPartner}
+							/>
 							{/* HIGHLIGHT IN-KIND */}
-							<SponsorSec title={"IN-KIND SPONSOR"} sponsorData={inkind}/>
+							<SponsorSec title={'IN-KIND SPONSOR'} sponsorData={inkind} />
 						</div>
 					</div>
 				</section>
