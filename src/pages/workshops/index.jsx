@@ -62,6 +62,8 @@ const Workshop = () => {
 								pdfLink={
 									'https://drive.google.com/file/d/1v51v3JI_JQ_cNB2-2XUJdaIe2f4UN8lF/view'
 								}
+								trackingLabelForKnowMore={'Data Science'}
+								trackingLabelForRegistration={'Register Data Science'}
 							/>
 							<WorkshopComp
 								imageId="121LzHkYuBH13mq-lM6O6bxezjtMRnukD"
@@ -74,11 +76,12 @@ const Workshop = () => {
 								pdfLink={
 									'https://drive.google.com/file/d/1ImeYN7cN8WTkPLggMOJS6bC4SMS3GY0N/view'
 								}
+								trackingLabelForKnowMore={'Data Structure'}
+								trackingLabelForRegistration={'Register Data Structure'}
 							/>
 							<WorkshopComp
 								imageId="1ThdVu8tM_x23z5d5FIEgTlfq0CP-dSY8"
-								title="Ethical Hacking and Cyber Security
-"
+								title="Ethical Hacking and Cyber Security"
 								startDate="March 5, 2022, 10:00 AM"
 								endDate="March 6, 2022, 5:00 PM"
 								venue="Zoom"
@@ -87,6 +90,8 @@ const Workshop = () => {
 								pdfLink={
 									'https://drive.google.com/file/d/1_uC_LdO665miJcFvXK1EhX4gMImv0B-p/view'
 								}
+								trackingLabelForKnowMore={"Ethical Hacking"}
+								trackingLabelForRegistration={"Registration Ethical Hacking"}
 							/>
 							<WorkshopComp
 								imageId="1-qiYntGY2gPoPzJO8ZeaE4HsTGJKYKKp"
@@ -99,6 +104,8 @@ const Workshop = () => {
 								pdfLink={
 									'https://drive.google.com/file/d/1_6iFpliz_oANi3s55YtBz_-coBUwlA64/view'
 								}
+								trackingLabelForKnowMore={"Blockchain"}
+								trackingLabelForRegistration={"Registration Blockchain"}
 							/>
 						</div>
 

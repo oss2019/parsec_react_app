@@ -5,7 +5,7 @@ import '../../css/bootstrap.css';
 import '../../css/style.css';
 import '../../css/responsive.css';
 import { useMediaQuery } from 'react-responsive';
-
+import useRoutetracker from '../../components/Tracker/hooks/useRouteTracker';
 
 const WorkshopComp = ({
 	title,
@@ -15,14 +15,18 @@ const WorkshopComp = ({
 	fee,
 	venue,
 	imageId,
-	pdfLink
+	pdfLink,
+	trackingLabelForKnowMore,
+	trackingLabelForRegistration
 }) => {
 	const isMobile = useMediaQuery({
 		query: '(max-width: 425px)',
     });
     const fntsizeStyles = {
         fontSize: '13px'
-    }
+	}
+	// ! Traking for external links of Workhops
+	const GARouteTracker = useRoutetracker("External Link")
 	return (
 		<>
 			<div
@@ -114,14 +118,22 @@ const WorkshopComp = ({
 					<br />
 				</div>
 				<div style={{ display: 'flex', justifyContent: 'space-between' }}>
-					<a href={`${pdfLink}`} target="_blank">
+					<a
+						href={`${pdfLink}`}
+						target="_blank"
+						onClick={GARouteTracker.bind(this, `${trackingLabelForKnowMore}`)}
+					>
 						<div className="btn-box">
 							<button type="button" className="btn btn-lg btn-primary">
 								Know More
 							</button>
 						</div>
 					</a>
-					<a href={`${registrationLink}`} target="_blank">
+					<a
+						href={`${registrationLink}`}
+						target="_blank"
+						onClick={GARouteTracker.bind(this, `${trackingLabelForRegistration}`)}
+					>
 						<div className="btn-box">
 							<button type="button" className="btn btn-lg btn-primary">
 								Register Here
