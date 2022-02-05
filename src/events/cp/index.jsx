@@ -8,37 +8,12 @@ import Footer from '../../components/Footer';
 import EventsBackground from '../../components/eventsBackground';
 // import '../../css/prices.css'
 // import '../../css/winners.css'
-
+import { useMediaQuery } from 'react-responsive';
 const Cp = () => {
-	// Set loading state to true initially
-	// const [loading, setLoading] = useState(true);
-
-	// useEffect(() => {
-	// 	// Loading function to load data or
-	// 	// fake it using setTimeout;
-	// 	const loadData = async () => {
-	// 		// Wait for two second
-	// 		await new Promise((r) => setTimeout(r, 2000));
-
-	// 		// Toggle loading state
-	// 		setLoading((loading) => !loading);
-	// 	};
-
-	// 	loadData();
-	// }, []);
-
-	// // If page is in loading state, display
-	// // loading message. Modify it as per your
-	// // requirement.
-	// if (loading) {
-	// 	return <div className="preloader"></div>;
-	// }
-
-	// If page is not in loading state, display page.
-	// else {
-	// 	return <h1>Home</h1>;
-	// }
-	// else {
+	const isTabletorMobile = useMediaQuery({ query: '(max-width: 550px)' });
+	const isTab = useMediaQuery({ query: '(max-width:1026px)' });
+	const isMobile = useMediaQuery({ query: '(max-width:425px)' });
+	const issm = useMediaQuery({ query: '(max-width:400px)' });
 	return (
 		<React.Fragment>
 			<EventsBackground />
@@ -47,38 +22,36 @@ const Cp = () => {
 				<div className="preloader"></div>
 				{/* <div className="form-back-drop"></div> */}
 				<Header active={2} />
-
 				<section
 					className="page-title"
-					id="page-title"
-					style={{ position: 'relative', margin: '-150px auto 0' }}
+					style={{ overflow: 'visible', paddingRight: 0, padding: '0' }}
 				>
-					{/* <div
-						className="auto-container"
+					<img
+						src={`${
+							isTabletorMobile
+								? 'https://drive.google.com/uc?id=16D0dyvXdUCcP0U6IN45Xbv2ROWwbwF5z'
+								: 'https://drive.google.com/uc?id=1jAlqvXWkDimYfAvLkg0bO19lOpPptWNS'
+						}`}
+						id="hack-title"
 						style={{
-							boxShadow: `10px 10px 10px rgba(0, 0, 0, 0.25)`,
+							marginTop: isTab
+								? isMobile
+									? issm
+										? '55px'
+										: '45px'
+									: '60px'
+								: '',
+							objectFit: 'cover',
+							width: '100vw',
+							padding: '0',
 						}}
-					> */}
-					{/* <div className="project-tabs tabs-box"> */}
-					{/* <div
-								className="inner-column tab active-tab"
-								id="introduction"
-								style={{ background: 'rgba(14, 30, 81, 0.7)' }}
-							> */}
-					{/* <section
-									className="login-section"
-									style={{
-										backgroundImage: 'url(images/background/7.jpg)',
-										paddingTop: '0px',
-									}}
-								> */}
-					{/* <div className="auto-container"> */}
+					/>
+				</section>
+				<section style={{ position: 'relative', margin: ' 100px 0' }}>
 					<div
 						className="login-form auto-container"
 						style={{
 							background: 'rgba(34, 40, 49, 0.87)',
-							// backgroundColor: '#202124',
-							// backgroundColor: 'rgba(28,27,27,0.6)',
 							boxShadow: `1px 1px 2px rgba(0, 0, 0, 0.25), 0 0 35px rgba(0, 0, 0, 0.25), 0 0 15px rgba(0, 0, 0, 0.25)`,
 						}}
 					>
@@ -115,7 +88,8 @@ const Cp = () => {
 											solution for a problem statement released at the start of
 											the event.
 										</div>
-										<br /><br />
+										<br />
+										<br />
 										<div
 											className="row justify-content-center align-items-center"
 											style={{ margin: 'auto' }}
@@ -191,7 +165,7 @@ const Cp = () => {
 
 								<ul className="list-style-four">
 									<li>
-										Contest starts:  
+										Contest starts:
 										<strong> 3:00 PM, March 5, 2022 </strong>
 									</li>
 									<li>Code of Conduct to be followed.</li>

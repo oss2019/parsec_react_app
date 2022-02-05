@@ -19,21 +19,19 @@ const Hackathon = () => {
 		query: '(max-width: 500px)',
 	});
 	const [hack, setHack] = useState(1);
-	// const overviewCtrl = () => {
-	//     setHack(1);
-	// }
-	// const timelineCtrl = () => {
-	//     setHack(2)
-	// }
-	// const themesCtrl = () => {
-	//     setHack(3)
-	// }
-	// const judgesCtrl = () => {
-	//     setHack(4)
-	// }
 	const renderCtrl = (q) => {
 		setHack(q);
 	};
+	// React.useEffect(() => {
+	// 	const script = document.createElement('script');
+	// 	script.src = 'https://apply.devfolio.co/v2/sdk.js';
+	// 	script.async = true;
+	// 	script.defer = true;
+	// 	document.body.appendChild(script);
+	// 	return () => {
+	// 		document.body.removeChild(script);
+	// 	};
+	// }, []);
 	return (
 		<React.Fragment>
 			<div className="page-wrapper">
@@ -44,52 +42,31 @@ const Hackathon = () => {
 				<section
 					className="page-title"
 					// id="ptitle"
-					style={{overflow: 'visible', paddingRight: 0}}
+					style={{ overflow: 'visible', paddingRight: 0 }}
 				>
 					<img
 						src={`${
 							isTabletorMobile
-								? 'https://drive.google.com/uc?id=1apV5ynv4RiNFiSi2b0lr2Gmym4ImlhNS'
-								: 'https://drive.google.com/uc?id=1ZQnnEceBalsQeHarPmKyctV3nvt9GfaS'
+								? 'https://drive.google.com/uc?id=1Slj_JDJ9ZxKRnmwHI7PRPJ7hzTeq23gt'
+								: 'https://drive.google.com/uc?id=15f75sPjME1b5EAdGTjMxtMRmtMt6pAEb'
 						}`}
 						id="hack-title"
-						style={{position: 'absolute',top: 0, overflow: 'visible', height: '50vh', marginRight: 0, right: 0,left: 0, width: '100vw'}}
-					/>
-					{/* <div className="auto-container">
-						<ul className="bread-crumb clearfix">
-							<li>
-								{' '}
-								<br></br>
-								<br></br>
-							</li>
-						</ul>
-					</div> */}
-				</section>
-				{/* <section className="page-title" style={{ overflow: 'visible' }}>
-					<img
-						src="https://drive.google.com/uc?id=1N4GNtpusZnZJK1Ko8Andh7iSQb87STTv"
-						className="img-fluid bg-img"
 						style={{
 							position: 'absolute',
 							top: 0,
-							height: '50vh'
+							overflow: 'visible',
+							height: '50vh',
+							marginRight: 0,
+							right: 0,
+							left: 0,
+							width: '100vw',
 						}}
 					/>
-				</section> */}
-
-				{/* <img
-					src={hackathonBackground}
-					// style={{
-					// 	padding: '0',
-					// 	margin: '0',
-					// 	width: '100%',
-					// 	height: 'auto',
-					// 	backgroundSize: 'cover',
-					// }}
-					id='ptitle'
-				/> */}
-
-				<section className="project-section">
+				</section>
+				<section
+					className="project-section auto-container"
+					style={{ marginTop: '50vh' }}
+				>
 					<div className="anim-icons">
 						<span className="icon icon-cross-1"></span>
 					</div>
@@ -197,7 +174,7 @@ const Hackathon = () => {
 														Judges
 													</div>
 												</li>
-											)} */}
+											)}  */}
 										</ul>
 									</div>
 								</div>
@@ -205,7 +182,7 @@ const Hackathon = () => {
 								<div className="content-column col-lg-8 col-md-12 col-sm-12 tabs-content">
 									{hack === 1 && <Overview />}
 									{hack === 2 && <Timeline />}
-									{/* {hack === 3 && <Themes />} */}
+									{/* {hack === 3 && <Themes />}  */}
 									{/* {hack === 4 && <Judges />} */}
 								</div>
 							</div>

@@ -3,16 +3,22 @@ import './styles.css';
 import '../../../css/style.css';
 import '../../../css/bootstrap.css';
 import '../../../css/responsive.css';
-import project from '../../../images/resource/project.jpg';
-
 const Overview = () => {
+	React.useEffect(() => {
+		const script = document.createElement('script');
+		script.src = 'https://apply.devfolio.co/v2/sdk.js';
+		script.async = true;
+		script.defer = true;
+		document.body.appendChild(script);
+		return () => {
+			document.body.removeChild(script);
+		};
+	}, []);
 	return (
 		<React.Fragment>
 			<div className="inner-column tab active-tab" id="introduction">
 				<section
 					className="login-section"
-					// style={{backgroundImage:`url(images/background/7.jpg)`,
-					//         paddingTop:`0px`}}
 				>
 					<div className="auto-container p-0">
 						<div className="login-form">
@@ -69,6 +75,16 @@ const Overview = () => {
 													COMING SOON
 												</a>
 											</div>
+											{/* <div>
+
+											</div> */}
+											{/* <div
+												class="apply-button"
+												data-hackathon-slug="Devhack 3.0"
+												data-button-theme="light"
+												// style="height: 44px; width: 312px"
+												style={{height: '44px', width: '312px'}}
+											></div> */}
 										</div>
 									</div>
 								</div>
@@ -95,7 +111,14 @@ const Overview = () => {
 								>
 									<div
 										className=" border-danger"
-										style={{ border: '2px solid #dc3545', borderRadius: '8px', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}
+										style={{
+											border: '2px solid #dc3545',
+											borderRadius: '8px',
+											display: 'flex',
+											flexDirection: 'row',
+											justifyContent: 'space-between',
+											alignItems: 'center',
+										}}
 									>
 										<div
 											style={{
@@ -124,7 +147,7 @@ const Overview = () => {
 									<ul className="list-style-four mb-0">
 										<li style={{ color: `#12114a` }}>
 											Contest starts:
-											<strong> 8:00 PM on 4th March, 2022  </strong>
+											<strong> 8:00 PM on 4th March, 2022 </strong>
 										</li>
 										<li style={{ color: `#12114a` }}>
 											Code of Conduct to be followed.
@@ -142,24 +165,24 @@ const Overview = () => {
 									<br />
 									<br />
 									<p
-												className="text-justify"
-												style={{
-													color: `#383434`,
-													fontSize: `large`,
-												}}
-											>
-											Still have queries? Join us on our Telegram{' '}
-															<a
-																href="https://t.me/parseciitdh"
-																style={{
-																	color: `#12114a`,
-																	textDecoration: `None`,
-																}}
-																target="_blank"
-															>
-																channel
-															</a>{' '}
-															and we'll try our best to answer all your doubts.
+										className="text-justify"
+										style={{
+											color: `#383434`,
+											fontSize: `large`,
+										}}
+									>
+										Still have queries? Join us on our Telegram{' '}
+										<a
+											href="https://t.me/parseciitdh"
+											style={{
+												color: `#12114a`,
+												textDecoration: `None`,
+											}}
+											target="_blank"
+										>
+											channel
+										</a>{' '}
+										and we'll try our best to answer all your doubts.
 									</p>
 								</div>
 							</div>

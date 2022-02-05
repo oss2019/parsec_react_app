@@ -158,7 +158,8 @@ const Timeline = () => {
 											Inspiration comes best from experience. Whether you're
 											looking for a quick idea or are keen to learn about
 											current trends in technology and see the passion that
-											drives the industry, make sure you don't miss out on our Speaker Session.
+											drives the industry, make sure you don't miss out on our
+											Speaker Session.
 											{/* <a href="#" target="_blank">
 												Speaker Session.
 											</a> */}
