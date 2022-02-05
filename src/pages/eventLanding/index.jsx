@@ -6,7 +6,7 @@ import '../../css/responsive.css';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import styled from '@emotion/styled/macro';
-// import ReactCardFlip from 'react-card-flip'; 
+// import ReactCardFlip from 'react-card-flip';
 import eventBg from '../../images/_events/bg.jpeg';
 import prsents from '../../images/_events/PRESENTS.png';
 import parsecLogo from '../../images/_events/parsec_logo.png';
@@ -22,8 +22,8 @@ import evtTitle from '../../images/_events/evtTitle.jpg';
 
 import LazyLoad from 'react-lazyload';
 import { useMediaQuery } from 'react-responsive';
-
-const EvtCard = ({ evtTitle, evtLogo, evtUrl,date,time,mode}) => {
+import useRoutetracker from '../../components/Tracker/hooks/useRouteTracker';
+const EvtCard = ({ evtTitle, evtLogo, evtUrl, date, time, mode }) => {
 	// const url = '/hackathon';
 	const isMobile = useMediaQuery({
 		query: '(max-width: 400px)',
@@ -31,7 +31,8 @@ const EvtCard = ({ evtTitle, evtLogo, evtUrl,date,time,mode}) => {
 	const isTablet = useMediaQuery({
 		query: '(max-width: 1100px)',
 	});
-	
+
+	const GAEventsTracker = useRoutetracker('Events');
 	return (
 		<div
 			className="venue-feature-block col-lg-5 col-md-6 col-sm-12 wow fadeInUp bg-img flip-card"
@@ -50,78 +51,76 @@ const EvtCard = ({ evtTitle, evtLogo, evtUrl,date,time,mode}) => {
 			}}
 			id="example3"
 		>
-			<a href={evtUrl}>
-				<div className='flip-card-inner'>
-
-				<div style={{ width: '100%', height: '100%'}}
-					 className='flip-card-front' 
-						 >
-					<img
-						src={parsecLogo}
-						style={{
-							height: '57px',
-							position: 'absolute',
-							top: '20px',
-							left: '0',
-							right: '0',
-							margin: '0 auto',
-						}}
-					/>
-					<img
-						src={prsents}
-						style={{
-							height: '20px',
-							position: 'absolute',
-							top: '82px',
-							left: '0',
-							right: '0',
-							margin: '0 auto',
-						}}
-					/>
-					<div 
-						style={{
-							height: '150px',
-							width: '150px',
-							borderRadius: '75px',
-							position: 'absolute',
-							top: '124px',
-							left: '0',
-							right: '0',
-							margin: '0 auto',
-							background: 'rgba(255,255,255, 0.25)',
-						}}
-
-						
+			<a href={evtUrl} onClick={GAEventsTracker.bind(this,`${evtUrl}`)}>
+				<div className="flip-card-inner">
+					<div
+						style={{ width: '100%', height: '100%' }}
+						className="flip-card-front"
 					>
-						<div
+						<img
+							src={parsecLogo}
 							style={{
-								height: '90px',
-								width: '90px',
-								borderRadius: '45px',
+								height: '57px',
 								position: 'absolute',
-								top: '0px',
+								top: '20px',
 								left: '0',
 								right: '0',
-								bottom: '0',
-								margin: ' auto',
-								background: '#000000',
+								margin: '0 auto',
+							}}
+						/>
+						<img
+							src={prsents}
+							style={{
+								height: '20px',
+								position: 'absolute',
+								top: '82px',
+								left: '0',
+								right: '0',
+								margin: '0 auto',
+							}}
+						/>
+						<div
+							style={{
+								height: '150px',
+								width: '150px',
+								borderRadius: '75px',
+								position: 'absolute',
+								top: '124px',
+								left: '0',
+								right: '0',
+								margin: '0 auto',
+								background: 'rgba(255,255,255, 0.25)',
 							}}
 						>
-							<img
-								src={evtLogo}
+							<div
 								style={{
-									height: '50%',
+									height: '90px',
+									width: '90px',
+									borderRadius: '45px',
 									position: 'absolute',
-									top: '0',
+									top: '0px',
 									left: '0',
 									right: '0',
 									bottom: '0',
-									margin: 'auto',
+									margin: ' auto',
+									background: '#000000',
 								}}
-							/>
+							>
+								<img
+									src={evtLogo}
+									style={{
+										height: '50%',
+										position: 'absolute',
+										top: '0',
+										left: '0',
+										right: '0',
+										bottom: '0',
+										margin: 'auto',
+									}}
+								/>
+							</div>
 						</div>
-					</div>
-					{/* <img
+						{/* <img
 						src={evtTitle}
 						style={{
 							height: '20px',
@@ -132,77 +131,101 @@ const EvtCard = ({ evtTitle, evtLogo, evtUrl,date,time,mode}) => {
 							margin: '0 auto',
 						}}
 					/> */}
-					<h3
-						className="text-capitalize"
-						style={{
-							// height: '20px',
-							fontSize: '21px',
-							position: 'absolute',
-							top: '290px',
-							left: '0',
-							right: '0',
-							margin: '0 auto',
-							fontFamily: `'Oswald', sans-serif`,
-							color: '#ffffff',
-							textAlign: 'center',
-						}}
-					>
-						{evtTitle}
-					</h3>
-				</div>
+						<h3
+							className="text-capitalize"
+							style={{
+								// height: '20px',
+								fontSize: '21px',
+								position: 'absolute',
+								top: '290px',
+								left: '0',
+								right: '0',
+								margin: '0 auto',
+								fontFamily: `'Oswald', sans-serif`,
+								color: '#ffffff',
+								textAlign: 'center',
+							}}
+						>
+							{evtTitle}
+						</h3>
+					</div>
 
-				<div class="flip-card-back" >
-						<h2 style={{ fontFamily: `'Oswald', sans-serif`,color : 'white', padding : '20px'}}>{evtTitle}</h2>
+					<div class="flip-card-back">
+						<h2
+							style={{
+								fontFamily: `'Oswald', sans-serif`,
+								color: 'white',
+								padding: '20px',
+							}}
+						>
+							{evtTitle}
+						</h2>
 
-						<div style={{
+						<div
+							style={{
 								display: 'flex',
-								flexDirection :'column',
-								flexWrap : 'nowrap',
-								justifyContent:'space-around',
-								justifyItems:'center' }}
-							>
-							
-							<div style={{padding:'20px'}}><h5 style={{fontFamily: `'Oswald', sans-serif`,color : 'white'}}>DATE : {date}</h5></div>
-							<div style={{padding:'20px'}}><h5 style={{fontFamily: `'Oswald', sans-serif`,color : 'white'}}>TIME : {time}</h5></div>
-							<div style={{padding:'20px'}}><h5 style={{fontFamily: `'Oswald', sans-serif`,color : 'white'}}>MODE : {mode}</h5></div>
+								flexDirection: 'column',
+								flexWrap: 'nowrap',
+								justifyContent: 'space-around',
+								justifyItems: 'center',
+							}}
+						>
+							<div style={{ padding: '20px' }}>
+								<h5
+									style={{ fontFamily: `'Oswald', sans-serif`, color: 'white' }}
+								>
+									DATE : {date}
+								</h5>
+							</div>
+							<div style={{ padding: '20px' }}>
+								<h5
+									style={{ fontFamily: `'Oswald', sans-serif`, color: 'white' }}
+								>
+									TIME : {time}
+								</h5>
+							</div>
+							<div style={{ padding: '20px' }}>
+								<h5
+									style={{ fontFamily: `'Oswald', sans-serif`, color: 'white' }}
+								>
+									MODE : {mode}
+								</h5>
+							</div>
 						</div>
-						
+					</div>
 				</div>
-			</div>				
-			</a>			
+			</a>
 		</div>
 	);
 };
 
-
 // const Card = ({evtTitle, evtLogo, evtUrl, details}) => {
 // 	const [isFlipped, setIsFlipped] = React.useState(false);
-// 	
+//
 // 	return (
 // 	  <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
 // 		<div
 // 		  style={CardStyle}
 // 		  onMouseEnter={() => setIsFlipped((prev) => !prev)}
-// 		  
+//
 // 		>
 //		<EvtCard
 // 		evtLogo={evtLogo}
 // 		evtTitle={evtTitle}
 // 		evtUrl={evtUrl}
 //		/>
-// 		  
+//
 // 		</div>
 // 		<div
 // 		  style={CardStyle}
 // 		  onMouseLeave={() => setIsFlipped((prev) => !prev)}
-// 		
+//
 // 		>
 // 		  {details}
 // 		</div>
 // 	  </ReactCardFlip>
 // 	);
 //   };
-
 
 const EventLanding = () => {
 	const isMobileOrTablet = useMediaQuery({ query: '(max-width: 600px)' });
@@ -245,11 +268,14 @@ const EventLanding = () => {
 						</div>
 						{/* <LazyLoad> */}
 
-						<div className="row " style={{padding: 'auto', display: 'flex-wrap', justifyContent: 'center'}}>
-
-						
-							
-    					
+						<div
+							className="row "
+							style={{
+								padding: 'auto',
+								display: 'flex-wrap',
+								justifyContent: 'center',
+							}}
+						>
 							<EvtCard
 								evtLogo={devhack}
 								evtTitle="DEVHACK 3.0"
@@ -257,7 +283,6 @@ const EventLanding = () => {
 								date="4 MARCH 2022"
 								time="8 PM"
 								mode="ONLINE"
-								
 							/>
 							<EvtCard
 								evtLogo={algostrike}
@@ -275,9 +300,9 @@ const EventLanding = () => {
 								time="8 PM"
 								mode="ONLINE"
 							/>
-							<EvtCard 
-								evtLogo={quiz} 
-								evtTitle="QUIZ" 
+							<EvtCard
+								evtLogo={quiz}
+								evtTitle="QUIZ"
 								evtUrl={'/quiz'}
 								date="5 MARCH 2022"
 								time="12:30 PM"
@@ -299,7 +324,7 @@ const EventLanding = () => {
 								time="8 PM"
 								mode="ONLINE"
 							/>
-							  {/* <EvtCard 
+							{/* <EvtCard 
 								evtLogo={devhack}
 								evtTitle="GUARDAINS"
 								evtUrl={}

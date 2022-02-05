@@ -5,6 +5,7 @@ import '../../css/bootstrap.css';
 import '../../css/responsive.css';
 // import './styles.css';
 import FooterLogo from '../../images/logos/logo-footer.png';
+import Tracker from '../Tracker';
 
 const Footer = () => {
 	return (
@@ -232,6 +233,7 @@ const Footer = () => {
 			{/* <div className="scroll-to-top scroll-to-target" data-target="html">
 				<span className="fa fa-angle-double-up"></span>
 			</div> */}
+			<Tracker />
 		</React.Fragment>
 	);
 };
