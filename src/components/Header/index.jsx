@@ -16,6 +16,7 @@ import Logo from '../Logo';
 import parsecLogo from '../../images/logos/logo-nav.png';
 import './styles.css';
 import { nodeName } from 'jquery';
+import useRoutetracker from '../Tracker/hooks/useRouteTracker';
 
 const Header = ({ active }) => {
 	const isTabletorMobile = useMediaQuery({
@@ -388,7 +389,7 @@ const Header = ({ active }) => {
 			});
 		})(window.jQuery);
 	}, []);
-
+	const GAPageTracker = useRoutetracker('Page');
 	return (
 		<div
 			style={{
@@ -417,7 +418,7 @@ const Header = ({ active }) => {
 						<i className="fas fa-bars fa-2x" />
 					</div>
 					<div className="logo" style={{ margin: '5px 10px' }}>
-						<a href="/">
+						<a href="/" onClick={GAPageTracker.bind(this, 'home')}>
 							<img src={parsecLogo} className="img-fluid" id="logo" />
 						</a>
 					</div>
@@ -431,7 +432,7 @@ const Header = ({ active }) => {
 								<div className="clearfix">
 									<div className="pull-left logo-box">
 										<div className="logo">
-											<a href="/">
+											<a href="/" onClick={GAPageTracker.bind(this, '/home')}>
 												<img src={parsecLogo} />
 											</a>
 										</div>
@@ -468,7 +469,12 @@ const Header = ({ active }) => {
 														</a>
 													</li>
 													<li className={`${active === 2 ? 'current' : ''}`}>
-														<a href="/events">Events</a>
+														<a
+															href="/events"
+															onClick={GAPageTracker.bind(this, '/events')}
+														>
+															Events
+														</a>
 														{/* <Dropdown>
 															<Dropdown.Toggle
 																className="dropdown"
@@ -535,7 +541,12 @@ const Header = ({ active }) => {
 														<a href="/aboutus">About</a>
 													</li> */}
 													<li className={`${active === 3 ? 'current' : ''}`}>
-														<a href="/workshops">Workshops</a>
+														<a
+															href="/workshops"
+															onClick={GAPageTracker.bind(this, '/workshops')}
+														>
+															Workshops
+														</a>
 													</li>
 													{/* <li className={`${active === 4 ? 'current' : ''}`}>
 														<a href="/schedule" target="">
@@ -548,15 +559,28 @@ const Header = ({ active }) => {
 														</a>
 													</li> */}
 													<li className={`${active === 9 ? 'current' : ''}`}>
-														<a href="/gallery">Gallery</a>
+														<a
+															href="/gallery"
+															onClick={GAPageTracker.bind(this, '/gallery')}
+														>
+															Gallery
+														</a>
 													</li>
 													<li className={`${active === 6 ? 'current' : ''}`}>
-														<a href="/faq" target="">
+														<a
+															href="/faq"
+															target=""
+															onClick={GAPageTracker.bind(this, '/faq')}
+														>
 															FAQs
 														</a>
 													</li>
 													<li className={`${active === 7 ? 'current' : ''}`}>
-														<a href="/team" target="">
+														<a
+															href="/team"
+															target=""
+															onClick={GAPageTracker.bind(this, '/team')}
+														>
 															Team
 														</a>
 													</li>

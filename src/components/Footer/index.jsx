@@ -6,8 +6,9 @@ import '../../css/responsive.css';
 // import './styles.css';
 import FooterLogo from '../../images/logos/logo-footer.png';
 import Tracker from '../Tracker';
-
+import useRoutetracker from '../Tracker/hooks/useRouteTracker';
 const Footer = () => {
+	const GAPageTracker = useRoutetracker("Pages")
 	return (
 		<React.Fragment>
 			<footer className="pt-5 pb-4" id="contact">
@@ -17,7 +18,7 @@ const Footer = () => {
 						height: 'fit-content',
 					}}
 				>
-					<div className="row" style={{textAlign: 'center'}}>
+					<div className="row" style={{ textAlign: 'center' }}>
 						<div className="col-lg-3 col-md-6 col-sm-6 my-auto">
 							<a href="index.html" target="_blank">
 								<img src={FooterLogo} alt="footer-logo" />
@@ -41,6 +42,7 @@ const Footer = () => {
 													textDecoration: 'none',
 													// pointerEvents: 'none',
 												}}
+												onClick={GAPageTracker.bind(this, '/hackathon')}
 											>
 												DevHack 3.0
 											</a>
@@ -52,6 +54,7 @@ const Footer = () => {
 													textDecoration: 'none',
 													// pointerEvents: 'none',
 												}}
+												onClick={GAPageTracker.bind(this, '/ctf')}
 											>
 												VeniVidiVici 2.0
 											</a>
@@ -63,6 +66,7 @@ const Footer = () => {
 													textDecoration: 'none',
 													// pointerEvents: 'none',
 												}}
+												onClick={GAPageTracker.bind(this, '/cp')}
 											>
 												Algostrike 2.0
 											</a>
@@ -75,6 +79,7 @@ const Footer = () => {
 													textDecoration: 'none',
 													// pointerEvents: 'none',
 												}}
+												onClick={GAPageTracker.bind(this, '/quiz')}
 											>
 												Quiz
 											</a>
@@ -86,6 +91,7 @@ const Footer = () => {
 													textDecoration: 'none',
 													// pointerEvents: 'none',
 												}}
+												onClick={GAPageTracker.bind(this, '/designo')}
 											>
 												Designõ
 											</a>
@@ -97,6 +103,7 @@ const Footer = () => {
 													textDecoration: 'none',
 													// pointerEvents: 'none',
 												}}
+												onClick={GAPageTracker.bind(this, '/ascensus')}
 											>
 												Ascensus
 											</a>
@@ -107,16 +114,28 @@ const Footer = () => {
 							</ul>
 						</div>
 
-						<div className="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4 text-left" style={{textAlign: 'center'}}>
-							<h5 className="mb-4 font-weight-bold text-white" style={{textAlign: 'center'}}>SUPPORT</h5>
-							<ul className="f-address text-left" style={{ paddingLeft: 0, textAlign: 'center' }}>
+						<div
+							className="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4 text-left"
+							style={{ textAlign: 'center' }}
+						>
+							<h5
+								className="mb-4 font-weight-bold text-white"
+								style={{ textAlign: 'center' }}
+							>
+								SUPPORT
+							</h5>
+							<ul
+								className="f-address text-left"
+								style={{ paddingLeft: 0, textAlign: 'center' }}
+							>
 								<li>
-									<div className="row" style={{textAlign: 'center'}}>
+									<div className="row" style={{ textAlign: 'center' }}>
 										<div className="col-12">
 											<a
 												className="mb-0"
 												href="/travel"
 												style={{ textDecoration: 'none' }}
+												onClick={GAPageTracker.bind(this, '/travel')}
 											>
 												How to Reach?
 											</a>
@@ -125,6 +144,7 @@ const Footer = () => {
 												className="mb-0"
 												href="/sponsors"
 												style={{ textDecoration: 'none' }}
+												onClick={GAPageTracker.bind(this, '/sponsors')}
 											>
 												Sponsors
 											</a>
@@ -133,6 +153,7 @@ const Footer = () => {
 												className="mb-0"
 												href="gallery"
 												style={{ textDecoration: 'none' }}
+												onClick={GAPageTracker.bind(this, '/gallery')}
 											>
 												Gallery
 											</a>
@@ -140,6 +161,7 @@ const Footer = () => {
 											<a
 												href="/contact"
 												style={{ textDecoration: 'none' }}
+												onClick={GAPageTracker.bind(this, '/contact')}
 											>
 												Contact Us
 											</a>
@@ -147,6 +169,7 @@ const Footer = () => {
 											<a
 												href="aboutus"
 												style={{ textDecoration: 'none' }}
+												onClick={GAPageTracker.bind(this, '/aboutus')}
 											>
 												About Us
 											</a>
@@ -154,6 +177,7 @@ const Footer = () => {
 											<a
 												href="codeofconduct"
 												style={{ textDecoration: 'none' }}
+												onClick={GAPageTracker.bind(this, '/codeofconduct')}
 											>
 												Code Of Conduct
 											</a>
@@ -164,16 +188,28 @@ const Footer = () => {
 							</ul>
 						</div>
 
-					<div className="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4 text-left" style={{textAlign: 'center'}}>
-							<h5 className="mb-4 font-weight-bold text-white" style={{textAlign: 'center'}}>SOCIAL MEDIA</h5>
+						<div
+							className="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4 text-left"
+							style={{ textAlign: 'center' }}
+						>
+							<h5
+								className="mb-4 font-weight-bold text-white"
+								style={{ textAlign: 'center' }}
+							>
+								SOCIAL MEDIA
+							</h5>
 
-							<ul className="social-pet mt-4 mb-4" style={{ paddingLeft: '0',textAlign: 'center' }}>
+							<ul
+								className="social-pet mt-4 mb-4"
+								style={{ paddingLeft: '0', textAlign: 'center' }}
+							>
 								<li>
 									<a
 										href="https://www.facebook.com/parsec.iitdh"
 										target="_blank"
 										title="Facebook"
 										style={{ textDecoration: 'none' }}
+										onClick={GAPageTracker.bind(this, 'Facebook')}
 									>
 										<i className="fab fa-facebook-f"></i>
 									</a>
@@ -184,6 +220,7 @@ const Footer = () => {
 										target="_blank"
 										title="Twitter"
 										style={{ textDecoration: 'none' }}
+										onClick={GAPageTracker.bind(this, 'Twitter')}
 									>
 										<i className="fab fa-twitter"></i>
 									</a>
@@ -197,6 +234,7 @@ const Footer = () => {
 											textDecoration: 'none',
 										}}
 										title="Telegram"
+										onClick={GAPageTracker.bind(this, 'Telegram')}
 									>
 										<i className="fab fa-telegram"></i>
 									</a>
@@ -213,6 +251,7 @@ const Footer = () => {
 											textDecoration: 'none',
 										}}
 										title="instagram"
+										onClick={GAPageTracker.bind(this, 'Instagram')}
 									>
 										<i className="fab fa-instagram"></i>
 									</a>

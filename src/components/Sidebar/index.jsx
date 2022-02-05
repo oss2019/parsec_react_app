@@ -5,12 +5,12 @@ import { useMediaQuery } from 'react-responsive';
 
 // import { url } from '../../shared/pdfURL';
 // import Logo from '../Logo';
-
+import useRoutetracker from '../Tracker/hooks/useRouteTracker';
 const Sidebar = ({ show, handleClose, active }) => {
 	const isTabletorMobile = useMediaQuery({
 		query: '(max-width: 1026px)',
 	});
-
+const GAPageTracker = useRoutetracker("Page")
 	const history = useHistory();
 
 	return (
@@ -78,10 +78,11 @@ const Sidebar = ({ show, handleClose, active }) => {
 						}`}
 						href="/events"
 						style={{ textDecoration: 'none' }}
+						onClick={GAPageTracker.bind(this, '/events')}
 					>
 						Events
 					</a>
-					
+
 					{/* <Dropdown>
 						<Dropdown.Toggle
 							// className="dropdown"
@@ -166,6 +167,7 @@ const Sidebar = ({ show, handleClose, active }) => {
 						}`}
 						href="/workshops"
 						style={{ textDecoration: 'none' }}
+						onClick={GAPageTracker.bind(this, '/workshops')}
 					>
 						Workshops
 					</a>
@@ -180,6 +182,7 @@ const Sidebar = ({ show, handleClose, active }) => {
 						}`}
 						href="/gallery"
 						style={{ textDecoration: 'none' }}
+						onClick={GAPageTracker.bind(this, '/gallery')}
 					>
 						Gallery
 					</a>
@@ -194,6 +197,7 @@ const Sidebar = ({ show, handleClose, active }) => {
 						}`}
 						href="/faq"
 						style={{ textDecoration: 'none' }}
+						onClick={GAPageTracker.bind(this, '/faq')}
 					>
 						FAQs
 					</a>
@@ -214,6 +218,7 @@ const Sidebar = ({ show, handleClose, active }) => {
 						}`}
 						href="/team"
 						style={{ textDecoration: 'none' }}
+						onClick={GAPageTracker.bind(this, '/team')}
 					>
 						Team
 					</a>
