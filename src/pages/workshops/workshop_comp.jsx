@@ -5,7 +5,7 @@ import '../../css/style.css';
 import '../../css/responsive.css';
 import { useMediaQuery } from 'react-responsive';
 import useRoutetracker from '../../components/Tracker/hooks/useRouteTracker';
-import ReactGA from 'react-ga'
+import ReactGA from 'react-ga';
 
 const WorkshopComp = ({
 	title,
@@ -17,16 +17,38 @@ const WorkshopComp = ({
 	imageId,
 	pdfLink,
 	trackingLabelForKnowMore,
-	trackingLabelForRegistration
+	trackingLabelForRegistration,
 }) => {
 	const isMobile = useMediaQuery({
 		query: '(max-width: 425px)',
-    });
-    const fntsizeStyles = {
-        fontSize: '13px'
-	}
+	});
+	const fntsizeStyles = {
+		fontSize: '13px',
+	};
+	const sendOutboundForKnowMoreEvt = (e) => {
+		ReactGA.outboundLink(
+			{
+				label: trackingLabelForKnowMore,
+			},
+			() => {
+				// console.log('event sent', trackingLabelForKnowMore);
+			}
+		);
+	};
+	const setOutBoundEvtForRegistration= (e) => {
+		// console.log(e.target.href);
+		// const link = e.target.href;
+		ReactGA.outboundLink(
+			{
+				label: trackingLabelForRegistration,
+			},
+			() => {
+				// console.log('asldk')
+			}
+		);
+	};
 	// ! Traking for external links of Workhops
-	const GARouteTracker = useRoutetracker("External Link")
+	const GARouteTracker = useRoutetracker('External Link');
 	return (
 		<>
 			<div
@@ -118,35 +140,30 @@ const WorkshopComp = ({
 					<br />
 				</div>
 				<div style={{ display: 'flex', justifyContent: 'space-between' }}>
-					{/* <ReactGA.OutboundLink> */}
-						<a
-							href={`${pdfLink}`}
-							target="_blank"
-							// onClick={GARouteTracker.bind(this, `${trackingLabelForKnowMore}`)}
-						>
-							<div className="btn-box">
-								<button type="button" className="btn btn-lg btn-primary">
-									Know More
-								</button>
-							</div>
-						</a>
-					{/* </ReactGA.OutboundLink> */}
-					{/* <ReactGA.OutboundLink> */}
-						<a
-							href={`${registrationLink}`}
-							target="_blank"
-							// onClick={GARouteTracker.bind(
-							// 	this,
-							// 	`${trackingLabelForRegistration}`
-							// )}
-						>
-							<div className="btn-box">
-								<button type="button" className="btn btn-lg btn-primary">
-									Register Here
-								</button>
-							</div>
-						</a>
-					{/* </ReactGA.OutboundLink> */}
+					<ReactGA.OutboundLink></ReactGA.OutboundLink>
+					<a
+						href={`${pdfLink}`}
+						target="_blank"
+						onClick={sendOutboundForKnowMoreEvt}
+					>
+						<div className="btn-box">
+							<button type="button" className="btn btn-lg btn-primary">
+								Know More
+							</button>
+						</div>
+					</a>
+
+					<a
+						href={`${registrationLink}`}
+						target="_blank"
+						onClick={setOutBoundEvtForRegistration}
+					>
+						<div className="btn-box">
+							<button type="button" className="btn btn-lg btn-primary">
+								Register Here
+							</button>
+						</div>
+					</a>
 				</div>
 
 				<br />

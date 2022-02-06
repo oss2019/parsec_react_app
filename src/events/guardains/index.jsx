@@ -184,7 +184,7 @@ const Guardains = () => {
 									// style={{color : '#c4c4c4'}}
 									>
 										Contest starts: 5 March 2022, 2:00 PM
-										<strong> - </strong>
+										{/* <strong> - </strong> */}
 									</li>
 									<li
 									// style={{color : '#c4c4c4'}}
@@ -208,7 +208,7 @@ const Guardains = () => {
 								</ul>
 
 								<br />
-								<p
+								{/* <p
 									className="font-weight-bold"
 									style={{ fontSize: 'large', color: '#c4c4c4' }}
 								>
@@ -222,7 +222,7 @@ const Guardains = () => {
 										channel
 									</a>{' '}
 									and we will try our best to answer all of them.
-								</p>
+								</p> */}
 							</div>
 						</div>
 					</div>
