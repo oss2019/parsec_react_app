@@ -13,7 +13,13 @@ import './styles.css'
 
 const EventCarousel = () => {
 	return (
-		<Carousel showStatus={false} infiniteLoop={true} interval={5000} autoPlay={true} stopOnHover={true} >
+		<Carousel
+			showStatus={false}
+			infiniteLoop={true}
+			interval={5000}
+			autoPlay={true}
+			stopOnHover={true}
+		>
 			{/* <div > */}
 			<div class="slide-item">
 				<div class="row">
@@ -59,7 +65,6 @@ const EventCarousel = () => {
 								alt=""
 								class="bg-img"
 								style={{ width: '70%' }}
-								
 							/>
 						</div>
 					</div>
@@ -105,7 +110,6 @@ const EventCarousel = () => {
 								alt=""
 								class="bg-img"
 								style={{ width: '70%' }}
-								
 							/>
 						</div>
 					</div>
@@ -196,7 +200,7 @@ const EventCarousel = () => {
 								src="https://drive.google.com/uc?id=17c5WqrsJsXmArHg6xDYOh5ZX__snZDf0"
 								alt=""
 								class="bg-img"
-								style={{ width: '70%' }} 
+								style={{ width: '70%' }}
 							/>
 						</div>
 					</div>
@@ -278,6 +282,51 @@ const EventCarousel = () => {
 						<div class="inner-column  bg-img">
 							<img
 								src="https://drive.google.com/uc?id=1CJkzriYKr05wO81rGG4ENjIOh8taoHwz"
+								alt=""
+								class="bg-img"
+								style={{ width: '70%' }}
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slide-item">
+				<div class="row">
+					<div class="content-column order-2 col-lg-5 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<span
+								class="title"
+								style={{
+									fontSize: '2rem',
+									color: '#f20487',
+									fontWeight: '600',
+								}}
+							>
+								{/* Show your Skills */}
+								
+							</span>
+							<h2>GuardAIns</h2>
+							<div
+								class="text mb-3"
+								style={{
+									fontSize: '18px',
+									fontWeight: 'normal',
+									lineHeight: '2',
+								}}
+							>
+								GuardAIns is an AI tournament in which participants must utilize
+								their knowledge to develop bots that will navigate the maze
+								independently in search of the Power stone and bring it back to
+								their base. These five Guardians each have five unique special
+								powers that will aid in the pursuit of the Power Stone.
+							</div>
+						</div>
+					</div>
+
+					<div class="info-column col-lg-7 col-md-12 col-sm-12">
+						<div class="inner-column  bg-img">
+							<img
+								src="https://drive.google.com/uc?id=11BHGunOTQZ9OhAVD2qwyGE3mgoMhjYKe"
 								alt=""
 								class="bg-img"
 								style={{ width: '70%' }}

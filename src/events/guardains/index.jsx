@@ -8,10 +8,10 @@ import Footer from '../../components/Footer';
 import EventsBackground from '../../components/eventsBackground';
 import { useMediaQuery } from 'react-responsive';
 const Guardains = () => {
-		const isTabletorMobile = useMediaQuery({ query: '(max-width: 550px)' });
-		const isTab = useMediaQuery({ query: '(max-width:1026px)' });
-		const isMobile = useMediaQuery({ query: '(max-width:425px)' });
-		const issm = useMediaQuery({ query: '(max-width:400px)' });
+	const isTabletorMobile = useMediaQuery({ query: '(max-width: 550px)' });
+	const isTab = useMediaQuery({ query: '(max-width:1026px)' });
+	const isMobile = useMediaQuery({ query: '(max-width:425px)' });
+	const issm = useMediaQuery({ query: '(max-width:400px)' });
 	return (
 		<React.Fragment>
 			<EventsBackground />
@@ -140,7 +140,7 @@ const Guardains = () => {
 										>
 											<div className="row">
 												<div className="col-md-6" style={{ color: '#2babd6' }}>
-													Duration : -{' '}
+													Duration : 2 Days
 												</div>
 												<div className="col-md-6" style={{ color: '#2babd6' }}>
 													Team Size : 2
@@ -183,7 +183,7 @@ const Guardains = () => {
 									<li
 									// style={{color : '#c4c4c4'}}
 									>
-										Contest starts:
+										Contest starts: 5 March 2022, 2:00 PM
 										<strong> - </strong>
 									</li>
 									<li

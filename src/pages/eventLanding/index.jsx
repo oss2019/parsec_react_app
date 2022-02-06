@@ -357,15 +357,15 @@ const EventLanding = () => {
 								time="8 PM"
 								mode="ONLINE"
 							/>
-							{/* <EvtCard 
+							<EvtCard 
 								evtLogo={devhack}
 								evtTitle="GUARDAINS"
-								evtUrl={}
-								date="4 MARCH 2022"
-								time="8 PM"
+								evtUrl={'/guardains'}
+								date="5 MARCH 2022"
+								time="2 PM"
 								mode="ONLINE"  
 								
-							/> */}
+							/>
 						</div>
 
 						{/* </LazyLoad> */}
