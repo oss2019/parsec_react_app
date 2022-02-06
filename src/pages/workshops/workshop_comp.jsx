@@ -140,7 +140,6 @@ const WorkshopComp = ({
 					<br />
 				</div>
 				<div style={{ display: 'flex', justifyContent: 'space-between' }}>
-					<ReactGA.OutboundLink></ReactGA.OutboundLink>
 					<a
 						href={`${pdfLink}`}
 						target="_blank"
