@@ -1,35 +1,94 @@
 [
-    {
-        "name": "Ashish Akash",
-        "image": "https://drive.google.com/uc?id=1k5jdF4W1U62HVJoB2WgSyzppL_SlvEI1",
-        "instagram": "https://www.instagram.com/ashish_akash_/",
-        "facebook": "",
-        "github": "https://github.com/ashishakash",
-        "linkedin": ""
-    },
-    
-    {
-        "name": "Sumedhsingh Rajput",
-        "image": "https://drive.google.com/uc?id=16ceiQxw-MCqdFrPun_h_Y5x4pXU12cHs",
-        "instagram": "",
-        "facebook": "",
-        "github": "",
-        "linkedin": "https://www.linkedin.com/in/sumedh-rajput-846b0b19b"
-    },
-    {
-        "name": "Prajwal",
-        "image": "https://drive.google.com/uc?id=1VGKtGUgV7VyOMLfZ_uUer8ydSPZuitKv",
-        "instagram": "",
-        "facebook": "",
-        "github": "",
-        "linkedin": ""
-    },
-    {
-        "name": "Mohammed Huzaif Barkati",
-        "image": "https://drive.google.com/uc?id=1onKg-bQT6vFlX3N7xN9hSZlq5xwtp-RR",
-        "instagram": "https://www.instagram.com/huzaif.barkati/",
-        "facebook": "",
-        "github": "",
-        "linkedin": ""
-    }
+	{
+		"name": "Ashish Akash",
+		"image": "https://drive.google.com/uc?id=1k5jdF4W1U62HVJoB2WgSyzppL_SlvEI1",
+		"instagram": "https://www.instagram.com/ashish_akash_/",
+		"facebook": "",
+		"github": "https://github.com/ashishakash",
+		"linkedin": "",
+		"teamlead": "true"
+	},
+	{
+		"name": "Divyanshu Nagrale",
+		"image": "https://drive.google.com/uc?id=1_tH1IsbiigKpC5umbfbOHocsMRjIVBPa",
+		"instagram": "",
+		"facebook": "",
+		"github": "",
+		"linkedin": "https://www.linkedin.com/in/divyanshu-nagrale-664180173/",
+		"teamlead": "false"
+	},
+	{
+		"name": "Yusuf",
+		"image": "https://drive.google.com/uc?id=1r0uSaCpZFrGWX7nxrQxngvFsOMNAwc7i",
+		"instagram": "",
+		"facebook": "",
+		"github": "",
+		"linkedin": "",
+		"teamlead": "false"
+	},
+
+	{
+		"name": "Saloni Singh",
+		"image": "https://drive.google.com/uc?id=1QX1PViwq2xQ9EinOuYlg839G-maM_hB0",
+		"instagram": "",
+		"facebook": "",
+		"github": "https://github.com/SaloniSingh1601",
+		"linkedin": "https://www.linkedin.com/in/saloni-singh-b9b4941a4/",
+		"teamlead": "false"
+	},
+	{
+		"name": "Atharva Swami",
+		"image": "https://drive.google.com/uc?id=1o53sM3t1GDu6X69dlw3bT8HVyu5bepZa",
+		"instagram": "",
+		"facebook": "",
+		"github": "https://github.com/atharvaswami",
+		"linkedin": "https://www.linkedin.com/in/atharva-swami",
+		"teamlead": "false"
+	},
+	{
+		"name": "Meghana Sripalle",
+		"image": "https://drive.google.com/uc?id=1Ss3rfUzGxDhMlX_oVU66LL0YwgvHjPL-",
+		"instagram": "https://www.instagram.com/harish.r.t/",
+		"facebook": "",
+		"github": "https://github.com/MeghanaSripalle",
+		"linkedin": "",
+		"teamlead": "false"
+	},
+	{
+		"name": "Pasumarthi Dharani Samsritha",
+		"image": "https://drive.google.com/uc?id=1X8kDaawj0QGJKiMKBsLTG2Qg52FZBiwa",
+		"instagram": "https://www.instagram.com/samsi_sam_sri/",
+		"facebook": "",
+		"github": "https://github.com/Samsritha63/",
+		"linkedin": "https://www.linkedin.com/in/dharani-samsritha-pasumarthi-4ba2a9200",
+		"teamlead": "false"
+	},
+	{
+		"name": "Balla Veekshita Naidu",
+		"image": "https://drive.google.com/uc?id=1hDoJMwFmmXHMqHilSD0JK8kN8uGZ5IEV",
+		"instagram": "https://www.instagram.com/veekshitan_07/",
+		"facebook": "",
+		"github": "",
+		"linkedin": "https://www.linkedin.com/in/veekshita-naidu-363a871a4",
+		"teamlead": "false"
+	},
+
+	{
+		"name": "Mohammed Huzaif Barkati",
+		"image": "https://drive.google.com/uc?id=1onKg-bQT6vFlX3N7xN9hSZlq5xwtp-RR",
+		"instagram": "https://www.instagram.com/huzaif.barkati/",
+		"facebook": "",
+		"github": "",
+		"linkedin": "",
+		"teamlead": "false"
+	},
+	{
+		"name": "Sayali Lokhande",
+		"image": "https://drive.google.com/uc?id=1PR3Fd64hGjk5bWIhaTLwzfianqfKNk3-",
+		"instagram": "https://www.instagram.com/sayalil_17/",
+		"facebook": "",
+		"github": "https://github.com/sayali3905",
+		"linkedin": "https://www.linkedin.com/in/sayali-lokhande-55609b201",
+		"teamlead": "false"
+	}
 ]

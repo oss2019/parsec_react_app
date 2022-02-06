@@ -118,11 +118,11 @@ const WorkshopComp = ({
 					<br />
 				</div>
 				<div style={{ display: 'flex', justifyContent: 'space-between' }}>
-					<ReactGA.OutboundLink>
+					{/* <ReactGA.OutboundLink> */}
 						<a
 							href={`${pdfLink}`}
 							target="_blank"
-							onClick={GARouteTracker.bind(this, `${trackingLabelForKnowMore}`)}
+							// onClick={GARouteTracker.bind(this, `${trackingLabelForKnowMore}`)}
 						>
 							<div className="btn-box">
 								<button type="button" className="btn btn-lg btn-primary">
@@ -130,15 +130,15 @@ const WorkshopComp = ({
 								</button>
 							</div>
 						</a>
-					</ReactGA.OutboundLink>
-					<ReactGA.OutboundLink>
+					{/* </ReactGA.OutboundLink> */}
+					{/* <ReactGA.OutboundLink> */}
 						<a
 							href={`${registrationLink}`}
 							target="_blank"
-							onClick={GARouteTracker.bind(
-								this,
-								`${trackingLabelForRegistration}`
-							)}
+							// onClick={GARouteTracker.bind(
+							// 	this,
+							// 	`${trackingLabelForRegistration}`
+							// )}
 						>
 							<div className="btn-box">
 								<button type="button" className="btn btn-lg btn-primary">
@@ -146,7 +146,7 @@ const WorkshopComp = ({
 								</button>
 							</div>
 						</a>
-					</ReactGA.OutboundLink>
+					{/* </ReactGA.OutboundLink> */}
 				</div>
 
 				<br />

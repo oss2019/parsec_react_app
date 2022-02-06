@@ -108,6 +108,18 @@ const Footer = () => {
 												Ascensus
 											</a>
 											<br />
+											{/* <a
+												className="mb-0"
+												href="/guardains"
+												style={{
+													textDecoration: 'none',
+													// pointerEvents: 'none',
+												}}
+												onClick={GAPageTracker.bind(this, '/ascensus')}
+											>
+												GuardAIns
+											</a>
+											<br /> */}
 										</div>
 									</div>
 								</li>

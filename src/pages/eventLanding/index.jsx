@@ -46,18 +46,24 @@ const EvtCard = ({ evtTitle, evtLogo, evtUrl, date, time, mode }) => {
 						: isTablet === true
 						? '1rem auto'
 						: '1.5rem',
-				background: `url(${eventBg})`,
+				background: `url(https://drive.google.com/uc?id=1qe5lFkx6MFLfclGJoH1tabsz3vvTNbuC)`,
 				// objectFit: 'contain'
 			}}
 			id="example3"
 		>
-			<a href={evtUrl} onClick={GAEventsTracker.bind(this,`${evtUrl}`)}>
+			<a href={evtUrl} onClick={GAEventsTracker.bind(this, `${evtUrl}`)}>
 				<div className="flip-card-inner">
 					<div
-						style={{ width: '100%', height: '100%' }}
+						style={{
+							width: '100%',
+							height: '100%',
+							display: 'flex',
+							flexDirection: 'column',
+							justifyContent: 'space-evenly',
+						}}
 						className="flip-card-front"
 					>
-						<img
+						{/* <img
 							src={parsecLogo}
 							style={{
 								height: '57px',
@@ -78,25 +84,26 @@ const EvtCard = ({ evtTitle, evtLogo, evtUrl, date, time, mode }) => {
 								right: '0',
 								margin: '0 auto',
 							}}
-						/>
+						/> */}
 						<div
 							style={{
-								height: '150px',
-								width: '150px',
-								borderRadius: '75px',
+								height: '200px',
+								width: '200px',
+								borderRadius: '100px',
 								position: 'absolute',
-								top: '124px',
+								top: '20px',
 								left: '0',
 								right: '0',
+								bottom: '0',
 								margin: '0 auto',
 								background: 'rgba(255,255,255, 0.25)',
 							}}
 						>
 							<div
 								style={{
-									height: '90px',
-									width: '90px',
-									borderRadius: '45px',
+									height: '135px',
+									width: '135px',
+									borderRadius: '68px',
 									position: 'absolute',
 									top: '0px',
 									left: '0',
@@ -135,9 +142,9 @@ const EvtCard = ({ evtTitle, evtLogo, evtUrl, date, time, mode }) => {
 							className="text-capitalize"
 							style={{
 								// height: '20px',
-								fontSize: '21px',
+								// fontSize: '21px',
 								position: 'absolute',
-								top: '290px',
+								top: '280px',
 								left: '0',
 								right: '0',
 								margin: '0 auto',
@@ -228,7 +235,7 @@ const EvtCard = ({ evtTitle, evtLogo, evtUrl, date, time, mode }) => {
 //   };
 
 const EventLanding = () => {
-	const isMobileOrTablet = useMediaQuery({ query: '(max-width: 600px)' });
+	const isTabletorMobile = useMediaQuery({ query: '(max-width: 600px)' });
 
 	return (
 		<React.Fragment>
@@ -236,9 +243,35 @@ const EventLanding = () => {
 				<div className="preloader"></div>
 				<EventBackground bgColor={'#ffffff'} />
 				<Header active={2} />
-
+				{/* <section
+					className="page-title"
+					// id="ptitle"
+					style={{ overflow: 'visible', paddingRight: 0 }}
+				>
+					<img
+						src={`${
+							isTabletorMobile
+								? 'https://drive.google.com/uc?id=1XRFezuAztuC5cP_z8cidTgaxxE6XNzpd'
+								: 'https://drive.google.com/uc?id=1XRFezuAztuC5cP_z8cidTgaxxE6XNzpd'
+						}`}
+						id="hack-title"
+						style={{
+							position: 'absolute',
+							top: 0,
+							overflow: 'visible',
+							height: '50vh',
+							marginRight: 0,
+							right: 0,
+							left: 0,
+							width: '100vw',
+							color: 'wheat',
+						}}
+					/>
+					dfadf asdf sdaf
+				</section> */}
 				<section
 					className="page-title"
+					id="page-title"
 					style={{
 						backgroundImage: `url(${evtTitle})`,
 						backgroundRepeat: 'no-repeat',
@@ -261,7 +294,7 @@ const EventLanding = () => {
 					</div>
 				</section>
 
-				<section className="event-venue-section" style={{}}>
+				<section className="event-venue-section">
 					<div className="auto-container" style={{ padding: '0 auto' }}>
 						<div className="sec-title">
 							<h2 style={{ color: '#ffffff' }}>Events</h2>

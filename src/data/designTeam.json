@@ -5,7 +5,8 @@
 		"instagram": "https://www.instagram.com/samriddhachattopadhyay/",
 		"facebook": "https://www.facebook.com/samriddha.chattopadhyay",
 		"github": "https://github.com/Samyc2002/",
-		"linkedin": "https://www.linkedin.com/in/samriddha-chattopadhyay-b13555200/"
+		"linkedin": "https://www.linkedin.com/in/samriddha-chattopadhyay-b13555200/",
+		"teamlead": "true"
 	},
 	{
 		"name": "Sayali Lokhande",
@@ -13,7 +14,8 @@
 		"instagram": "https://www.instagram.com/sayalil_17/",
 		"facebook": "",
 		"github": "https://github.com/sayali3905",
-		"linkedin": "https://www.linkedin.com/in/sayali-lokhande-55609b201"
+		"linkedin": "https://www.linkedin.com/in/sayali-lokhande-55609b201",
+		"teamlead": "false"
 	},
 	{
 		"name": "Mohit Kannaujiya",
@@ -21,7 +23,8 @@
 		"instagram": "https://www.instagram.com/@mohit_2422141/",
 		"facebook": "",
 		"github": "",
-		"linkedin": ""
+		"linkedin": "",
+		"teamlead": "false"
 	},
 	{
 		"name": "Shahil Patel",
@@ -29,7 +32,8 @@
 		"instagram": "",
 		"facebook": "",
 		"github": "https://github.com/shahilpatel-3602",
-		"linkedin": "https://www.linkedin.com/in/shahil-patel-97298b1bb/"
+		"linkedin": "https://www.linkedin.com/in/shahil-patel-97298b1bb/",
+		"teamlead": "false"
 	},
 	{
 		"name": "Kalidindi Dhrutika ",
@@ -37,7 +41,8 @@
 		"instagram": "https://www.instagram.com/dhrutika.k",
 		"facebook": "",
 		"github": "",
-		"linkedin": ""
+		"linkedin": "",
+		"teamlead": "false"
 	},
 	{
 		"name": "Tejal Avinash Ladage",
@@ -45,6 +50,17 @@
 		"instagram": "https://www.instagram.com/tejalladage2202",
 		"facebook": "",
 		"github": "",
-		"linkedin": ""
+		"linkedin": "",
+		"teamlead": "false"
+	},
+	{
+		"name": "Harishkumar Laxmikant Gajakosh",
+		"image": "https://drive.google.com/uc?id=1VIO08BZKUx3jLWBcri2yPxGvHR9yWqmz",
+		"instagram": "https://www.instagram.com/cadmium_24/",
+		"facebook": "",
+		"github": "",
+		"linkedin": "https://www.linkedin.com/in/hklg",
+		"post": "designo",
+		"teamlead": "false"
 	}
 ]
