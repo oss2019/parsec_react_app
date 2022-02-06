@@ -152,12 +152,12 @@ const Overview = () => {
 										<li style={{ color: `#12114a` }}>
 											Code of Conduct to be followed.
 										</li>
-										<li style={{ color: `hsl(241, 63%, 18%)` }}>
+										{/* <li style={{ color: `hsl(241, 63%, 18%)` }}>
 											Carry fully charged laptops.
-										</li>
-										<li style={{ color: `#12114a` }}>
+										</li> */}
+										{/* <li style={{ color: `#12114a` }}>
 											Food and mattresses for power naps will be provided
-										</li>
+										</li> */}
 										<li style={{ color: `#12114a` }}>
 											Separate judging for Hardware and Software hacks
 										</li>
