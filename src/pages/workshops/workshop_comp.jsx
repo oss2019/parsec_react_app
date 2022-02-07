@@ -1,11 +1,11 @@
 import React from 'react';
-import aiWorkshopImage from '../../images/resource/ml&ai.jpg';
 import './styles.css';
 import '../../css/bootstrap.css';
 import '../../css/style.css';
 import '../../css/responsive.css';
 import { useMediaQuery } from 'react-responsive';
 import useRoutetracker from '../../components/Tracker/hooks/useRouteTracker';
+import ReactGA from 'react-ga';
 
 const WorkshopComp = ({
 	title,
@@ -17,16 +17,38 @@ const WorkshopComp = ({
 	imageId,
 	pdfLink,
 	trackingLabelForKnowMore,
-	trackingLabelForRegistration
+	trackingLabelForRegistration,
 }) => {
 	const isMobile = useMediaQuery({
 		query: '(max-width: 425px)',
-    });
-    const fntsizeStyles = {
-        fontSize: '13px'
-	}
+	});
+	const fntsizeStyles = {
+		fontSize: '13px',
+	};
+	const sendOutboundForKnowMoreEvt = (e) => {
+		ReactGA.outboundLink(
+			{
+				label: trackingLabelForKnowMore,
+			},
+			() => {
+				// console.log('event sent', trackingLabelForKnowMore);
+			}
+		);
+	};
+	const setOutBoundEvtForRegistration= (e) => {
+		// console.log(e.target.href);
+		// const link = e.target.href;
+		ReactGA.outboundLink(
+			{
+				label: trackingLabelForRegistration,
+			},
+			() => {
+				// console.log('asldk')
+			}
+		);
+	};
 	// ! Traking for external links of Workhops
-	const GARouteTracker = useRoutetracker("External Link")
+	const GARouteTracker = useRoutetracker('External Link');
 	return (
 		<>
 			<div
@@ -121,7 +143,7 @@ const WorkshopComp = ({
 					<a
 						href={`${pdfLink}`}
 						target="_blank"
-						onClick={GARouteTracker.bind(this, `${trackingLabelForKnowMore}`)}
+						onClick={sendOutboundForKnowMoreEvt}
 					>
 						<div className="btn-box">
 							<button type="button" className="btn btn-lg btn-primary">
@@ -129,10 +151,11 @@ const WorkshopComp = ({
 							</button>
 						</div>
 					</a>
+
 					<a
 						href={`${registrationLink}`}
 						target="_blank"
-						onClick={GARouteTracker.bind(this, `${trackingLabelForRegistration}`)}
+						onClick={setOutBoundEvtForRegistration}
 					>
 						<div className="btn-box">
 							<button type="button" className="btn btn-lg btn-primary">
@@ -146,154 +169,6 @@ const WorkshopComp = ({
 				<br />
 			</div>
 		</>
-		// <div
-		// 	className="news-block news-block-style col-lg-5 col-md-6 col-sm-12 wow fadeInUp "
-		//     dataWowDelay="400ms"
-		//     style={{height: '600px'}}
-		// >
-		// 	<div
-		// 		className="image-box"
-		// 		style={{
-		// 			padding: '8% 5% 3% 5%',
-		// 			borderRadius: '12px',
-		// 			overflow: 'hidden',
-		// 		}}
-		// 	>
-		// 		<figure
-		// 			className="image"
-		// 			style={{ borderRadius: '12px', overflow: 'hidden' }}
-		// 		>
-		// 			<a href="#">
-		// 				<img
-		// 					src={aiWorkshopImage}
-		// 					alt=""
-		// 					style={{
-		// 						width: '100%',
-		// 						objectFit: 'cover',
-		// 						borderRadius: '12px',
-		// 					}}
-		// 				/>
-		// 			</a>
-		// 		</figure>
-		// 	</div>
-
-		// 	<div className="lower-content" style={{ textAlign: 'center' }}>
-		// 		<h4>
-		// 			<a
-		// 				href="#"
-		// 				style={{
-		// 					fontSize: '25px',
-		// 					paddingTop: '5px',
-		// 					fontFamily: `-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif`,
-		// 					textAlign: 'center',
-		// 					textDecoration: 'none',
-		// 				}}
-		// 			>
-		// 				{title}
-		// 			</a>
-		// 		</h4>
-		// 		<>
-		// 			<div className="text" style={{ marginBottom: '6px' }}>
-		// 				<span
-		// 					style={{
-		// 						color: '#000',
-		// 						fontWeight: '700',
-		// 						fontSize: '20px',
-		// 					}}
-		// 				>
-		// 					Start Date:{' '}
-		// 				</span>
-		// 				<span
-		// 					style={{
-		// 						color: '#000',
-		// 						fontSize: '17px',
-		// 						fontWeight: 'normal',
-		// 					}}
-		// 				>
-		// 					{startDate}
-		// 				</span>
-		// 			</div>
-		// 			<div className="text" style={{ marginBottom: '6px' }}>
-		// 				<span
-		// 					style={{
-		// 						color: '#000',
-		// 						fontWeight: '700',
-		// 						fontSize: '20px',
-		// 					}}
-		// 				>
-		// 					End Date:{' '}
-		// 				</span>
-		// 				<span
-		// 					style={{
-		// 						color: '#000',
-		// 						fontSize: '17px',
-		// 						fontWeight: 'normal',
-		// 					}}
-		// 				>
-		// 					{endDate}
-		// 				</span>
-		// 			</div>
-		// 			<div className="text" style={{ marginBottom: '6px' }}>
-		// 				<span
-		// 					style={{
-		// 						color: '#000',
-		// 						fontWeight: '700',
-		// 						fontSize: '20px',
-		// 					}}
-		// 				>
-		// 					Venue:{' '}
-		// 				</span>
-		// 				<span
-		// 					style={{
-		// 						color: '#000',
-		// 						fontSize: '17px',
-		// 						fontWeight: 'normal',
-		// 					}}
-		// 				>
-		// 					{venue}
-		// 				</span>
-		// 			</div>
-		// 			<div className="text" style={{ marginBottom: '6px' }}>
-		// 				<span
-		// 					style={{
-		// 						color: '#000',
-		// 						fontWeight: '700',
-		// 						fontSize: '20px',
-		// 					}}
-		// 				>
-		// 					Fees:{' '}
-		// 				</span>
-		// 				<span
-		// 					style={{
-		// 						color: '#000',
-		// 						fontSize: '17px',
-		// 						fontWeight: 'normal',
-		// 					}}
-		// 				>
-		// 					&#8377; {fee}
-		// 				</span>
-		// 			</div>
-		// 		</>
-
-		// 		<center
-		// 			style={{
-		// 				height: '50px',
-		// 				paddingBottom: '60px',
-		// 				paddingTop: '15px',
-		// 			}}
-		// 		>
-		// 			<a href={`${registrationLink}`} target="_blank">
-		// 				<div className="btn-box">
-		// 					<button type="button" className="btn btn-lg btn-primary">
-		// 						Register Here
-		// 					</button>
-		// 				</div>
-		// 			</a>
-		// 			<br />
-		// 			<br />
-		// 		</center>
-		// 	</div>
-		// </div>
 	);
 };
 

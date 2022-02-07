@@ -1,21 +1,13 @@
 [
 	{
-		"name": "Manav Kushwaha",
-		"image": "https://drive.google.com/uc?id=1CbPpikIzAYum2vPFaNWnxJAVmsDopMPf",
-		"instagram": "",
+		"name": "Nir Bavariya",
+		"image": "https://drive.google.com/uc?id=1NEBVImjoMdnGUPD_TzY_CLfcvfeD5Js0",
+		"instagram": "https://www.instagram.com/pio_neer19/",
 		"facebook": "",
 		"github": "",
-		"linkedin": "https://www.linkedin.com/in/manav-kushwaha",
-		"post": "devhack"
-	},
-	{
-		"name": "Omkar D Jadhav",
-		"image": "https://drive.google.com/uc?id=1tx911UFYb7zK6qwAGqKrF2-rJEn1k9lv",
-		"instagram": "https://www.instagram.com/omkar.exe",
-		"facebook": "",
-		"github": "https://github.com/IamODJ/",
-		"linkedin": "https://www.linkedin.com/in/iamodj",
-		"post": "devhack"
+		"linkedin": "https://www.linkedin.com/in/nir-bavariya-376155193",
+		"post": "algostrike",
+		"teamlead": "true"
 	},
 	{
 		"name": "Sumedhsingh Rajput",
@@ -24,16 +16,8 @@
 		"facebook": "",
 		"github": "",
 		"linkedin": "https://www.linkedin.com/in/sumedh-rajput-846b0b19b",
-		"post": "algostrike"
-	},
-	{
-		"name": "Putti Gowtham Sai",
-		"image": "https://drive.google.com/uc?id=11LvBu0rCkI0t3yu2GLNbxCbxbvEWTd54",
-		"instagram": "https://www.instagram.com/gowtham31m/",
-		"facebook": "",
-		"github": "",
-		"linkedin": "",
-		"post": "devhack"
+		"post": "algostrike",
+		"teamlead": "false"
 	},
 	{
 		"name": "Vansh gupta",
@@ -42,17 +26,10 @@
 		"facebook": "",
 		"github": "",
 		"linkedin": "https://www.linkedin.com/in/vansh-gupta-22nov/",
-		"post": "algostrike"
+		"post": "algostrike",
+		"teamlead": "false"
 	},
-	{
-		"name": "Nir Bavariya",
-		"image": "https://drive.google.com/uc?id=1NEBVImjoMdnGUPD_TzY_CLfcvfeD5Js0",
-		"instagram": "https://www.instagram.com/pio_neer19/",
-		"facebook": "",
-		"github": "",
-		"linkedin": "https://www.linkedin.com/in/nir-bavariya-376155193",
-		"post": "algostrike"
-	},
+
 	{
 		"name": "Adarsh Kumar Mall",
 		"image": "https://drive.google.com/uc?id=1agbtSt4y9lq6MqVGRI0Zd-iEqlYeE41U",
@@ -60,7 +37,8 @@
 		"facebook": "",
 		"github": "https://github.com/adimall25",
 		"linkedin": "https://www.linkedin.com/in/adarsh-kumar-mall-4a5368191/",
-		"post": "algostrike"
+		"post": "algostrike",
+		"teamlead": "false"
 	},
 	{
 		"name": "Atharva Swami",
@@ -69,7 +47,8 @@
 		"facebook": "",
 		"github": "https://github.com/atharvaswami",
 		"linkedin": "https://www.linkedin.com/in/atharva-swami",
-		"post": "venividivici"
+		"post": "venividivici",
+		"teamlead": "true"
 	},
 	{
 		"name": "Rishit Saiya",
@@ -78,7 +57,8 @@
 		"facebook": "",
 		"github": "https://github.com/rishitsaiya/",
 		"linkedin": "https://www.linkedin.com/in/rishit-saiya/",
-		"post": "venividivici"
+		"post": "venividivici",
+		"teamlead": "false"
 	},
 	{
 		"name": "Harishkumar Laxmikant Gajakosh",
@@ -87,7 +67,8 @@
 		"facebook": "",
 		"github": "",
 		"linkedin": "https://www.linkedin.com/in/hklg",
-		"post": "designo"
+		"post": "designo",
+		"teamlead": "true"
 	},
 	{
 		"name": "Siddharth Patra",
@@ -96,7 +77,8 @@
 		"facebook": "",
 		"github": "",
 		"linkedin": "https://www.linkedin.com/in/siddharth-patra-2001/",
-		"post": "ascensus"
+		"post": "ascensus",
+		"teamlead": "true"
 	},
 	{
 		"name": "Mayank Mittal",
@@ -105,7 +87,8 @@
 		"facebook": "",
 		"github": "https://github.com/Mittal9269",
 		"linkedin": "https://www.linkedin.com/in/mayank-mittal-866a1b1a6/",
-		"post": "ascensus"
+		"post": "ascensus",
+		"teamlead": "true"
 	},
 	{
 		"name": "Abhinav Soni",
@@ -114,16 +97,8 @@
 		"facebook": "",
 		"github": "",
 		"linkedin": "https://www.linkedin.com/in/soni-abhinav",
-		"post": "quiz"
-	},
-	{
-		"name": "Harish R T",
-		"image": "https://drive.google.com/uc?id=16O4ElKsavuzGoIMG1RSd5NddzLPdf_a-",
-		"instagram": "https://www.instagram.com/harish.r.t/",
-		"facebook": "",
-		"github": "https://github.com/Chef-rises-7/",
-		"linkedin": "https://www.linkedin.com/in/harish-r-t-399467196/",
-		"post": "devhack"
+		"post": "quiz",
+		"teamlead": "true"
 	},
 	{
 		"name": "Rudraksh",
@@ -132,6 +107,37 @@
 		"facebook": "",
 		"github": "https://github.com/rudrakshsattabhayya",
 		"linkedin": "https://www.linkedin.com/in/rudraksh-sattabhayya-86684b190",
-		"post": "devhack"
+		"post": "devhack",
+		"teamlead": "true"
+	},
+	{
+		"name": "Hari Prasad P",
+		"image": "https://drive.google.com/uc?id=1TokuRPkAv4gzXzAhxcMsXIU7cAlEOvU7",
+		"instagram": "https://www.instagram.com/_hari.prasaad/",
+		"facebook": "",
+		"github": "",
+		"linkedin": "https://www.linkedin.com/in/hari-prasad-618556200",
+		"post": "devhack",
+		"teamlead": "false"
+	},
+	{
+		"name": "Rajashekhar",
+		"image": "https://drive.google.com/uc?id=1a8LVOcSpJCB9RAH2bxGpadeSxWnHAbfs",
+		"instagram": "https://www.instagram.com/rajashekhar_091/",
+		"facebook": "",
+		"github": "",
+		"linkedin": "https://www.linkedin.com/in/hari-prasad-618556200",
+		"post": "devhack",
+		"teamlead": "false"
+	},
+	{
+		"name": "Putti Gowtham Sai",
+		"image": "https://drive.google.com/uc?id=11LvBu0rCkI0t3yu2GLNbxCbxbvEWTd54",
+		"instagram": "https://www.instagram.com/gowtham31m/",
+		"facebook": "",
+		"github": "",
+		"linkedin": "",
+		"post": "gaurdians",
+		"teamlead": "false"
 	}
-]  
+]

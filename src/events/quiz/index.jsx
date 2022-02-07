@@ -7,8 +7,12 @@ import '../../css/responsive.css';
 import quizTitleBackground from '../../images/resource/19629.jpg';
 import Footer from '../../components/Footer';
 import EventsBackground from '../../components/eventsBackground';
-
+import { useMediaQuery } from 'react-responsive';
 const Quiz = () => {
+		const isTabletorMobile = useMediaQuery({ query: '(max-width: 550px)' });
+		const isTab = useMediaQuery({ query: '(max-width:1026px)' });
+		const isMobile = useMediaQuery({ query: '(max-width:425px)' });
+		const issm = useMediaQuery({ query: '(max-width:400px)' });
 	return (
 		<React.Fragment>
 			<div className="page-wrapper">
@@ -19,24 +23,34 @@ const Quiz = () => {
 
 				<section
 					className="page-title"
-					id="page-title"
-					style={{ backgroundImage: `url(${quizTitleBackground})` }}
+					style={{ overflow: 'visible', paddingRight: 0, padding: '0' }}
 				>
-					<div className="auto-container">
-						<span className="float-text">SciTech Quiz</span>
-						<h1>Quiz</h1>
-						<ul className="bread-crumb clearfix">
-							<li>
-								<a href="index.html" style={{ textDecoration: `None` }}>
-									Home{' '}
-								</a>
-							</li>
-							<li>Quiz</li>
-						</ul>
-					</div>
+					<img
+						src={`${
+							isTabletorMobile
+								? 'https://drive.google.com/uc?id=1m6CcYPd0YzEoG0HoY7ffeYt1IxiJbZFd'
+								: 'https://drive.google.com/uc?id=1arYIkEx5X7aTRwlA8nSgdZ-CTIg0ts0c'
+						}`}
+						id="hack-title"
+						style={{
+							marginTop: isTab
+								? isMobile
+									? issm
+										? '55px'
+										: '45px'
+									: '60px'
+								: '',
+							objectFit: 'cover',
+							width: '100vw',
+							padding: '0',
+						}}
+					/>
 				</section>
 
-				<section className="project-section" style={{ background: `#090b38` }}>
+				<section
+					className="project-section"
+					style={{  marginTop: '150px' }}
+				>
 					<div className="anim-icons">
 						<span className="icon icon-cross-1"></span>
 					</div>
@@ -158,7 +172,7 @@ const Quiz = () => {
 														>
 															<div
 																style={{
-																	backgroundColor: `#090b38`,
+																	// backgroundColor: `#090b38`,
 																	fontFamily: `'Roboto', sans-serif`,
 																	fontSize: `large`,
 																	fontWeight: `bold`,
@@ -194,7 +208,7 @@ const Quiz = () => {
 															style={{ fontSize: `large`, color: `#ed6286` }}
 														>
 															<li style={{ color: `#ed6286` }}>
-																Quiz starts: 12:30 PM, 5th March, 2022 
+																Quiz starts: 12:30 PM, 5th March, 2022
 															</li>
 															<li style={{ color: `#ed6286` }}>
 																Students of Standard 9th to 12th and
