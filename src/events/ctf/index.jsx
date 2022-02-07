@@ -234,16 +234,16 @@ const Ctf = () => {
 														}}
 														className="font-weight-bold"
 													>
-														Still have queries? Reach out to us on our Telegram{' '}
+														Still have queries? Reach out to us on{' '}
 														<a
-															href="https://t.me/parsec_venividivici"
+															href="https://discord.gg/xwaHg8YDKK"
 															style={{
 																color: `#00adb5`,
 																textDecoration: `None`,
 															}}
 															target="_blank"
 														>
-															channel
+															discord
 														</a>{' '}
 														and we will try our best to answer all of them.
 													</p>
