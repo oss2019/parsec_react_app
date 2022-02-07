@@ -262,10 +262,24 @@ const Footer = () => {
 											boxShadow: '0px 3px 10px rgba(0,0,0,.25)',
 											textDecoration: 'none',
 										}}
-										title="instagram"
+										title="Instagram"
 										onClick={GAPageTracker.bind(this, 'Instagram')}
 									>
 										<i className="fab fa-instagram"></i>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://www.linkedin.com/company/parsec-iit-dharwad/"
+										target="_blank"
+										style={{
+											backgroundColor: '#0088cc',
+											textDecoration: 'none',
+										}}
+										title="Linkdin"
+										onClick={GAPageTracker.bind(this, 'Linkedin')}
+									>
+										<i className="fab fa-linkedin-in"></i>
 									</a>
 								</li>
 							</ul>

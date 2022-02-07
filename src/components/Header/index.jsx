@@ -677,6 +677,22 @@ const Header = ({ active }) => {
 									<br />
 									<li>
 										<a
+											href="https://www.linkedin.com/company/parsec-iit-dharwad/"
+											target="_blank"
+										>
+											Linkdin
+										</a>
+									</li>
+									<li>
+										<a
+											href="https://t.me/joinchat/AAAAAFcfPNde3RmitAKyxg"
+											target="_blank"
+										>
+											Telegram
+										</a>
+									</li>
+									<li>
+										<a
 											href="https://www.facebook.com/parsec.iitdh"
 											target="_blank"
 										>
