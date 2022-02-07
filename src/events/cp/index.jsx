@@ -169,17 +169,25 @@ const Cp = () => {
 										<strong> 3:00 PM, March 5, 2022 </strong>
 									</li>
 									<li>Code of Conduct to be followed.</li>
-									<li>
+									{/* <li>
 										Carry fully charged laptops. At least one laptop per team is
 										required.
 									</li>
 									<li>
 										Internet connection and charging points will be provided
 										during the event.
+									</li> */}
+									<li>
+										For every wrong submission, penalty of 10 minutes would be
+										imposed.
 									</li>
 									<li>
 										Teams will be judged on the basis of how optimal their
 										solution is compared to the other teams.{' '}
+									</li>
+									<li>
+										Participants would be ranked on the basis of their
+										submission time and penalties.
 									</li>
 								</ul>
 
