@@ -78,6 +78,7 @@ const Ctf = () => {
 														maxWidth: `250px`,
 														maxHeight: `200px`,
 														textAlign: 'center',
+														maxWidth: '100%',
 													}}
 												>
 													{/* <br> */}
@@ -109,7 +110,7 @@ const Ctf = () => {
 														</li>
 													</ul> */}
 													<div
-														className="row justify-content-center align-items-center"
+														className="row justify-content-center align-items-center "
 														style={{ margin: 'auto', paddingTop: '40px' }}
 													>
 														<div className="btn-box text-center">
@@ -194,7 +195,8 @@ const Ctf = () => {
 														className="font-weight-bold"
 													>
 														This is online CTF security challenge. The event
-														starts at 8:00 PM on 4th March, 2022.
+														starts at
+														<strong> 8:00 PM on 4th March, 2022.</strong>
 														<br />
 														Below are the categories on which the event will be
 														based, given so that you'll put up a good fight!
