@@ -82,11 +82,13 @@ const Cp = () => {
 											className="text"
 											style={{ color: '#eeeeee', fontSize: '20px' }}
 										>
-											An algorithmic programming contest where teams of three
-											have to solve an engineering problem by applying heuristic
-											algorithms. Participants will have to work on an ingenious
-											solution for a problem statement released at the start of
-											the event.
+											An algorithmic programming contest which tests your
+											knowledge of various heuristic algorithms. It is an event
+											under Parsec'22 IIT Dharwad's annual tech fest and in
+											association with Coding Ninjas. The objective of the
+											contest is that the participants have to formulate
+											solutions to a multitude of fascinating engineering
+											problems utilizing heuristic algorithms.
 										</div>
 										<br />
 										<br />
@@ -154,7 +156,7 @@ const Cp = () => {
 											}}
 										>
 											<div className="row">
-												<div className="col-md-6">Duration: 3 hours</div>
+												<div className="col-md-6">Duration: 2.5 hours</div>
 												<div className="col-md-6">Team Size: 1</div>
 											</div>
 										</div>{' '}
@@ -181,10 +183,10 @@ const Cp = () => {
 										For every wrong submission, penalty of 10 minutes would be
 										imposed.
 									</li>
-									<li>
+									{/* <li>
 										Teams will be judged on the basis of how optimal their
 										solution is compared to the other teams.{' '}
-									</li>
+									</li> */}
 									<li>
 										Participants would be ranked on the basis of their
 										submission time and penalties.
