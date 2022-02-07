@@ -426,7 +426,10 @@ const Header = ({ active }) => {
 			)}
 			{!isTabletorMobile && (
 				<>
-					<header className="main-header header-style-two">
+					<header
+						className="main-header header-style-two"
+						// style={{ background: '' }}
+					>
 						<div className="header-upper">
 							<div className="outer-container">
 								<div className="clearfix">

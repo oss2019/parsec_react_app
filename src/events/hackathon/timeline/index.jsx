@@ -213,7 +213,7 @@ const Timeline = () => {
 										<div className="float-right text-danger">
 											9:00 AM, March 5, 2022
 										</div>
-										<h4 className="card-title text-danger">Speaker Session</h4>
+										<h4 className="card-title text-danger">Speaker's Session Begin</h4>
 										{/* <p
 											className="card-text text-dark"
 											style={{ fontSize: `medium` }}

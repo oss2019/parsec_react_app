@@ -250,30 +250,38 @@ const GAPageTracker = useRoutetracker("Page")
 					Contact
 				</p> */}
 
-				<div style={{ color: 'white', bottom: 0, position: 'absolute' }}>
-					<div className="contact-info-box">
-						<ul className="info-list">
-							<br />
-							<li>outreach.parsec@iitdh.ac.in</li>
-							<br />
-							<li>+91 7892128329</li>
-						</ul>
-						<ul className="social-list clearfix">
-							<br />
-							<br />
-							<li>
-								<a href="https://www.facebook.com/parsec.iitdh" target="_blank">
-									Facebook
-								</a>
-							</li>
-							<li>
-								<a href="https://twitter.com/parsec_iitdh" target="_blank">
-									Twitter
-								</a>
-							</li>
-						</ul>
-					</div>
+				{/* <div style={{ color: 'white', bottom: 0, position: 'absolute' }}> */}
+				<div className="contact-info-box" style={{ textAlign: 'left' }}>
+					<ul className="info-list">
+						<br />
+						<li>outreach.parsec@iitdh.ac.in</li>
+						<br />
+						<li>+91 7892128329</li>
+					</ul>
+					<ul className="social-list clearfix">
+						<br />
+						<br />
+						<li>
+							<a
+								href="https://www.linkedin.com/company/parsec-iit-dharwad/"
+								target="_blank"
+							>
+								Linkdin
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/parsec.iitdh" target="_blank">
+								Facebook
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/parsec_iitdh" target="_blank">
+								Twitter
+							</a>
+						</li>
+					</ul>
 				</div>
+				{/* </div> */}
 
 				{/* <a href="#" className="elements text a gradient-text">
 					Download as PDF

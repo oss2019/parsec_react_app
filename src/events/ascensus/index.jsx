@@ -28,6 +28,9 @@ const Ascensus = () => {
 								? 'https://drive.google.com/uc?id=10IdkF4NgUxEevrlhz3OJzKNOzKQ_Msvt'
 								: 'https://drive.google.com/uc?id=1v9sywkm737U4Ek7VJIK7Da-m_g7SHa9G'
 						}`}
+						// src={
+						// 	'https://drive.google.com/uc?id=1hD7W0E4mraM06X-wmZtWeYnFeBirmIII'
+						// }
 						id="hack-title"
 						style={{
 							marginTop: isTab
