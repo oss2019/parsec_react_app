@@ -74,10 +74,14 @@ const Ctf = () => {
 												<div className="col-lg-4"></div>
 												<div
 													className="col-lg-4"
-													style={{ maxWidth: `250px`, maxHeight: `200px`, textAlign: 'center' }}
+													style={{
+														maxWidth: `250px`,
+														maxHeight: `200px`,
+														textAlign: 'center',
+													}}
 												>
 													{/* <br> */}
-													<ul className="ul1" style={{ paddingRight: `30px`, textAlign: 'center' }}>
+													{/* <ul className="ul1" style={{ paddingRight: `30px`, textAlign: 'center' }}>
 														<a
 															// href=" https://parseciitdh.typeform.com/to/FuAQay"
 															style={{ textDecoration: 'none' }}
@@ -103,7 +107,26 @@ const Ctf = () => {
 																proceed to ctf
 															</a>
 														</li>
-													</ul>
+													</ul> */}
+													<div
+														className="row justify-content-center align-items-center"
+														style={{ margin: 'auto', paddingTop: '40px' }}
+													>
+														<div className="btn-box text-center">
+															<a
+																href="https://vq27el0vrvo.typeform.com/to/ppwjqUt5"
+																className="theme-btn btn-style-four button2 text-center"
+																id="btncs2"
+																style={{
+																	borderRadius: '8px',
+																	color: '#ffffff',
+																	// background: 'rgba(242, 172, 79,0.9)',
+																}}
+															>
+																Register Now
+															</a>
+														</div>
+													</div>
 												</div>
 												<div className="col-lg-4"></div>
 												<div
