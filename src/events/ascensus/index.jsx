@@ -75,10 +75,12 @@ const Ascensus = () => {
 											className="text"
 											style={{ color: '#eeeeee', fontSize: '20px' }}
 										>
-											PARSEC brings to you ascensus, a real time case study
-											competition to test your business acumen. In Ascensus, you
-											will be competing with top teams from all over India to
-											exhibit your mettle before the judges. 
+											The technical club of IIT DHARWAD PARSEC has come up with
+											ASCENSUS - a real-time case study competition that mainly
+											analyzes your business acumen. In the event, participants
+											will be competing against diverse teams across INDIA to
+											exhibit their spirit before judges, which should culminate
+											in an ingenious solution.
 										</div>
 										<div
 											className="row justify-content-center align-items-center"
@@ -89,7 +91,7 @@ const Ascensus = () => {
 													href="https://dare2compete.com/competition/ascensus-parsec-a-paradigm-shift-indian-institute-of-technology-iit-dharwad-262140"
 													className="theme-btn btn-style-four button2 text-center"
 													id="btncs2"
-													target='_blank'
+													target="_blank"
 													style={{
 														borderRadius: '8px',
 														color: '#ffffff',
@@ -131,7 +133,7 @@ const Ascensus = () => {
 												style={{ color: `rgb(242, 172, 79)` }}
 											>
 												<div className="col-md-6">Rounds : 3</div>
-												<div className="col-md-6">Team Size: 1</div>
+												<div className="col-md-6">Team Size: 2-3 Members</div>
 											</div>
 										</div>{' '}
 									</div>
@@ -143,9 +145,8 @@ const Ascensus = () => {
 									className="font-weight-bold"
 									style={{ fontSize: 'large', color: '#eeeeee' }}
 								>
-									Ascensus will be hosted on dare2compete (D2C) platform and
-									will be of 3 rounds. The event starts at 8:00 PM on 4th March,
-									2022.
+									<br /> Timeline: The event is being conducted in 3 rounds
+									which include the following:
 								</p>
 								<p
 									// className="font-weight-bold"
@@ -158,19 +159,18 @@ const Ascensus = () => {
 									}}
 									className="list-style-four2"
 								>
-									{/* <li>
-										<div>Quiz round : 1 March - 7 PM</div>
+									<li>
+										<strong>Quiz Round</strong>: 28th February 2022, 20:00 IST
 									</li>
 									<li>
-										<div>
-											Problem statement round : 1 March - 11 PM Submission : 5
-											March - 6 PM
-										</div>
+										<strong>Problem Statement Round</strong>: 1st March 2022 at
+										00:00 IST to 3rd March 2022 at 23:59 IST
 									</li>
 									<li>
-										<div>Ppt presentation round : 6 March - 12 pm</div>
-									</li> */}
-									<li
+										<strong>Ppt presentation Round:</strong> 6th March 2022 at
+										12:00 IST
+									</li>
+									{/* <li
 										style={{
 											color: `#707070`,
 										}}
@@ -199,7 +199,7 @@ const Ascensus = () => {
 											In Round Three, you will be presenting your solution in
 											front of the jury
 										</strong>
-									</li>
+									</li> */}
 								</ul>
 
 								<p
