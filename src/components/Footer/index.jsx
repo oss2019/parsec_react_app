@@ -20,7 +20,7 @@ const Footer = () => {
 				>
 					<div className="row" style={{ textAlign: 'center' }}>
 						<div className="col-lg-3 col-md-6 col-sm-6 my-auto">
-							<a href="index.html" target="_blank">
+							<a href="/" target="_blank">
 								<img src={FooterLogo} alt="footer-logo" />
 							</a>
 							<p className="mb-4 mt-4">
