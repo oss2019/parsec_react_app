@@ -86,8 +86,8 @@ const Designo = () => {
 									>
 										<div className="btn-box" style={{ textAlign: `center` }}>
 											<a
-												href="#"
-												//  target="_blank"
+												href="https://dare2compete.com/competition/designo-parsec-a-paradigm-shift-indian-institute-of-technology-iit-dharwad-262181"
+												 target="_blank"
 												className="theme-btn btn-style-one btn-rounded mb-4"
 												// id="btncs"
 												style={{
@@ -95,7 +95,7 @@ const Designo = () => {
 													textDecoration: `none`,
 												}}
 											>
-												COMING SOON
+												REGISTER NOW
 											</a>
 										</div>
 									</div>

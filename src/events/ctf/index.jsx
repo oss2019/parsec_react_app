@@ -122,6 +122,7 @@ const Ctf = () => {
 																	color: '#ffffff',
 																	// background: 'rgba(242, 172, 79,0.9)',
 																}}
+																target='_blank'
 															>
 																Register Now
 															</a>

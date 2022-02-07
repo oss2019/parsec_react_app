@@ -89,6 +89,7 @@ const Ascensus = () => {
 													href="https://dare2compete.com/competition/ascensus-parsec-a-paradigm-shift-indian-institute-of-technology-iit-dharwad-262140"
 													className="theme-btn btn-style-four button2 text-center"
 													id="btncs2"
+													target='_blank'
 													style={{
 														borderRadius: '8px',
 														color: '#ffffff',
