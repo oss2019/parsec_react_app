@@ -86,7 +86,7 @@ const Ascensus = () => {
 										>
 											<div className="btn-box text-center">
 												<a
-													href="##"
+													href="https://dare2compete.com/competition/ascensus-parsec-a-paradigm-shift-indian-institute-of-technology-iit-dharwad-262140"
 													className="theme-btn btn-style-four button2 text-center"
 													id="btncs2"
 													style={{
@@ -95,7 +95,7 @@ const Ascensus = () => {
 														// background: 'rgba(242, 172, 79,0.9)',
 													}}
 												>
-													Coming Soon
+													Register Now
 												</a>
 											</div>
 										</div>
