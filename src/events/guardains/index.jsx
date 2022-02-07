@@ -171,7 +171,7 @@ const Guardains = () => {
 										color: `#c4c4c4`,
 									}}
 								>
-									Participants will have to devise a python programme to guide
+									Participants will have to devise a Python program to guide
 									their troops past the obstacles, traps, and opponents, making
 									use of the different talents possessed by each of the
 									guardians.
