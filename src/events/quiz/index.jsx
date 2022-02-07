@@ -47,10 +47,7 @@ const Quiz = () => {
 					/>
 				</section>
 
-				<section
-					className="project-section"
-					style={{  marginTop: '150px' }}
-				>
+				<section className="project-section" style={{ marginTop: '150px' }}>
 					<div className="anim-icons">
 						<span className="icon icon-cross-1"></span>
 					</div>
@@ -110,8 +107,8 @@ const Quiz = () => {
 																	style={{ textAlign: `center` }}
 																>
 																	<a
-																		href="#"
-																		//  target="_blank"
+																		href="https://dare2compete.com/quiz/technoquiz-parsec-a-paradigm-shift-indian-institute-of-technology-iit-dharwad-262190"
+																		target="_blank"
 																		className="theme-btn btn-style-one btn-rounded mb-4"
 																		// id="btncs"
 																		style={{
@@ -119,7 +116,7 @@ const Quiz = () => {
 																			textDecoration: `none`,
 																		}}
 																	>
-																		COMING SOON
+																		REGISTER NOW
 																	</a>
 																</div>
 															</div>
