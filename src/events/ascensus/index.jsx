@@ -30,18 +30,20 @@ const Ascensus = () => {
 						}`}
 						id="hack-title"
 						style={{
-							marginTop: isTab ? (isMobile? (issm? '55px':'45px'):'60px') : '',
+							marginTop: isTab
+								? isMobile
+									? issm
+										? '55px'
+										: '45px'
+									: '60px'
+								: '',
 							objectFit: 'cover',
-							width:'100vw',
+							width: '100vw',
 							padding: '0',
-							
 						}}
 					/>
 				</section>
-				<section
-			
-					style={{ position: 'relative', margin: ' 100px 0' }}
-				>
+				<section style={{ position: 'relative', margin: ' 100px 0' }}>
 					<div
 						className="login-form auto-container"
 						style={{ background: 'rgba(34, 40, 49, 0.87)' }}
@@ -147,14 +149,7 @@ const Ascensus = () => {
 								<p
 									// className="font-weight-bold"
 									style={{ fontSize: 'large', color: '#eeeeee' }}
-								>
-									<div>Quiz round : 1 March - 7 PM</div>
-									<div>
-										Problem statement round : 1 March - 11 PM Submission : 5
-										March - 6 PM
-									</div>
-									<div>Ppt presentation round : 6 March - 12 pm</div>
-								</p>
+								></p>
 
 								<ul
 									style={{
@@ -162,6 +157,18 @@ const Ascensus = () => {
 									}}
 									className="list-style-four2"
 								>
+									{/* <li>
+										<div>Quiz round : 1 March - 7 PM</div>
+									</li>
+									<li>
+										<div>
+											Problem statement round : 1 March - 11 PM Submission : 5
+											March - 6 PM
+										</div>
+									</li>
+									<li>
+										<div>Ppt presentation round : 6 March - 12 pm</div>
+									</li> */}
 									<li
 										style={{
 											color: `#707070`,
