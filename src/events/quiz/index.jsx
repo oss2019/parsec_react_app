@@ -86,16 +86,19 @@ const Quiz = () => {
 																	className="text"
 																	style={{ color: `#ffffff`, fontSize: `20px` }}
 																>
-																	Under <strong>PARSEC 2022</strong>, the{' '}
-																	<strong>Quiz Club of IIT Dharwad</strong> is
-																	conducting a{' '}
-																	<strong>Science and Technology Quiz</strong>{' '}
+																	Under <strong>PARSEC 2022</strong>, the Quiz
+																	Club of IIT Dharwad is conducting a 
+																	<strong> Science and Technology Quiz </strong>{' '}
 																	for High School and college students in and
 																	around Dharwad-Hubli. The questions are
 																	designed to investigate, rather than to simply
 																	arrive at an answer, and specifically to
-																	promote debate and discussion among teams and
-																	the judges.
+																	promote debate and discussion among teams
+																	participating and the judges. The
+																	participants' knowledge, expertise in high
+																	school science, developments, and current news
+																	from the world of Science and Technology will
+																	be tested in the Quiz competition.
 																</div>
 															</div>
 															<div
