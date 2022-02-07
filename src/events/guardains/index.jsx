@@ -208,21 +208,21 @@ const Guardains = () => {
 								</ul>
 
 								<br />
-								{/* <p
+								<p
 									className="font-weight-bold"
 									style={{ fontSize: 'large', color: '#c4c4c4' }}
 								>
 									Still have queries? Reach out to us on our Telegram{' '}
 									<a
-										href=""
-										// target="_blank"
+										href="https://t.me/parsec_guardians"
+										target="_blank"
 										style={{ color: 'rgba(43, 171, 214)' }}
 										rel="noreferrer"
 									>
 										channel
 									</a>{' '}
 									and we will try our best to answer all of them.
-								</p> */}
+								</p>
 							</div>
 						</div>
 					</div>
