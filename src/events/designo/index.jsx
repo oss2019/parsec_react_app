@@ -8,10 +8,10 @@ import Footer from '../../components/Footer';
 import EventsBackground from '../../components/eventsBackground';
 import { useMediaQuery } from 'react-responsive';
 const Designo = () => {
-		const isTabletorMobile = useMediaQuery({ query: '(max-width: 550px)' });
-		const isTab = useMediaQuery({ query: '(max-width:1026px)' });
-		const isMobile = useMediaQuery({ query: '(max-width:425px)' });
-		const issm = useMediaQuery({ query: '(max-width:400px)' });
+	const isTabletorMobile = useMediaQuery({ query: '(max-width: 550px)' });
+	const isTab = useMediaQuery({ query: '(max-width:1026px)' });
+	const isMobile = useMediaQuery({ query: '(max-width:425px)' });
+	const issm = useMediaQuery({ query: '(max-width:400px)' });
 	return (
 		<React.Fragment>
 			<div className="page-wrapper">
@@ -87,7 +87,7 @@ const Designo = () => {
 										<div className="btn-box" style={{ textAlign: `center` }}>
 											<a
 												href="https://dare2compete.com/competition/designo-parsec-a-paradigm-shift-indian-institute-of-technology-iit-dharwad-262181"
-												 target="_blank"
+												target="_blank"
 												className="theme-btn btn-style-one btn-rounded mb-4"
 												// id="btncs"
 												style={{
