@@ -156,7 +156,7 @@ const Ctf = () => {
 																	Duration: 12 hours
 																</div>
 																<div className="col-md-6 text-info">
-																	Team Size: 3
+																	Team Size: 2
 																</div>
 															</div>
 														</div>
