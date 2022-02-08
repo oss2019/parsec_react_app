@@ -1,10 +1,15 @@
-import React from 'react';
+import React  from 'react';
 import './styles.css';
 import '../../../css/style.css';
 import '../../../css/bootstrap.css';
 import '../../../css/responsive.css';
+import { useState } from 'react';
 
 const Timeline = () => {
+	const [isIdeationVisible, setIsIdeationVisible] = useState(false)
+	const handleToggle = () => {
+		setIsIdeationVisible(!isIdeationVisible)
+	}
 	return (
 		<React.Fragment>
 			<div className="tab inner-column active-tab" id="timeline">
@@ -141,14 +146,17 @@ const Timeline = () => {
 											In this phase, teams are expected to come up with ideas
 											worth hacking.
 										</p>
-										<button
-											className="btn btn-sm btn-outline-secondary"
-											type="button"
-											data-target="#t2_details"
-											data-toggle="collapse"
-										>
-											More ▼
-										</button>
+										{!isIdeationVisible && (
+											<button
+												className="btn btn-sm btn-outline-secondary"
+												type="button"
+												data-target="#t2_details"
+												data-toggle="collapse"
+												onClick={handleToggle}
+											>
+												More ▼
+											</button>
+										)}
 										<div className="collapse mt-3" id="t2_details">
 											<p
 												className="card-text text-dark"
