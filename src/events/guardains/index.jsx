@@ -99,16 +99,17 @@ const Guardains = () => {
 										>
 											<div className="btn-box text-center">
 												<a
-													href=""
+													href="https://dare2compete.com/p/guardains-parsec-a-paradigm-shift-indian-institute-of-technology-iit-dharwad-262141"
 													className="theme-btn btn-style-four button text-center"
 													id="btncs"
+													target={'_blank'}
 													style={{
 														borderRadius: '8px',
 														color: '#ffffff',
 														// background: '#f20487',
 													}}
 												>
-													Coming Soon
+													Register Now
 												</a>
 											</div>
 										</div>
