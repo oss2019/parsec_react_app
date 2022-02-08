@@ -9,10 +9,7 @@ import Footer from '../../components/Footer';
 import EventsBackground from '../../components/eventsBackground';
 import { useMediaQuery } from 'react-responsive';
 const Quiz = () => {
-		const isTabletorMobile = useMediaQuery({ query: '(max-width: 550px)' });
-		const isTab = useMediaQuery({ query: '(max-width:1026px)' });
-		const isMobile = useMediaQuery({ query: '(max-width:425px)' });
-		const issm = useMediaQuery({ query: '(max-width:400px)' });
+		const isSmallDevice = useMediaQuery({query:'(max-width:1026px)'})
 	return (
 		<React.Fragment>
 			<div className="page-wrapper">
@@ -21,31 +18,9 @@ const Quiz = () => {
 
 				<Header active={2} />
 
-				<section
-					className="page-title"
-					style={{ overflow: 'visible', paddingRight: 0, padding: '0' }}
-				>
-					<img
-						src={`${
-							isTabletorMobile
-								? 'https://drive.google.com/uc?id=1m6CcYPd0YzEoG0HoY7ffeYt1IxiJbZFd'
-								: 'https://drive.google.com/uc?id=1arYIkEx5X7aTRwlA8nSgdZ-CTIg0ts0c'
-						}`}
-						id="hack-title"
-						style={{
-							marginTop: isTab
-								? isMobile
-									? issm
-										? '55px'
-										: '45px'
-									: '60px'
-								: '',
-							objectFit: 'cover',
-							width: '100vw',
-							padding: '0',
-						}}
-					/>
-				</section>
+				<div style={{ marginTop: isSmallDevice ? '45px' : '0' }}>
+					<img src="https://drive.google.com/uc?id=1KbAIfAB9t3VcmvOb2mzvdKlhg18v_fKB" style={{minWidth: '100vw'}}/>
+				</div>
 
 				<section className="project-section" style={{ marginTop: '150px' }}>
 					<div className="anim-icons">
@@ -87,7 +62,7 @@ const Quiz = () => {
 																	style={{ color: `#ffffff`, fontSize: `20px` }}
 																>
 																	Under <strong>PARSEC 2022</strong>, the Quiz
-																	Club of IIT Dharwad is conducting a 
+																	Club of IIT Dharwad is conducting a
 																	<strong> Science and Technology Quiz </strong>{' '}
 																	for High School and college students in and
 																	around Dharwad-Hubli. The questions are

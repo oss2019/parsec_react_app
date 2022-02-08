@@ -6,8 +6,13 @@ import '../../css/bootstrap.css';
 import '../../css/responsive.css';
 import Footer from '../../components/Footer';
 import EventsBackground from '../../components/eventsBackground';
+import { useMediaQuery } from 'react-responsive';
 
 const Ctf = () => {
+	const isSmallDevice = useMediaQuery({
+		query: '(max-width:1026px)'
+	})
+
 	return (
 		<React.Fragment>
 			<div className="page-wrapper">
@@ -15,10 +20,15 @@ const Ctf = () => {
 				<div className="preloader"></div>
 
 				<Header active={2} />
-
+				<div style={{ marginTop: isSmallDevice ? '45px' : '0' }}>
+					<img
+						src="https://drive.google.com/uc?id=1lzpmSFGSYH8wHNdtuxUo5FvFPO31SdEE"
+						style={{ minWidth: '100vw' }}
+					/>
+				</div>
 				<section
 					className="page-title"
-					// sstyle="background-image:url(images/background/cp.jpg);"
+					// style="background-image:url(https://drive.google.com/uc?id=11F0HAV4tp0K1StKh5cxGDkHR7_Wyshs2);"
 					id="page-title"
 					style={{ position: 'relative', margin: '-150px auto 0' }}
 				>

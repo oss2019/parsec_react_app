@@ -8,44 +8,19 @@ import Footer from '../../components/Footer';
 import EventsBackground from '../../components/eventsBackground';
 import { useMediaQuery } from 'react-responsive';
 const Ascensus = () => {
-	const isTabletorMobile = useMediaQuery({ query: '(max-width: 550px)' });
-	const isTab = useMediaQuery({ query: '(max-width:1026px)' });
-	const isMobile = useMediaQuery({ query: '(max-width:425px)' });
-	const issm = useMediaQuery({ query: '(max-width:400px)' });
+	const isSmallDevice = useMediaQuery({ query: '(max-width:1026px)'})
 	return (
 		<React.Fragment>
 			<EventsBackground />
 			<div className="page-wrapper">
 				<div className="preloader"></div>
 				<Header active={2} />
-				<section
-					className="page-title"
-					style={{ overflow: 'visible', paddingRight: 0, padding: '0' }}
-				>
+				<div style={{ marginTop: isSmallDevice ? '45px' : '0' }}>
 					<img
-						src={`${
-							isTabletorMobile
-								? 'https://drive.google.com/uc?id=10IdkF4NgUxEevrlhz3OJzKNOzKQ_Msvt'
-								: 'https://drive.google.com/uc?id=1v9sywkm737U4Ek7VJIK7Da-m_g7SHa9G'
-						}`}
-						// src={
-						// 	'https://drive.google.com/uc?id=1hD7W0E4mraM06X-wmZtWeYnFeBirmIII'
-						// }
-						id="hack-title"
-						style={{
-							marginTop: isTab
-								? isMobile
-									? issm
-										? '55px'
-										: '45px'
-									: '60px'
-								: '',
-							objectFit: 'cover',
-							width: '100vw',
-							padding: '0',
-						}}
+						src="https://drive.google.com/uc?id=1C9Hdqp8G-r9QYpqjDpMq9nRFbVioJsPC"
+						style={{ minWidth: '100vw' }}
 					/>
-				</section>
+				</div>
 				<section style={{ position: 'relative', margin: ' 100px 0' }}>
 					<div
 						className="login-form auto-container"

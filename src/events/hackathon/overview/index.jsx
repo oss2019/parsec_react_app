@@ -80,7 +80,7 @@ const Overview = () => {
 											</div> */}
 											{/* <div
 												class="apply-button"
-												data-hackathon-slug="Devhack 3.0"
+												data-hackathon-slug="devhack-3"
 												data-button-theme="light"
 												// style="height: 44px; width: 312px"
 												style={{height: '44px', width: '312px'}}

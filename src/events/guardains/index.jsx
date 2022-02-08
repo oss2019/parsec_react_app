@@ -8,10 +8,7 @@ import Footer from '../../components/Footer';
 import EventsBackground from '../../components/eventsBackground';
 import { useMediaQuery } from 'react-responsive';
 const Guardains = () => {
-	const isTabletorMobile = useMediaQuery({ query: '(max-width: 550px)' });
-	const isTab = useMediaQuery({ query: '(max-width:1026px)' });
-	const isMobile = useMediaQuery({ query: '(max-width:425px)' });
-	const issm = useMediaQuery({ query: '(max-width:400px)' });
+	const isSmallDevice = useMediaQuery({query: '(max-width:1026px)'})
 	return (
 		<React.Fragment>
 			<EventsBackground />
@@ -19,31 +16,9 @@ const Guardains = () => {
 				<div className="preloader"></div>
 
 				<Header active={2} />
-				<section
-					className="page-title"
-					style={{ overflow: 'visible', paddingRight: 0, padding: '0' }}
-				>
-					<img
-						src={`${
-							isTabletorMobile
-								? 'https://drive.google.com/uc?id=18G70T6VzylhWIYkJy8xufkRlEjnUUEAH'
-								: 'https://drive.google.com/uc?id=1YARnk_4npbrq111wY9AsRi6TGtkx7RB8'
-						}`}
-						id="hack-title"
-						style={{
-							marginTop: isTab
-								? isMobile
-									? issm
-										? '55px'
-										: '45px'
-									: '60px'
-								: '',
-							objectFit: 'cover',
-							width: '100vw',
-							padding: '0',
-						}}
-					/>
-				</section>
+				<div style={{ marginTop: isSmallDevice ? '45px' : '0' }}>
+					<img src="https://drive.google.com/uc?id=1rb40v_ILv4px4u-7Wi2UQJ3Srk0rTS_q" style={{minWidth: '100vw'}} />
+				</div>
 				<section style={{ position: 'relative', margin: ' 100px 0' }}>
 					<div
 						className="login-form auto-container"
