@@ -47,38 +47,13 @@ const Timeline = () => {
 											{/* <strong>Phase 1:</strong> */}
 											Opening Ceremony
 										</h4>
-										{/* <p
-											className="card-text text-dark mb-1"
+										<p
+											className="card-text text-dark"
 											style={{ fontSize: `medium` }}
 										>
-											<strong>
-												Behind every great hack, lies a greater idea!
-											</strong>{' '}
-											In this phase, teams are expected to come up with ideas
-											worth hacking.
-										</p> */}
-										{/* <button
-											className="btn btn-sm btn-outline-secondary"
-											type="button"
-											data-target="#t2_details"
-											data-toggle="collapse"
-										>
-											More ▼
-										</button>
-										<div className="collapse mt-3" id="t2_details">
-											<p
-												className="card-text text-dark"
-												style={{ fontSize: `medium` }}
-											>
-												Ideas can be real life problems around them that they
-												are keen to solve or can simply be anything they are
-												passionate about and want to see being implemented in
-												this world. The timeline merely serves as a guide to
-												keep track of time and teams who have already decided on
-												the next big change they want to introduce to the world
-												are free to start hacking!
-											</p>
-										</div> */}
+											A line-up of enthralling performances serving as a prelude
+											to Devhack 3.0.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -115,14 +90,16 @@ const Timeline = () => {
 											6:00 PM, March 4, 2022
 										</div>
 										<h4 className="card-title text-danger">Orientation</h4>
-										{/* <p
+										<p
 											className="card-text text-dark"
 											style={{ fontSize: `medium` }}
 										>
-											A quick session explaining the rules, guidelines,
-											timeline, themes and submission format for the hackathon.
-											Make sure to be there on time.
-										</p> */}
+											An informative preamble to Devhack 3.0 comprising details
+											regarding the available tracks, their utilization,
+											resources, judges, judging criteria and mentors
+											accompanied by the welcoming of the participants. An
+											interactive line-up of games for networking.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -151,10 +128,10 @@ const Timeline = () => {
 											8:00 PM, March 4 , 2022
 										</div>
 										<h4 className="card-title text-danger">
-											<strong>Phase 1:</strong>
+											<strong>Phase 1:&nbsp;</strong>
 											Ideation
 										</h4>
-										{/* <p
+										<p
 											className="card-text text-dark mb-1"
 											style={{ fontSize: `medium` }}
 										>
@@ -163,8 +140,8 @@ const Timeline = () => {
 											</strong>{' '}
 											In this phase, teams are expected to come up with ideas
 											worth hacking.
-										</p> */}
-										{/* <button
+										</p>
+										<button
 											className="btn btn-sm btn-outline-secondary"
 											type="button"
 											data-target="#t2_details"
@@ -177,15 +154,14 @@ const Timeline = () => {
 												className="card-text text-dark"
 												style={{ fontSize: `medium` }}
 											>
-												Ideas can be real life problems around them that they
-												are keen to solve or can simply be anything they are
-												passionate about and want to see being implemented in
-												this world. The timeline merely serves as a guide to
-												keep track of time and teams who have already decided on
-												the next big change they want to introduce to the world
-												are free to start hacking!
+												This is the time for your ideas to shine. Ideas can be
+												influenced by the happenings in your surroundings. Your
+												strategic idea might be one of the best solutions of the
+												problem statement if you plan it suitably. Make this
+												opportunity memorable by implementing all the innovative
+												ideas you couldn't before.
 											</p>
-										</div> */}
+										</div>
 									</div>
 								</div>
 							</div>
@@ -213,20 +189,20 @@ const Timeline = () => {
 										<div className="float-right text-danger">
 											9:00 AM, March 5, 2022
 										</div>
-										<h4 className="card-title text-danger">Speaker's Session Begin</h4>
-										{/* <p
+										<h4 className="card-title text-danger">
+											Speaker's Session Begin
+										</h4>
+										<p
 											className="card-text text-dark"
 											style={{ fontSize: `medium` }}
 										>
 											Inspiration comes best from experience. Whether you're
 											looking for a quick idea or are keen to learn about
 											current trends in technology and see the passion that
-											drives the industry, make sure you don't miss out on our
-											Speaker Session.
-											// {/* <a href="#" target="_blank">
-											// 	Speaker Session.
-											// </a> 
-										</p> */}
+											drives the industry, you are at the right place. Gain tips
+											to tackle the ever-advancing technology to inspiring
+											anecdotes.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -255,19 +231,19 @@ const Timeline = () => {
 											2:00 PM, March 5, 2022
 										</div>
 										<h4 className="card-title text-danger">
-											<strong>Phase 2:</strong>
+											<strong>Phase 2:&nbsp;</strong>
 											Innovation
 										</h4>
-										{/* <p
+										<p
 											className="card-text text-dark mb-1"
 											style={{ fontSize: `medium` }}
 										>
-											<strong>Let the hacking begin!</strong> In this phase,
-											teams are expected to have started protoyping and
-											developing their idea. As important as an idea can be,
-											transforming it into a solution that impacts the world is
-											all the more essential.
-										</p> */}
+											<strong>Let the hacking begin!</strong> IIn this Phase,
+											teams are expected to have commenced sketching the
+											framework and planning its implementation. An idea can
+											gain more prominence when it becomes reality. So buckle up
+											and get your ideas moving.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -296,17 +272,17 @@ const Timeline = () => {
 											10:00 PM, March 5, 2022
 										</div>
 										<h4 className="card-title text-danger">
-											<strong>Phase 3:</strong>
+											<strong>Phase 3:&nbsp;</strong>
 											Power Hacking
 										</h4>
-										{/* <p
+										<p
 											className="card-text text-dark mb-1"
 											style={{ fontSize: `medium` }}
 										>
-											<strong>Tick-tock Tick-tock!</strong> Make sure you make
-											every second count as you build upon your hack and go the
-											distance by making it into a minimum viable product.
-										</p> */}
+											<strong>Tick-tock Tick-tock!</strong>The clock is ticking!
+											Keep working on enhancing your hack and developing the
+											impeccable version of it before time runs out.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -335,18 +311,18 @@ const Timeline = () => {
 											8:00 AM, March 6, 2022
 										</div>
 										<h4 className="card-title text-danger">
-											<strong>Phase 4:</strong>
-											Submission
+											<strong>Phase 4:&nbsp;</strong>
+											Submission of Prototype
 										</h4>
-										{/* <p
+										<p
 											className="card-text text-dark mb-1"
 											style={{ fontSize: `medium` }}
 										>
-											<strong> Submit your hack on Devfolio</strong> and let the
-											world know what you made for them to be eligible to
-											compete for the top positions in{' '}
-											<strong>DevHack 3.0</strong>.
-										</p> */}
+											Time's up! Submit your ingenious hack on
+											<strong> Devfolio </strong> on time to be a part of this
+											electrifying battle of unconventional ideas and emerge as
+											one of the top teams.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -376,16 +352,15 @@ const Timeline = () => {
 										</div>
 										<h4 className="card-title text-danger">
 											{/* <strong>Phase 5:</strong> */}
-											Declaration of to 7 teams
+											Declaration of top 7 teams
 										</h4>
-										{/* <p
+										<p
 											className="card-text text-dark mb-1"
 											style={{ fontSize: `medium` }}
 										>
-											<strong> Time to impress the Judges!</strong> Top teams
-											will present their brilliant hack for the final evaluation
-											in the auditorium after 2:00 PM.
-										</p> */}
+											Voila, the results are out! The declaration of the top 7
+											teams in the thrilling highlight of the event.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -414,17 +389,17 @@ const Timeline = () => {
 											12:15 PM, March 6, 2022
 										</div>
 										<h4 className="card-title text-danger">
-											<strong>Phase 5:</strong>
+											<strong>Phase 5:&nbsp;</strong>
 											Submission deadline for presentations
 										</h4>
-										{/* <p
+										<p
 											className="card-text text-dark mb-1"
 											style={{ fontSize: `medium` }}
 										>
-											<strong> Time to impress the Judges!</strong> Top teams
-											will present their brilliant hack for the final evaluation
-											in the auditorium after 2:00 PM.
-										</p> */}
+											<strong> Time to impress the Judges!</strong> The top
+											teams will present their profound ideas before the judges
+											for a concluding evaluation.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -456,14 +431,13 @@ const Timeline = () => {
 											{/* <strong>Phase 5:</strong> */}
 											Prize Distribution
 										</h4>
-										{/* <p
+										<p
 											className="card-text text-dark mb-1"
 											style={{ fontSize: `medium` }}
 										>
-											<strong> Time to impress the Judges!</strong> Top teams
-											will present their brilliant hack for the final evaluation
-											in the auditorium after 2:00 PM.
-										</p> */}
+											May the best idea win! The winner will receive exciting
+											prizes.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -495,14 +469,12 @@ const Timeline = () => {
 											{/* <strong>Phase 5:</strong> */}
 											Closing Ceremony
 										</h4>
-										{/* <p
+										<p
 											className="card-text text-dark mb-1"
 											style={{ fontSize: `medium` }}
 										>
-											<strong> Time to impress the Judges!</strong> Top teams
-											will present their brilliant hack for the final evaluation
-											in the auditorium after 2:00 PM.
-										</p> */}
+											This brings the exhilarating event to an end.
+										</p>
 									</div>
 								</div>
 							</div>
