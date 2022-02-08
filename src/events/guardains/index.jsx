@@ -141,10 +141,10 @@ const Guardains = () => {
 										>
 											<div className="row">
 												<div className="col-md-6" style={{ color: '#2babd6' }}>
-													Duration : 2 Days
+													Duration : 1 Day
 												</div>
 												<div className="col-md-6" style={{ color: '#2babd6' }}>
-													Team Size : 2
+													Team Size : 1-2 Members
 												</div>
 											</div>
 										</div>{' '}
@@ -184,7 +184,7 @@ const Guardains = () => {
 									<li
 									// style={{color : '#c4c4c4'}}
 									>
-										Contest starts: 5 March 2022, 2:00 PM
+										Contest starts: 5 March 2022, 12:00 AM IST
 										{/* <strong> - </strong> */}
 									</li>
 									<li
