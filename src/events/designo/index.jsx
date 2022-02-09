@@ -13,22 +13,30 @@ const Designo = () => {
 	return (
 		<React.Fragment>
 			<div className="page-wrapper">
-				<EventsBackground />
+				{/* <EventsBackground /> */}
 				<div className="preloader"></div>
 
 				<Header active={2} />
-				<div style={{ marginTop: isSmallDevice ? '45px' : '0' }}>
+				<div
+					style={{
+						marginTop: isSmallDevice ? '55px' : '0',
+						background: '#000102',
+						top: 0,
+						display: 'flex',
+						alignItems: 'flex-start',
+					}}
+				>
 					<img
-						src="https://drive.google.com/uc?id=11oIttLvPVvbwgpOZscWajOwwS_tkiI-W"
-						style={{ minWidth: '100vw' }}
+						src="https://drive.google.com/uc?id=1bartvEvMP6PqkttkH_A-OxY58q-txmoU"
+						style={{ minWidth: '100vw', maxHeight: '70vh', objectFit: 'contain' }}
 					/>
 				</div>
 				<section
 					style={{
 						position: 'relative',
 						margin: '0',
-						background: `rgba(34, 40, 49, 0.87)`,
-						width: '100vw'
+						background: `#000102`,
+						width: '100vw',
 					}}
 				>
 					<div className="login-form auto-container" style={{}}>
@@ -105,7 +113,7 @@ const Designo = () => {
 								>
 									<div
 										style={{
-											backgroundColor: `rgba(9, 11, 56,0.5)`,
+											// backgroundColor: `rgba(9, 11, 56,0.5)`,
 											fontFamily: `'Roboto', sans-serif`,
 											fontSize: `large`,
 											fontWeight: `bold`,

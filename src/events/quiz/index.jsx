@@ -14,24 +14,35 @@ const Quiz = () => {
 		<React.Fragment>
 			<div className="page-wrapper">
 				<div className="preloader"></div>
-				<EventsBackground />
+				{/* <EventsBackground /> */}
 
 				<Header active={2} />
 
-				<div style={{ marginTop: isSmallDevice ? '45px' : '0' }}>
+				<div
+					style={{
+						marginTop: isSmallDevice ? '55px' : '0',
+						background: '#000102',
+						top: 0,
+						display: 'flex',
+						alignItems: 'flex-start',
+					}}
+				>
 					<img
-						src="https://drive.google.com/uc?id=1KbAIfAB9t3VcmvOb2mzvdKlhg18v_fKB"
-						style={{ minWidth: '100vw' }}
+						src="https://drive.google.com/uc?id=1Ns9Sv-U6ATfjO4z6UmDzdYLPJvDV3beq"
+						style={{
+							minWidth: '100vw',
+							maxHeight: '70vh',
+							objectFit: 'contain',
+						}}
 					/>
 				</div>
 
 				<section
 					style={{
 						marginTop: '0',
-						background: 'rgba(22, 22, 50, 0.8)',
+						background: '#000102',
 					}}
 				>
-
 					<div className="auto-container">
 						<div className="row">
 							<div className="content-column col-lg-12 col-md-12 col-sm-12 tabs-content">
@@ -55,7 +66,7 @@ const Quiz = () => {
 												<div className="row clearfix">
 													<h1
 														className="mx-auto mt-5"
-														style={{ color: `#ce41af`, textAlign: `center` }}
+														style={{ color: `#66b6ff`, textAlign: `center` }}
 													>
 														Quiz
 													</h1>
@@ -95,7 +106,7 @@ const Quiz = () => {
 																	<a
 																		href="https://dare2compete.com/quiz/technoquiz-parsec-a-paradigm-shift-indian-institute-of-technology-iit-dharwad-262190"
 																		target="_blank"
-																		className="theme-btn btn-style-one btn-rounded mb-4"
+																		className="theme-btn btn-style-two btn-rounded mb-4"
 																		// id="btncs"
 																		style={{
 																			// pointerEvents: `none`,
@@ -117,7 +128,7 @@ const Quiz = () => {
 														</div>
 													</div>
 
-													<div className="image-column col-lg-11 col-sm-12 col-sm-12">
+													{/* <div className="image-column col-lg-11 col-sm-12 col-sm-12">
 														<div
 															className="image-box wow fadeIn"
 															style={{ paddingTop: `0px` }}
@@ -137,7 +148,7 @@ const Quiz = () => {
 																></img>
 															</figure>
 														</div>
-													</div>
+													</div> */}
 
 													<br></br>
 
@@ -146,9 +157,9 @@ const Quiz = () => {
 														style={{ padding: `40px` }}
 													>
 														<div
-															className=" border-danger"
+															className=""
 															style={{
-																border: '2px solid #ed6286',
+																border: '2px solid #66b6ff',
 																borderRadius: '8px',
 																overflow: 'hidden',
 															}}
@@ -165,13 +176,13 @@ const Quiz = () => {
 																<div className="row">
 																	<div
 																		className="col-md-6"
-																		style={{ color: `#ed6286` }}
+																		style={{ color: `#66b6ff` }}
 																	>
 																		Duration: 3 hours
 																	</div>
 																	<div
 																		className="col-md-6"
-																		style={{ color: `#ed6286` }}
+																		style={{ color: `#66b6ff` }}
 																	>
 																		Team Size: 2
 																	</div>
@@ -188,24 +199,24 @@ const Quiz = () => {
 														</p>
 														<ul
 															className="list-style-four"
-															style={{ fontSize: `large`, color: `#ed6286` }}
+															style={{ fontSize: `large`, color: `#66b6ff` }}
 														>
-															<li style={{ color: `#ed6286` }}>
+															<li style={{ color: `#66b6ff` }}>
 																Quiz starts: 12:30 PM, 5th March, 2022
 															</li>
-															<li style={{ color: `#ed6286` }}>
+															<li style={{ color: `#66b6ff` }}>
 																Students of Standard 9th to 12th and
 																Undergraduate are welcome
 															</li>
-															<li style={{ color: `#ed6286` }}>
+															<li style={{ color: `#66b6ff` }}>
 																Participants should belong to the same
 																school/college
 															</li>
-															<li style={{ color: `#ed6286` }}>
+															<li style={{ color: `#66b6ff` }}>
 																School/College ID Cards needed for verification
 															</li>
 
-															<li style={{ color: `#ed6286` }}>
+															<li style={{ color: `#66b6ff` }}>
 																Max. 5 Teams will be selected from a school.
 															</li>
 														</ul>
@@ -246,7 +257,7 @@ const Quiz = () => {
 															<a
 																href="https://t.me/parsecquiz"
 																style={{
-																	color: `#ed6286`,
+																	color: `#66b6ff`,
 																	textDecoration: `None`,
 																}}
 																target={'_blank'}

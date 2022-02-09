@@ -97,7 +97,7 @@ const EventCarousel = () => {
 								For normal people, maestro is a distinguished performer of a
 								musical instrument. Although, for us, Code Maestro is someone
 								who can interweave data structures and algos to solve a problem
-								efficiently. Join us at this 2.5 hour long brainstorming coding
+								efficiently. Join us at this 2 hour long brainstorming coding
 								contest where you can turn yourself into a Code Maestro!
 							</div>
 						</div>

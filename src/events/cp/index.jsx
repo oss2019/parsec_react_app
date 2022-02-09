@@ -13,7 +13,7 @@ const Cp = () => {
 	const isSmallDevice = useMediaQuery({ query:'(max-width:1026px)'})
 	return (
 		<React.Fragment>
-			<EventsBackground />
+			{/* <EventsBackground /> */}
 			<div className="page-wrapper">
 				{/* <Suspense fallback={<div className="preloader"></div>} /> */}
 				<div className="preloader"></div>
@@ -44,17 +44,39 @@ const Cp = () => {
 						}}
 					/>
 				</section> */}
-				<div style={{ marginTop: isSmallDevice ? '45px' : '0' }}>
+				<div
+					style={{
+						marginTop: isSmallDevice ? '55px' : '0',
+						background: '#000102',
+						top: 0,
+						display: 'flex',
+						alignItems: 'flex-start',
+					}}
+				>
 					<img
-						src="https://drive.google.com/uc?id=1UMaCKPm6zcRUe6VMpbDeCOV_SjsZBbmV"
-						style={{ minWidth: '100vw' }}
+						src="https://drive.google.com/uc?id=1d1yLUmNeyn1vnGsgLY9iSDa0s9NB3bBx"
+						style={{ minWidth: '100vw', maxHeight: '70vh' }}
 					/>
 				</div>
+				{/* <div
+					style={{
+						background: 'linear-gradient(180deg, #8EBBFF 0%, #048DFB 100%)',
+						minWidth: '100vw',
+						height: '50vh',
+						objectFit: 'cover',
+						display: 'flex',
+						alignItems: 'center',
+						justifyContent: 'center'
+					}}
+				>
+					<h1 style={{color: 'white', fontSize: '100px'}}>{'<'}ALGOSTRIKE{'>'}</h1>
+				</div> */}
 				<section
 					style={{
 						position: 'relative',
 						margin: '0',
-						background: 'rgba(34, 40, 49, 0.87)',
+						// background: 'rgba(34, 40, 49, 0.87)',
+						background: '#000000',
 					}}
 				>
 					<div className="login-form auto-container" style={{}}>
@@ -177,7 +199,7 @@ const Cp = () => {
 											}}
 										>
 											<div className="row">
-												<div className="col-md-6">Duration: 2.5 hours</div>
+												<div className="col-md-6">Duration: 2 hours</div>
 												<div className="col-md-6">Team Size: 1</div>
 											</div>
 										</div>{' '}
