@@ -20,7 +20,7 @@ const Footer = () => {
 				>
 					<div className="row" style={{ textAlign: 'center' }}>
 						<div className="col-lg-3 col-md-6 col-sm-6 my-auto">
-							<a href="index.html" target="_blank">
+							<a href="/" target="_blank">
 								<img src={FooterLogo} alt="footer-logo" />
 							</a>
 							<p className="mb-4 mt-4">
@@ -262,10 +262,24 @@ const Footer = () => {
 											boxShadow: '0px 3px 10px rgba(0,0,0,.25)',
 											textDecoration: 'none',
 										}}
-										title="instagram"
+										title="Instagram"
 										onClick={GAPageTracker.bind(this, 'Instagram')}
 									>
 										<i className="fab fa-instagram"></i>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://www.linkedin.com/company/parsec-iit-dharwad/"
+										target="_blank"
+										style={{
+											backgroundColor: '#0088cc',
+											textDecoration: 'none',
+										}}
+										title="Linkdin"
+										onClick={GAPageTracker.bind(this, 'Linkedin')}
+									>
+										<i className="fab fa-linkedin-in"></i>
 									</a>
 								</li>
 							</ul>

@@ -6,8 +6,13 @@ import '../../css/bootstrap.css';
 import '../../css/responsive.css';
 import Footer from '../../components/Footer';
 import EventsBackground from '../../components/eventsBackground';
+import { useMediaQuery } from 'react-responsive';
 
 const Ctf = () => {
+	const isSmallDevice = useMediaQuery({
+		query: '(max-width:1026px)'
+	})
+
 	return (
 		<React.Fragment>
 			<div className="page-wrapper">
@@ -15,10 +20,15 @@ const Ctf = () => {
 				<div className="preloader"></div>
 
 				<Header active={2} />
-
+				<div style={{ marginTop: isSmallDevice ? '45px' : '0' }}>
+					<img
+						src="https://drive.google.com/uc?id=1lzpmSFGSYH8wHNdtuxUo5FvFPO31SdEE"
+						style={{ minWidth: '100vw' }}
+					/>
+				</div>
 				<section
 					className="page-title"
-					// sstyle="background-image:url(images/background/cp.jpg);"
+					// style="background-image:url(https://drive.google.com/uc?id=11F0HAV4tp0K1StKh5cxGDkHR7_Wyshs2);"
 					id="page-title"
 					style={{ position: 'relative', margin: '-150px auto 0' }}
 				>
@@ -74,10 +84,15 @@ const Ctf = () => {
 												<div className="col-lg-4"></div>
 												<div
 													className="col-lg-4"
-													style={{ maxWidth: `250px`, maxHeight: `200px`, textAlign: 'center' }}
+													style={{
+														maxWidth: `250px`,
+														maxHeight: `200px`,
+														textAlign: 'center',
+														maxWidth: '100%',
+													}}
 												>
 													{/* <br> */}
-													<ul className="ul1" style={{ paddingRight: `30px`, textAlign: 'center' }}>
+													{/* <ul className="ul1" style={{ paddingRight: `30px`, textAlign: 'center' }}>
 														<a
 															// href=" https://parseciitdh.typeform.com/to/FuAQay"
 															style={{ textDecoration: 'none' }}
@@ -103,7 +118,27 @@ const Ctf = () => {
 																proceed to ctf
 															</a>
 														</li>
-													</ul>
+													</ul> */}
+													<div
+														className="row justify-content-center align-items-center "
+														style={{ margin: 'auto', paddingTop: '40px' }}
+													>
+														<div className="btn-box text-center">
+															<a
+																href="https://vq27el0vrvo.typeform.com/to/ppwjqUt5"
+																className="theme-btn btn-style-four button2 text-center"
+																id="btncs2"
+																style={{
+																	borderRadius: '8px',
+																	color: '#ffffff',
+																	// background: 'rgba(242, 172, 79,0.9)',
+																}}
+																target="_blank"
+															>
+																Register Now
+															</a>
+														</div>
+													</div>
 												</div>
 												<div className="col-lg-4"></div>
 												<div
@@ -156,7 +191,7 @@ const Ctf = () => {
 																	Duration: 12 hours
 																</div>
 																<div className="col-md-6 text-info">
-																	Team Size: 3
+																	Team Size: 2
 																</div>
 															</div>
 														</div>
@@ -170,7 +205,8 @@ const Ctf = () => {
 														className="font-weight-bold"
 													>
 														This is online CTF security challenge. The event
-														starts at 8:00 PM on 4th March, 2022.
+														starts at
+														<strong> 8:00 PM on 4th March, 2022.</strong>
 														<br />
 														Below are the categories on which the event will be
 														based, given so that you'll put up a good fight!
@@ -208,16 +244,16 @@ const Ctf = () => {
 														}}
 														className="font-weight-bold"
 													>
-														Still have queries? Reach out to us on our Telegram{' '}
+														Still have queries? Reach out to us on{' '}
 														<a
-															href="https://t.me/parsec_venividivici"
+															href="https://discord.gg/xwaHg8YDKK"
 															style={{
 																color: `#00adb5`,
 																textDecoration: `None`,
 															}}
 															target="_blank"
 														>
-															channel
+															discord
 														</a>{' '}
 														and we will try our best to answer all of them.
 													</p>

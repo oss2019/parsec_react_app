@@ -155,6 +155,7 @@ const Team = () => {
 						/>
 						<TeamMembers teamData={workshopTeam} title={'Workshop Team'} />
 						<TeamMembers teamData={marketingTeam} title={'Marketing Team'} />
+						<TeamMembers teamData={webTeamData} title={'Web-Ops Team'} />
 						<TeamMembers teamData={designTeamData} title={'Design Team'} />
 						<TeamMembers teamData={contentTeamData} title={'Content Team'} />
 						<TeamMembers teamData={utilitiesTeam} title={'Utilities Team'} />

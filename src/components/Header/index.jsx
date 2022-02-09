@@ -426,7 +426,10 @@ const Header = ({ active }) => {
 			)}
 			{!isTabletorMobile && (
 				<>
-					<header className="main-header header-style-two">
+					<header
+						className="main-header header-style-two"
+						// style={{ background: '' }}
+					>
 						<div className="header-upper">
 							<div className="outer-container">
 								<div className="clearfix">
@@ -675,6 +678,22 @@ const Header = ({ active }) => {
 								<ul className="social-list clearfix">
 									<br />
 									<br />
+									<li>
+										<a
+											href="https://www.linkedin.com/company/parsec-iit-dharwad/"
+											target="_blank"
+										>
+											Linkdin
+										</a>
+									</li>
+									<li>
+										<a
+											href="https://t.me/joinchat/AAAAAFcfPNde3RmitAKyxg"
+											target="_blank"
+										>
+											Telegram
+										</a>
+									</li>
 									<li>
 										<a
 											href="https://www.facebook.com/parsec.iitdh"

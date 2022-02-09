@@ -357,14 +357,15 @@ const EventLanding = () => {
 								time="8 PM"
 								mode="ONLINE"
 							/>
-							<EvtCard 
-								evtLogo={devhack}
+							<EvtCard
+								evtLogo={
+									'https://drive.google.com/uc?id=1qfsEvElO1Mpj4OiglhmEAB3g9VKMTh3c'
+								}
 								evtTitle="GUARDAINS"
 								evtUrl={'/guardains'}
 								date="5 MARCH 2022"
 								time="2 PM"
-								mode="ONLINE"  
-								
+								mode="ONLINE"
 							/>
 						</div>
 

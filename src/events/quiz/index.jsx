@@ -9,10 +9,7 @@ import Footer from '../../components/Footer';
 import EventsBackground from '../../components/eventsBackground';
 import { useMediaQuery } from 'react-responsive';
 const Quiz = () => {
-		const isTabletorMobile = useMediaQuery({ query: '(max-width: 550px)' });
-		const isTab = useMediaQuery({ query: '(max-width:1026px)' });
-		const isMobile = useMediaQuery({ query: '(max-width:425px)' });
-		const issm = useMediaQuery({ query: '(max-width:400px)' });
+		const isSmallDevice = useMediaQuery({query:'(max-width:1026px)'})
 	return (
 		<React.Fragment>
 			<div className="page-wrapper">
@@ -21,36 +18,11 @@ const Quiz = () => {
 
 				<Header active={2} />
 
-				<section
-					className="page-title"
-					style={{ overflow: 'visible', paddingRight: 0, padding: '0' }}
-				>
-					<img
-						src={`${
-							isTabletorMobile
-								? 'https://drive.google.com/uc?id=1m6CcYPd0YzEoG0HoY7ffeYt1IxiJbZFd'
-								: 'https://drive.google.com/uc?id=1arYIkEx5X7aTRwlA8nSgdZ-CTIg0ts0c'
-						}`}
-						id="hack-title"
-						style={{
-							marginTop: isTab
-								? isMobile
-									? issm
-										? '55px'
-										: '45px'
-									: '60px'
-								: '',
-							objectFit: 'cover',
-							width: '100vw',
-							padding: '0',
-						}}
-					/>
-				</section>
+				<div style={{ marginTop: isSmallDevice ? '45px' : '0' }}>
+					<img src="https://drive.google.com/uc?id=1KbAIfAB9t3VcmvOb2mzvdKlhg18v_fKB" style={{minWidth: '100vw'}}/>
+				</div>
 
-				<section
-					className="project-section"
-					style={{  marginTop: '150px' }}
-				>
+				<section className="project-section" style={{ marginTop: '150px' }}>
 					<div className="anim-icons">
 						<span className="icon icon-cross-1"></span>
 					</div>
@@ -89,16 +61,19 @@ const Quiz = () => {
 																	className="text"
 																	style={{ color: `#ffffff`, fontSize: `20px` }}
 																>
-																	Under <strong>PARSEC 2022</strong>, the{' '}
-																	<strong>Quiz Club of IIT Dharwad</strong> is
-																	conducting a{' '}
-																	<strong>Science and Technology Quiz</strong>{' '}
+																	Under <strong>PARSEC 2022</strong>, the Quiz
+																	Club of IIT Dharwad is conducting a
+																	<strong> Science and Technology Quiz </strong>{' '}
 																	for High School and college students in and
 																	around Dharwad-Hubli. The questions are
 																	designed to investigate, rather than to simply
 																	arrive at an answer, and specifically to
-																	promote debate and discussion among teams and
-																	the judges.
+																	promote debate and discussion among teams
+																	participating and the judges. The
+																	participants' knowledge, expertise in high
+																	school science, developments, and current news
+																	from the world of Science and Technology will
+																	be tested in the Quiz competition.
 																</div>
 															</div>
 															<div
@@ -110,8 +85,8 @@ const Quiz = () => {
 																	style={{ textAlign: `center` }}
 																>
 																	<a
-																		href="#"
-																		//  target="_blank"
+																		href="https://dare2compete.com/quiz/technoquiz-parsec-a-paradigm-shift-indian-institute-of-technology-iit-dharwad-262190"
+																		target="_blank"
 																		className="theme-btn btn-style-one btn-rounded mb-4"
 																		// id="btncs"
 																		style={{
@@ -119,7 +94,7 @@ const Quiz = () => {
 																			textDecoration: `none`,
 																		}}
 																	>
-																		COMING SOON
+																		REGISTER NOW
 																	</a>
 																</div>
 															</div>

@@ -82,11 +82,13 @@ const Cp = () => {
 											className="text"
 											style={{ color: '#eeeeee', fontSize: '20px' }}
 										>
-											An algorithmic programming contest where teams of three
-											have to solve an engineering problem by applying heuristic
-											algorithms. Participants will have to work on an ingenious
-											solution for a problem statement released at the start of
-											the event.
+											An algorithmic programming contest which tests your
+											knowledge of various heuristic algorithms. It is an event
+											under Parsec'22 IIT Dharwad's annual tech fest and in
+											association with Coding Ninjas. The objective of the
+											contest is that the participants have to formulate
+											solutions to a multitude of fascinating engineering
+											problems utilizing heuristic algorithms.
 										</div>
 										<br />
 										<br />
@@ -96,16 +98,17 @@ const Cp = () => {
 										>
 											<div className="btn-box text-center">
 												<a
-													href=""
+													href="https://bit.ly/3GyVYHn"
 													className="theme-btn btn-style-four button text-center"
 													id="btncs"
+													target='_blank'
 													style={{
 														borderRadius: '8px',
 														color: '#ffffff',
 														// background: '#f20487',
 													}}
 												>
-													Coming Soon
+													Register Now
 												</a>
 											</div>
 										</div>
@@ -154,7 +157,7 @@ const Cp = () => {
 											}}
 										>
 											<div className="row">
-												<div className="col-md-6">Duration: 3 hours</div>
+												<div className="col-md-6">Duration: 2.5 hours</div>
 												<div className="col-md-6">Team Size: 1</div>
 											</div>
 										</div>{' '}
@@ -169,17 +172,25 @@ const Cp = () => {
 										<strong> 3:00 PM, March 5, 2022 </strong>
 									</li>
 									<li>Code of Conduct to be followed.</li>
-									<li>
+									{/* <li>
 										Carry fully charged laptops. At least one laptop per team is
 										required.
 									</li>
 									<li>
 										Internet connection and charging points will be provided
 										during the event.
-									</li>
+									</li> */}
 									<li>
+										For every wrong submission, penalty of 10 minutes would be
+										imposed.
+									</li>
+									{/* <li>
 										Teams will be judged on the basis of how optimal their
 										solution is compared to the other teams.{' '}
+									</li> */}
+									<li>
+										Participants would be ranked on the basis of their
+										submission time and penalties.
 									</li>
 								</ul>
 

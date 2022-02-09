@@ -8,10 +8,7 @@ import Footer from '../../components/Footer';
 import EventsBackground from '../../components/eventsBackground';
 import { useMediaQuery } from 'react-responsive';
 const Guardains = () => {
-	const isTabletorMobile = useMediaQuery({ query: '(max-width: 550px)' });
-	const isTab = useMediaQuery({ query: '(max-width:1026px)' });
-	const isMobile = useMediaQuery({ query: '(max-width:425px)' });
-	const issm = useMediaQuery({ query: '(max-width:400px)' });
+	const isSmallDevice = useMediaQuery({query: '(max-width:1026px)'})
 	return (
 		<React.Fragment>
 			<EventsBackground />
@@ -19,31 +16,9 @@ const Guardains = () => {
 				<div className="preloader"></div>
 
 				<Header active={2} />
-				<section
-					className="page-title"
-					style={{ overflow: 'visible', paddingRight: 0, padding: '0' }}
-				>
-					<img
-						src={`${
-							isTabletorMobile
-								? 'https://drive.google.com/uc?id=18G70T6VzylhWIYkJy8xufkRlEjnUUEAH'
-								: 'https://drive.google.com/uc?id=1YARnk_4npbrq111wY9AsRi6TGtkx7RB8'
-						}`}
-						id="hack-title"
-						style={{
-							marginTop: isTab
-								? isMobile
-									? issm
-										? '55px'
-										: '45px'
-									: '60px'
-								: '',
-							objectFit: 'cover',
-							width: '100vw',
-							padding: '0',
-						}}
-					/>
-				</section>
+				<div style={{ marginTop: isSmallDevice ? '45px' : '0' }}>
+					<img src="https://drive.google.com/uc?id=1rb40v_ILv4px4u-7Wi2UQJ3Srk0rTS_q" style={{minWidth: '100vw'}} />
+				</div>
 				<section style={{ position: 'relative', margin: ' 100px 0' }}>
 					<div
 						className="login-form auto-container"
@@ -99,16 +74,17 @@ const Guardains = () => {
 										>
 											<div className="btn-box text-center">
 												<a
-													href=""
+													href="https://dare2compete.com/p/guardains-parsec-a-paradigm-shift-indian-institute-of-technology-iit-dharwad-262141"
 													className="theme-btn btn-style-four button text-center"
 													id="btncs"
+													target={'_blank'}
 													style={{
 														borderRadius: '8px',
 														color: '#ffffff',
 														// background: '#f20487',
 													}}
 												>
-													Coming Soon
+													Register Now
 												</a>
 											</div>
 										</div>
@@ -140,10 +116,10 @@ const Guardains = () => {
 										>
 											<div className="row">
 												<div className="col-md-6" style={{ color: '#2babd6' }}>
-													Duration : 2 Days
+													Duration : 1 Day
 												</div>
 												<div className="col-md-6" style={{ color: '#2babd6' }}>
-													Team Size : 2
+													Team Size : 1-2 Members
 												</div>
 											</div>
 										</div>{' '}
@@ -171,7 +147,7 @@ const Guardains = () => {
 										color: `#c4c4c4`,
 									}}
 								>
-									Participants will have to devise a python programme to guide
+									Participants will have to devise a Python program to guide
 									their troops past the obstacles, traps, and opponents, making
 									use of the different talents possessed by each of the
 									guardians.
@@ -183,7 +159,7 @@ const Guardains = () => {
 									<li
 									// style={{color : '#c4c4c4'}}
 									>
-										Contest starts: 5 March 2022, 2:00 PM
+										Contest starts: 5 March 2022, 12:00 AM IST
 										{/* <strong> - </strong> */}
 									</li>
 									<li
@@ -208,21 +184,21 @@ const Guardains = () => {
 								</ul>
 
 								<br />
-								{/* <p
+								<p
 									className="font-weight-bold"
 									style={{ fontSize: 'large', color: '#c4c4c4' }}
 								>
 									Still have queries? Reach out to us on our Telegram{' '}
 									<a
-										href=""
-										// target="_blank"
+										href="https://t.me/parsec_guardians"
+										target="_blank"
 										style={{ color: 'rgba(43, 171, 214)' }}
 										rel="noreferrer"
 									>
 										channel
 									</a>{' '}
 									and we will try our best to answer all of them.
-								</p> */}
+								</p>
 							</div>
 						</div>
 					</div>
