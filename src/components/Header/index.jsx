@@ -687,10 +687,7 @@ const Header = ({ active }) => {
 										</a>
 									</li>
 									<li>
-										<a
-											href="https://t.me/joinchat/AAAAAFcfPNde3RmitAKyxg"
-											target="_blank"
-										>
+										<a href="https://t.me/parsec_iitdh" target="_blank">
 											Telegram
 										</a>
 									</li>

@@ -239,7 +239,7 @@ const Footer = () => {
 								</li>
 								<li>
 									<a
-										href="https://t.me/joinchat/AAAAAFcfPNde3RmitAKyxg"
+										href="https://t.me/parsec_iitdh"
 										target="_blank"
 										style={{
 											backgroundColor: '#0088cc',
