@@ -502,10 +502,10 @@ const Team = () => {
 															<img src={`${data.image}`} alt="" />
 														</div>
 
-														{data.linkedin !== '' ||
+														{(data.linkedin !== '' ||
 															data.facebook !== '' ||
 															data.github !== '' ||
-															(data.instagram !== '' && (
+															data.instagram !== '') && (
 																<div className="social-info">
 																	{data.facebook && (
 																		<a
@@ -537,7 +537,7 @@ const Team = () => {
 																		</a>
 																	)}
 																</div>
-															))}
+															)}
 														<div className="speaker-info">
 															<h5>{makeName(data.name)}</h5>
 															{data.teamlead == 'true' && (
