@@ -486,6 +486,72 @@ const Team = () => {
 									</>
 								))}
 							</div>
+							<div className="sec-title">
+								<h4>GuardAIns Team</h4>
+							</div>
+							{/* <FadeIn className="row"> */}
+							<div className="row">
+								{eventCoordinators.map((data, i) => (
+									<>
+										{data.post === 'guardains' && (
+											<div className="col-12 col-sm-6 col-lg-3" key={`${i}`}>
+												<Zoom delay={delayTime}>
+													{/* <Card delay={600} style={{ border: 0 }}> */}
+													<div className="single-speaker-area wow fadeInUp ">
+														<div className="speaker-single-thumb">
+															<img src={`${data.image}`} alt="" />
+														</div>
+
+														{data.linkedin !== '' ||
+															data.facebook !== '' ||
+															data.github !== '' ||
+															(data.instagram !== '' && (
+																<div className="social-info">
+																	{data.facebook && (
+																		<a
+																			href={`${data.facebook}`}
+																			target="_blank"
+																		>
+																			<i className="fab fa-facebook-f"></i>
+																		</a>
+																	)}
+																	{data.instagram !== '' && (
+																		<a
+																			href={`${data.instagram}`}
+																			target="_blank"
+																		>
+																			<i className="fab fa-instagram"></i>
+																		</a>
+																	)}
+																	{data.github !== '' && (
+																		<a href={`${data.github}`} target="_blank">
+																			<i className="fab fa-github"></i>
+																		</a>
+																	)}
+																	{data.linkedin !== '' && (
+																		<a
+																			href={`${data.linkedin}`}
+																			target="_blank"
+																		>
+																			<i className="fab fa-linkedin-in"></i>
+																		</a>
+																	)}
+																</div>
+															))}
+														<div className="speaker-info">
+															<h5>{makeName(data.name)}</h5>
+															{data.teamlead == 'true' && (
+																<p style={{ color: 'cyan' }}>Team Lead</p>
+															)}
+														</div>
+													</div>
+													{/* </Card> */}
+												</Zoom>
+											</div>
+										)}
+									</>
+								))}
+							</div>
 						</div>
 
 						{/* </FadeIn> */}

@@ -8,13 +8,21 @@ import '../../css/responsive.css';
 import Footer from '../../components/Footer';
 import WorkshopComp from './workshop_comp';
 // import '../../css/contact.css';
-
+import { useMediaQuery } from 'react-responsive';
 const Workshop = () => {
+	const isSmallDevice = useMediaQuery({query:'(max-widht:1026px)'})
 	return (
 		<React.Fragment>
 			<div className="page-wrapper" style={{ overflowX: 'hidden' }}>
 				<div className="preloader"></div>
 				<Header active={3} />
+
+				{/* <div style={{ marginTop: isSmallDevice ? '45px' : '0' }}>
+					<img
+						src="https://drive.google.com/uc?id=1eXH6NV9AG3Lz9uk5ibZB9UL5OV1fMDQU"
+						style={{ minWidth: '100vw' }}
+					/>
+				</div> */}
 				<section
 					className="page-title"
 					style={{
@@ -22,7 +30,6 @@ const Workshop = () => {
 					}}
 					id="page-title"
 				>
-					{/* <img src={TitleBackground} /> */}
 					<div className="auto-container">
 						<span className="float-text">Workshops</span>
 						<h1>Workshops</h1>
@@ -90,8 +97,8 @@ const Workshop = () => {
 								pdfLink={
 									'https://drive.google.com/file/d/1_uC_LdO665miJcFvXK1EhX4gMImv0B-p/view'
 								}
-								trackingLabelForKnowMore={"Ethical Hacking"}
-								trackingLabelForRegistration={"Registration Ethical Hacking"}
+								trackingLabelForKnowMore={'Ethical Hacking'}
+								trackingLabelForRegistration={'Registration Ethical Hacking'}
 							/>
 							<WorkshopComp
 								imageId="1-qiYntGY2gPoPzJO8ZeaE4HsTGJKYKKp"
@@ -104,8 +111,8 @@ const Workshop = () => {
 								pdfLink={
 									'https://drive.google.com/file/d/1_6iFpliz_oANi3s55YtBz_-coBUwlA64/view'
 								}
-								trackingLabelForKnowMore={"Blockchain"}
-								trackingLabelForRegistration={"Registration Blockchain"}
+								trackingLabelForKnowMore={'Blockchain'}
+								trackingLabelForRegistration={'Registration Blockchain'}
 							/>
 						</div>
 
