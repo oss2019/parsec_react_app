@@ -16,7 +16,8 @@ const CodeOfConduct = () => {
 				<Header />
 
 				<section
-					className="page-title"
+                    className="page-title"
+                    id='page-title'
 					style={{ backgroundImage: `url(${codeofconductBg})` }}
 				>
 					<div className="auto-container">

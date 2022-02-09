@@ -50,8 +50,26 @@ const FAQ = () => {
 
 				<section
 					className="page-title"
+					id="page-title"
 					style={{ backgroundImage: `url(${faqTitleBg})` }}
-				></section>
+				>
+					<div className="auto-container">
+						<span className="float-text">FAQs</span>
+						<h1>FAQs</h1>
+						<ul className="bread-crumb clearfix">
+							<li>
+								<a
+									href="/"
+									// target="_blank"
+									style={{ textDecoration: 'none' }}
+								>
+									Home
+								</a>
+							</li>
+							<li>FAQs</li>
+						</ul>
+					</div>
+				</section>
 
 				<div className="auto-container mb-10 p-10">
 					<div className="row align-items-center">
@@ -101,9 +119,7 @@ const FAQ = () => {
 													{' '}
 													We value the importance of safety and inclusion of
 													all. All attendees must adhere to{' '}
-													<a href="/codeofconduct" >
-														Our Code of Conduct.
-													</a>
+													<a href="/codeofconduct">Our Code of Conduct.</a>
 													Additionally, all DevHack Participants are required to
 													strictly adhere to the{' '}
 													<a
@@ -194,9 +210,7 @@ const FAQ = () => {
 												<div className="text">
 													{' '}
 													If you have any other queries,{' '}
-													<a href="/contact" >
-														reach out to us
-													</a>
+													<a href="/contact">reach out to us</a>
 												</div>
 											</div>
 										</div>

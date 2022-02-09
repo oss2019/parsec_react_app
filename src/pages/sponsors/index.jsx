@@ -18,6 +18,7 @@ const Sponsers = () => {
 
 				<section
 					className="page-title"
+					id='page-title'
 					style={{ backgroundImage: `url(${sponserTitleBg})` }}
 				>
 					<div class="auto-container">

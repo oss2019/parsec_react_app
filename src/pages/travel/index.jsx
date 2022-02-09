@@ -17,6 +17,7 @@ const Travel = () => {
 
 				<section
 					className="page-title"
+					id='page-title'
 					style={{ backgroundImage: `url(${travelTitleBg})` }}
 				>
 					<div className="auto-container">

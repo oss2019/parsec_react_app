@@ -88,6 +88,7 @@ const About = () => {
 
 				<section
 					className="page-title"
+					id='page-title'
 					style={{ backgroundImage: `url(${aboutTitleBg})` }}
 				>
 					<div className="auto-container">
