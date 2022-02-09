@@ -17,15 +17,21 @@ const Guardains = () => {
 
 				<Header active={2} />
 				<div style={{ marginTop: isSmallDevice ? '45px' : '0' }}>
-					<img src="https://drive.google.com/uc?id=1rb40v_ILv4px4u-7Wi2UQJ3Srk0rTS_q" style={{minWidth: '100vw'}} />
+					<img
+						src="https://drive.google.com/uc?id=1rb40v_ILv4px4u-7Wi2UQJ3Srk0rTS_q"
+						style={{ minWidth: '100vw' }}
+					/>
 				</div>
-				<section style={{ position: 'relative', margin: ' 100px 0' }}>
+				<section
+					style={{
+						position: 'relative',
+						margin: '0',
+						background: 'rgba(22, 22, 50, 0.8)',
+					}}
+				>
 					<div
 						className="login-form auto-container"
 						style={{
-							background: 'rgba(22, 22, 50, 0.8)',
-
-							boxShadow: `1px 1px 2px rgba(0, 0, 0, 0.25), 0 0 35px rgba(0, 0, 0, 0.25), 0 0 15px rgba(0, 0, 0, 0.25)`,
 						}}
 					>
 						<div className="pt-4 row clearfix">

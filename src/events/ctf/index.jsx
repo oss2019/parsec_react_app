@@ -27,10 +27,7 @@ const Ctf = () => {
 					/>
 				</div>
 				<section
-					className="page-title"
-					// style="background-image:url(https://drive.google.com/uc?id=11F0HAV4tp0K1StKh5cxGDkHR7_Wyshs2);"
-					id="page-title"
-					style={{ position: 'relative', margin: '-150px auto 0' }}
+					style={{ position: 'relative', margin: ' 0', background: `rgba(7, 9, 	12, 0.87)` }}
 				>
 					{/* <canvas></canvas> */}
 					<div className="auto-container">

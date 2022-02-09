@@ -18,13 +18,20 @@ const Designo = () => {
 
 				<Header active={2} />
 				<div style={{ marginTop: isSmallDevice ? '45px' : '0' }}>
-					<img src="https://drive.google.com/uc?id=11oIttLvPVvbwgpOZscWajOwwS_tkiI-W" style={{minWidth: '100vw'}} />
+					<img
+						src="https://drive.google.com/uc?id=11oIttLvPVvbwgpOZscWajOwwS_tkiI-W"
+						style={{ minWidth: '100vw' }}
+					/>
 				</div>
-				<section style={{ position: 'relative', margin: ' 100px 0' }}>
-					<div
-						className="login-form auto-container"
-						style={{ background: `rgba(34, 40, 49, 0.87)` }}
-					>
+				<section
+					style={{
+						position: 'relative',
+						margin: '0',
+						background: `rgba(34, 40, 49, 0.87)`,
+						width: '100vw'
+					}}
+				>
+					<div className="login-form auto-container" style={{}}>
 						<div className="row clearfix">
 							<h1
 								className="mx-auto mt-5"

@@ -19,13 +19,19 @@ const Quiz = () => {
 				<Header active={2} />
 
 				<div style={{ marginTop: isSmallDevice ? '45px' : '0' }}>
-					<img src="https://drive.google.com/uc?id=1KbAIfAB9t3VcmvOb2mzvdKlhg18v_fKB" style={{minWidth: '100vw'}}/>
+					<img
+						src="https://drive.google.com/uc?id=1KbAIfAB9t3VcmvOb2mzvdKlhg18v_fKB"
+						style={{ minWidth: '100vw' }}
+					/>
 				</div>
 
-				<section className="project-section" style={{ marginTop: '150px' }}>
-					<div className="anim-icons">
-						<span className="icon icon-cross-1"></span>
-					</div>
+				<section
+					style={{
+						marginTop: '0',
+						background: 'rgba(22, 22, 50, 0.8)',
+					}}
+				>
+
 					<div className="auto-container">
 						<div className="row">
 							<div className="content-column col-lg-12 col-md-12 col-sm-12 tabs-content">
@@ -40,9 +46,11 @@ const Quiz = () => {
 										<div className="auto-container">
 											<div
 												className="login-form"
-												style={{
-													boxShadow: `1px 1px 2px black, 0 0 35px blue, 0 0 15px darkblue`,
-												}}
+												style={
+													{
+														// boxShadow: `1px 1px 2px black, 0 0 35px blue, 0 0 15px darkblue`,
+													}
+												}
 											>
 												<div className="row clearfix">
 													<h1

@@ -10,10 +10,7 @@ import EventsBackground from '../../components/eventsBackground';
 // import '../../css/winners.css'
 import { useMediaQuery } from 'react-responsive';
 const Cp = () => {
-	const isTabletorMobile = useMediaQuery({ query: '(max-width: 550px)' });
-	const isTab = useMediaQuery({ query: '(max-width:1026px)' });
-	const isMobile = useMediaQuery({ query: '(max-width:425px)' });
-	const issm = useMediaQuery({ query: '(max-width:400px)' });
+	const isSmallDevice = useMediaQuery({ query:'(max-width:1026px)'})
 	return (
 		<React.Fragment>
 			<EventsBackground />
@@ -22,7 +19,7 @@ const Cp = () => {
 				<div className="preloader"></div>
 				{/* <div className="form-back-drop"></div> */}
 				<Header active={2} />
-				<section
+				{/* <section
 					className="page-title"
 					style={{ overflow: 'visible', paddingRight: 0, padding: '0' }}
 				>
@@ -46,15 +43,21 @@ const Cp = () => {
 							padding: '0',
 						}}
 					/>
-				</section>
-				<section style={{ position: 'relative', margin: ' 100px 0' }}>
-					<div
-						className="login-form auto-container"
-						style={{
-							background: 'rgba(34, 40, 49, 0.87)',
-							boxShadow: `1px 1px 2px rgba(0, 0, 0, 0.25), 0 0 35px rgba(0, 0, 0, 0.25), 0 0 15px rgba(0, 0, 0, 0.25)`,
-						}}
-					>
+				</section> */}
+				<div style={{ marginTop: isSmallDevice ? '45px' : '0' }}>
+					<img
+						src="https://drive.google.com/uc?id=1UMaCKPm6zcRUe6VMpbDeCOV_SjsZBbmV"
+						style={{ minWidth: '100vw' }}
+					/>
+				</div>
+				<section
+					style={{
+						position: 'relative',
+						margin: '0',
+						background: 'rgba(34, 40, 49, 0.87)',
+					}}
+				>
+					<div className="login-form auto-container" style={{}}>
 						<div className="pt-4 row clearfix">
 							<h1
 								className="px-3 py-2 w-100 text-center"
@@ -88,7 +91,24 @@ const Cp = () => {
 											association with Coding Ninjas. The objective of the
 											contest is that the participants have to formulate
 											solutions to a multitude of fascinating engineering
-											problems utilizing heuristic algorithms.
+											problems utilizing heuristic algorithms. To know more,
+											head to our{' '}
+											<strong
+												style={{
+													cursor: 'pointer',
+												}}
+											>
+												<a
+													href="https://drive.google.com/file/d/1e9DQO-uqzYDn-pbU7fdA3MOryEkEiQIB/view?usp=sharing"
+													target={'_blank'}
+													style={{
+														textDecoration: 'none',
+														color: 'rgba(0, 173, 181)',
+													}}
+												>
+													Rulebook
+												</a>
+											</strong>
 										</div>
 										<br />
 										<br />
@@ -101,7 +121,7 @@ const Cp = () => {
 													href="https://bit.ly/3GyVYHn"
 													className="theme-btn btn-style-four button text-center"
 													id="btncs"
-													target='_blank'
+													target="_blank"
 													style={{
 														borderRadius: '8px',
 														color: '#ffffff',

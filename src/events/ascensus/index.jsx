@@ -21,10 +21,16 @@ const Ascensus = () => {
 						style={{ minWidth: '100vw' }}
 					/>
 				</div>
-				<section style={{ position: 'relative', margin: ' 100px 0' }}>
+				<section
+					style={{
+						position: 'relative',
+						margin: '0',
+						width: '100vw',
+						background: 'rgba(34, 40, 49, 0.87)',
+					}}
+				>
 					<div
 						className="login-form auto-container"
-						style={{ background: 'rgba(34, 40, 49, 0.87)' }}
 					>
 						<div className="pt-4 row clearfix">
 							<h1

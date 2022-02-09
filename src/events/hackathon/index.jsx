@@ -22,6 +22,7 @@ const Hackathon = () => {
 	const renderCtrl = (q) => {
 		setHack(q);
 	};
+	const isSmallDevice = useMediaQuery({query:'(max-width:1026px)'})
 	// React.useEffect(() => {
 	// 	const script = document.createElement('script');
 	// 	script.src = 'https://apply.devfolio.co/v2/sdk.js';
@@ -39,7 +40,7 @@ const Hackathon = () => {
 				{/* <EventsBackground /> */}
 				<Header active={2} />
 
-				<section
+				{/* <section
 					className="page-title"
 					// id="ptitle"
 					style={{ overflow: 'visible', paddingRight: 0 }}
@@ -62,10 +63,17 @@ const Hackathon = () => {
 							width: '100vw',
 						}}
 					/>
-				</section>
+					
+				</section> */}
+				<div style={{ marginTop: isSmallDevice ? '45px' : '0' }}>
+					<img
+						src="https://drive.google.com/uc?id=1KvfiSeMntQN5ki6VTPtGgydezgfaO9xK"
+						style={{ minWidth: '100vw' }}
+					/>
+				</div>
 				<section
 					className="project-section auto-container"
-					style={{ marginTop: '50vh' }}
+					// style={{ marginTop: '50vh' }}
 				>
 					<div className="anim-icons">
 						<span className="icon icon-cross-1"></span>
