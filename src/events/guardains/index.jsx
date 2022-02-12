@@ -11,29 +11,41 @@ const Guardains = () => {
 	const isSmallDevice = useMediaQuery({query: '(max-width:1026px)'})
 	return (
 		<React.Fragment>
-			<EventsBackground />
+			{/* <EventsBackground /> */}
 			<div className="page-wrapper">
 				<div className="preloader"></div>
 
 				<Header active={2} />
-				<div style={{ marginTop: isSmallDevice ? '45px' : '0' }}>
-					<img src="https://drive.google.com/uc?id=1rb40v_ILv4px4u-7Wi2UQJ3Srk0rTS_q" style={{minWidth: '100vw'}} />
+				<div
+					style={{
+						marginTop: isSmallDevice ? '55px' : '0',
+						background: '#000102',
+						top: 0,
+						display: 'flex',
+						alignItems: 'flex-start',
+					}}
+				>
+					<img
+						src="https://drive.google.com/uc?id=1_XN1DbPzXRnDzHHuPnUJnEEBdiOCp7SB"
+						style={{ minWidth: '100vw', maxHeight: '70vh', objectFit: 'cover' }}
+					/>
 				</div>
-				<section style={{ position: 'relative', margin: ' 100px 0' }}>
-					<div
-						className="login-form auto-container"
-						style={{
-							background: 'rgba(22, 22, 50, 0.8)',
-
-							boxShadow: `1px 1px 2px rgba(0, 0, 0, 0.25), 0 0 35px rgba(0, 0, 0, 0.25), 0 0 15px rgba(0, 0, 0, 0.25)`,
-						}}
-					>
+				<section
+					style={{
+						position: 'relative',
+						margin: '0',
+						// background: 'rgba(22, 22, 50, 0.8)',
+						background: '#000102',
+					}}
+				>
+					<div className="login-form auto-container" style={{}}>
 						<div className="pt-4 row clearfix">
 							<h1
 								className="px-3 py-2 w-100 text-center"
 								style={{
 									fontFamily: 'poppins',
-									color: 'rgba(43, 171, 214)',
+									// color: 'rgba(43, 171, 214)',
+									color: '#22c7a8',
 								}}
 							>
 								GuardAIns
@@ -42,7 +54,7 @@ const Guardains = () => {
 								className="px-3 py-2 w-100 text-center"
 								style={{
 									fontFamily: 'poppins',
-									color: 'rgba(43, 171, 214)',
+									color: '#22c7a8',
 								}}
 							>
 								AI TOURNAMENT
@@ -100,7 +112,7 @@ const Guardains = () => {
 									<div
 										className="row-cols-1"
 										style={{
-											border: '2px solid #2b75d6',
+											border: '2px solid #22c7a8',
 											borderRadius: '8px',
 											overflow: 'hidden',
 										}}
@@ -111,14 +123,14 @@ const Guardains = () => {
 												fontFamily: 'Roboto, sans-serif',
 												fontSize: 'large',
 												fontWeight: 'bold',
-												background: '#2d3645',
+												// background: '#2d3645',
 											}}
 										>
 											<div className="row">
-												<div className="col-md-6" style={{ color: '#2babd6' }}>
+												<div className="col-md-6" style={{ color: '#22c7a8' }}>
 													Duration : 1 Day
 												</div>
-												<div className="col-md-6" style={{ color: '#2babd6' }}>
+												<div className="col-md-6" style={{ color: '#22c7a8' }}>
 													Team Size : 1-2 Members
 												</div>
 											</div>
@@ -157,25 +169,29 @@ const Guardains = () => {
 
 								<ul className="list-style-four list-style-four1">
 									<li
-									// style={{color : '#c4c4c4'}}
+										// style={{color : '#c4c4c4'}}
+										style={{ color: '#22c7a8' }}
 									>
 										Contest starts: 5 March 2022, 12:00 AM IST
 										{/* <strong> - </strong> */}
 									</li>
 									<li
-									// style={{color : '#c4c4c4'}}
+										// style={{color : '#c4c4c4'}}
+										style={{ color: '#22c7a8' }}
 									>
 										{' '}
 										Only python programming language is to be used.
 									</li>
 									<li
-									// style={{color : '#c4c4c4'}}
+										// style={{color : '#c4c4c4'}}
+										style={{ color: '#22c7a8' }}
 									>
 										{' '}
 										Code of conduct to be followed.{' '}
 									</li>
 									<li
-									// style={{color : '#c4c4c4'}}
+										// style={{color : '#c4c4c4'}}
+										style={{ color: '#22c7a8' }}
 									>
 										The bots will battle against each other, and the game will
 										be won by the first player to discover the stone and bring
@@ -192,7 +208,7 @@ const Guardains = () => {
 									<a
 										href="https://t.me/parsec_guardians"
 										target="_blank"
-										style={{ color: 'rgba(43, 171, 214)' }}
+										style={{ color: '#22c7a8' }}
 										rel="noreferrer"
 									>
 										channel

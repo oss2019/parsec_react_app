@@ -11,14 +11,14 @@ function App() {
 
 	return (
 		<div>
-			<LazyLoad>
+			{/* <LazyLoad> */}
         {/* <Background /> */}
         {/* <EventPage /> */}
 				<Router>
 					<Routes />
 				</Router>
 				{/* <Footer /> */}
-			</LazyLoad>
+			{/* </LazyLoad> */}
 		</div>
 	);
 }

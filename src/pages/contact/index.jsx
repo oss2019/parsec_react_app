@@ -30,6 +30,7 @@ const ContactPage = () => {
 
 				<section
 					className="page-title"
+					id='page-title'
 					style={{ backgroundImage: `url(${contactTitleImage})` }}
 				>
 					<div className="auto-container">

@@ -8,16 +8,13 @@ import '../../css/responsive.css';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import parsecLogo from '../../images/logos/parsec-lg.png';
-import mainSlider from '../../images/main-slider/4_comp.jpg'
+import mainSlider from '../../images/main-slider/4_comp.jpg';
 import EventCarousel from './eventsCarousel';
-
-
 
 import { Typewriter } from '@chrisfieldsii/react-use-typewriter';
 import '@chrisfieldsii/react-use-typewriter/dist/index.css';
 import Sponsors from './sponsors';
 import AboutUs from './about';
-
 
 const Home = () => {
 	useEffect(() => {
@@ -124,7 +121,7 @@ const Home = () => {
 	return (
 		<React.Fragment>
 			<div className="page-wrapper">
-				<div className='preloader'></div>
+				<div className="preloader"></div>
 				<Header active={1} />
 
 				<section
@@ -197,10 +194,9 @@ const Home = () => {
 						</div>
 					</div>
 				</section>
-			
+
 				<br />
 				<br />
-		
 
 				<AboutUs />
 
@@ -508,6 +504,7 @@ const Home = () => {
 
 				<Sponsors />
 				{/* <topScroll /> */}
+	
 				<Footer />
 				{/* </Suspense> */}
 			</div>

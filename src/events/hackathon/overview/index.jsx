@@ -17,9 +17,7 @@ const Overview = () => {
 	return (
 		<React.Fragment>
 			<div className="inner-column tab active-tab" id="introduction">
-				<section
-					className="login-section"
-				>
+				<section className="login-section">
 					<div className="auto-container p-0">
 						<div className="login-form">
 							<div className="row clearfix">
@@ -65,7 +63,7 @@ const Overview = () => {
 												paddingBottom: `20px`,
 											}}
 										>
-											<div className="btn-box" style={{ textAlign: `center` }}>
+											{/* <div className="btn-box" style={{ textAlign: `center` }}>
 												<a
 													href="#"
 													//  target="_blank"
@@ -74,17 +72,16 @@ const Overview = () => {
 												>
 													COMING SOON
 												</a>
-											</div>
+											</div> */}
 											{/* <div>
 
 											</div> */}
-											{/* <div
+											<div
 												class="apply-button"
-												data-hackathon-slug="devhack-3"
+												data-hackathon-slug="devhack"
 												data-button-theme="light"
-												// style="height: 44px; width: 312px"
-												style={{height: '44px', width: '312px'}}
-											></div> */}
+												style={{ height: '44px', width: '312px' }}
+											></div>
 										</div>
 									</div>
 								</div>

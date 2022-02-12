@@ -16,21 +16,23 @@ const Ctf = () => {
 	return (
 		<React.Fragment>
 			<div className="page-wrapper">
-				<EventsBackground />
+				{/* <EventsBackground /> */}
 				<div className="preloader"></div>
 
 				<Header active={2} />
-				<div style={{ marginTop: isSmallDevice ? '45px' : '0' }}>
+				<div style={{ marginTop: isSmallDevice ? '55px' : '0', background: '#000102', top: 0,display:'flex', alignItems:'flex-start' }}>
 					<img
-						src="https://drive.google.com/uc?id=1lzpmSFGSYH8wHNdtuxUo5FvFPO31SdEE"
-						style={{ minWidth: '100vw' }}
+						src="https://drive.google.com/uc?id=1GAn_A6lnppbmjMIN-UpaWnr-gxEXotsq"
+						style={{ minWidth: '100vw', maxHeight: '70vh', objectFit:'contain' }}
 					/>
 				</div>
 				<section
-					className="page-title"
-					// style="background-image:url(https://drive.google.com/uc?id=11F0HAV4tp0K1StKh5cxGDkHR7_Wyshs2);"
-					id="page-title"
-					style={{ position: 'relative', margin: '-150px auto 0' }}
+					style={{
+						position: 'relative',
+						margin: ' 0',
+						// background: `rgba(7, 9, 	12, 0.87)`,
+						background: '#000102',
+					}}
 				>
 					{/* <canvas></canvas> */}
 					<div className="auto-container">
@@ -38,7 +40,7 @@ const Ctf = () => {
 							<div
 								className="inner-column tab active-tab"
 								id="introduction"
-								style={{ background: `rgba(7, 9, 	12, 0.87)` }}
+								// style={{ background: `rgba(7, 9, 	12, 0.87)` }}
 							>
 								<section
 									className="login-section"
@@ -183,7 +185,7 @@ const Ctf = () => {
 														}}
 													>
 														<div
-															style={{ background: `rgb(7, 9, 12)` }}
+															// style={{ background: `rgb(7, 9, 12)` }}
 															class="card-body text-center"
 														>
 															<div className="row">

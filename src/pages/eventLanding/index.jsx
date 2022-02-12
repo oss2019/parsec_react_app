@@ -241,7 +241,7 @@ const EventLanding = () => {
 		<React.Fragment>
 			<div className="page-wrapper">
 				<div className="preloader"></div>
-				<EventBackground bgColor={'#ffffff'} />
+				<EventBackground bgColor={'#000102'} />
 				<Header active={2} />
 				{/* <section
 					className="page-title"
@@ -276,6 +276,7 @@ const EventLanding = () => {
 						backgroundImage: `url(${evtTitle})`,
 						backgroundRepeat: 'no-repeat',
 						backgroundSize: 'cover',
+						boxShadow: ' 0 0 230px 0 black inset',
 					}}
 				>
 					<div className="auto-container">
