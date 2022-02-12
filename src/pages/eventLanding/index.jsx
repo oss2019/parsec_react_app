@@ -241,7 +241,7 @@ const EventLanding = () => {
 		<React.Fragment>
 			<div className="page-wrapper">
 				<div className="preloader"></div>
-				<EventBackground bgColor={'#000102'} />
+				<EventBackground bgColor={'#ffffff'} />
 				<Header active={2} />
 				{/* <section
 					className="page-title"
@@ -354,7 +354,7 @@ const EventLanding = () => {
 								evtLogo={ascensus}
 								evtTitle="ASCENSUS"
 								evtUrl={'/ascensus'}
-								date="4 MARCH 2022"
+								date="28 FEB 2022"
 								time="8 PM"
 								mode="ONLINE"
 							/>

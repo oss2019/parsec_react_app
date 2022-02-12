@@ -404,9 +404,88 @@ const Timeline = () => {
 											className="card-text text-dark mb-1"
 											style={{ fontSize: `medium` }}
 										>
+											Time's up! Submit your presentations on
+											<strong> Devfolio </strong> on time to be a part of this
+											electrifying battle of unconventional ideas and emerge as
+											one of the top teams.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className="row">
+							<div className="col-auto text-center flex-column d-none d-sm-flex">
+								<div className="row h-50">
+									<div className="col border-right"> </div>
+									<div className="col"> </div>
+								</div>
+								<h5 className="m-2">
+									<span className="badge badge-pill bg-danger"> </span>
+								</h5>
+								<div className="row h-50">
+									<div className="col border-right"> </div>
+									<div className="col"> </div>
+								</div>
+							</div>
+							<div className="col py-2">
+								<div className=" border-danger shadow">
+									<div
+										className="card-body"
+										style={{ border: '2px solid #dc3545', borderRadius: '8px' }}
+									>
+										<div className="float-right text-danger">
+											12:30 PM, March 6, 2022
+										</div>
+										<h4 className="card-title text-danger">
+											<strong>Phase 6:&nbsp;</strong>
+											Giving presentations in front of judges
+										</h4>
+										<p
+											className="card-text text-dark mb-1"
+											style={{ fontSize: `medium` }}
+										>
 											<strong> Time to impress the Judges!</strong> The top
 											teams will present their profound ideas before the judges
 											for a concluding evaluation.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className="row">
+							<div className="col-auto text-center flex-column d-none d-sm-flex">
+								<div className="row h-50">
+									<div className="col border-right"> </div>
+									<div className="col"> </div>
+								</div>
+								<h5 className="m-2">
+									<span className="badge badge-pill bg-danger"> </span>
+								</h5>
+								<div className="row h-50">
+									<div className="col border-right"> </div>
+									<div className="col"> </div>
+								</div>
+							</div>
+							<div className="col py-2">
+								<div className=" border-danger shadow">
+									<div
+										className="card-body"
+										style={{ border: '2px solid #dc3545', borderRadius: '8px' }}
+									>
+										<div className="float-right text-danger">
+											3:30 PM, March 6, 2022
+										</div>
+										<h4 className="card-title text-danger">
+											{/* <strong>Phase 5:</strong> */}
+											Speaker's Session
+										</h4>
+										<p
+											className="card-text text-dark mb-1"
+											style={{ fontSize: `medium` }}
+										>
+											If you are looking for some inspiration, you are at the
+											right place. Gain tips to tackle the ever advancing
+											technology to inspiring anecdotes.
 										</p>
 									</div>
 								</div>
