@@ -473,7 +473,7 @@ const Timeline = () => {
 										style={{ border: '2px solid #dc3545', borderRadius: '8px' }}
 									>
 										<div className="float-right text-danger">
-											3:30 PM, March 6, 2022
+											2:30 PM, March 6, 2022
 										</div>
 										<h4 className="card-title text-danger">
 											{/* <strong>Phase 5:</strong> */}

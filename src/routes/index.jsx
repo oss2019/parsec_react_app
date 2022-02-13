@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 import Cp from '../events/cp';
 import Ctf from '../events/ctf';
@@ -28,38 +28,83 @@ import EventLanding from '../pages/eventLanding';
 import Guardains from '../events/guardains';
 
 const Routes = () => {
-    return (
-        <div>
-            <Switch>
-                <Route exact path='/' component={Home} />
-                <Route path='/faq' component={FAQ} />
-                <Route path='/sponsors' component={Sponsers} />
-                <Route path='/aboutus' component={About} />
-                <Route path='/gallery' component={Gallery} />
-                <Route path='/codeofconduct' component={CodeOfConduct} />
-                <Route path='/travel' component={Travel} />
-                <Route path='/contact' component={ContactPage} />
+	return (
+		<div>
+			<Switch>
+				<Route exact path="/" component={Home} />
+				<Route exact path="/faq" component={FAQ} />
+				<Route exact path="/faq.html">
+					<Redirect to="/faq" />
+				</Route>
+
+				<Route exact path="/sponsors" component={Sponsers} />
+				<Route exact path="/sponsors.html">
+					<Redirect to="/sponsors" />
+				</Route>
+				<Route exact path="/aboutus" component={About} />
+				<Route exact path="/about.html">
+					<Redirect to="/aboutus" />
+				</Route>
+				<Route exact path="/gallery" component={Gallery} />
+				<Route exact path="/gallery.html">
+					<Redirect to="/gallery" />
+				</Route>
+				<Route exact path="/codeofconduct" component={CodeOfConduct} />
+				<Route exact path="/codeofcounduct.html">
+					<Redirect to="/codeofcounduct" />
+				</Route>
+				<Route exact path="/travel" component={Travel} />
+				<Route exact path="/travel.html">
+					<Redirect to="/travel" />
+				</Route>
+				<Route exact path="/contact" component={ContactPage} />
+				<Route exact path="/contact.html">
+					<Redirect to="/contact" />
+				</Route>
+
+				<Route exact path="/events" component={EventLanding} />
+				<Route exact path="/events.html">
+					<Redirect to="/events" />
+				</Route>
+				<Route exact path="/team" component={Team} />
+				<Route exact path="/team.html">
+					<Redirect to="/team" />
+				</Route>
+				<Route exact path="/cp" component={Cp} />
+				<Route exact path="/cp.html">
+					<Redirect to="/cp" />
+				</Route>
+				<Route exact path="/ctf" component={Ctf} />
+				<Route exact path="/ctf.html">
+					<Redirect to="/ctf" />
+				</Route>
+				<Route exact path="/hackathon" component={Hackathon} />
+				<Route exact path="/hackathon.html">
+					<Redirect to="/hackathon" />
+				</Route>
+				{/* <Route path='/hackathon_overview' component={Overview}/> */}
+
+				<Route exact path="/ascensus" component={Ascensus} />
+				<Route exact path="/designo" component={Designo} />
+				<Route exact path="/quiz" component={Quiz} />
+				<Route exact path="/quiz.html">
+					<Redirect to="/quiz" />
+				</Route>
+				<Route exact path="/workshops" component={Workshop} />
+				<Route exact path="/workshops.html">
+					<Redirect to="/workshops" />
+				</Route>
+                {/* <Route path="/schedule" component={Schedule} /> */}
                 
-                <Route path='/events' component={EventLanding} />
-                <Route path='/team' component={Team}/>
-                <Route path='/cp' component={Cp}/>
-                <Route path='/ctf' component={Ctf}/>
-                <Route path='/hackathon' component={Hackathon} />
-                {/* <Route path='/hackathon_overview' component={Overview}/> */}
-                <Route path='/ascensus' component={Ascensus}/>
-                <Route path='/designo' component={Designo}/>
-                <Route path='/quiz' component={Quiz} />
-                <Route path='/workshops' component={Workshop} />
-                <Route path='/schedule' component={Schedule} />
-                <Route path='/speakers' component={Speakers} />
-                {/* <Route path='/hackathon_timeline' component={Timeline}/>
+				{/* <Route path="/speakers" component={Speakers} /> */}
+				{/* <Route path='/hackathon_timeline' component={Timeline}/>
                 <Route path='/hackathon_themes' component={Themes} />
                 <Route path='/hackathon_judges' component={Judges} /> */}
-                {/* <Route path='/students' component={Students}/> */}
-                <Route path='/guardains' component={Guardains} />
-            </Switch>
-        </div>
-    )
-}
+				{/* <Route path='/students' component={Students}/> */}
+				<Route path="/guardains" component={Guardains} />
+			</Switch>
+		</div>
+	);
+};
 
 export default Routes;
