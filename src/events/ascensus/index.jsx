@@ -77,6 +77,17 @@ const Ascensus = () => {
 											exhibit their spirit before judges, which should culminate
 											in an ingenious solution.
 										</div>
+
+										{/* <x-sign
+											style={{
+												fontSize: '30px',
+												textAlign: 'center',
+												margin: 'auto',
+												paddingTop: '10px',
+											}}
+										>
+											Prizes Worth &#8377; 1,85,000
+										</x-sign> */}
 										<div
 											className="row justify-content-center align-items-center"
 											style={{ margin: 'auto', paddingTop: '40px' }}
@@ -100,36 +111,6 @@ const Ascensus = () => {
 									</div>
 								</div>
 							</div>
-
-							<div
-								className="row justify-content-center align-items-center col-lg-12"
-								style={{ margin: 'auto' }}
-							>
-								<p
-									style={{
-										color: '#fff',
-										fontSize: '20px',
-										textShadow: '2px 2px 2px rgba(255, 165, 0,0.8)',
-										textAlign: 'center',
-									}}
-								>
-									Registrations Closes on 28 Feb'22 05:00 PM IST !
-								</p>
-								{/* <h5 style="color:#ed6286;padding-top:20px;text-shadow: 1px 1px 2px black, 0 0 1em #e1ecc4, 0 0 0.2em #ed6286;padding-bottom:20px">
-                  Registration ends on 8th February 2020.
-                </h5> */}
-							</div>
-
-							<x-sign
-								style={{
-									fontSize: '30px',
-									textAlign: 'center',
-									margin: 'auto',
-									paddingTop: '10px',
-								}}
-							>
-								Prizes Worth &#8377; 1,85,000
-							</x-sign>
 
 							<div
 								className="form-column col-lg-12 col-md-12 col-sm-12"
@@ -166,6 +147,7 @@ const Ascensus = () => {
 								</div>
 
 								<br />
+								{/* <p>Registrations Closes on 28 Feb'22 05:00 PM IST </p> */}
 
 								<p
 									className="font-weight-bold"

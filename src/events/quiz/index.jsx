@@ -120,7 +120,7 @@ const Quiz = () => {
 														</div>
 													</div>
 
-													<div
+													{/* <div
 														className="row justify-content-center align-items-center col-lg-12"
 														style={{ margin: 'auto' }}
 													>
@@ -145,7 +145,7 @@ const Quiz = () => {
 														}}
 													>
 														Prizes Worth &#8377; 1,10,000
-													</x-sign>
+													</x-sign> */}
 
 													{/* <div className="image-column col-lg-11 col-sm-12 col-sm-12">
 														<div

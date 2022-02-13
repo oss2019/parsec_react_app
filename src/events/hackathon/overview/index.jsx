@@ -122,7 +122,7 @@ const Overview = () => {
                 </h5> */}
                 </div>
 
-                <x-sign
+                {/* <x-sign
                   style={{
                     fontSize: "30px",
                     margin: "auto",
@@ -132,7 +132,7 @@ const Overview = () => {
                   }}
                 >
                   Prizes Worth &#8377; 11,23,000
-                </x-sign>
+                </x-sign> */}
 
                 <div
                   className="form-column col-lg-12 col-md-12 col-sm-12"

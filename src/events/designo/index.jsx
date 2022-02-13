@@ -101,7 +101,7 @@ const Designo = () => {
 								</div>
 							</div>
 
-							<div
+							{/* <div
 								className="row justify-content-center align-items-center col-lg-12"
 								style={{ margin: 'auto' }}
 							>
@@ -126,7 +126,7 @@ const Designo = () => {
 								}}
 							>
 								Prizes Worth &#8377; 1,15,000
-							</x-sign>
+							</x-sign> */}
 
 							<div
 								className="form-column col-lg-12 col-md-12 col-sm-12"
