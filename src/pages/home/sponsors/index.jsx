@@ -91,17 +91,18 @@ const Sponsors = () => {
 							className="row"
 							style={{ display: 'flex-wrap', justifyContent: 'center' }}
 						>
+							{/* HIGHLIGHT ASSOCIATE PARTNER */}
+							<SponsorSec
+								title={'IN ASSOCIATION WITH'}
+								sponsorData={associateSponsors}
+							/>
 							{/* HIGHLIGHT PLATINUM */}
 							<SponsorSec title="PLATINUM" sponsorData={platinumSponsors} />
 							{/* HIGHLIGHT GOLD */}
 							<SponsorSec title="GOLD" sponsorData={goldSponsors} />
 							{/* HIGHLIGHT SILVER */}
 							<SponsorSec title="SILVER" sponsorData={silverSponsor} />
-							{/* HIGHLIGHT ASSOCIATE PARTNER */}
-							<SponsorSec
-								title={'ASSOCIATE PARTNER'}
-								sponsorData={associateSponsors}
-							/>
+
 							{/* HIGHLIGHT INDUSTRIAL LIVE TRAINING AND INTERNSHIP PARTNER */}
 							<SponsorSec
 								title={'INDUSTRIAL LIVE TRAINING AND INTERNSHIP PARTNER'}
