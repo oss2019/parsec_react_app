@@ -102,6 +102,7 @@ const Routes = () => {
                 <Route path='/hackathon_judges' component={Judges} /> */}
 				{/* <Route path='/students' component={Students}/> */}
 				<Route path="/guardains" component={Guardains} />
+				<Route render={() => <Redirect to= {{pathname: '/'}} />} />
 			</Switch>
 		</div>
 	);
