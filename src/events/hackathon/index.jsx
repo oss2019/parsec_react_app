@@ -67,8 +67,13 @@ const Hackathon = () => {
 				</section> */}
 				<div style={{ marginTop: isSmallDevice ? '45px' : '0' }}>
 					<img
-						src="https://drive.google.com/uc?id=1KvfiSeMntQN5ki6VTPtGgydezgfaO9xK"
-						style={{ minWidth: '100vw' }}
+						src="https://drive.google.com/uc?id=15f75sPjME1b5EAdGTjMxtMRmtMt6pAEb"
+						style={{
+							minWidth:!isTabletorMobile ? '100vw': '',
+							minHeight: isTabletorMobile ? '24vh' : '',
+							objectFit: 'cover'
+						
+						}}
 					/>
 				</div>
 				<section
