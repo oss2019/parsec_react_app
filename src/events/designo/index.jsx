@@ -181,7 +181,7 @@ const Designo = () => {
 									}}
 								>
 									<strong>
-										The event starts at 2:00 PM on 5th March, 2022.
+										The event starts at 12:00 AM on 2nd March, 2022.
 									</strong>
 								</p>
 
