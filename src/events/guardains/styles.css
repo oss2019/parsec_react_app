@@ -89,3 +89,66 @@ x-sign:nth-of-type(1) {
 	text-decoration: none;
 	background-color: #12114a;
 }
+
+h4 {
+  float: left;
+  width: 50%;
+  height: 44px;
+  margin: 30px 0;
+  line-height: 24px;
+  text-align: center;
+  font-weight: normal;
+}
+@media screen and (max-width: 768px) {
+  h4 {
+    width: 100%;
+  }
+}
+
+a, a > span {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  line-height: 24px;
+}
+a:before, a:after, a > span:before, a > span:after {
+  content: "";
+  position: absolute;
+  transition: transform 0.5s ease;
+}
+
+.effect-7 {
+	display: inline-block;
+	overflow: hidden;
+  }
+  .effect-7:before {
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #22c7a8;
+	transform: translateX(-100%);
+  }
+  .effect-7:after {
+	content: attr(data-content);
+	left: 0;
+	top: 0;
+	width: 0;
+	margin: 12px;
+	color: white;
+	white-space: nowrap;
+	overflow: hidden;
+	transition: width 0.5s ease;
+  }
+  .effect-7 > span {
+	display: block;
+	margin: 2px;
+	padding: 10px;
+	background: black;
+  }
+  .effect-7:hover:before {
+	transform: translateX(0);
+  }
+  .effect-7:hover:after {
+	width: calc(100% - 24px);
+  }
