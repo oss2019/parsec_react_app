@@ -35,11 +35,11 @@ const Gallery = () => {
 						</ul>
 					</div>
 				</section>
-				<div className="container mb-5">
-					<h4 className="font-weight-light text-center text-lg-left mt-4 mb-0">
+				<div className="">
+					<h3 className="font-weight-light text-center text-lg-left mt-4 mb-0">
 						You owe our photography team a treat for each Instagram-level photo
 						you find (of yours ofc) xP
-					</h4>
+					</h3>
 					<br />
 
 					<hr className="mt-2 mb-5"></hr>

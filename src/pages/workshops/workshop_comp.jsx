@@ -35,7 +35,7 @@ const WorkshopComp = ({
 			}
 		);
 	};
-	const setOutBoundEvtForRegistration= (e) => {
+	const setOutBoundEvtForRegistration = (e) => {
 		// console.log(e.target.href);
 		// const link = e.target.href;
 		ReactGA.outboundLink(
@@ -111,32 +111,31 @@ const WorkshopComp = ({
 							{endDate}
 						</h5>
 					</div>
-					<div
-						style={{
-							display: 'flex',
-							flexDirection: 'row',
-							alignItems: 'flex-end',
-							justifyContent: 'flex-start',
-						}}
-					>
-						<h4 className="responsiveFont">Venue:&nbsp;&nbsp;</h4>
-						<h5 className="responsiveFont" style={{ fontWeight: 'normal' }}>
+					<h4 className="responsiveFont" style={{ margin: 0, padding: 0 }}>
+						Venue:
+						<span
+							style={{
+								marginLeft: '10px',
+								fontSize: '20px',
+								fontWeight: 'normal',
+							}}
+						>
 							{venue}
-						</h5>
-					</div>
-					<div
-						style={{
-							display: 'flex',
-							flexDirection: 'row',
-							alignItems: 'flex-end',
-							justifyContent: 'flex-start',
-						}}
-					>
-						<h4 className="responsiveFont">Fees:&nbsp;&nbsp;</h4>
-						<h5 style={{ fontWeight: 'normal' }} className="responsiveFont">
-							&#8377; {fee}
-						</h5>
-					</div>
+						</span>
+					</h4>
+					<h4 className="responsiveFont" style={{ margin: 0, padding: 0 }}>
+						Fees:
+						<span
+							style={{
+								marginLeft: '10px',
+								fontSize: '20px',
+								fontWeight: 'normal',
+							}}
+						>
+							&#8377;{fee}
+						</span>
+					</h4>
+					
 					<br />
 				</div>
 				<div style={{ display: 'flex', justifyContent: 'space-between' }}>

@@ -170,7 +170,7 @@ const Home = () => {
 									</div>
 								</div>
 								<br />
-								<h4 className="ml12 text-white mt-5">
+								<h3 className="ml12 text-white mt-5">
 									<span
 										className="ml12 letter"
 										id="intro-title"
@@ -189,7 +189,7 @@ const Home = () => {
 											// }
 										/>
 									</span>
-								</h4>
+								</h3>
 							</div>
 						</div>
 					</div>
@@ -217,10 +217,18 @@ const Home = () => {
 										className="countdown-content-text mb-100 wow fadeInUp"
 										data-wow-delay="300ms"
 									>
-										<h6 style={{ textAlign: 'left' }}>4th March</h6>
-										<h4 style={{ fontWeight: '450', textAlign: 'left' }}>
+										<h6 style={{ textAlign: 'left', color: '#f20487' }}>
+											4th March
+										</h6>
+										<h3
+											style={{
+												fontWeight: '450',
+												textAlign: 'left',
+												color: '#f20487',
+											}}
+										>
 											Coming in...
-										</h4>
+										</h3>
 									</div>
 								</div>
 
@@ -504,7 +512,7 @@ const Home = () => {
 
 				<Sponsors />
 				{/* <topScroll /> */}
-	
+
 				<Footer />
 				{/* </Suspense> */}
 			</div>

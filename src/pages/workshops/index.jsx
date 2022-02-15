@@ -105,7 +105,7 @@ const Workshop = () => {
 								title="Blockchain Tech and Application"
 								startDate="March 5, 2022, 10:00 AM"
 								endDate="March 6, 2022, 4:30 PM"
-								venue="Instructor-Led Online (Zoom)"
+								venue="Zoom"
 								fee="799.00"
 								registrationLink="https://rzp.io/l/7Kmit4R9q"
 								pdfLink={
