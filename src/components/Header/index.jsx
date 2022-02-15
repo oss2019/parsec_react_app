@@ -587,6 +587,15 @@ const Header = ({ active }) => {
 															Team
 														</a>
 													</li>
+													{/* <li className={`${active === 7 ? 'current' : ''}`}>
+														<a
+															href="/schedule"
+															target=""
+															onClick={GAPageTracker.bind(this, '/schedule')}
+														>
+															Schedule
+														</a>
+													</li> */}
 													{/* <li className={`${active === 8 ? 'current' : ''}`}>
 														<a href="/contact" target="">
 															Contact
