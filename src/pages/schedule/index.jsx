@@ -7,7 +7,7 @@ import {
 import 'react-vertical-timeline-component/style.min.css';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
-import evtTitle from '../../images/_events/evtTitle.jpg';
+import schedule from '../../images/background/schedule.jpg';
 
 const TimelineComp = ({ circleColor, title, description, date, time }) => {
 	return (
@@ -34,7 +34,7 @@ export default function Schedule() {
 				className="page-title"
 				id="page-title"
 				style={{
-					backgroundImage: `url(${evtTitle})`,
+					backgroundImage: `url(${schedule})`,
 					backgroundRepeat: 'no-repeat',
 					backgroundSize: 'cover',
 					boxShadow: ' 0 0 230px 0 black inset',
@@ -58,6 +58,7 @@ export default function Schedule() {
 			<div style={{ backgroundColor: '#efefef', overflow: 'auto' }}>
 				<br />
 				<h1 style={{ textAlign: 'center' }}>Parsec: A paradigm shift</h1>
+				<h1 style={{ textAlign: 'center' }}>(Inaguration)</h1>
 				<VerticalTimeline>
 					<TimelineComp
 						circleColor="rgb(33, 150, 243)"
