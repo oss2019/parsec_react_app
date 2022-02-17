@@ -223,6 +223,21 @@ const GAPageTracker = useRoutetracker("Page")
 						Team
 					</a>
 				</p>
+				<p
+					className={`elements text link ${active === 21 ? 'violet' : 'white'}`}
+					// onClick={() => history.push('/gallery')}
+				>
+					<a
+						className={`elements text link ${
+							active === 21 ? 'violet' : 'white'
+						}`}
+						href="/schedule"
+						style={{ textDecoration: 'none' }}
+						onClick={GAPageTracker.bind(this, '/schedule')}
+					>
+						Schedule
+					</a>
+				</p>
 				{/* <p
 					className={`elements text link ${active === 7 ? 'violet' : 'white'}`}
 					onClick={() => history.push('/team')}

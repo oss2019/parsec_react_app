@@ -561,14 +561,14 @@ const Header = ({ active }) => {
 															Speakers
 														</a>
 													</li> */}
-													<li className={`${active === 9 ? 'current' : ''}`}>
+													{/* <li className={`${active === 9 ? 'current' : ''}`}>
 														<a
 															href="/gallery"
 															onClick={GAPageTracker.bind(this, '/gallery')}
 														>
 															Gallery
 														</a>
-													</li>
+													</li> */}
 													<li className={`${active === 6 ? 'current' : ''}`}>
 														<a
 															href="/faq"
@@ -587,7 +587,7 @@ const Header = ({ active }) => {
 															Team
 														</a>
 													</li>
-													{/* <li className={`${active === 7 ? 'current' : ''}`}>
+													<li className={`${active === 21 ? 'current' : ''}`}>
 														<a
 															href="/schedule"
 															target=""
@@ -595,7 +595,7 @@ const Header = ({ active }) => {
 														>
 															Schedule
 														</a>
-													</li> */}
+													</li>
 													{/* <li className={`${active === 8 ? 'current' : ''}`}>
 														<a href="/contact" target="">
 															Contact

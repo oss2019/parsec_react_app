@@ -13,7 +13,7 @@ export default function Schedule() {
 	const [isVisible07, setIsVisible07] = useState(false);
 	return (
 		<div className="page-wrapper">
-			<Header />
+			<Header active={21} />
 			<section
 				style={{
 					background:
