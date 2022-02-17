@@ -48,10 +48,10 @@ const Timeline = () => {
 										<div className="float-right text-danger">
 											4:00 PM, March 4 , 2022
 										</div>
-										<h4 className="card-title text-danger">
+										<h3 className="card-title text-danger">
 											{/* <strong>Phase 1:</strong> */}
 											Opening Ceremony
-										</h4>
+										</h3>
 										<p
 											className="card-text text-dark"
 											style={{ fontSize: `medium` }}
@@ -94,7 +94,7 @@ const Timeline = () => {
 										<div className="float-right text-danger">
 											6:00 PM, March 4, 2022
 										</div>
-										<h4 className="card-title text-danger">Orientation</h4>
+										<h3 className="card-title text-danger">Orientation</h3>
 										<p
 											className="card-text text-dark"
 											style={{ fontSize: `medium` }}
@@ -132,10 +132,10 @@ const Timeline = () => {
 										<div className="float-right text-danger">
 											8:00 PM, March 4 , 2022
 										</div>
-										<h4 className="card-title text-danger">
+										<h3 className="card-title text-danger">
 											<strong>Phase 1:&nbsp;</strong>
 											Ideation
-										</h4>
+										</h3>
 										<p
 											className="card-text text-dark mb-1"
 											style={{ fontSize: `medium` }}
@@ -197,9 +197,9 @@ const Timeline = () => {
 										<div className="float-right text-danger">
 											9:00 AM, March 5, 2022
 										</div>
-										<h4 className="card-title text-danger">
+										<h3 className="card-title text-danger">
 											Speaker's Session Begin
-										</h4>
+										</h3>
 										<p
 											className="card-text text-dark"
 											style={{ fontSize: `medium` }}
@@ -238,10 +238,10 @@ const Timeline = () => {
 										<div className="float-right text-danger">
 											2:00 PM, March 5, 2022
 										</div>
-										<h4 className="card-title text-danger">
+										<h3 className="card-title text-danger">
 											<strong>Phase 2:&nbsp;</strong>
 											Innovation
-										</h4>
+										</h3>
 										<p
 											className="card-text text-dark mb-1"
 											style={{ fontSize: `medium` }}
@@ -279,10 +279,10 @@ const Timeline = () => {
 										<div className="float-right text-danger">
 											10:00 PM, March 5, 2022
 										</div>
-										<h4 className="card-title text-danger">
+										<h3 className="card-title text-danger">
 											<strong>Phase 3:&nbsp;</strong>
 											Power Hacking
-										</h4>
+										</h3>
 										<p
 											className="card-text text-dark mb-1"
 											style={{ fontSize: `medium` }}
@@ -318,10 +318,10 @@ const Timeline = () => {
 										<div className="float-right text-danger">
 											8:00 AM, March 6, 2022
 										</div>
-										<h4 className="card-title text-danger">
+										<h3 className="card-title text-danger">
 											<strong>Phase 4:&nbsp;</strong>
 											Submission of Prototype
-										</h4>
+										</h3>
 										<p
 											className="card-text text-dark mb-1"
 											style={{ fontSize: `medium` }}
@@ -358,10 +358,10 @@ const Timeline = () => {
 										<div className="float-right text-danger">
 											10:30 AM, March 6, 2022
 										</div>
-										<h4 className="card-title text-danger">
+										<h3 className="card-title text-danger">
 											{/* <strong>Phase 5:</strong> */}
 											Declaration of top 7 teams
-										</h4>
+										</h3>
 										<p
 											className="card-text text-dark mb-1"
 											style={{ fontSize: `medium` }}
@@ -396,10 +396,10 @@ const Timeline = () => {
 										<div className="float-right text-danger">
 											12:15 PM, March 6, 2022
 										</div>
-										<h4 className="card-title text-danger">
+										<h3 className="card-title text-danger">
 											<strong>Phase 5:&nbsp;</strong>
 											Submission deadline for presentations
-										</h4>
+										</h3>
 										<p
 											className="card-text text-dark mb-1"
 											style={{ fontSize: `medium` }}
@@ -436,10 +436,10 @@ const Timeline = () => {
 										<div className="float-right text-danger">
 											12:30 PM, March 6, 2022
 										</div>
-										<h4 className="card-title text-danger">
+										<h3 className="card-title text-danger">
 											<strong>Phase 6:&nbsp;</strong>
 											Giving presentations in front of judges
-										</h4>
+										</h3>
 										<p
 											className="card-text text-dark mb-1"
 											style={{ fontSize: `medium` }}
@@ -475,10 +475,10 @@ const Timeline = () => {
 										<div className="float-right text-danger">
 											2:30 PM, March 6, 2022
 										</div>
-										<h4 className="card-title text-danger">
+										<h3 className="card-title text-danger">
 											{/* <strong>Phase 5:</strong> */}
 											Speaker's Session
-										</h4>
+										</h3>
 										<p
 											className="card-text text-dark mb-1"
 											style={{ fontSize: `medium` }}
@@ -514,10 +514,10 @@ const Timeline = () => {
 										<div className="float-right text-danger">
 											3:30 PM, March 6, 2022
 										</div>
-										<h4 className="card-title text-danger">
+										<h3 className="card-title text-danger">
 											{/* <strong>Phase 5:</strong> */}
 											Prize Distribution
-										</h4>
+										</h3>
 										<p
 											className="card-text text-dark mb-1"
 											style={{ fontSize: `medium` }}
@@ -552,10 +552,10 @@ const Timeline = () => {
 										<div className="float-right text-danger">
 											5:00 PM, March 6, 2022
 										</div>
-										<h4 className="card-title text-danger">
+										<h3 className="card-title text-danger">
 											{/* <strong>Phase 5:</strong> */}
 											Closing Ceremony
-										</h4>
+										</h3>
 										<p
 											className="card-text text-dark mb-1"
 											style={{ fontSize: `medium` }}
