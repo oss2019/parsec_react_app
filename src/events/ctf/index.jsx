@@ -182,7 +182,7 @@ const Ctf = () => {
 													</h5> */}
                         </div>
 
-                        <div
+                        {/* <div
                           className="row justify-content-center align-items-center col-lg-12"
                           style={{ margin: "auto" }}
                         >
@@ -196,14 +196,12 @@ const Ctf = () => {
 							  paddingTop: '20px'
                             }}
                           >
-                            Registrations Closes on 9th February !
-                          </p>
-                          {/* <h5 style="color:#ed6286;padding-top:20px;text-shadow: 1px 1px 2px black, 0 0 1em #e1ecc4, 0 0 0.2em #ed6286;padding-bottom:20px">
-                  Registration ends on 8th February 2020.
-                </h5> */}
-                        </div>
+                            Registrations Closes on 5 March 2022 7:00 AM IST !
+                          </p> */}
+                          
+                        {/* </div> */}
 
-                        <x-sign
+                        {/* <x-sign
                           style={{
                             fontSize: "30px",
                             textAlign: "center",
@@ -213,7 +211,7 @@ const Ctf = () => {
                           }}
                         >
                           Prizes Worth &#8377; 70,000
-                        </x-sign>
+                        </x-sign> */}
 
                         
 

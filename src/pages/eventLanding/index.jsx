@@ -315,7 +315,7 @@ const EventLanding = () => {
 								evtTitle="DEVHACK 3.0"
 								evtUrl={'/hackathon'}
 								date="4 MARCH 2022"
-								time="8 PM"
+								time="8:00 PM"
 								mode="ONLINE"
 							/>
 							<EvtCard
@@ -323,7 +323,7 @@ const EventLanding = () => {
 								evtTitle="ALGOSTRIKE 2.0"
 								evtUrl={'/cp'}
 								date="5 MARCH 2022"
-								time="3 PM"
+								time="3:00 PM"
 								mode="ONLINE"
 							/>
 							<EvtCard
@@ -331,7 +331,7 @@ const EventLanding = () => {
 								evtTitle="VENIVIDIVICI 2.0"
 								evtUrl={'/ctf'}
 								date="4 MARCH 2022"
-								time="8 PM"
+								time="8:00 PM"
 								mode="ONLINE"
 							/>
 							<EvtCard
@@ -346,8 +346,8 @@ const EventLanding = () => {
 								evtLogo={designo}
 								evtTitle="DESIGNÕ"
 								evtUrl={'/designo'}
-								date="5 MARCH 2022"
-								time="2 PM"
+								date="2 MARCH 2022"
+								time="12:00 AM"
 								mode="ONLINE"
 							/>
 							<EvtCard
@@ -355,7 +355,7 @@ const EventLanding = () => {
 								evtTitle="ASCENSUS"
 								evtUrl={'/ascensus'}
 								date="28 FEB 2022"
-								time="8 PM"
+								time="8:00 PM"
 								mode="ONLINE"
 							/>
 							<EvtCard
@@ -365,7 +365,7 @@ const EventLanding = () => {
 								evtTitle="GUARDAINS"
 								evtUrl={'/guardains'}
 								date="5 MARCH 2022"
-								time="2 PM"
+								time="12:00 AM IST"
 								mode="ONLINE"
 							/>
 						</div>

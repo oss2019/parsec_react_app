@@ -115,14 +115,14 @@ const Overview = () => {
                       textAlign: "center",
                     }}
                   >
-                    Registrations Closes on 9th February !
+                    {/* Registrations Closes on 9th February ! */}
                   </p>
                   {/* <h5 style="color:#ed6286;padding-top:20px;text-shadow: 1px 1px 2px black, 0 0 1em #e1ecc4, 0 0 0.2em #ed6286;padding-bottom:20px">
                   Registration ends on 8th February 2020.
                 </h5> */}
                 </div>
 
-                <x-sign
+                {/* <x-sign
                   style={{
                     fontSize: "30px",
                     margin: "auto",
@@ -132,7 +132,7 @@ const Overview = () => {
                   }}
                 >
                   Prizes Worth &#8377; 11,23,000
-                </x-sign>
+                </x-sign> */}
 
                 <div
                   className="form-column col-lg-12 col-md-12 col-sm-12"

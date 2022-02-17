@@ -76,9 +76,21 @@ const Guardains = () => {
                       the maze independently in search of the Power stone and
                       bring it back to their base. These five Guardians each
                       have five unique special powers that will aid in the
-                      pursuit of the Power Stone.
+                      pursuit of the Power Stone. Problem statement released <strong><a href="https://docs.google.com/document/d/1A5G1X7uQRoZuxNsrjSVoHGqIZUIanb3GAMai_SLHTA8/edit?usp=sharing" target="_blank" style={{color:'#22c7a8'}}>here.</a></strong>
                     </div>
                     <br />
+
+
+					
+                    {/* <div
+                      className="row justify-content-center align-items-center"
+                      style={{ margin: "auto" }}
+                    >
+						<h2><a className="effect-7" href="https://docs.google.com/document/d/1A5G1X7uQRoZuxNsrjSVoHGqIZUIanb3GAMai_SLHTA8/edit?usp=sharing"><span style = {{color:'white'}}>PROBLEM STATEMENT</span></a></h2>
+                    
+                    </div> */}
+					{/* <h4><a className="effect-7" href="https://docs.google.com/document/d/1A5G1X7uQRoZuxNsrjSVoHGqIZUIanb3GAMai_SLHTA8/edit?usp=sharing" target="_blank"><span style = {{color:'white'}}>PROBLEM STATEMENT</span></a></h4> */}
+
                     <br />
                     <div
                       className="row justify-content-center align-items-center"
@@ -104,33 +116,33 @@ const Guardains = () => {
                 </div>
               </div>
 
-              <div
-                className="row justify-content-center align-items-center col-lg-12"
-                style={{ margin: "auto" }}
-              >
-                <p
-                  style={{
-                    color: "#fff",
-                    fontSize: "20px",
-                    textShadow: "2px 2px 2px rgba(34, 199, 168,0.7)",
-                    textAlign: "center",
-                  }}
-                >
-                  Registrations Closes on 9th February !
-                </p>
-              </div>
+              {/* <div
+								className="row justify-content-center align-items-center col-lg-12"
+								style={{ margin: 'auto' }}
+							>
+								<p
+									style={{
+										color: '#fff',
+										fontSize: '20px',
+										textShadow: '2px 2px 2px rgba(34, 199, 168,0.7)',
+										textAlign: 'center',
+									}}
+								>
+									Registrations Closes on 04 Mar'22 12:00 AM IST !
+								</p>
+							</div>
 
-              <x-sign
-                style={{
-                  fontSize: "30px",
-                  textAlign: "center",
-                  margin: "auto",
-                  paddingTop: "10px",
-				  paddingBottom: '15px'
-                }}
-              >
-                Prizes Worth &#8377; 1,15,000
-              </x-sign>
+							<x-sign
+								style={{
+									fontSize: '30px',
+									textAlign: 'center',
+									margin: 'auto',
+									paddingTop: '10px',
+									paddingBottom: '15px',
+								}}
+							>
+								Prizes Worth &#8377; 1,15,000
+							</x-sign> */}
 
               <div
                 className="form-column col-lg-12 col-md-12 col-sm-12"
@@ -156,7 +168,7 @@ const Guardains = () => {
                     >
                       <div className="row">
                         <div className="col-md-6" style={{ color: "#22c7a8" }}>
-                          Duration : 1 Day
+                          Duration : 3 Days
                         </div>
                         <div className="col-md-6" style={{ color: "#22c7a8" }}>
                           Team Size : 1-2 Members
@@ -200,7 +212,7 @@ const Guardains = () => {
                     // style={{color : '#c4c4c4'}}
                     style={{ color: "#22c7a8" }}
                   >
-                    Contest starts: 5 March 2022, 12:00 AM IST
+                    Contest starts: 3 March 2022, 2:00 PM IST
                     {/* <strong> - </strong> */}
                   </li>
                   <li
