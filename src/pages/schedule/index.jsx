@@ -32,7 +32,7 @@ export default function Schedule() {
 			<section
 				style={{
 					background:
-						'url(https://bigthink.com/wp-content/uploads/2021/07/134458-134459.png?lb=1536,864)',
+						'url(https://drive.google.com/uc?id=1wc71TAR24D_qbSyi-H-m3jN8NoLfJ1uP)',
 					backgroundSize: 'cover',
 					backgroundRepeat: 'no-repeat',
 					boxShadow: '100px 100px 100px 100px rgba(255,255,255,0.2) inset',
@@ -74,7 +74,7 @@ export default function Schedule() {
 								style={{
 									color: 'white',
 									transitionDelay: '1s',
-									textAlign: isSmallDevice? 'center': 'left',
+									textAlign: isSmallDevice ? 'center' : 'left',
 								}}
 							>
 								<br />
@@ -143,9 +143,7 @@ export default function Schedule() {
 									Events
 								</h3>
 
-								<h5 style={h5Style}>
-									DESIGNO PRELIMS BEGINS: 12:00 AM
-								</h5>
+								<h5 style={h5Style}>DESIGNO PRELIMS BEGINS: 12:00 AM</h5>
 							</div>
 						)}
 					</div>
@@ -173,9 +171,7 @@ export default function Schedule() {
 									Events
 								</h3>
 
-								<h5 style={h5Style}>
-									GUARDAINS KICKSTARTS: 02:00 PM
-								</h5>
+								<h5 style={h5Style}>GUARDAINS KICKSTARTS: 02:00 PM</h5>
 							</div>
 						)}
 					</div>
@@ -202,21 +198,13 @@ export default function Schedule() {
 								<h3 style={{ color: 'inherit', textAlign: 'center' }}>
 									Events
 								</h3>
-								<h5 style={h5Style}>
-									DESIGNO PRELIMS ENDS: 12:00 AM
-								</h5>
-								<h5 style={h5Style}>
-									DEVHACK OPENING CEREMONY: 04:00 PM
-								</h5>
+								<h5 style={h5Style}>DESIGNO PRELIMS ENDS: 12:00 AM</h5>
+								<h5 style={h5Style}>DEVHACK OPENING CEREMONY: 04:00 PM</h5>
 								<h5 style={h5Style}>
 									DEVHACK ORIENTATION SESSION: 06:00 PM TO 7:30 PM
 								</h5>
-								<h5 style={h5Style}>
-									VENIVIDIVICI KICKSOFF: 08:00 PM
-								</h5>
-								<h5 style={h5Style}>
-									DEVHACK IDEATION PHASE: 08:00 PM
-								</h5>
+								<h5 style={h5Style}>VENIVIDIVICI KICKSOFF: 08:00 PM</h5>
+								<h5 style={h5Style}>DEVHACK IDEATION PHASE: 08:00 PM</h5>
 							</div>
 						)}
 					</div>
@@ -248,24 +236,16 @@ export default function Schedule() {
 								<h5 style={h5Style}>
 									ASCENSUS PRESENTATION ROUND KICKSOFF: 06:00 AM
 								</h5>
-								<h5 style={h5Style}>
-									VENIVIDIVICI ENDS: 08:00 AM
-								</h5>
-								<h5 style={h5Style}>
-									DEVHACK SPEAKER SESSION: 11:00 AM
-								</h5>
+								<h5 style={h5Style}>VENIVIDIVICI ENDS: 08:00 AM</h5>
+								<h5 style={h5Style}>DEVHACK SPEAKER SESSION: 11:00 AM</h5>
 								<h5 style={h5Style}>
 									DEVHACK IDEATION JUDGING BEGINS: 11:30 AM
 								</h5>
-								<h5 style={h5Style}>
-									QUIZ PRELIMS: 12:00 PM TO 02:00 PM
-								</h5>
+								<h5 style={h5Style}>QUIZ PRELIMS: 12:00 PM TO 02:00 PM</h5>
 								<h5 style={h5Style}>
 									DEVHACK INNOVATION PHASE KICKSOFF: 02:00 PM
 								</h5>
-								<h5 style={h5Style}>
-									DESIGNO FINALS: 02:00 PM TO 08:00 PM
-								</h5>
+								<h5 style={h5Style}>DESIGNO FINALS: 02:00 PM TO 08:00 PM</h5>
 								<h5 style={h5Style}>
 									DEVHACK POWER HACKING PHASE KICKSOFF: 10:00 PM
 								</h5>
@@ -299,30 +279,20 @@ export default function Schedule() {
 								<h5 style={h5Style}>
 									DEVHACK SUBMISSION OF PROTOTYPE: 08:00 PM
 								</h5>
-								<h5 style={h5Style}>
-									QUIZ FINALS: 10:00 AM TO 12:30 PM
-								</h5>
+								<h5 style={h5Style}>QUIZ FINALS: 10:00 AM TO 12:30 PM</h5>
 								<h5 style={h5Style}>
 									DEVHACK DECLARATION OF TOP 7 TEAMS: 10:30 AM
 								</h5>
-								<h5 style={h5Style}>
-									ALGOSTRIKE FINAL SCOREBOARD: 11:30 AM
-								</h5>
+								<h5 style={h5Style}>ALGOSTRIKE FINAL SCOREBOARD: 11:30 AM</h5>
 								<h5 style={h5Style}>
 									DEVHACK SUBMISSION OF PRESENTATION: 12:15 PM
 								</h5>
 								<h5 style={h5Style}>
 									DEVHACK PRESENTATION OF TOP 7 TEAMS: 12:30 PM
 								</h5>
-								<h5 style={h5Style}>
-									DEVHACK SPEAKER SESSION: 02:30 PM
-								</h5>
-								<h5 style={h5Style}>
-									DEVHACK PRIZE DISTRIBUTION: 03:30 PM
-								</h5>
-								<h5 style={h5Style}>
-									DEVHACK CLOSING CEREMONY: 05:30 PM
-								</h5>
+								<h5 style={h5Style}>DEVHACK SPEAKER SESSION: 02:30 PM</h5>
+								<h5 style={h5Style}>DEVHACK PRIZE DISTRIBUTION: 03:30 PM</h5>
+								<h5 style={h5Style}>DEVHACK CLOSING CEREMONY: 05:30 PM</h5>
 							</div>
 						)}
 					</div>
