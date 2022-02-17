@@ -50,6 +50,36 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
   <title>Parsec</title>
+  <style>
+    :root {
+      /* scrollbar-color: transparent transparent; */
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      /* box-shadow: inset 0 0 5px grey;  */
+      /* border-radius: 10px; */
+      background: rgba(255, 255, 255, 0);
+      display: none;
+      opacity: 0;
+      z-index: -10;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  </style>
 </head>
 
 <body>
