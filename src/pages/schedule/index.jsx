@@ -28,6 +28,7 @@ export default function Schedule() {
 	const h5Style = { color: 'inherit',fontSize:isSmallDevice? '15px':''  }
 	return (
 		<div className="page-wrapper">
+			<div className='preloader'></div>
 			<Header active={21} />
 			<section
 				style={{

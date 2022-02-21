@@ -5,6 +5,17 @@ const Prizes = () => {
 	return (
 		<div>
 			<h1 style={{ textAlign: 'center', color: '#12114a' }}>Prizes</h1>
+			<x-sign
+				style={{
+					fontSize: '30px',
+					margin: 'auto',
+					paddingBottom: '0px',
+					textAlign: 'center',
+					color: 'black',
+				}}
+			>
+				Prizes Worth &#8377; 12 Lakhs
+			</x-sign>
 			<hr />
 			<hr />
 			<h3>1st Prize</h3>
@@ -232,18 +243,34 @@ const Prizes = () => {
 			<hr />
 			<h3>All Participants will get: </h3>
 			<ul>
-				<li>	<strong style={{ color: '#12114a', fontSize: '2rem' }}>
+				<li>
+					{' '}
+					<strong style={{ color: '#12114a', fontSize: '2rem' }}>
 						&#8226;&nbsp;
-					</strong> 30 day free trial from Echo 3D.</li>
-				<li>	<strong style={{ color: '#12114a', fontSize: '2rem' }}>
+					</strong>{' '}
+					30 day free trial from Echo 3D.
+				</li>
+				<li>
+					{' '}
+					<strong style={{ color: '#12114a', fontSize: '2rem' }}>
 						&#8226;&nbsp;
-					</strong> 90 day extended free trial from Balsamiq</li>
-				<li>	<strong style={{ color: '#12114a', fontSize: '2rem' }}>
+					</strong>{' '}
+					90 day extended free trial from Balsamiq
+				</li>
+				<li>
+					{' '}
+					<strong style={{ color: '#12114a', fontSize: '2rem' }}>
 						&#8226;&nbsp;
-					</strong> 5 years free Taskade Unlimited Subscription</li>
-				<li>	<strong style={{ color: '#12114a', fontSize: '2rem' }}>
+					</strong>{' '}
+					5 years free Taskade Unlimited Subscription
+				</li>
+				<li>
+					{' '}
+					<strong style={{ color: '#12114a', fontSize: '2rem' }}>
 						&#8226;&nbsp;
-					</strong> Other exciting prizes</li>
+					</strong>{' '}
+					Other exciting prizes
+				</li>
 			</ul>
 			{/* <Grid container spacing={6}>
 				<Grid item xs={12}>
