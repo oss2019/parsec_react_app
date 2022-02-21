@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy, Suspense, useState, useEffect } from "react";
 import Header from "../../components/Header";
 import "./styles.css";
 import "../../css/style.css";
@@ -9,6 +9,46 @@ import EventsBackground from "../../components/eventsBackground";
 import { useMediaQuery } from "react-responsive";
 
 const Ctf = () => {
+
+  var y = window.pageYOffset;
+  // const [up, setUp] = useState(false);
+  var up = false;
+  useEffect(() => {
+    document.addEventListener("scroll", () => {
+      if (window.pageYOffset === 0) {
+        document.getElementById("bottomNav").style.bottom = "0px";
+        document.getElementById("eventdetail").style.bottom = "0px";
+      } else {
+        document.getElementById("bottomNav").style.bottom = "-100px";
+        document.getElementById("eventdetail").style.bottom = "-100px";
+      }
+    });
+  }, []);
+
+  // var y = window.pageYOffset;
+  // // const [up, setUp] = useState(false);
+  // var up = false;
+  // useEffect(() => {
+  //   document.addEventListener("scroll", () => {
+  //     var yoffset = window.pageYOffset;
+  //     console.log(yoffset, y);
+  //     if (yoffset > y) {
+  //       y = yoffset;
+  //       up = false;
+  //     } else {
+  //       y = yoffset;
+  //       up = true;
+  //     }
+  //     if (up) {
+  //       document.getElementById("bottomNav").style.bottom = "0px";
+  //       document.getElementById("eventdetail").style.bottom = "0px";
+  //     } else {
+  //       document.getElementById("bottomNav").style.bottom = "-100px";
+  //       document.getElementById("eventdetail").style.bottom = "-100px";
+  //     }
+  //   });
+  // }, []);
+
   const isSmallDevice = useMediaQuery({
     query: "(max-width:1026px)",
   });
@@ -29,14 +69,101 @@ const Ctf = () => {
             alignItems: "flex-start",
           }}
         >
-          <img
+          <div
+            style={{
+              //   backgroundImage:
+            //       "url(" +
+            //       "https://drive.google.com/uc?id=1GAn_A6lnppbmjMIN-UpaWnr-gxEXotsq" +
+            //       ")",
+              height: "100vh",
+              width: "100vw",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              opacity: "0.9",
+            }}
+          >
+            <div
+              style={{
+                paddingTop: "25vh",
+              }}
+            >
+              <h1
+                className="px-3 py-2 w-100 text-center"
+                style={{
+                  fontFamily: "poppins",
+                  color: "#e4e4e4",
+                  textShadow:
+                    "1px 1px 2px black, 0 0 1em #0dcaf0, 0 0 0.2em #0dcaf0",
+                  fontSize: "10vw",
+                  letterSpacing: "0.1em",
+                }}
+              >
+                VeniVidiVici
+              </h1>
+              <h2
+                className="px-3 py-2 w-100 text-center"
+                style={{
+                  fontFamily: "poppins",
+                  color: "#e4e4e4",
+                  fontSize: "4.5vw",
+                  // letterSpacing: "0.5em",
+                  textShadow:
+                    "1px 1px 2px black, 0 0 0.5em #0dcaf0, 0 0 0.2px #0dcaf0",
+                }}
+              >
+                CTF Security Challenge
+              </h2>
+            </div>
+          </div>
+          <div
+              id="bottomNav"
+              style={{
+                width: "60%",
+                left: "20%",
+                color: "white",
+                bottom: "0px",
+                margin: "auto",
+                alignItems: "center",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <div
+                style={{
+                  width: "95vw",
+                  height: "60px",
+                  background: "rgba(0,0,0,0.7)",
+
+                  border: "1px solid white",
+                  borderRadius: "5px",
+                  borderTopRightRadius: "200px",
+                  borderTopLeftRadius: "200px",
+                  display: "grid",
+                  justifyContent: "center",
+                }}
+              >
+                <div
+                  style={{
+                    margin: "auto",
+                    padding: "auto",
+                    textAlign: "center",
+                    fontSize: "3vw",
+                    textShadow: '1px 1px 2px black, 0 0 0.5em #0dcaf0, 0 0 0.2px #0dcaf0',
+                  }}
+                >
+                  Prizes worth : 10k
+                </div>
+              </div>
+            </div>
+          {/* <img
             src="https://drive.google.com/uc?id=1GAn_A6lnppbmjMIN-UpaWnr-gxEXotsq"
             style={{
               minWidth: "100vw",
               maxHeight: "70vh",
               objectFit: "contain",
             }}
-          />
+          /> */}
         </div>
         <section
           style={{
@@ -64,7 +191,7 @@ const Ctf = () => {
                   <div className="auto-container">
                     <div className="login-form">
                       <div className="pt-4 row clearfix">
-                        <h1
+                        {/* <h1
                           className="px-3 py-2 w-100 text-center text-info"
                           style={{ fontFamily: `poppins` }}
                         >
@@ -75,7 +202,7 @@ const Ctf = () => {
                           style={{ fontFamily: `poppins` }}
                         >
                           CTF Security Challenge
-                        </h2>
+                        </h2> */}
                         <div className="form-column col-lg-12 col-md-12 col-sm-12">
                           <div className="py-0 px-2">
                             <div className="title-box">
@@ -198,7 +325,7 @@ const Ctf = () => {
                           >
                             Registrations Closes on 5 March 2022 7:00 AM IST !
                           </p> */}
-                          
+
                         {/* </div> */}
 
                         {/* <x-sign
@@ -212,8 +339,6 @@ const Ctf = () => {
                         >
                           Prizes Worth &#8377; 70,000
                         </x-sign> */}
-
-                        
 
                         <div
                           className="form-column col-lg-12 col-md-12 col-sm-12"
