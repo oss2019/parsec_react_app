@@ -364,8 +364,8 @@ const EventLanding = () => {
 								}
 								evtTitle="GUARDAINS"
 								evtUrl={'/guardains'}
-								date="5 MARCH 2022"
-								time="12:00 AM IST"
+								date="3 MARCH 2022"
+								time="2:00 PM IST"
 								mode="ONLINE"
 							/>
 						</div>

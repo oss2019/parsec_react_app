@@ -152,3 +152,41 @@ a:before, a:after, a > span:before, a > span:after {
   .effect-7:hover:after {
 	width: calc(100% - 24px);
   }
+
+/* .scroll{
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+	top: 0;
+    left: 0;
+    overflow-y: auto;
+    height: 100vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+}
+
+.scroll-area{
+	scroll-snap-align: start;
+	height: 100vh;
+} */
+
+
+#bottomNav {
+	width: 50%;
+	position: fixed;
+	display: block;
+	transition: bottom 0.3s;
+	z-index: 100;
+	
+}
+
+#eventdetail {
+	padding: auto;
+	width: 60%;
+	/* height: 100%; */
+	padding-top: 1vw;
+	padding-bottom: 0.5vw;
+	position: fixed;
+	text-align: center;
+	transition: bottom 0.3s;
+	z-index: 100;
+}

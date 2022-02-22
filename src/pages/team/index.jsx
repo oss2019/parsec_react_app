@@ -169,7 +169,7 @@ const Team = () => {
 
 						<div className="row">
 							<div className="sec-title">
-								<h4>Devhack Team</h4>
+								<h3>Devhack Team</h3>
 							</div>
 							{/* <FadeIn className="row"> */}
 							<div className="row">
@@ -223,7 +223,7 @@ const Team = () => {
 							</div>
 
 							<div className="sec-title">
-								<h4>Algostrike Team</h4>
+								<h3>Algostrike Team</h3>
 							</div>
 							{/* <FadeIn className="row"> */}
 							<div className="row">
@@ -276,7 +276,7 @@ const Team = () => {
 							</div>
 
 							<div className="sec-title">
-								<h4>VeniVidiVici Team</h4>
+								<h3>VeniVidiVici Team</h3>
 							</div>
 							{/* <FadeIn className="row"> */}
 							<div className="row">
@@ -329,7 +329,7 @@ const Team = () => {
 							</div>
 
 							<div className="sec-title">
-								<h4>Designõ Team</h4>
+								<h3>Designõ Team</h3>
 							</div>
 							{/* <FadeIn className="row"> */}
 							<div className="row">
@@ -382,7 +382,7 @@ const Team = () => {
 							</div>
 
 							<div className="sec-title">
-								<h4>Ascensus Team</h4>
+								<h3>Ascensus Team</h3>
 							</div>
 							{/* <FadeIn className="row"> */}
 							<div className="row">
@@ -435,7 +435,7 @@ const Team = () => {
 							</div>
 
 							<div className="sec-title">
-								<h4>Quiz Team</h4>
+								<h3>Quiz Team</h3>
 							</div>
 							{/* <FadeIn className="row"> */}
 							<div className="row">
@@ -487,7 +487,7 @@ const Team = () => {
 								))}
 							</div>
 							<div className="sec-title">
-								<h4>GuardAIns Team</h4>
+								<h3>GuardAIns Team</h3>
 							</div>
 							{/* <FadeIn className="row"> */}
 							<div className="row">
