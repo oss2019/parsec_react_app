@@ -8,6 +8,7 @@ import quizTitleBackground from "../../images/resource/19629.jpg";
 import Footer from "../../components/Footer";
 import EventsBackground from "../../components/eventsBackground";
 import { useMediaQuery } from "react-responsive";
+
 const Quiz = () => {
 
   var y = window.pageYOffset;
@@ -78,10 +79,8 @@ const Quiz = () => {
 
           <div
             style={{
-			//   backgroundImage:
-            //       "url(" +
-            //       "https://drive.google.com/uc?id=1Ns9Sv-U6ATfjO4z6UmDzdYLPJvDV3beq" +
-            //       ")",
+              backgroundImage:
+              "url(https://drive.google.com/uc?id=1UOihuRvc7Ix3zL5gxh6V_41FiGU8s993)",
               height: "100vh",
               width: "100vw",
               backgroundPosition: "center",
@@ -115,28 +114,29 @@ const Quiz = () => {
           <div
             id="bottomNav"
             style={{
-              width: "60%",
-              left: "20%",
+              // width: "60%",
               color: "white",
               bottom: "0px",
               margin: "auto",
               alignItems: "center",
               display: "flex",
               justifyContent: "center",
+              backgroundImage: `url(https://drive.google.com/uc?id=18zqej-hL7IjCcYqeAm6eDlZpt0h4yT7Y)`
+
             }}
           >
             <div
               style={{
-                width: "95vw",
-                height: "60px",
-                background: "rgba(0,0,0,0.7)",
+                // width: "95vw",
+                // height: "60px",
+                // background: "rgba(0,0,0,0.7)",
 
-                border: "1px solid white",
-                borderRadius: "5px",
-                borderTopRightRadius: "200px",
-                borderTopLeftRadius: "200px",
-                display: "grid",
-                justifyContent: "center",
+                // border: "1px solid white",
+                // borderRadius: "5px",
+                // borderTopRightRadius: "200px",
+                // borderTopLeftRadius: "200px",
+                // display: "grid",
+                // justifyContent: "center",
               }}
             >
               <div

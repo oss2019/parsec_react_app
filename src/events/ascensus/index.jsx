@@ -58,28 +58,17 @@ const Ascensus = () => {
             alignItems: "flex-start",
           }}
         >
-          {/* <img
-            src="https://drive.google.com/uc?id=1esMbRcdpk17hITB6ylmAW6GU14abe19Z"
-            style={{
-              minWidth: "100vw",
-              maxHeight: "70vh",
-              objectFit: "contain",
-            }}
-          /> */}
-
           <div
             style={{
               backgroundImage:
-                "url(https://drive.google.com/uc?id=10N3YCO1t1oGCSs2JU8S60inoxIxKnkCO)",
+                "url(https://drive.google.com/uc?id=1UOihuRvc7Ix3zL5gxh6V_41FiGU8s993)",
               height: "100vh",
               width: "100vw",
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
               opacity: "0.9",
-              WebkitBoxShadow: "0px 30px 20px 19px green",
-              MozBoxShadow: "0px 30px 20px 19px green",
-              boxShadow: '0px 30px 20px 19px green '
+
             }}
           >
             <div

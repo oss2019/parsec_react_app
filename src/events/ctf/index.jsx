@@ -71,10 +71,8 @@ const Ctf = () => {
         >
           <div
             style={{
-              //   backgroundImage:
-            //       "url(" +
-            //       "https://drive.google.com/uc?id=1GAn_A6lnppbmjMIN-UpaWnr-gxEXotsq" +
-            //       ")",
+              backgroundImage:
+                "url(https://drive.google.com/uc?id=1UOihuRvc7Ix3zL5gxh6V_41FiGU8s993)",
               height: "100vh",
               width: "100vw",
               backgroundPosition: "center",

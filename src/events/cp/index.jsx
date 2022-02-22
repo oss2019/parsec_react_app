@@ -113,6 +113,7 @@ const Cp = () => {
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
               opacity: "0.9",
+              backgroundImage:"url(https://drive.google.com/uc?id=1UOihuRvc7Ix3zL5gxh6V_41FiGU8s993)"
             }}
           >
             <div

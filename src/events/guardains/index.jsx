@@ -71,10 +71,8 @@ const Guardains = () => {
           >
             <div
               style={{
-                // backgroundImage:
-                //   "url(" +
-                //   "https://drive.google.com/uc?id=1_XN1DbPzXRnDzHHuPnUJnEEBdiOCp7SB" +
-                //   ")",
+                backgroundImage:
+                "url(https://drive.google.com/uc?id=1UOihuRvc7Ix3zL5gxh6V_41FiGU8s993)",
                 height: "100vh",
                 width: "100vw",
                 backgroundPosition: "center",
