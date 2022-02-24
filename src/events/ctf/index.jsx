@@ -139,7 +139,7 @@ const Ctf = () => {
 													>
 														<div className="btn-box text-center">
 															<a
-																href="https://vq27el0vrvo.typeform.com/to/ppwjqUt5"
+																href="https://forms.gle/93wrwNAX4EnvMiiSA"
 																className="theme-btn btn-style-four button2 text-center"
 																id="btncs2"
 																style={{
