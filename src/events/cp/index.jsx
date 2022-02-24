@@ -1,17 +1,17 @@
-import React, { lazy, Suspense, useState, useEffect } from "react";
-import Header from "../../components/Header";
-import "./styles.css";
-import "../../css/style.css";
-import "../../css/bootstrap.css";
-import "../../css/responsive.css";
-import Footer from "../../components/Footer";
-import EventsBackground from "../../components/eventsBackground";
+import React, { lazy, Suspense, useState, useEffect } from 'react';
+import Header from '../../components/Header';
+import './styles.css';
+import '../../css/style.css';
+import '../../css/bootstrap.css';
+import '../../css/responsive.css';
+import Footer from '../../components/Footer';
+import EventsBackground from '../../components/eventsBackground';
 // import '../../css/prices.css'
 // import '../../css/winners.css'
-import { useMediaQuery } from "react-responsive";
+import { useMediaQuery } from 'react-responsive';
 const Cp = () => {
-  const isSmallDevice = useMediaQuery({ query: "(max-width:1026px)" });
-  return (
+	const isSmallDevice = useMediaQuery({ query: '(max-width:1026px)' });
+	return (
 		<React.Fragment>
 			{/* <EventsBackground /> */}
 			<div className="page-wrapper">
@@ -114,8 +114,8 @@ const Cp = () => {
 											contest is that the participants have to formulate
 											solutions to a multitude of fascinating engineering
 											problems utilizing heuristic algorithms. Grab this chance
-											to bag prizes worth <strong>2 Lakhs!</strong>{' '}
-											Get set algo!
+											to bag prizes worth <strong>2 Lakhs!</strong> Get set
+											algo!
 										</div>
 										<br />
 										<br />
@@ -286,7 +286,8 @@ const Cp = () => {
 										>
 											Prizes Distributions.
 										</a>
-									</strong><br/>
+									</strong>
+									<br />
 									Still have queries? Reach out to us on our Telegram{' '}
 									<a
 										href="https://t.me/+j4lRweNxm200OWNl"
@@ -311,7 +312,7 @@ const Cp = () => {
 			<Footer />
 		</React.Fragment>
 	);
-  // }
+	// }
 };
 
 export default Cp;

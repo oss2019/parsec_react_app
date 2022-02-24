@@ -1,16 +1,16 @@
-import React from "react";
-import Header from "../../components/Header";
-import "./styles.css";
-import "../../css/style.css";
-import "../../css/bootstrap.css";
-import "../../css/responsive.css";
-import quizTitleBackground from "../../images/resource/19629.jpg";
-import Footer from "../../components/Footer";
-import EventsBackground from "../../components/eventsBackground";
-import { useMediaQuery } from "react-responsive";
+import React from 'react';
+import Header from '../../components/Header';
+import './styles.css';
+import '../../css/style.css';
+import '../../css/bootstrap.css';
+import '../../css/responsive.css';
+import quizTitleBackground from '../../images/resource/19629.jpg';
+import Footer from '../../components/Footer';
+import EventsBackground from '../../components/eventsBackground';
+import { useMediaQuery } from 'react-responsive';
 const Quiz = () => {
-  const isSmallDevice = useMediaQuery({ query: "(max-width:1026px)" });
-  return (
+	const isSmallDevice = useMediaQuery({ query: '(max-width:1026px)' });
+	return (
 		<React.Fragment>
 			<div className="page-wrapper">
 				<div className="preloader"></div>
@@ -83,7 +83,8 @@ const Quiz = () => {
 																	Under <strong>PARSEC 2022</strong>, the Quiz
 																	Club of IIT Dharwad is conducting a
 																	<strong> Science and Technology Quiz </strong>{' '}
-																	for High School and college students. The questions are
+																	for High School and college students in and
+																	around Dharwad-Hubli. The questions are
 																	designed to investigate, rather than to simply
 																	arrive at an answer, and specifically to
 																	promote debate and discussion among teams

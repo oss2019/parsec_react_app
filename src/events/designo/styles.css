@@ -112,3 +112,24 @@ x-sign:nth-of-type(1) {
     transform: perspective(400px) rotateY(-50deg);
     padding-right: 2%;
 }
+
+#bottomNav {
+	width: 50%;
+	position: fixed;
+	display: block;
+	transition: bottom 0.3s;
+	z-index: 100;
+	
+}
+
+#eventdetail {
+	padding: auto;
+	width: 60%;
+	/* height: 100%; */
+	padding-top: 1vw;
+	padding-bottom: 0.5vw;
+	position: fixed;
+	text-align: center;
+	transition: bottom 0.3s;
+	z-index: 100;
+}

@@ -1,15 +1,15 @@
-import React, { lazy, Suspense, useState, useEffect } from "react";
-import Header from "../../components/Header";
-import "./styles.css";
-import "../../css/style.css";
-import "../../css/bootstrap.css";
-import "../../css/responsive.css";
-import Footer from "../../components/Footer";
-import EventsBackground from "../../components/eventsBackground";
-import { useMediaQuery } from "react-responsive";
+import React, { lazy, Suspense, useState, useEffect } from 'react';
+import Header from '../../components/Header';
+import './styles.css';
+import '../../css/style.css';
+import '../../css/bootstrap.css';
+import '../../css/responsive.css';
+import Footer from '../../components/Footer';
+import EventsBackground from '../../components/eventsBackground';
+import { useMediaQuery } from 'react-responsive';
 const Ascensus = () => {
-  const isSmallDevice = useMediaQuery({ query: "(max-width:1026px)" });
-  return (
+	const isSmallDevice = useMediaQuery({ query: '(max-width:1026px)' });
+	return (
 		<React.Fragment>
 			{/* <EventsBackground /> */}
 			<div className="page-wrapper">
