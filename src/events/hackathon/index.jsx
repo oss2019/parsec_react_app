@@ -15,6 +15,8 @@ import { Link } from 'react-router-dom';
 import hackathonBackground from '../../images/events/devhack/devhack_banner.png';
 import EventsBackground from '../../components/eventsBackground';
 import Prizes from './prizes/prizes';
+import Tracks from './tracks/index';
+
 const Hackathon = () => {
 	const isTabletorMobile = useMediaQuery({
 		query: '(max-width: 500px)',
@@ -211,6 +213,31 @@ const Hackathon = () => {
 														Prizes
 													</div>
 												</li>
+											)}
+											{hack === 6 ? (
+												<li className="tab-btn active-btn" data-tab="#timeline">
+													<div
+														onClick={renderCtrl.bind(this, 6)}
+														style={{
+															backgroundColor: '#ffff',
+														}}
+													>
+														{/* <Link to={'hackathon_overview'}>Overview</Link> */}
+														Tracks
+													</div>
+												</li>
+											) : (
+												<li className="tab-btn " data-tab="#timeline">
+													<div
+														onClick={renderCtrl.bind(this, 6)}
+														style={{
+															backgroundColor: '#f1f2f9',
+														}}
+													>
+														{/* <Link to={'hackathon_overview'}>Overview</Link> */}
+														Tracks
+													</div>
+												</li>
 											)} 
 										</ul>
 									</div>
@@ -222,6 +249,7 @@ const Hackathon = () => {
 									{/* {hack === 3 && <Themes />}  */}
 									{/* {hack === 4 && <Judges />} */}
 									{hack === 5 && <Prizes />}
+									{hack === 6 && <Tracks />}
 								</div>
 							</div>
 						</div>
