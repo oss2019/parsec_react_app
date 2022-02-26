@@ -168,7 +168,7 @@ const Hackathon = () => {
 													</div>
 												</li>
 													)} */}
-											{/* {hack === 4 ? (
+											{hack === 4 ? (
 												<li className="tab-btn active-btn" data-tab="#judge">
 													<div
 														onClick={renderCtrl.bind(this, 4)}
@@ -190,9 +190,9 @@ const Hackathon = () => {
 														Judges
 													</div>
 												</li>
-											)}  */}
+											)} 
 											{hack === 5 ? (
-												<li className="tab-btn active-btn" data-tab="#judge">
+												<li className="tab-btn active-btn" data-tab="#prize">
 													<div
 														onClick={renderCtrl.bind(this, 5)}
 														style={{
@@ -203,7 +203,7 @@ const Hackathon = () => {
 													</div>
 												</li>
 											) : (
-												<li className="tab-btn " data-tab="#judge">
+												<li className="tab-btn " data-tab="#prize">
 													<div
 														onClick={renderCtrl.bind(this, 5)}
 														style={{
@@ -215,7 +215,7 @@ const Hackathon = () => {
 												</li>
 											)}
 											{hack === 6 ? (
-												<li className="tab-btn active-btn" data-tab="#timeline">
+												<li className="tab-btn active-btn" data-tab="#tracks">
 													<div
 														onClick={renderCtrl.bind(this, 6)}
 														style={{
@@ -227,7 +227,7 @@ const Hackathon = () => {
 													</div>
 												</li>
 											) : (
-												<li className="tab-btn " data-tab="#timeline">
+												<li className="tab-btn " data-tab="#tracks">
 													<div
 														onClick={renderCtrl.bind(this, 6)}
 														style={{
@@ -247,7 +247,7 @@ const Hackathon = () => {
 									{hack === 1 && <Overview />}
 									{hack === 2 && <Timeline />}
 									{/* {hack === 3 && <Themes />}  */}
-									{/* {hack === 4 && <Judges />} */}
+									{hack === 4 && <Judges />}
 									{hack === 5 && <Prizes />}
 									{hack === 6 && <Tracks />}
 								</div>

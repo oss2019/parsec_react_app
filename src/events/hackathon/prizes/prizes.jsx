@@ -18,7 +18,7 @@ const Prizes = () => {
 			</x-sign>
 			<hr />
 			<hr />
-			<h3>1st Prize</h3>
+			<h3 className='text-danger'>1st Prize</h3>
 			<ol>
 				<li>
 					<strong style={{ color: '#12114a', fontSize: '2rem' }}>
@@ -64,7 +64,7 @@ const Prizes = () => {
 				</li>
 			</ol>
 			<hr />
-			<h3>2nd Prize</h3>
+			<h3 className='text-danger'>2nd Prize</h3>
 			<ul>
 				<li>
 					<strong style={{ color: '#12114a', fontSize: '2rem' }}>
@@ -110,7 +110,7 @@ const Prizes = () => {
 				</li>
 			</ul>
 			<hr />
-			<h3>3rd Prize</h3>
+			<h3 className='text-danger'>3rd Prize</h3>
 			<ul>
 				<li>
 					<strong style={{ color: '#12114a', fontSize: '2rem' }}>
@@ -156,7 +156,7 @@ const Prizes = () => {
 				</li>
 			</ul>
 			<hr />
-			<h3>Best Begginer Hack: (Team entirely composed of 1st years)</h3>
+			<h3 className='text-danger'>Best Begginer Hack: (Team entirely composed of 1st years)</h3>
 			<ul>
 				<li>
 					<strong style={{ color: '#12114a', fontSize: '2rem' }}>
@@ -184,7 +184,7 @@ const Prizes = () => {
 				</li>
 			</ul>
 			<hr />
-			<h3>Best Hack in each Track</h3>
+			<h3 className='text-danger'>Best Hack in each Track</h3>
 			<ul>
 				<li>
 					<strong style={{ color: '#12114a', fontSize: '2rem' }}>
@@ -212,7 +212,7 @@ const Prizes = () => {
 				</li>
 			</ul>
 			<hr />
-			<h3>Best Hack from IIT Dharwad</h3>
+			<h3 className='text-danger'>Best Hack from IIT Dharwad</h3>
 			<ul>
 				<li>
 					<strong style={{ color: '#12114a', fontSize: '2rem' }}>
@@ -241,7 +241,7 @@ const Prizes = () => {
 			</ul>
 			<hr />
 			<hr />
-			<h3>All Participants will get: </h3>
+			<h3 className='text-danger'>All Participants will get: </h3>
 			<ul>
 				<li>
 					{' '}
