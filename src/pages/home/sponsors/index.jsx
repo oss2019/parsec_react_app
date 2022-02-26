@@ -7,7 +7,8 @@ import industryPartner from './industryPartner.json';
 import workshopPartner from './workshopPartner.json';
 import silverSponsor from './silver.json';
 import associateSponsors from './associatePartners.json'
-const SponsorSec = ({title,sponsorData}) => {
+import titleSponsor from './titleSponsors.json'
+const SponsorSec = ({title,sponsorData,padding}) => {
 	return (
 		<>
 			<h1
@@ -59,7 +60,7 @@ const SponsorSec = ({title,sponsorData}) => {
 											height: '123px',
 											width: 'auto',
 											alignItems: 'center',
-											padding: '5px',
+											padding: padding? `${padding}`:'5px',
 										}}
 									/>
 								</div>
@@ -91,6 +92,12 @@ const Sponsors = () => {
 							className="row"
 							style={{ display: 'flex-wrap', justifyContent: 'center' }}
 						>
+							{/* HIGHLIGHT TITLE SPONSOR */}
+							{/* <SponsorSec
+								title={'TITLE SPONSOR'}
+								sponsorData={titleSponsor}
+								padding='30px'
+							/> */}
 							{/* HIGHLIGHT ASSOCIATE PARTNER */}
 							<SponsorSec
 								title={'IN ASSOCIATION WITH'}
