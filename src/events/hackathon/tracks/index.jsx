@@ -51,11 +51,12 @@ const Tracks = () => {
 										className="card-text text-dark"
 										style={{ fontSize: `medium` }}
 									>
-										Track automation or sometimes only automation refers to the
-										recording or handling of time-based controlling data in
-										time-based computer applications such as digital audio
-										workstations, video editing software and computer animation
-										software.
+										Innovate by Automating a well used process which can be
+										applied in Real Time by using Robotics Process Automation
+										(RPA) techniques over the
+										<a href="https://clointfusion.com/">&nbsp;clointfusion </a>{' '}
+										platform. The end product should have a real life
+										application and be realistic.
 									</p>
 								</div>
 							</div>
