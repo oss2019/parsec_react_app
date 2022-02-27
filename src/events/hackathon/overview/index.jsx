@@ -187,9 +187,9 @@ const Overview = () => {
                     {/* <li style={{ color: `#12114a` }}>
 											Food and mattresses for power naps will be provided
 										</li> */}
-                    <li style={{ color: `#12114a` }}>
+                    {/* <li style={{ color: `#12114a` }}>
                       Separate judging for Hardware and Software hacks
-                    </li>
+                    </li> */}
                   </ul>
                   <br />
                   <br />

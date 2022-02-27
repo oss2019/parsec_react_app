@@ -72,10 +72,9 @@ const Hackathon = () => {
 					<img
 						src="https://drive.google.com/uc?id=15f75sPjME1b5EAdGTjMxtMRmtMt6pAEb"
 						style={{
-							minWidth:!isTabletorMobile ? '100vw': '',
+							minWidth: !isTabletorMobile ? '100vw' : '',
 							minHeight: isTabletorMobile ? '24vh' : '',
-							objectFit: 'cover'
-						
+							objectFit: 'cover',
 						}}
 					/>
 				</div>
@@ -168,52 +167,6 @@ const Hackathon = () => {
 													</div>
 												</li>
 													)} */}
-											{hack === 4 ? (
-												<li className="tab-btn active-btn" data-tab="#judge">
-													<div
-														onClick={renderCtrl.bind(this, 4)}
-														style={{
-															backgroundColor: '#ffff',
-														}}
-													>
-														Judges
-													</div>
-												</li>
-											) : (
-												<li className="tab-btn " data-tab="#judge">
-													<div
-														onClick={renderCtrl.bind(this, 4)}
-														style={{
-															backgroundColor: '#f1f2f9',
-														}}
-													>
-														Judges
-													</div>
-												</li>
-											)} 
-											{hack === 5 ? (
-												<li className="tab-btn active-btn" data-tab="#prize">
-													<div
-														onClick={renderCtrl.bind(this, 5)}
-														style={{
-															backgroundColor: '#ffff',
-														}}
-													>
-														Prizes
-													</div>
-												</li>
-											) : (
-												<li className="tab-btn " data-tab="#prize">
-													<div
-														onClick={renderCtrl.bind(this, 5)}
-														style={{
-															backgroundColor: '#f1f2f9',
-														}}
-													>
-														Prizes
-													</div>
-												</li>
-											)}
 											{hack === 6 ? (
 												<li className="tab-btn active-btn" data-tab="#tracks">
 													<div
@@ -238,7 +191,53 @@ const Hackathon = () => {
 														Tracks
 													</div>
 												</li>
-											)} 
+											)}
+											{hack === 4 ? (
+												<li className="tab-btn active-btn" data-tab="#judge">
+													<div
+														onClick={renderCtrl.bind(this, 4)}
+														style={{
+															backgroundColor: '#ffff',
+														}}
+													>
+														Judges
+													</div>
+												</li>
+											) : (
+												<li className="tab-btn " data-tab="#judge">
+													<div
+														onClick={renderCtrl.bind(this, 4)}
+														style={{
+															backgroundColor: '#f1f2f9',
+														}}
+													>
+														Judges
+													</div>
+												</li>
+											)}
+											{hack === 5 ? (
+												<li className="tab-btn active-btn" data-tab="#prize">
+													<div
+														onClick={renderCtrl.bind(this, 5)}
+														style={{
+															backgroundColor: '#ffff',
+														}}
+													>
+														Prizes
+													</div>
+												</li>
+											) : (
+												<li className="tab-btn " data-tab="#prize">
+													<div
+														onClick={renderCtrl.bind(this, 5)}
+														style={{
+															backgroundColor: '#f1f2f9',
+														}}
+													>
+														Prizes
+													</div>
+												</li>
+											)}
 										</ul>
 									</div>
 								</div>

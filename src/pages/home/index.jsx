@@ -509,6 +509,20 @@ const Home = () => {
 						</div>
 					</div>
 				</div>
+				{/* Merch store */}
+				{/* <section className="auto-container">
+					<br />
+					<br />
+					<h1 style={{ textAlign: 'center' }}>MERCH STORE</h1>
+					<div style={{textAlign: 'center'}}>
+						<a href="http://parsecmemories.co.in/" style={{textAlign: 'center'}}>
+							<img
+								src="https://drive.google.com/uc?id=1XB-V8xI31bX9aA15gxg7TYYtuOnrtIld"
+								style={{	}}
+							/>
+						</a>
+					</div>
+				</section> */}
 
 				<Sponsors />
 				{/* <topScroll /> */}
