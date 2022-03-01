@@ -247,7 +247,7 @@ const Timeline = () => {
 											className="card-text text-dark mb-1"
 											style={{ fontSize: `medium` }}
 										>
-											<strong>Let the hacking begin!</strong> IIn this Phase,
+											<strong>Let the hacking begin!</strong> In this Phase,
 											teams are expected to have commenced sketching the
 											framework and planning its implementation. An idea can
 											gain more prominence when it becomes reality. So buckle up
