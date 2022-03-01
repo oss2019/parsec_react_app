@@ -18,6 +18,7 @@ import ascensus from '../../images/_events/ascensus.png';
 import designo from '../../images/_events/designo.png';
 import EventBackground from '../../components/eventsBackground';
 import evtTitle from '../../images/_events/evtTitle.jpg';
+import libertas from '../../images/events/Libertas/Libertas.png';
 // import evtSmall from '../../images/_events/evtSmall.png';
 
 import LazyLoad from 'react-lazyload';
@@ -366,6 +367,14 @@ const EventLanding = () => {
 								evtUrl={'/guardains'}
 								date="3 MARCH 2022"
 								time="2:00 PM IST"
+								mode="ONLINE"
+							/>
+							<EvtCard
+								evtLogo={libertas}
+								evtTitle="LIBERTAS"
+								evtUrl={'https://dare2compete.com/competition/libertas-parsec-a-paradigm-shift-indian-institute-of-technology-iit-dharwad-269678'}
+								date="5 MARCH 2022"
+								time="11:00 AM IST"
 								mode="ONLINE"
 							/>
 						</div>
