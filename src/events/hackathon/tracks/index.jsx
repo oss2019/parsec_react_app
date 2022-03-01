@@ -54,7 +54,9 @@ const Tracks = () => {
 										Innovate by Automating a well used process which can be
 										applied in Real Time by using Robotics Process Automation
 										(RPA) techniques over the
-										<a href="https://clointfusion.com/">&nbsp;clointfusion </a>{' '}
+										<a href="https://clointfusion.com/">
+											&nbsp;clointfusion{' '}
+										</a>{' '}
 										platform. The end product should have a real life
 										application and be realistic.
 									</p>
@@ -252,6 +254,64 @@ const Tracks = () => {
 											</a>
 										</li>
 									</ol>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className="row">
+						<div className="col py-2">
+							<div className=" shadow">
+								<div
+									className="card-body"
+									style={{
+										border: '2px solid #e2e6e9',
+										borderRadius: '8px',
+									}}
+								>
+									<h3 className="card-title text-danger">Filecoin</h3>
+									<p
+										className="card-text text-dark"
+										style={{ fontSize: `medium` }}
+									>
+										<a href="https://protocol.ai/"> Protocol Labs</a> is an
+										open-source R&D lab. They build protocols, tools, and
+										services to radically improve the internet. Their products
+										serve thousands of organizations and millions of people.
+									</p>
+									<ol>
+										<li>
+											<strong style={{ color: '#000', fontSize: '1rem' }}>
+												&#8226;&nbsp;
+											</strong>
+											<a href="https://filecoin.io/">Filecoin</a>: An
+											open-source cloud storage marketplace, protocol, and
+											cryptocurrency.
+										</li>
+										<li>
+											<strong style={{ color: '#000', fontSize: '1rem' }}>
+												&#8226;&nbsp;
+											</strong>
+										 <a href="https://ipfs.io/">IPFS</a>: IPFS
+											powers the Distributed Web. It's a peer-to-peer hypermedia
+											protocol designed to preserve and grow humanity's
+											knowledge by making the web upgradeable, resilient, and
+											more open.
+										</li>
+									</ol>
+									Protocol Labs is glad to offer a dedicated bounty for building
+									on Filecoin and/or IPFS, its mentorship, and support as a 2021
+									Devfolio Hackathon Season Partner.
+									<ol>
+										<li>
+											<strong style={{ color: '#000', fontSize: '1rem' }}>
+												&#8226;&nbsp;
+											</strong>
+											<a href="https://protocollabs.notion.site/Getting-started-with-IPFS-Filecoin-173c73d4d8d64765a42058594bc46bb7">
+												Getting started with IPFS & Filecoin
+											</a>
+										</li>
+									</ol>
+								
 								</div>
 							</div>
 						</div>

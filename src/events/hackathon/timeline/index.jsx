@@ -199,7 +199,7 @@ const Timeline = () => {
 											9:00 AM, March 5, 2022
 										</div>
 										<h3 className="card-title text-danger">
-											Speaker's Session Begin
+											Speakers Session - II
 										</h3>
 										<p
 											className="card-text text-dark"
