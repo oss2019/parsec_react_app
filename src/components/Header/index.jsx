@@ -569,7 +569,7 @@ const Header = ({ active }) => {
 															Gallery
 														</a>
 													</li> */}
-													<li className={`${active === 6 ? 'current' : ''}`}>
+													{/* <li className={`${active === 6 ? 'current' : ''}`}>
 														<a
 															href="/faq"
 															target=""
@@ -577,7 +577,7 @@ const Header = ({ active }) => {
 														>
 															FAQs
 														</a>
-													</li>
+													</li> */}
 													<li className={`${active === 7 ? 'current' : ''}`}>
 														<a
 															href="/team"
@@ -594,6 +594,15 @@ const Header = ({ active }) => {
 															onClick={GAPageTracker.bind(this, '/schedule')}
 														>
 															Schedule
+														</a>
+													</li>
+													<li className={`${active === 0 ? '' : ''}`}>
+														<a
+															href="http://parsecmemories.co.in/"
+															target="_blank"
+															onClick={GAPageTracker.bind(this, '/merchStore')}
+														>
+															Merch Store
 														</a>
 													</li>
 													{/* <li className={`${active === 8 ? 'current' : ''}`}>

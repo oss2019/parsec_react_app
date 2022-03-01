@@ -171,6 +171,14 @@ const Footer = () => {
 											</a>
 											<br />
 											<a
+												href="/faq"
+												style={{ textDecoration: 'none' }}
+												onClick={GAPageTracker.bind(this, '/contact')}
+											>
+												FAQs
+											</a>
+											<br />
+											<a
 												href="/contact"
 												style={{ textDecoration: 'none' }}
 												onClick={GAPageTracker.bind(this, '/contact')}

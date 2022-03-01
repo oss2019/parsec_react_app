@@ -50,14 +50,15 @@ const Timeline = () => {
 										</div>
 										<h3 className="card-title text-danger">
 											{/* <strong>Phase 1:</strong> */}
-											Opening Ceremony
+											Venturing into the world of Devhack
 										</h3>
 										<p
 											className="card-text text-dark"
 											style={{ fontSize: `medium` }}
 										>
-											A line-up of enthralling performances serving as a prelude
-											to Devhack 3.0.
+											A captivating prelude where you get to know what Devhack
+											is in a nutshell followed by interactive speaker sessions
+											by some of the industry's technologists.
 										</p>
 									</div>
 								</div>
@@ -198,7 +199,7 @@ const Timeline = () => {
 											9:00 AM, March 5, 2022
 										</div>
 										<h3 className="card-title text-danger">
-											Speaker's Session Begin
+											Speakers Session - II
 										</h3>
 										<p
 											className="card-text text-dark"
@@ -452,7 +453,7 @@ const Timeline = () => {
 								</div>
 							</div>
 						</div>
-						<div className="row">
+						{/* <div className="row">
 							<div className="col-auto text-center flex-column d-none d-sm-flex">
 								<div className="row h-50">
 									<div className="col border-right"> </div>
@@ -476,7 +477,6 @@ const Timeline = () => {
 											2:30 PM, March 6, 2022
 										</div>
 										<h3 className="card-title text-danger">
-											{/* <strong>Phase 5:</strong> */}
 											Speaker's Session
 										</h3>
 										<p
@@ -490,7 +490,7 @@ const Timeline = () => {
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> */}
 						<div className="row">
 							<div className="col-auto text-center flex-column d-none d-sm-flex">
 								<div className="row h-50">

@@ -238,6 +238,22 @@ const GAPageTracker = useRoutetracker("Page")
 						Schedule
 					</a>
 				</p>
+				<p
+					className={`elements text link ${active === 0 ? 'violet' : 'white'}`}
+					// onClick={() => history.push('/gallery')}
+				>
+					<a
+						className={`elements text link ${
+							active === 0 ? 'violet' : 'white'
+						}`}
+						href="http://parsecmemories.co.in/"
+						target={'_blank'}
+						style={{ textDecoration: 'none' }}
+						onClick={GAPageTracker.bind(this, '/merchStore')}
+					>
+						Merch Store
+					</a>
+				</p>
 				{/* <p
 					className={`elements text link ${active === 7 ? 'violet' : 'white'}`}
 					onClick={() => history.push('/team')}
