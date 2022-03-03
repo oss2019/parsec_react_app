@@ -153,7 +153,7 @@ const Ctf = () => {
                           >
                             <div className="btn-box text-center">
                               <a
-                                href="https://forms.gle/93wrwNAX4EnvMiiSA"
+                                href="https://dare2compete.com/hackathon/venividivici-ctf-parsec-a-paradigm-shift-indian-institute-of-technology-iit-dharwad-268112"
                                 className="theme-btn btn-style-four button2 text-center"
                                 id="btncs2"
                                 style={{
