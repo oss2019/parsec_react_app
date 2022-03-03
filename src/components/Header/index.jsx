@@ -596,6 +596,15 @@ const Header = ({ active }) => {
 															Schedule
 														</a>
 													</li>
+													<li className={`${active === 8 ? 'current' : ''}`}>
+														<a
+															href="/speakers"
+															target=""
+															onClick={GAPageTracker.bind(this, '/speakers')}
+														>
+															Speakers
+														</a>
+													</li>
 													<li className={`${active === 0 ? '' : ''}`}>
 														<a
 															href="http://parsecmemories.co.in/"
