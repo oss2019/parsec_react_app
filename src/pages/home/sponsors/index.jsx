@@ -8,6 +8,7 @@ import workshopPartner from './workshopPartner.json';
 import silverSponsor from './silver.json';
 import associateSponsors from './associatePartners.json'
 import titleSponsor from './titleSponsors.json'
+import { useMediaQuery } from 'react-responsive';
 const SponsorSec = ({title,sponsorData,padding}) => {
 	return (
 		<>
@@ -74,6 +75,7 @@ const SponsorSec = ({title,sponsorData,padding}) => {
 }
 
 const Sponsors = () => {
+	const isSmall  = useMediaQuery({query: '(max-width: 1007px)'})
 	return (
 		<section className="sponsor">
 			<div className="auto-container">
@@ -94,15 +96,113 @@ const Sponsors = () => {
 						>
 							{/* HIGHLIGHT TITLE SPONSOR */}
 							{/* <SponsorSec
-								title={'TITLE SPONSOR'}
+								title={'POWERED BY'}
 								sponsorData={titleSponsor}
-								padding='30px'
+								// padding='10px'
 							/> */}
+							<div
+								style={{
+									display: 'flex',
+									justifyContent: 'space-evenly',
+									alignItems: isSmall ? 'center' : 'flex-start',
+									flexDirection: isSmall ? 'column' : 'row',
+								}}
+							>
+								<div>
+									<h1
+										title="sec-title"
+										style={{ textAlign: 'center', color: '#cd7f32' }}
+									>
+										POWERED BY
+									</h1>
+
+									<div
+										style={{
+											display: 'flex',
+											justifyContent: 'center',
+											alignItems: 'center',
+											marginTop: '30px',
+											marginBottom: '50px',
+										}}
+									>
+										<img
+											src={`https://drive.google.com/uc?id=11s4gQBPhMDSwX6T6bAUEKQgL50C_1AXI`}
+											alt=""
+											style={{
+												// height: '123px',
+												// width: 'auto',
+												// alignItems: 'center',
+												width: '350px',
+												height: 'auto',
+												boxShadow: '-7px -4px 60px 0px rgba(168,168,168,0.2)',
+												borderRadius: '8px',
+											}}
+										/>
+									</div>
+								</div>
+
+								<div>
+									<h1
+										title="sec-title"
+										style={{ textAlign: 'center', color: '#cd7f32' }}
+									>
+										IN ASSOCIATION WITH
+									</h1>
+
+									<figure
+										className="image"
+										style={{
+											height: '153px',
+											border: '#ffffff',
+											display: 'flex',
+											alignItems: 'center',
+											justifyContent: 'center',
+											marginTop: '30px',
+											// width: '350px',
+											// height: 'auto',
+											boxShadow: '-7px -4px 60px 0px rgba(168,168,168,0.2)',
+											borderRadius: '8px',
+										}}
+									>
+										<a href="{`${item.link}`}">
+											<div
+												style={{
+													display: 'flex',
+													alignItems: 'center',
+													justifyContent: 'center',
+													width: '100%',
+													height: '100%',
+												}}
+											>
+												<img
+													src={`https://drive.google.com/uc?id=1IcgRd99WskgI0VD9120fAMbBvKqU1xx9`}
+													alt=""
+													style={{
+														height: '123px',
+														width: 'auto',
+														alignItems: 'center',
+													}}
+												/>
+											</div>
+										</a>
+									</figure>
+								</div>
+
+								{/* <SponsorSec
+									title={'IN ASSOCIATION WITH'}
+									sponsorData={associateSponsors}
+								/> */}
+							</div>
+
+							<br />
+							<br />
+							<br />
+
 							{/* HIGHLIGHT ASSOCIATE PARTNER */}
-							<SponsorSec
+							{/* <SponsorSec
 								title={'IN ASSOCIATION WITH'}
 								sponsorData={associateSponsors}
-							/>
+							/> */}
 							{/* HIGHLIGHT PLATINUM */}
 							<SponsorSec title="PLATINUM" sponsorData={platinumSponsors} />
 							{/* HIGHLIGHT GOLD */}

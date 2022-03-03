@@ -26,6 +26,7 @@ import About from '../pages/about';
 import Gallery from '../pages/gallery';
 import EventLanding from '../pages/eventLanding';
 import Guardains from '../events/guardains';
+// import Speakers from '../pages/speakers';
 
 const Routes = () => {
 	return (
@@ -96,14 +97,15 @@ const Routes = () => {
 				</Route>
 				<Route path="/schedule" component={Schedule} />
 
-				{/* <Route path="/speakers" component={Speakers} /> */}
+				<Route path="/speakers" component={Speakers} />
 				{/* <Route path='/hackathon_timeline' component={Timeline}/>
                 <Route path='/hackathon_themes' component={Themes} />
                 <Route path='/hackathon_judges' component={Judges} /> */}
 				{/* <Route path='/students' component={Students}/> */}
 				<Route path="/guardains" component={Guardains} />
 				<Route render={() => <Redirect to={{ pathname: '/' }} />} />
-			</Switch>
+				{/* <Route path="/speakers" component={Speakers} /> */}
+ 			</Switch>
 		</div>
 	);
 };

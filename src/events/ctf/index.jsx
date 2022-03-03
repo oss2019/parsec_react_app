@@ -12,6 +12,9 @@ const Ctf = () => {
 	const isSmallDevice = useMediaQuery({
 		query: '(max-width:1026px)',
 	});
+	const isMobile = useMediaQuery({
+		query: '(max-width: 700px)',
+	});
 
 	return (
 		<React.Fragment>
@@ -97,16 +100,24 @@ const Ctf = () => {
 												></div>
 												<div className="col-lg-4"></div>
 												<div
-													className="col-lg-4"
 													style={{
-														maxWidth: `250px`,
-														maxHeight: `200px`,
-														textAlign: 'center',
-														maxWidth: '100%',
+														display: 'flex',
+														justifyContent: 'center',
+														alignItems: 'center',
+														flexDirection: isMobile ? 'column' : 'row',
 													}}
 												>
-													{/* <br> */}
-													{/* <ul className="ul1" style={{ paddingRight: `30px`, textAlign: 'center' }}>
+													<div
+														className="col-lg-4"
+														style={{
+															maxWidth: `250px`,
+															maxHeight: `200px`,
+															textAlign: 'center',
+															maxWidth: '100%',
+														}}
+													>
+														{/* <br> */}
+														{/* <ul className="ul1" style={{ paddingRight: `30px`, textAlign: 'center' }}>
 														<a
 															// href=" https://parseciitdh.typeform.com/to/FuAQay"
 															style={{ textDecoration: 'none' }}
@@ -133,24 +144,87 @@ const Ctf = () => {
 															</a>
 														</li>
 													</ul> */}
+														<div
+															className=""
+															style={{ margin: 'auto', paddingTop: '40px' }}
+														>
+															<div className="btn-box text-center">
+																<a
+																	href="https://parsec-ctf.herokuapp.com/"
+																	className=" btn-style-four button2 text-center"
+																	id="btncs2"
+																	style={{
+																		borderRadius: '8px',
+																		color: '#ffffff',
+																		// background: 'rgba(242, 172, 79,0.9)',
+																		paddingLeft: '80px',
+																		paddingRight: '80px',
+																	}}
+																	target="_blank"
+																	rel="noreferrer"
+																>
+																	CTFd
+																</a>
+															</div>
+														</div>
+													</div>
 													<div
-														className="row justify-content-center align-items-center "
-														style={{ margin: 'auto', paddingTop: '40px' }}
+														className="col-lg-4"
+														style={{
+															maxWidth: `250px`,
+															maxHeight: `200px`,
+															textAlign: 'center',
+															maxWidth: '100%',
+														}}
 													>
-														<div className="btn-box text-center">
+														{/* <br> */}
+														{/* <ul className="ul1" style={{ paddingRight: `30px`, textAlign: 'center' }}>
+														<a
+															// href=" https://parseciitdh.typeform.com/to/FuAQay"
+															style={{ textDecoration: 'none' }}
+														>
+															<li className="li1" style={{maxWidth: '330px'}}>Register Now</li>
+														</a>
+														<li
+															className="li1"
+															style={{
+																marginRight: `40px`,
+																paddingRight: `40px`,
+																maxWidth: `330px`,textAlign:'center'
+															}}
+														>
 															<a
-																href="https://forms.gle/93wrwNAX4EnvMiiSA"
-																className="theme-btn btn-style-four button2 text-center"
-																id="btncs2"
+																href="https://venividivici.iitdh.ac.in/"
 																style={{
-																	borderRadius: '8px',
-																	color: '#ffffff',
-																	// background: 'rgba(242, 172, 79,0.9)',
+																	color: `#ffffff`,
+																	width: '100%',
+																	textDecoration: 'none',textAlign: 'center'
 																}}
-																target="_blank"
 															>
-																Register Now
+																proceed to ctf
 															</a>
+														</li>
+													</ul> */}
+														<div
+															className=""
+															style={{ margin: 'auto', paddingTop: '40px' }}
+														>
+															<div className="btn-box text-center">
+																<a
+																	href="https://dare2compete.com/hackathon/venividivici-ctf-parsec-a-paradigm-shift-indian-institute-of-technology-iit-dharwad-268112"
+																	className="theme-btn btn-style-four button2 text-center"
+																	id="btncs2"
+																	style={{
+																		borderRadius: '8px',
+																		color: '#ffffff',
+																		// background: 'rgba(242, 172, 79,0.9)',
+																	}}
+																	target="_blank"
+																	rel="noreferrer"
+																>
+																	Register Now
+																</a>
+															</div>
 														</div>
 													</div>
 												</div>
@@ -287,18 +361,21 @@ const Ctf = () => {
 														}}
 														className="font-weight-bold"
 													>
-														Still have queries? Reach out to us on{' '}
+														It's compulsory to join the{' '}
 														<a
 															href="https://discord.gg/xwaHg8YDKK"
+															className="text-info"
 															style={{
-																color: `#00adb5`,
+																// color: `#00adb5`,
 																textDecoration: `None`,
 															}}
 															target="_blank"
+															rel="noreferrer"
 														>
 															discord
 														</a>{' '}
-														and we will try our best to answer all of them.
+														server as all the further instructions will only be
+														shared there after the start of the event.
 													</p>
 												</div>
 											</div>
