@@ -5,8 +5,8 @@ import "../../css/style.css";
 import "../../css/responsive.css";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import Venkat from "../../images/speakers/venkat.jpeg";
-import Bhavi from "../../images/speakers/bhavi.jpeg";
+import Venkat from "../../images/speakers/venkat.png";
+import Bhavi from "../../images/speakers/bhavi.png";
 import Background from "../../images/background/speaker.jpeg";
 
 const Speakers = () => {
@@ -14,7 +14,7 @@ const Speakers = () => {
     <React.Fragment>
       <div className="page-wrapper" style={{ overflowX: "hidden" }}>
         <div className="preloader"></div>
-        <Header active={3} />
+        <Header active={88} />
 
         {/* <div style={{ marginTop: isSmallDevice ? '45px' : '0' }}>
 					<img

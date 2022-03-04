@@ -15,7 +15,7 @@ import { Typewriter } from "@chrisfieldsii/react-use-typewriter";
 import "@chrisfieldsii/react-use-typewriter/dist/index.css";
 import Sponsors from "./sponsors";
 import AboutUs from "./about";
-import Roopak from "../../images/guest/Roopak.jpg";
+import Roopak from "../../images/guest/Roopak.png";
 
 const Home = () => {
   useEffect(() => {
@@ -219,7 +219,7 @@ const Home = () => {
             >
               <div
                 className="col-md-5 py-2"
-                style={{ width: "80%", minWidth: "90vw" }}
+                style={{ width: "80%", minWidth: "80vw" }}
               >
                 <div className=" border-danger shadow">
                   <div
@@ -256,27 +256,27 @@ const Home = () => {
                         padding: "4% 1%",
                       }}
                     >
-                      <h5
+                      <h1
                         className="card-title text-danger"
                         style={{
                           textAlign: "center",
-                          fontSize: "1.8rem",
+                          // fontSize: "1.8rem",
                           padding: "2% 0%",
                         }}
                       >
                         Mr. Roopak Sharma
-                      </h5>
+                      </h1>
 
                       <p
                         className="card-text text-dark mb-1"
                         style={{
-                          fontSize: `1.3rem`,
+                          fontSize: `1.8rem`,
                           textAlign: "center",
                           padding: "2% 0%",
                         }}
                       >
                         <strong>
-                          Vice President, Advanced Engineering and Systems
+                          Vice President, Advanced Engineering <br /> and   Systems
                           Technology{" "}
                         </strong>
                       </p>
@@ -286,6 +286,7 @@ const Home = () => {
                           fontSize: `1.3rem`,
                           textAlign: "center",
                           padding: "2% 0%",
+                          letterSpacing: '0.3rem'
                         }}
                       >
                         JCB India Head Quarters

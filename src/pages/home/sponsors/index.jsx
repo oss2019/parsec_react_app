@@ -8,6 +8,7 @@ import workshopPartner from './workshopPartner.json';
 import silverSponsor from './silver.json';
 import associateSponsors from './associatePartners.json'
 import titleSponsor from './titleSponsors.json'
+import trelix from './trelix.json'
 import { useMediaQuery } from 'react-responsive';
 const SponsorSec = ({title,sponsorData,padding}) => {
 	return (
@@ -43,6 +44,7 @@ const SponsorSec = ({title,sponsorData,padding}) => {
 								href={`${item.link}`}
 								style={{
 									pointerEvents: item.link === '' ? 'none' : '',
+									// pointerEvents: 'none'
 								}}
 							>
 								<div
@@ -97,9 +99,50 @@ const Sponsors = () => {
 							{/* HIGHLIGHT TITLE SPONSOR */}
 							{/* <SponsorSec
 								title={'POWERED BY'}
-								sponsorData={titleSponsor}
+								sponsorData={trelix}
+								padding='10px'
 								// padding='10px'
 							/> */}
+							<div>
+								<h1
+									title="sec-title"
+									style={{ textAlign: 'center', color: '#cd7f32' }}
+								>
+									BROUGHT TO YOU BY
+								</h1>
+
+								<div
+									style={{
+										display: 'flex',
+										justifyContent: 'center',
+										alignItems: 'center',
+										marginTop: '30px',
+										marginBottom: '50px',
+									}}
+								>
+									<a
+										href="https://enterprisecareers.mcafee.com/"
+										style={{
+											boxShadow: '-7px -4px 60px 0px rgba(168,168,168,0.2)',
+											borderRadius: '8px',
+											overflow: 'hidden',
+										}}
+									>
+										<img
+											src={`https://drive.google.com/uc?id=1Nu0D39XxN7fgrfWGd_wr27a5AgM8P2Mq`}
+											alt=""
+											style={{
+												// height: '123px',
+												// width: 'auto',
+												// alignItems: 'center',
+												width: '350px',
+												height: 'auto',
+												borderRadius: '8px',
+											}}
+										/>
+									</a>
+								</div>
+							</div>
 							<div
 								style={{
 									display: 'flex',
@@ -125,19 +168,27 @@ const Sponsors = () => {
 											marginBottom: '50px',
 										}}
 									>
-										<img
-											src={`https://drive.google.com/uc?id=11s4gQBPhMDSwX6T6bAUEKQgL50C_1AXI`}
-											alt=""
+										<a
+											href="https://cred.club/"
 											style={{
-												// height: '123px',
-												// width: 'auto',
-												// alignItems: 'center',
-												width: '350px',
-												height: 'auto',
 												boxShadow: '-7px -4px 60px 0px rgba(168,168,168,0.2)',
 												borderRadius: '8px',
+												overflow: 'hidden',
 											}}
-										/>
+										>
+											<img
+												src={`https://drive.google.com/uc?id=11s4gQBPhMDSwX6T6bAUEKQgL50C_1AXI`}
+												alt=""
+												style={{
+													// height: '123px',
+													// width: 'auto',
+													// alignItems: 'center',
+													width: '350px',
+													height: 'auto',
+													borderRadius: '8px',
+												}}
+											/>
+										</a>
 									</div>
 								</div>
 
@@ -164,7 +215,7 @@ const Sponsors = () => {
 											borderRadius: '8px',
 										}}
 									>
-										<a href="{`${item.link}`}">
+										<a href="https://dare2compete.com/">
 											<div
 												style={{
 													display: 'flex',
