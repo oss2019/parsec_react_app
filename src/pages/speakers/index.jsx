@@ -221,7 +221,7 @@ const Speakers = () => {
                     className="card-text text-dark"
                     style={{ fontSize: `medium` }}
                   >
-                    Any novel concept that solves a real-world problem.
+                    
                   </p>
                 </div>
               </div>
