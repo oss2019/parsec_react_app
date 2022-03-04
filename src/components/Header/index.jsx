@@ -596,7 +596,7 @@ const Header = ({ active }) => {
 															Schedule
 														</a>
 													</li>
-													<li className={`${active === 8 ? 'current' : ''}`}>
+													{/* <li className={`${active === 8 ? 'current' : ''}`}>
 														<a
 															href="/speakers"
 															target=""
@@ -604,7 +604,7 @@ const Header = ({ active }) => {
 														>
 															Speakers
 														</a>
-													</li>
+													</li> */}
 													<li className={`${active === 0 ? '' : ''}`}>
 														<a
 															href="http://parsecmemories.co.in/"
