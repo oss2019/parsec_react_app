@@ -92,9 +92,9 @@ const Routes = () => {
 					<Redirect to="/quiz" />
 				</Route>
 				<Route exact path="/workshops" component={Workshop} />
-				<Route exact path="/workshops.html">
+				{/* <Route exact path="/workshops.html">
 					<Redirect to="/workshops" />
-				</Route>
+				</Route> */}
 				<Route path="/schedule" component={Schedule} />
 
 				<Route path="/speakers" component={Speakers} />

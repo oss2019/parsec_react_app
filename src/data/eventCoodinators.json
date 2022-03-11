@@ -61,6 +61,28 @@
 		"teamlead": "false"
 	},
 	{
+		"name": "Hrishikesh Pable",
+		"image": "https://drive.google.com/uc?id=1KFrgQCV8Q0LqMx_nQ2lfXVGa6kYGFLO9",
+		"instagram": "",
+		"facebook": "",
+		"github": "https://github.com/Hrishikesh2002",
+		"linkedin": "https://www.linkedin.com/in/hrishikesh-pable-11022002",
+		"post": "venividivici",
+		"teamlead": "false"
+
+	},
+	{
+		"name": "Keshav Naram",
+		"image": "https://drive.google.com/uc?id=1jhPMJqomuOPqvuVjVpMSMWzwTP__YvSX",
+		"instagram": "https://www.instagram.com/giant_gemini",
+		"facebook": "",
+		"github": "https://github.com/Naramkeshav59",
+		"linkedin": "https://www.linkedin.com/in/keshav-naram-a5898b1bb",
+		"post": "venividivici",
+		"teamlead": "false"
+
+	},
+	{
 		"name": "Harishkumar Laxmikant Gajakosh",
 		"image": "https://drive.google.com/uc?id=1VIO08BZKUx3jLWBcri2yPxGvHR9yWqmz",
 		"instagram": "https://www.instagram.com/cadmium_24/",
@@ -179,5 +201,25 @@
 		"linkedin": "https://www.linkedin.com/in/karthik-murakonda-59756b200/",
 		"teamlead": "false",
 		"post": "guardains"
+	},
+	{
+		"name": "Adityaram Jogadenu",
+		"image": "https://drive.google.com/uc?id=1fKCSncBrb0jxMN7-tIruQIo458wssaML",
+		"instagram": "https://www.instagram.com/ramjar6/",
+		"facebook": "",
+		"github": "",
+		"linkedin": "https://www.linkedin.com/in/adityaram-jogadenu-b20343202/",
+		"teamlead": "true",
+		"post": "nexus"
+	},
+	{
+		"name": "Chidaksh Ravuru",
+		"image": "https://drive.google.com/uc?id=1EzfDRgfCC4NqS61Y-tyjDmhgpiHDaUot",
+		"instagram": "https://www.instagram.com/ravuru.chidaksh/",
+		"facebook": "",
+		"github": "https://github.com/chidaksh",
+		"linkedin": "https://www.linkedin.com/in/chidaksh/",
+		"teamlead": "false",
+		"post": "nexus"
 	}
 ]

@@ -157,7 +157,7 @@ const GAPageTracker = useRoutetracker("Page")
 				>
 					About
 				</p> */}
-				<p
+				{/* <p
 					className={`elements text link ${active === 3 ? 'violet' : 'white'}`}
 					// onClick={() => history.push('/gallery')}
 				>
@@ -171,7 +171,7 @@ const GAPageTracker = useRoutetracker("Page")
 					>
 						Workshops
 					</a>
-				</p>
+				</p> */}
 				<p
 					className={`elements text link ${active === 9 ? 'violet' : 'white'}`}
 					// onClick={() => history.push('/gallery')}
@@ -221,6 +221,21 @@ const GAPageTracker = useRoutetracker("Page")
 						onClick={GAPageTracker.bind(this, '/team')}
 					>
 						Team
+					</a>
+				</p>
+				<p
+					className={`elements text link ${active === 88 ? 'violet' : 'white'}`}
+					// onClick={() => history.push('/gallery')}
+				>
+					<a
+						className={`elements text link ${
+							active === 88 ? 'violet' : 'white'
+						}`}
+						href="/speakers"
+						style={{ textDecoration: 'none' }}
+						onClick={GAPageTracker.bind(this, '/speakers')}
+					>
+						Speakers
 					</a>
 				</p>
 				<p

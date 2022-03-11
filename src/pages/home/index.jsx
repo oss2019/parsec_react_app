@@ -1,124 +1,125 @@
-import React, { useEffect, Suspense } from 'react';
-import './styles.css';
-import '../../css/counternew.css';
-import '../../css/bootstrap.css';
-import '../../css/style.css';
-import '../../css/responsive.css';
+import React, { useEffect, Suspense } from "react";
+import "./styles.css";
+import "../../css/counternew.css";
+import "../../css/bootstrap.css";
+import "../../css/style.css";
+import "../../css/responsive.css";
 
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import parsecLogo from '../../images/logos/parsec-lg.png';
-import mainSlider from '../../images/main-slider/4_comp.jpg';
-import EventCarousel from './eventsCarousel';
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import parsecLogo from "../../images/logos/parsec-lg.png";
+import mainSlider from "../../images/main-slider/4_comp.jpg";
+import EventCarousel from "./eventsCarousel";
 
-import { Typewriter } from '@chrisfieldsii/react-use-typewriter';
-import '@chrisfieldsii/react-use-typewriter/dist/index.css';
-import Sponsors from './sponsors';
-import AboutUs from './about';
+import { Typewriter } from "@chrisfieldsii/react-use-typewriter";
+import "@chrisfieldsii/react-use-typewriter/dist/index.css";
+import Sponsors from "./sponsors";
+import AboutUs from "./about";
+import Roopak from "../../images/guest/Roopak.png";
 
 const Home = () => {
-	useEffect(() => {
-		function getTimeRemaining(endtime) {
-			// 'use strict';
-			var t = Date.parse(endtime) - Date.parse(new Date());
-			//document.write(endtime.getTimezoneOffset());
-			//document.write(t/1000);
-			//document.write(t/1000+(endtime.getTimezoneOffset()));
-			var use = t / 1000 + endtime.getTimezoneOffset() * 60;
-			//var use =( t / 1000);
-			var seconds = Math.floor(use % 60);
-			var minutes = Math.floor((use / 60) % 60);
-			var hours = Math.floor((use / (60 * 60)) % 24);
-			var days = Math.floor(use / (60 * 60 * 24));
-			return {
-				total: t,
-				days: days,
-				hours: hours,
-				minutes: minutes,
-				seconds: seconds,
-			};
-		}
+  useEffect(() => {
+    // function getTimeRemaining(endtime) {
+    //   // 'use strict';
+    //   var t = Date.parse(endtime) - Date.parse(new Date());
+    //   //document.write(endtime.getTimezoneOffset());
+    //   //document.write(t/1000);
+    //   //document.write(t/1000+(endtime.getTimezoneOffset()));
+    //   var use = t / 1000 + endtime.getTimezoneOffset() * 60;
+    //   //var use =( t / 1000);
+    //   var seconds = Math.floor(use % 60);
+    //   var minutes = Math.floor((use / 60) % 60);
+    //   var hours = Math.floor((use / (60 * 60)) % 24);
+    //   var days = Math.floor(use / (60 * 60 * 24));
+    //   return {
+    //     total: t,
+    //     days: days,
+    //     hours: hours,
+    //     minutes: minutes,
+    //     seconds: seconds,
+    //   };
+    // }
 
-		function initializeClock(id, endtime) {
-			// 'use strict';
-			var clock = document.getElementById(id);
-			var daysSpan = clock.querySelector('.days');
-			var hoursSpan = clock.querySelector('.hours');
-			var minutesSpan = clock.querySelector('.minutes');
-			var secondsSpan = clock.querySelector('.seconds');
+    // function initializeClock(id, endtime) {
+    //   // 'use strict';
+    //   var clock = document.getElementById(id);
+    //   var daysSpan = clock.querySelector(".days");
+    //   var hoursSpan = clock.querySelector(".hours");
+    //   var minutesSpan = clock.querySelector(".minutes");
+    //   var secondsSpan = clock.querySelector(".seconds");
 
-			function updateClock() {
-				var t = getTimeRemaining(endtime);
+    //   function updateClock() {
+    //     var t = getTimeRemaining(endtime);
 
-				daysSpan.innerHTML = t.days;
-				hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-				minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-				secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+    //     daysSpan.innerHTML = t.days;
+    //     hoursSpan.innerHTML = ("0" + t.hours).slice(-2);
+    //     minutesSpan.innerHTML = ("0" + t.minutes).slice(-2);
+    //     secondsSpan.innerHTML = ("0" + t.seconds).slice(-2);
 
-				if (t.total <= 0) {
-					clearInterval(timeinterval);
-				}
-			}
+    //     if (t.total <= 0) {
+    //       clearInterval(timeinterval);
+    //     }
+    //   }
 
-			updateClock();
-			var timeinterval = setInterval(updateClock, 1000);
-		}
-		//var deadline = "17/01/2020";
-		var date1 = new Date('2022-03-04T18:30:00Z');
-		var date2 = new Date();
-		//document.write(date2.getHours());
-		//document.write(date1.getHours());
-		var seconds = date1.getTime() - date2.getTime(); //1440516958
-		var deadline = new Date(Date.parse(new Date()) + seconds);
-		initializeClock('clockdiv', deadline);
+    //   updateClock();
+    //   var timeinterval = setInterval(updateClock, 1000);
+    // }
+    //var deadline = "17/01/2020";
+    // var date1 = new Date("2022-03-04T18:30:00Z");
+    // var date2 = new Date();
+    // //document.write(date2.getHours());
+    // //document.write(date1.getHours());
+    // var seconds = date1.getTime() - date2.getTime(); //1440516958
+    // var deadline = new Date(Date.parse(new Date()) + seconds);
+    // initializeClock("clockdiv", deadline);
 
-		(function ($) {
-			// 'use strict';
+    (function ($) {
+      // 'use strict';
 
-			//Hide Loading Box (Preloader)
-			function handlePreloader() {
-				if ($('.preloader').length) {
-					$('.preloader').delay(200).fadeOut(500);
-				}
-			}
+      //Hide Loading Box (Preloader)
+      function handlePreloader() {
+        if ($(".preloader").length) {
+          $(".preloader").delay(200).fadeOut(500);
+        }
+      }
 
-			//Update Header Style and Scroll to Top
-			function headerStyle() {
-				if ($('.main-header').length) {
-					var windowpos = $(window).scrollTop();
-					var siteHeader = $('.main-header');
-					var scrollLink = $('.scroll-to-top');
-					if (windowpos >= 1) {
-						siteHeader.addClass('fixed-header');
-						scrollLink.fadeIn(300);
-					} else {
-						siteHeader.removeClass('fixed-header');
-						scrollLink.fadeOut(300);
-					}
-				}
-			}
+      //Update Header Style and Scroll to Top
+      function headerStyle() {
+        if ($(".main-header").length) {
+          var windowpos = $(window).scrollTop();
+          var siteHeader = $(".main-header");
+          var scrollLink = $(".scroll-to-top");
+          if (windowpos >= 1) {
+            siteHeader.addClass("fixed-header");
+            scrollLink.fadeIn(300);
+          } else {
+            siteHeader.removeClass("fixed-header");
+            scrollLink.fadeOut(300);
+          }
+        }
+      }
 
-			headerStyle();
+      headerStyle();
 
-			/* ==========================================================================
+      /* ==========================================================================
    When document is Scrollig, do
    ========================================================================== */
 
-			$(window).on('scroll', function () {
-				headerStyle();
-			});
+      $(window).on("scroll", function () {
+        headerStyle();
+      });
 
-			/* ==========================================================================
+      /* ==========================================================================
    When document is loading, do
    ========================================================================== */
 
-			$(window).on('load', function () {
-				handlePreloader();
-			});
-		})(window.jQuery);
-	}, []);
+      $(window).on("load", function () {
+        handlePreloader();
+      });
+    })(window.jQuery);
+  }, []);
 
-	return (
+  return (
 		<React.Fragment>
 			<div className="page-wrapper">
 				<div className="preloader"></div>
@@ -202,153 +203,248 @@ const Home = () => {
 
 				<br />
 				<br />
-				<br />
-				<br />
 
-				<section
-					className="about-us-countdown-area section-padding-100-0"
-					id="about"
-				>
-					<div className="countdown-up-area">
-						<div className="auto-container">
-							<div id="clockdiv" className="row align-items-center">
-								<div className="col-12 col-md-3">
+				<section style={{ margin: '2%px' }}>
+					<div
+						className="sec-title"
+						style={{ backgroundColor: 'transparent', paddingLeft: '6%' }}
+					>
+						<h1>Chief Guest</h1>
+					</div>
+
+					<div className="content-box">
+						<div
+							className="row"
+							style={{ display: 'flex', justifyContent: 'space-around' }}
+						>
+							<div
+								className="col-md-5 py-2"
+								style={{ width: '80%', minWidth: '80vw' }}
+							>
+								<div className=" border-danger shadow">
 									<div
-										className="countdown-content-text mb-100 wow fadeInUp"
-										data-wow-delay="300ms"
+										className="card-body"
+										style={{
+											border: '2px solid #e2e6e9',
+											borderRadius: '8px',
+											borderBottom: 'none',
+											borderRight: 'none',
+											boxShadow: '3px 3px #282963',
+
+											display: 'flex',
+											//   flexDirection : 'column',
+											flexWrap: 'wrap',
+										}}
 									>
-										<h6 style={{ textAlign: 'left', color: '#f20487' }}>
-											4th March
-										</h6>
-										<h3
+										<img
+											src={Roopak}
+											alt=" "
 											style={{
-												fontWeight: '450',
-												textAlign: 'left',
-												color: '#f20487',
+												width: '100%',
+												maxWidth: '300px',
+												display: 'block',
+												marginLeft: 'auto',
+												marginRight: 'auto',
+												padding: '1%',
+											}}
+										></img>
+										<div
+											style={{
+												margin: 'auto',
+												display: 'flex',
+												flexDirection: 'column',
+												padding: '4% 1%',
 											}}
 										>
-											Coming in...
-										</h3>
-									</div>
-								</div>
-
-								<div className="col-12 col-md-2">
-									<div
-										className="countdown-timer mb-100 wow fadeInUp mx-auto"
-										data-wow-delay="300ms"
-										style={{
-											height: '160px',
-											width: '160px',
-											border: '2px solid rgba(35, 43, 107, 1)',
-										}}
-									>
-										<span
-											className="days"
-											style={{ fontWeight: '900', fontSize: '55px' }}
-										></span>
-
-										<h3>
-											<span
+											<h1
+												className="card-title text-danger"
 												style={{
 													textAlign: 'center',
-													color: '#5e577c',
-													fontSize: '20px',
+													// fontSize: "1.8rem",
+													padding: '2% 0%',
 												}}
 											>
-												Days
-											</span>
-										</h3>
-									</div>
-								</div>
-								<div className="col-12 col-md-2">
-									<div
-										className="countdown-timer mb-100 wow fadeInUp mx-auto"
-										data-wow-delay="300ms"
-										style={{
-											height: '160px',
-											width: '160px',
-											border: '2px solid rgba(35, 43, 107, 1)',
-										}}
-									>
-										<span
-											className="hours"
-											style={{ fontWeight: '900', fontSize: '55px' }}
-										></span>
+												Mr. Roopak Sharma
+											</h1>
 
-										<h3>
-											<span
+											<p
+												className="card-text text-dark mb-1"
 												style={{
+													fontSize: `1.8rem`,
 													textAlign: 'center',
-													color: '#5e577c',
-													fontSize: '20px',
+													padding: '2% 0%',
 												}}
 											>
-												Hours
-											</span>
-										</h3>
-									</div>
-								</div>
-								<div className="col-12 col-md-2">
-									<div
-										className="countdown-timer mb-100 wow fadeInUp mx-auto"
-										data-wow-delay="300ms"
-										style={{
-											height: '160px',
-											width: '160px',
-											border: '2px solid rgba(35, 43, 107, 1)',
-										}}
-									>
-										<span
-											className="minutes"
-											style={{ fontWeight: '900', fontSize: '55px' }}
-										></span>
-
-										<h3>
-											<span
+												<strong>
+													Vice President, Advanced Engineering <br /> and
+													Systems Technology{' '}
+												</strong>
+											</p>
+											<p
+												className="card-text text-dark mb-1"
 												style={{
+													fontSize: `1.3rem`,
 													textAlign: 'center',
-													color: '#5e577c',
-													fontSize: '20px',
+													padding: '2% 0%',
+													letterSpacing: '0.3rem',
 												}}
 											>
-												Minutes
-											</span>
-										</h3>
-									</div>
-								</div>
-								<div className="col-12 col-md-2">
-									<div
-										className="countdown-timer mb-100 wow fadeInUp mx-auto"
-										data-wow-delay="300ms"
-										style={{
-											height: '160px',
-											width: '160px',
-											border: '2px solid rgba(35, 43, 107, 1)',
-										}}
-									>
-										<span
-											className="seconds"
-											style={{ fontWeight: '900', fontSize: '55px' }}
-										></span>
-
-										<h3>
-											<span
-												style={{
-													textAlign: 'center',
-													color: '#5e577c',
-													fontSize: '20px',
-												}}
-											>
-												Seconds
-											</span>
-										</h3>
+												JCB India Head Quarters
+											</p>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
+				<br />
+				<br />
 
+				{/* <section
+          className="about-us-countdown-area section-padding-100-0"
+          id="about"
+        >
+          <div className="countdown-up-area">
+            <div className="auto-container">
+              <div id="clockdiv" className="row align-items-center">
+                <div className="col-12 col-md-3">
+                  <div
+                    className="countdown-content-text mb-100 wow fadeInUp"
+                    data-wow-delay="300ms"
+                  >
+                    <h6 style={{ textAlign: "left", color: "#f20487" }}>
+                      4th March
+                    </h6>
+                    <h3
+                      style={{
+                        fontWeight: "450",
+                        textAlign: "left",
+                        color: "#f20487",
+                      }}
+                    >
+                      Coming in...
+                    </h3>
+                  </div>
+                </div>
+
+                <div className="col-12 col-md-2">
+                  <div
+                    className="countdown-timer mb-100 wow fadeInUp mx-auto"
+                    data-wow-delay="300ms"
+                    style={{
+                      height: "160px",
+                      width: "160px",
+                      border: "2px solid rgba(35, 43, 107, 1)",
+                    }}
+                  >
+                    <span
+                      className="days"
+                      style={{ fontWeight: "900", fontSize: "55px" }}
+                    ></span>
+
+                    <h3>
+                      <span
+                        style={{
+                          textAlign: "center",
+                          color: "#5e577c",
+                          fontSize: "20px",
+                        }}
+                      >
+                        Days
+                      </span>
+                    </h3>
+                  </div>
+                </div>
+                <div className="col-12 col-md-2">
+                  <div
+                    className="countdown-timer mb-100 wow fadeInUp mx-auto"
+                    data-wow-delay="300ms"
+                    style={{
+                      height: "160px",
+                      width: "160px",
+                      border: "2px solid rgba(35, 43, 107, 1)",
+                    }}
+                  >
+                    <span
+                      className="hours"
+                      style={{ fontWeight: "900", fontSize: "55px" }}
+                    ></span>
+
+                    <h3>
+                      <span
+                        style={{
+                          textAlign: "center",
+                          color: "#5e577c",
+                          fontSize: "20px",
+                        }}
+                      >
+                        Hours
+                      </span>
+                    </h3>
+                  </div>
+                </div>
+                <div className="col-12 col-md-2">
+                  <div
+                    className="countdown-timer mb-100 wow fadeInUp mx-auto"
+                    data-wow-delay="300ms"
+                    style={{
+                      height: "160px",
+                      width: "160px",
+                      border: "2px solid rgba(35, 43, 107, 1)",
+                    }}
+                  >
+                    <span
+                      className="minutes"
+                      style={{ fontWeight: "900", fontSize: "55px" }}
+                    ></span>
+
+                    <h3>
+                      <span
+                        style={{
+                          textAlign: "center",
+                          color: "#5e577c",
+                          fontSize: "20px",
+                        }}
+                      >
+                        Minutes
+                      </span>
+                    </h3>
+                  </div>
+                </div>
+                <div className="col-12 col-md-2">
+                  <div
+                    className="countdown-timer mb-100 wow fadeInUp mx-auto"
+                    data-wow-delay="300ms"
+                    style={{
+                      height: "160px",
+                      width: "160px",
+                      border: "2px solid rgba(35, 43, 107, 1)",
+                    }}
+                  >
+                    <span
+                      className="seconds"
+                      style={{ fontWeight: "900", fontSize: "55px" }}
+                    ></span>
+
+                    <h3>
+                      <span
+                        style={{
+                          textAlign: "center",
+                          color: "#5e577c",
+                          fontSize: "20px",
+                        }}
+                      >
+                        Seconds
+                      </span>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+ */}
 				{/* <EventCarousel /> */}
 				{/* lasdjfaldsfjasdfkasldfja */}
 				<section className="location-section">
