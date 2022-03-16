@@ -26,6 +26,8 @@ const GAPageTracker = useRoutetracker("Page")
 				zIndex: 100,
 				top: '0px',
 				backgroundColor: '#1f003b',
+				// overflow: 'scroll'
+				overflow: 'auto'
 			}}
 		>
 			<div className="children">
@@ -295,18 +297,31 @@ const GAPageTracker = useRoutetracker("Page")
 				>
 					Contact
 				</p> */}
-
+				<hr style={{width: '100%', height: '2pt', color: 'white'}} />
+ <div className='title'>
+				<h1 style={{color: 'white', padding: '0 10px',textAlign: 'center'}}>Verify Your Certificates</h1>
+				<h5 style={{color: 'white', lineHeight: '30px', padding: '0 10px'}}>
+            In case of any issues, contact +91 9674950307.</h5>
+			</div>
+			<br/>
+			<div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+			<Button variant="primary" size="lg"  onClick={() =>{
+				window.location.href  = '/verification'
+			}}>
+                        Verify Cirtificates
+                    </Button>
+			</div>
+			<hr style={{width: '100%', height: '2pt', color: 'white'}} />
 				{/* <div style={{ color: 'white', bottom: 0, position: 'absolute' }}> */}
 				<div className="contact-info-box" style={{ textAlign: 'left' }}>
-					<ul className="info-list">
+					{/* <ul className="info-list">
 						<br />
 						<li>outreach.parsec@iitdh.ac.in</li>
 						<br />
 						<li>+91 7892128329</li>
-					</ul>
+					</ul> */}
 					<ul className="social-list clearfix">
-						<br />
-						<br />
+					
 						<li>
 							<a
 								href="https://www.linkedin.com/company/parsec-iit-dharwad/"

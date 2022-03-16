@@ -751,59 +751,20 @@ const Header = ({ active, bg=false }) => {
 								</form>
 							</div> */}
 							 <>
-        {!data.exists?(
-          <div >
-            <div className='title'>
-				<h1 style={{color: 'white'}}>Get Certificates</h1>
+							 <div className='title'>
+				<h1 style={{color: 'white'}}>Verify Your Certificates</h1>
 				<hr style={{width: '100%', height: '2pt', color: 'white'}} />
-				<h5 style={{color: 'white', lineHeight: '30px'}}>Please Login with the Email ID <br/>with which you have registered for the event.<br/>
+				<h5 style={{color: 'white', lineHeight: '30px'}}>
             In case of any issues, contact +91 9674950307.</h5>
 			</div>
-            <br/><br/>
-            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-			<GoogleLogin
-                clientId="289322022105-d6kou0ncpfhvmq4g5a3pu81e94t3ni5c.apps.googleusercontent.com"
-                render={(renderProps) => (
-                    <Button variant="primary" size="lg" active={renderProps.disabled} onClick={renderProps.onClick}>
-                        Google Login
+			<br/>
+			<div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+			<Button variant="primary" size="lg"  onClick={() =>{
+				window.location.href  = '/verification'
+			}}>
+                        Verify Cirtificates
                     </Button>
-                )}
-                onSuccess={googleSuccess}
-                onFailure={googleFailure}
-                cookiePolicy="single_host_origin"
-            />
 			</div>
-          </div>
-        ):(
-          <>
-            {/* <Header bg/>
-            <br/><br/><br/><br/><br/><br/> */}
-            {/*<div className="padding-form">
-              <Form>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Label>ID</Form.Label>
-                  <Form.Control type="email" placeholder="Enter email" />
-                </Form.Group>
-                <Button variant="primary" type="submit">
-                  Submit
-                </Button>
-              </Form>
-            </div>*/}
-            <div style={{color: 'white'}} >
-              Available Certificates :
-              <br/>
-              {data?.data?.map((res, index) => {
-                console.log(res);
-                return (
-                  <>
-                    <code><a href={res}>Certificate {index + 1}</a></code>
-                    <br/>
-                  </>
-                )
-              })}
-            </div>
-          </>
-        )}
     </>
 							<div className="contact-info-box">
 								{/* <ul className="info-list">
