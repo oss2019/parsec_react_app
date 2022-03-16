@@ -26,7 +26,7 @@ const UserDetailSchema: Schema = new Schema({
 });
 
 const UserDetail: Model<UserDetailDocument> = model(
-  'UserDetail',
+  'User',
   UserDetailSchema
 );
 export default UserDetail;

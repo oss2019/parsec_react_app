@@ -2,15 +2,15 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "node src/index.js",
     "postinstall": "tsc",
-    "watch-node": "nodemon dist/index.js",
+    "watch-node": "nodemon src/index.js",
     "watch-ts": "tsc -w",
     "dev": "nodemon --exec ts-node src/index.ts",
-    "create-bundle": "tsc && node dist/index.js",
-    "start": "node dist/index.js",
+    "create-bundle": "tsc && node src/index.js",
+    "start": "node src/index.js",
     "format": "prettier --write \"**/*.{ts,tsx,js,scss}\" && npm run lint:fix",
     "format-check": "prettier --check \"**/*.{ts,tsx,js,scss}\"",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
@@ -19,8 +19,8 @@
   "author": "Samy",
   "license": "ISC",
   "engines": {
-      "node": "14.15.1",
-      "npm": "6.14.8"
+      "node": "17.7.1",
+      "npm": "8.5.4"
   },
   "dependencies": {
     "@types/cookie-parser": "^1.4.2",

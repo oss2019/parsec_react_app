@@ -7,7 +7,9 @@ export class UserController {
   static async getData(req: Request, res: Response, next: NextFunction) {
     try {
       const query = req.query;
+      console.log(query);
       const user = await UserDetail.findOne(query);
+      console.log(user);
       if (!user) {
         return res.status(200).json({
           data: {

@@ -3,7 +3,7 @@ import { UserController } from '../controllers/UserController';
 
 // The file is responsible to process the api requests and call the required middleware, validator and controller in a centralized place
 
-//@Route: /user
+//@Route: /search
 //@AUTH not required
 //@FUNCTIONS all user related work
 
