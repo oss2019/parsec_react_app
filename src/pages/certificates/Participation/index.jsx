@@ -65,6 +65,9 @@ const ParticipationCertificates = () => {
     <>
         {!data.exists?(
           <div className="center">
+            Please Login with the Email ID with which you have registered for the event.
+            In case of any issues, contact +91 9674950307.
+            <br/><br/>
             <GoogleLogin
                 clientId="289322022105-d6kou0ncpfhvmq4g5a3pu81e94t3ni5c.apps.googleusercontent.com"
                 render={(renderProps) => (

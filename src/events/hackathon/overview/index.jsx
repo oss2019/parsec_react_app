@@ -1,4 +1,6 @@
 import React from "react";
+import Button from 'react-bootstrap/Button';
+
 import "./styles.css";
 import "../../../css/style.css";
 import "../../../css/bootstrap.css";
@@ -86,14 +88,12 @@ const Overview = () => {
                         className="padding"
                       />
                       <br/>
-                      <div
-                        class="apply-button"
-                        data-hackathon-slug="devhack"
-                        data-button-theme="light"
-                        style={{ height: "44px", width: "312px" }}
+                      <Button
+                        variant="outline-primary"
+                        style={{ width: '18rem' }}
                       >
-                        <a href="/certificates" target="_blank">Get Certificates</a>
-                      </div>
+                        <a href="/participation" target="_blank">Get Certificates</a>
+                      </Button>
                     </div>
                   </div>
                 </div>

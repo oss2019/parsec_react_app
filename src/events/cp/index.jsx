@@ -141,7 +141,7 @@ const Cp = () => {
 											<div className="padding"/>
 											<div className="btn-box text-center">
 												<a
-													href="/certificates"
+													href="/participation"
 													className="theme-btn btn-style-four button text-center"
 													id="btncs"
 													target="_blank"

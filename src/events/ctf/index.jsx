@@ -270,7 +270,7 @@ const Ctf = () => {
 														>
 															<div className="btn-box text-center">
 																<a
-																	href="/certificates"
+																	href="/participation"
 																	className="theme-btn btn-style-four button2 text-center"
 																	id="btncs2"
 																	style={{

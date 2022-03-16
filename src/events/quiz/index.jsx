@@ -125,7 +125,7 @@ const Quiz = () => {
 																	style={{ textAlign: `center` }}
 																>
 																	<a
-																		href="/certificates"
+																		href="/participation"
 																		target="_blank"
 																		className="theme-btn btn-style-two btn-rounded mb-4"
 																		// id="btncs"

@@ -100,7 +100,7 @@ const Designo = () => {
 									>
 										<div className="btn-box" style={{ textAlign: `center` }}>
 											<a
-												href="/certificates"
+												href="/participation"
 												target="_blank"
 												className="theme-btn btn-style-one btn-rounded mb-4"
 												// id="btncs"
