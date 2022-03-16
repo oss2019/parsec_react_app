@@ -83,11 +83,11 @@ const Quiz = () => {
 																	Under <strong>PARSEC 2022</strong>, the Quiz
 																	Club of IIT Dharwad is conducting a
 																	<strong> Science and Technology Quiz </strong>{' '}
-																	for High School and college students. The questions are
-																	designed to investigate, rather than to simply
-																	arrive at an answer, and specifically to
-																	promote debate and discussion among teams
-																	participating and the judges. The
+																	for High School and college students. The
+																	questions are designed to investigate, rather
+																	than to simply arrive at an answer, and
+																	specifically to promote debate and discussion
+																	among teams participating and the judges. The
 																	participants' knowledge, expertise in high
 																	school science, developments, and current news
 																	from the world of Science and Technology will
@@ -98,7 +98,7 @@ const Quiz = () => {
 																className="row justify-content-center align-items-center"
 																style={{ margin: `auto` }}
 															>
-																<div
+																{/* <div
 																	className="btn-box"
 																	style={{ textAlign: `center` }}
 																>
@@ -114,7 +114,7 @@ const Quiz = () => {
 																	>
 																		REGISTER NOW
 																	</a>
-																</div>
+																</div> */}
 															</div>
 															<div
 																className="row justify-content-center align-items-center"

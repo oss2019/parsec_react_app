@@ -79,7 +79,7 @@ const Designo = () => {
 										className="row justify-content-center align-items-center"
 										style={{ margin: `auto` }}
 									>
-										<div className="btn-box" style={{ textAlign: `center` }}>
+										{/* <div className="btn-box" style={{ textAlign: `center` }}>
 											<a
 												href="https://dare2compete.com/competition/designo-parsec-a-paradigm-shift-indian-institute-of-technology-iit-dharwad-262181"
 												target="_blank"
@@ -92,7 +92,7 @@ const Designo = () => {
 											>
 												REGISTER NOW
 											</a>
-										</div>
+										</div> */}
 									</div>
 									<div
 										className="row justify-content-center align-items-center"

@@ -92,7 +92,7 @@ const Ascensus = () => {
 											className="row justify-content-center align-items-center"
 											style={{ margin: 'auto', paddingTop: '40px' }}
 										>
-											<div className="btn-box text-center">
+											{/* <div className="btn-box text-center">
 												<a
 													href="https://dare2compete.com/competition/ascensus-parsec-a-paradigm-shift-indian-institute-of-technology-iit-dharwad-262140"
 													className="theme-btn btn-style-four button2 text-center"
@@ -106,7 +106,7 @@ const Ascensus = () => {
 												>
 													Register Now
 												</a>
-											</div>
+											</div> */}
 										</div>
 										<div
 											className="row justify-content-center align-items-center"

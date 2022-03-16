@@ -78,7 +78,7 @@ const Overview = () => {
                       {/* <div>
 
 											</div> */}
-                      <div
+                      {/* <div
                         class="apply-button"
                         data-hackathon-slug="devhack"
                         data-button-theme="light"
@@ -86,7 +86,7 @@ const Overview = () => {
                       />
                       <div
                         className="padding"
-                      />
+                      /> */}
                       <br/>
                       <Button
                         variant="outline-primary"

@@ -123,7 +123,7 @@ const Cp = () => {
 											className="row justify-content-center align-items-center"
 											style={{ margin: 'auto' }}
 										>
-											<div className="btn-box text-center">
+											{/* <div className="btn-box text-center">
 												<a
 													href="https://bit.ly/3GyVYHn"
 													className="theme-btn btn-style-four button text-center"
@@ -137,8 +137,8 @@ const Cp = () => {
 												>
 													Register Now
 												</a>
-											</div>
-											<div className="padding"/>
+											</div> */}
+											<div className="padding" />
 											<div className="btn-box text-center">
 												<a
 													href="/participation"

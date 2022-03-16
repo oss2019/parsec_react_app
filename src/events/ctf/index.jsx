@@ -209,7 +209,7 @@ const Ctf = () => {
 															className=""
 															style={{ margin: 'auto', paddingTop: '40px' }}
 														>
-															<div className="btn-box text-center">
+															{/* <div className="btn-box text-center">
 																<a
 																	href="https://dare2compete.com/hackathon/venividivici-ctf-parsec-a-paradigm-shift-indian-institute-of-technology-iit-dharwad-268112"
 																	className="theme-btn btn-style-four button2 text-center"
@@ -224,7 +224,7 @@ const Ctf = () => {
 																>
 																	Register Now
 																</a>
-															</div>
+															</div> */}
 														</div>
 													</div>
 													<div

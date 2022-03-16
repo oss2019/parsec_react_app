@@ -103,7 +103,7 @@ const Guardains = () => {
 											className="row justify-content-center align-items-center"
 											style={{ margin: 'auto' }}
 										>
-											<div className="btn-box text-center">
+											{/* <div className="btn-box text-center">
 												<a
 													href="https://dare2compete.com/p/guardains-parsec-a-paradigm-shift-indian-institute-of-technology-iit-dharwad-262141"
 													className="theme-btn btn-style-four button text-center"
@@ -117,9 +117,9 @@ const Guardains = () => {
 												>
 													Register Now
 												</a>
-											</div>
+											</div> */}
 										</div>
-										<br/>
+										<br />
 										<div
 											className="row justify-content-center align-items-center"
 											style={{ margin: 'auto' }}
