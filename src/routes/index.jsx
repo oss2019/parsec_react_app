@@ -25,7 +25,8 @@ import CodeOfConduct from '../pages/codeOfConduct';
 import About from '../pages/about';
 import Gallery from '../pages/gallery';
 import EventLanding from '../pages/eventLanding';
-import Certificates from '../pages/certificates';
+import ParticipationCertificates from '../pages/certificates/Participation';
+import VerificationCertificates from '../pages/certificates/Verification';
 import Guardains from '../events/guardains';
 // import Speakers from '../pages/speakers';
 
@@ -38,7 +39,8 @@ const Routes = () => {
 				<Route exact path="/faq.html">
 					<Redirect to="/faq" />
 				</Route>
-				<Route exact path="/certificates" component={Certificates} />
+				<Route exact path="/participation" component={ParticipationCertificates} />
+				<Route exact path="/verification" component={VerificationCertificates} />
 				<Route exact path="/sponsors" component={Sponsers} />
 				<Route exact path="/sponsors.html">
 					<Redirect to="/sponsors" />
