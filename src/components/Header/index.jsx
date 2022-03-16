@@ -17,6 +17,10 @@ import parsecLogo from '../../images/logos/logo-nav.png';
 import './styles.css';
 import { nodeName } from 'jquery';
 import useRoutetracker from '../Tracker/hooks/useRouteTracker';
+import { GoogleLogin } from 'react-google-login';
+// import Button from 'react-bootstrap/Button';
+// import ParticipantData from '../../../data/ParticipantData.json';
+import ParticipantData from '../../data/ParticipantData.json'
 
 const Header = ({ active, bg=false }) => {
 	const isTabletorMobile = useMediaQuery({
@@ -389,6 +393,57 @@ const Header = ({ active, bg=false }) => {
 			});
 		})(window.jQuery);
 	}, []);
+
+	// Certificates
+
+	const [data, setData] = useState({
+		exists: false
+	  });
+	
+	  const getData = () => {
+		// XLSX.set_fs(fs);
+		// var name = excel.name;
+		// const reader = new FileReader();
+		// reader.onload = (evt) => { // evt = on_file_select event
+		//     /* Parse data */
+		//     const bstr = evt.target.result;
+		//     const wb = XLSX.read(bstr, {type:'binary'});
+		//     /* Get first worksheet */
+		//     const wsname = wb.SheetNames[0];
+		//     const ws = wb.Sheets[wsname];
+		//     /* Convert array of arrays */
+		//     const data = XLSX.utils.sheet_to_csv(ws, {header:1});
+		//     /* Update state */
+		//     console.log("Data>>>"+data);
+		// };
+		// reader.readAsText(excel);
+		// var workbook = XLSX.readFile(excel);
+		// console.log(workbook);
+	  }
+	
+	  const googleSuccess = async (res) => {
+		  const values = res?.profileObj;
+		  const result = {
+			  Email: values.email,
+			  // token: res?.tokenId
+		  }
+		  var response;
+		  // axios(`https://parsec-certificate-backend.herokuapp.com/search?email=${result.Email}`).then((res) => {
+		  //   response = res.data?.data;
+		  // }).catch(err => console.log(err));
+		  // axios(`http://localhost:5000/user/search?email=${result.Email}`).then((res) => {
+		  //   response = res.data?.data;
+		  // }).catch(err => console.log(err));
+		  console.log(result);
+		  setData({ exists: true, ...result, data: ParticipantData[result.Email] });
+	  }
+	
+	  const googleFailure = (error) => {
+		  console.log('Something went wrong :(', error);
+	  }
+	
+
+	// end Certificates
 	const GAPageTracker = useRoutetracker('Page');
 	return (
 		<div
@@ -428,7 +483,7 @@ const Header = ({ active, bg=false }) => {
 				<>
 					<header
 						className="main-header header-style-two"
-						style={{ backgroundColor: bg?"#1f003b":"transparent" }}
+						style={{ backgroundColor: bg?"#1f003b":"" }}
 					>
 						<div className="header-upper">
 							<div className="outer-container">
@@ -647,9 +702,9 @@ const Header = ({ active, bg=false }) => {
 							<div className="cross-icon">
 								<span className="fa fa-times"></span>
 							</div>
-							<div className="title">
+							{/* <div className="title">
 								<h2>Stuck? Feel free to contact.</h2>
-							</div>
+							</div> */}
 
 							{/* Appointment form */}
 
@@ -695,16 +750,75 @@ const Header = ({ active, bg=false }) => {
 									</div>
 								</form>
 							</div> */}
+							 <>
+        {!data.exists?(
+          <div >
+            <div className='title'>
+				<h1 style={{color: 'white'}}>Get Certificates</h1>
+				<hr style={{width: '100%', height: '2pt', color: 'white'}} />
+				<h5 style={{color: 'white', lineHeight: '30px'}}>Please Login with the Email ID <br/>with which you have registered for the event.<br/>
+            In case of any issues, contact +91 9674950307.</h5>
+			</div>
+            <br/><br/>
+            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+			<GoogleLogin
+                clientId="289322022105-d6kou0ncpfhvmq4g5a3pu81e94t3ni5c.apps.googleusercontent.com"
+                render={(renderProps) => (
+                    <Button variant="primary" size="lg" active={renderProps.disabled} onClick={renderProps.onClick}>
+                        Google Login
+                    </Button>
+                )}
+                onSuccess={googleSuccess}
+                onFailure={googleFailure}
+                cookiePolicy="single_host_origin"
+            />
+			</div>
+          </div>
+        ):(
+          <>
+            {/* <Header bg/>
+            <br/><br/><br/><br/><br/><br/> */}
+            {/*<div className="padding-form">
+              <Form>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                  <Form.Label>ID</Form.Label>
+                  <Form.Control type="email" placeholder="Enter email" />
+                </Form.Group>
+                <Button variant="primary" type="submit">
+                  Submit
+                </Button>
+              </Form>
+            </div>*/}
+            <div style={{color: 'white'}} >
+              Available Certificates :
+              <br/>
+              {data?.data?.map((res, index) => {
+                console.log(res);
+                return (
+                  <>
+                    <code><a href={res}>Certificate {index + 1}</a></code>
+                    <br/>
+                  </>
+                )
+              })}
+            </div>
+          </>
+        )}
+    </>
 							<div className="contact-info-box">
-								<ul className="info-list">
+								{/* <ul className="info-list">
 									<br />
 									<li>outreach.parsec@iitdh.ac.in</li>
 									<br />
 									<li>+91 7892128329</li>
-								</ul>
+								</ul> */}
+									<br />
+									<br />
+									<hr style={{width: '100%', height: '2pt', color: 'white'}} />
+
 								<ul className="social-list clearfix">
-									<br />
-									<br />
+									
+								
 									<li>
 										<a
 											href="https://www.linkedin.com/company/parsec-iit-dharwad/"

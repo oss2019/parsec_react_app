@@ -28,6 +28,7 @@ import EventLanding from '../pages/eventLanding';
 import ParticipationCertificates from '../pages/certificates/Participation';
 import VerificationCertificates from '../pages/certificates/Verification';
 import Guardains from '../events/guardains';
+
 // import Speakers from '../pages/speakers';
 
 const Routes = () => {
