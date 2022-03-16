@@ -9,6 +9,7 @@ import silverSponsor from './silver.json';
 import associateSponsors from './associatePartners.json'
 import titleSponsor from './titleSponsors.json'
 import trelix from './trelix.json'
+import educationalPartner from './educationPartner.json'
 import { useMediaQuery } from 'react-responsive';
 const SponsorSec = ({title,sponsorData,padding}) => {
 	return (
@@ -275,6 +276,10 @@ const Sponsors = () => {
 
 							{/* HIGHLIGHT WORKSHOP PARTNER */}
 							<SponsorSec
+								title={'EDUCATIONAL PARTNER'}
+								sponsorData={educationalPartner}
+							/>
+							<SponsorSec
 								title={'WORKSHOP PARTNER'}
 								sponsorData={workshopPartner}
 							/>
@@ -287,7 +292,7 @@ const Sponsors = () => {
 
 				<br />
 				<br />
-				<div className="btn-box" style={{ textAlign: 'center' }}>
+				{/* <div className="btn-box" style={{ textAlign: 'center' }}>
 					<a
 						href="https://drive.google.com/file/d/1bN3DHWDMvaiEYX8YA4N8i_W4uuh2gqzm/view?usp=sharing"
 						target="_blank"
@@ -300,7 +305,7 @@ const Sponsors = () => {
 					>
 						Become a Sponsor
 					</a>
-				</div>
+				</div> */}
 				<br />
 				<br />
 				<br />
