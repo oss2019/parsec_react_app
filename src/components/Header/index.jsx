@@ -18,7 +18,7 @@ import './styles.css';
 import { nodeName } from 'jquery';
 import useRoutetracker from '../Tracker/hooks/useRouteTracker';
 
-const Header = ({ active }) => {
+const Header = ({ active, bg=false }) => {
 	const isTabletorMobile = useMediaQuery({
 		query: '(max-width: 1026px)',
 	});
@@ -428,7 +428,7 @@ const Header = ({ active }) => {
 				<>
 					<header
 						className="main-header header-style-two"
-						// style={{ background: '' }}
+						style={{ backgroundColor: bg?"#1f003b":"transparent" }}
 					>
 						<div className="header-upper">
 							<div className="outer-container">

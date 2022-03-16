@@ -138,6 +138,22 @@ const Cp = () => {
 													Register Now
 												</a>
 											</div>
+											<div className="padding"/>
+											<div className="btn-box text-center">
+												<a
+													href="/certificates"
+													className="theme-btn btn-style-four button text-center"
+													id="btncs"
+													target="_blank"
+													style={{
+														borderRadius: '8px',
+														color: '#ffffff',
+														// background: '#f20487',
+													}}
+												>
+													Get Certificates
+												</a>
+											</div>
 										</div>
 									</div>
 								</div>

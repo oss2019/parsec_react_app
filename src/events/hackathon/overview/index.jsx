@@ -81,7 +81,19 @@ const Overview = () => {
                         data-hackathon-slug="devhack"
                         data-button-theme="light"
                         style={{ height: "44px", width: "312px" }}
-                      ></div>
+                      />
+                      <div
+                        className="padding"
+                      />
+                      <br/>
+                      <div
+                        class="apply-button"
+                        data-hackathon-slug="devhack"
+                        data-button-theme="light"
+                        style={{ height: "44px", width: "312px" }}
+                      >
+                        <a href="/certificates" target="_blank">Get Certificates</a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -105,7 +117,7 @@ const Overview = () => {
                   className="row justify-content-center align-items-center col-lg-12"
                   style={{ margin: "auto" }}
                 >
-                
+
 
                   <p
                     style={{

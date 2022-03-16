@@ -227,6 +227,65 @@ const Ctf = () => {
 															</div>
 														</div>
 													</div>
+													<div
+														className="col-lg-4"
+														style={{
+															maxWidth: `250px`,
+															maxHeight: `200px`,
+															textAlign: 'center',
+															maxWidth: '100%',
+														}}
+													>
+														{/* <br> */}
+														{/* <ul className="ul1" style={{ paddingRight: `30px`, textAlign: 'center' }}>
+														<a
+															// href=" https://parseciitdh.typeform.com/to/FuAQay"
+															style={{ textDecoration: 'none' }}
+														>
+															<li className="li1" style={{maxWidth: '330px'}}>Register Now</li>
+														</a>
+														<li
+															className="li1"
+															style={{
+																marginRight: `40px`,
+																paddingRight: `40px`,
+																maxWidth: `330px`,textAlign:'center'
+															}}
+														>
+															<a
+																href="https://venividivici.iitdh.ac.in/"
+																style={{
+																	color: `#ffffff`,
+																	width: '100%',
+																	textDecoration: 'none',textAlign: 'center'
+																}}
+															>
+																proceed to ctf
+															</a>
+														</li>
+													</ul> */}
+														<div
+															className=""
+															style={{ margin: 'auto', paddingTop: '40px' }}
+														>
+															<div className="btn-box text-center">
+																<a
+																	href="/certificates"
+																	className="theme-btn btn-style-four button2 text-center"
+																	id="btncs2"
+																	style={{
+																		borderRadius: '8px',
+																		color: '#ffffff',
+																		// background: 'rgba(242, 172, 79,0.9)',
+																	}}
+																	target="_blank"
+																	rel="noreferrer"
+																>
+																	Get Certificates
+																</a>
+															</div>
+														</div>
+													</div>
 												</div>
 												<div className="col-lg-4"></div>
 												<div
@@ -281,7 +340,7 @@ const Ctf = () => {
                             textAlign: "center",
                             margin: "auto",
                             paddingTop: "10px",
-                            
+
                           }}
                         >
                           Prizes Worth &#8377; 70,000

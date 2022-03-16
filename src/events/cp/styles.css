@@ -93,7 +93,7 @@ x-sign:nth-of-type(1) {
 	display: block;
 	transition: bottom 0.3s;
 	z-index: 100;
-	
+
 }
 
 #eventdetail {
@@ -106,4 +106,13 @@ x-sign:nth-of-type(1) {
 	text-align: center;
 	transition: bottom 0.3s;
 	z-index: 100;
+}
+
+.outline {
+	border: 2px solid #f20487;
+	background-color: inherit !important;
+}
+
+.padding {
+	min-height: 1rem;
 }

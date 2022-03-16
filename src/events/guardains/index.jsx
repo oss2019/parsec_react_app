@@ -94,7 +94,7 @@ const Guardains = () => {
                       style={{ margin: "auto" }}
                     >
 						<h2><a className="effect-7" href="https://docs.google.com/document/d/1A5G1X7uQRoZuxNsrjSVoHGqIZUIanb3GAMai_SLHTA8/edit?usp=sharing"><span style = {{color:'white'}}>PROBLEM STATEMENT</span></a></h2>
-                    
+
                     </div> */}
 										{/* <h4><a className="effect-7" href="https://docs.google.com/document/d/1A5G1X7uQRoZuxNsrjSVoHGqIZUIanb3GAMai_SLHTA8/edit?usp=sharing" target="_blank"><span style = {{color:'white'}}>PROBLEM STATEMENT</span></a></h4> */}
 
@@ -116,6 +116,27 @@ const Guardains = () => {
 													}}
 												>
 													Register Now
+												</a>
+											</div>
+										</div>
+										<br/>
+										<div
+											className="row justify-content-center align-items-center"
+											style={{ margin: 'auto' }}
+										>
+											<div className="btn-box text-center">
+												<a
+													href="/certificates"
+													className="theme-btn btn-style-four button text-center"
+													id="btncs"
+													target={'_blank'}
+													style={{
+														borderRadius: '8px',
+														color: '#ffffff',
+														// background: '#f20487',
+													}}
+												>
+													Get Certificates
 												</a>
 											</div>
 										</div>

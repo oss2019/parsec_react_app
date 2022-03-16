@@ -108,6 +108,26 @@ const Ascensus = () => {
 												</a>
 											</div>
 										</div>
+										<div
+											className="row justify-content-center align-items-center"
+											style={{ margin: 'auto', paddingTop: '40px' }}
+										>
+											<div className="btn-box text-center">
+												<a
+													href="/certificates"
+													className="theme-btn btn-style-four button2 text-center"
+													id="btncs2"
+													target="_blank"
+													style={{
+														borderRadius: '8px',
+														color: '#ffffff',
+														// background: 'rgba(242, 172, 79,0.9)',
+													}}
+												>
+													Get Certificates
+												</a>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>

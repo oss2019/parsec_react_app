@@ -97,6 +97,25 @@ const Designo = () => {
 									<div
 										className="row justify-content-center align-items-center"
 										style={{ margin: `auto` }}
+									>
+										<div className="btn-box" style={{ textAlign: `center` }}>
+											<a
+												href="/certificates"
+												target="_blank"
+												className="theme-btn btn-style-one btn-rounded mb-4"
+												// id="btncs"
+												style={{
+													// pointerEvents: `none`,
+													textDecoration: `none`,
+												}}
+											>
+												Get Certificates
+											</a>
+										</div>
+									</div>
+									<div
+										className="row justify-content-center align-items-center"
+										style={{ margin: `auto` }}
 									></div>
 								</div>
 							</div>
