@@ -148,7 +148,7 @@ const ParticipationCertificates = () => {
 							</div>
 						) : (
 							<>
-								<Header bg />
+								{/* <Header bg />git  */}
 								<br />
 								<br />
 								<br />
